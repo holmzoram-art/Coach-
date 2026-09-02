@@ -157,9 +157,9 @@ Målpace 6.12/km. Pulstak 172 til og med km 7, deretter åpent.
 | Km | Splitt | Puls | Melding |
 |---|---|---|---|
 | Start | — | — | «Mål 1.02. Første tre kilometer på 6.20, det skal føles for lett.» |
-| 1 | 5.58 | 148 | «6.58 er 22 sekunder for kjapt. Roe ned til 6.20.» |
+| 1 | 5.58 | 148 | «5.58 er 22 sekunder for kjapt. Roe ned til 6.20.» |
 | 2 | 6.18 | 154 | «6.18. Bedre. Hold den.» |
-| 3 | 6.21 | 158 | «6.21, du ligger 9 sekunder foran. Nå kan du gå ned på 6.12.» |
+| 3 | 6.21 | 158 | «6.21, du ligger 23 sekunder foran. Nå kan du gå ned på 6.12.» |
 | 4 | 6.14 | 163 | «6.14. Rett på skjema.» |
 | 5 | 6.10 | 168 | «Halvveis på 31.01. Pulsen er høy for å være her. Hold 6.15.» |
 | 6 | 6.16 | 169 | «6.16. Bra kontroll.» |
