@@ -99,3 +99,18 @@ jan) · 10 km eller HM uke 26 (slutten av feb).
 **Solo langturer:** uke 10 (nov) og uke 22 (feb), 18–20 km i egen I2-fart.
 Gruppelangturer beholdes for volum, men EF derfra føres i egen kolonne og
 sammenlignes kun mot andre gruppelangturer.
+
+## Beslutning om kneet — 03.09.26
+
+Knut: «Jeg ønsker ikke at du endrer noe på planen min, det er ikke vondt vondt
+men litt ubehagelig bare.» **Planen står uendret.** Ingen reduksjon av langtur,
+ingen frys på styrkelast.
+
+`belastning-restitusjon` sine anbefalinger (langtur maks 16 km, frys last på
+belt squat og bulgarians) ligger i `coach/logg/2026-09-03-kne.md` som råd, ikke
+som gjennomført endring.
+
+Knut booker fysioterapeut selv. Prep-notat: `coach/logg/fysio-prep.md`.
+
+**Dette overstyrer ikke de røde flaggene.** Hevelse, låsing, svikt, smerte i ro
+eller smerte som endrer gangen betyr fortsatt stopp.
