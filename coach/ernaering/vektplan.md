@@ -183,3 +183,88 @@ stille i tre uker på rad med planen fulgt: da justerer vi, ikke før.
 4. Hvordan ser onsdag og lørdag ut matmessig — de to hviledagene?
 5. Hvor sen er siste måltid, og henger det sammen med de 25 minuttene
    for lite søvn?
+
+---
+
+## 9. Sult og matfokus — tillegg 03.09.2026
+
+Knuts egne ord: han tenker mye på mat, er ofte veldig sulten, og «må jobbe med
+å ikke spise det han har lyst på». Dette er ikke en karakterbrist. Det er den
+forventede biologien etter 12 kg ned og holdt i tre år.
+
+### 9.1 Hvorfor sulten er reell
+
+- **Leptin faller mer enn fettmassen.** Mindre fettvev gir mindre leptin, og
+  hjernen leser det som energimangel — også ved 119 kg. Signalet «spis mer,
+  bruk mindre» skrus opp og skrus ikke av selv om vekten er stabil.
+- **Ghrelin holder seg forhøyet** lenge etter at vekttapet er over, og
+  metthetshormonene (GLP-1, PYY) faller. Samme måltid gir mindre metthet enn
+  det gjorde ved 131 kg.
+- **Adaptiv termogenese:** forbruket ligger noen prosent under det den nye
+  kroppsvekten tilsier. Vedlikehold koster mer disiplin nå enn før.
+- **Søvnen forsterker alt.** 19 av 28 netter under behov: kort søvn hever
+  ghrelin, senker metthetssignalene, og flytter lysten spesifikt mot søtt og
+  fett. 25 minutter for lite hver natt er en av de største enkeltårsakene til
+  at kveldene er tunge. Sult er her et søvnproblem forkledd som matproblem.
+- **40 km/uke på 119 kg** koster ekte energi. Appetitten er delvis korrekt.
+
+### 9.2 Metthet per kalori — rangert
+
+Han kan lage mat, så dette er håndverk, ikke teori:
+
+1. **Volum og vann i maten.** Grønnsaker og væskerike retter: gryter, supper,
+   wok. Dobbel grønnsaksmengde i samme rett.
+2. **Protein i hvert måltid, jevnt fordelt.** Ikke 220 g samlet på kvelden.
+3. **Poteter, belgfrukter, havre** foran raffinert karbo. Mest metthet av alle
+   karbokilder.
+4. **Fiber og tyggemotstand.** Hele grønnsaker foran most.
+5. **Væske til måltidet** — og et glass 20 min før.
+6. **Fett som smak, ikke base.** Olje, ost og dressing er den stille kalorien.
+
+Konkret endring i morgen: bytt halve porsjonen ris/pasta mot poteter eller
+linser, dobbel grønnsak, samme protein.
+
+### 9.3 Planlagt inkludering, ikke forbud
+
+Formuleringen «må jobbe med å ikke spise det jeg har lyst på» er den som over
+tid predikerer tilbakefall. Modellen vi bruker i stedet: **det du har lyst på
+er planlagt inn, ikke kjempet mot.**
+
+- Én fast plass i uka til det han faktisk vil ha, i normal porsjon, uten
+  kompensasjon dagen etter. Legg den på fredag — karbo etter langtur.
+- Ingen matvare er forbudt. Det finnes bare «i dag» og «på fredag».
+- Ingen matvare skal «tjenes inn» med trening.
+
+### 9.4 Diettpauser
+
+Ja. Legg inn **én vedlikeholdsuke etter hver 5.–6. uke med underskudd**:
+ca. midten av oktober, slutten av november, og en glidende overgang inn i
+januar. Full vedlikeholdsspising, ikke overspising. Det gir delvis
+leptinrespons, roer matfokuset, fyller glykogen, og koster i praksis lite
+totalt fordi ukene etter blir bedre. Vinduet i § 2 tåler dette.
+
+### 9.5 Dagsstruktur på en arbeidsdag
+
+Lunsj 10:40 og løping 16:18 med én banan mellom er oppskriften på en dårlig
+kveld. Ramme:
+
+| Ca. | |
+|---|---|
+| 06:30 | Frokost med tydelig protein |
+| 10:30–11:00 | Lunsj, protein + treg karbo |
+| 13:30–14:00 | Fast mellommåltid — ikke valgfritt |
+| 15:00–15:30 | Karbo før økt |
+| Etter økt | Karbo + protein innen en time |
+| Middag | Volumbasert, som § 9.2 |
+| Kveld | Kesam/cottage cheese ved behov |
+
+Mellommåltidet kl. 14 er det viktigste grepet i hele seksjonen.
+
+### 9.6 Gult flagg
+
+Matfokus etter langvarig underskudd er normalt. Grensen går der det slutter å
+være praktisk og begynner å styre livet: hvis tankene om mat forstyrrer jobb
+eller søvn, hvis han unngår sosiale måltider, hvis et avvik utløser skyld
+eller kompensasjon (ekstra økt, hoppe over neste måltid), eller hvis han
+begynner å skjule hva han spiser. Da er det ikke lenger en treningsplan-sak,
+og da sier vi det tydelig, én gang, uten drama.

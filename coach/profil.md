@@ -39,3 +39,26 @@ Det er utgangspunktet for all ernæringsplanlegging.
 Han har eksplisitt bedt om ærlige og konkrete tilbakemeldinger, og sagt at
 han ikke er redd for sannheten. **Vekt er et åpent tema** — det skal tas opp
 saklig når det er relevant, ikke pakkes inn.
+
+## Sult og matfokus — oppgitt 03.09.2026
+
+> «Jeg tenker mye på mat og hvordan og hva jeg kan spise, jeg er ofte veldig
+> sulten og må jobbe med å ikke spise det jeg har lyst å spise.»
+
+Forventet endokrin respons etter 12 kg holdt over tid, forsterket av
+søvnunderskudd. **Ikke behandle som disiplinproblem.**
+
+Formuleringen «må jobbe med å ikke spise det jeg har lyst på» er
+restriksjonstankegang, og den predikerer tilbakefall. Agentene skal foreslå
+**planlagt inkludering**, aldri forbudslister. Se `coach/ernaering/vektplan.md`
+seksjon 9.
+
+Han lager maten sin selv og er god til det. Proteinrike måltider med karbo lagt
+til bevisst. Han trenger ikke lære å lage mat — bare å endre sammensetning.
+
+## Lege
+
+Han vurderer å kontakte lege om vekt, men holder igjen fordi han mener han
+«burde klare det på egenhånd». Anbefalt 03.09 å ta kontakt — både for
+utredning (stoffskifte, søvnapné) og fordi det finnes etablert behandling.
+Pulse Ox er ikke slått på i Garmin; bør aktiveres før legetimen.
