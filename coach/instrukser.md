@@ -54,3 +54,15 @@ Baseline: hvilepuls 43,5 ± 1,5 · HRV 74,8 ± 1,6 · varighet 7t21 ± 58 min.
 Bakgrunn: 18-kilometeren 27.08 fikk 7,2 % HR-drift og kadensfall 77,7 → 64,5.
 Nettene før var 6t18 og 6t58, og morgenen hadde hvilepuls 45 (periodetopp) og
 HRV 73 (periodebunn). Økta var ikke for lang — han var for dårlig uthvilt.
+
+## Treningskontekst — viktig for tolkning av data
+
+- [2026-09-03] **Langturer og lange løp kjøres i gruppe.** Farten er ikke
+  Knuts egen — han må ofte holde igjen så alle henger med. Det betyr at
+  fart, puls og EF fra langturer **ikke er rene målinger av formen hans**.
+  `fysiolog` skal ikke lese trend ut av gruppeturer uten å si fra om dette.
+- [2026-09-03] **Intervaller og tempoøkter kjøres solo.** Det er de rene
+  dataene. Terskelutvikling og formkurve skal bygges på disse, ikke på
+  langturene.
+- [2026-09-03] Knut har selv bedt om **solo testøkter** for å kartlegge
+  hvor han faktisk ligger. Det er riktig instinkt og skal inn i planen.
