@@ -66,3 +66,36 @@ HRV 73 (periodebunn). Økta var ikke for lang — han var for dårlig uthvilt.
   langturene.
 - [2026-09-03] Knut har selv bedt om **solo testøkter** for å kartlegge
   hvor han faktisk ligger. Det er riktig instinkt og skal inn i planen.
+
+## Soner — revidert 03.09.26 (makspuls 190)
+
+OLT-modellen. Erstatter den gamle tabellen, som forutsatte makspuls ~207.
+
+| Sone | % av 190 | Puls | Bruk |
+|---|---|---|---|
+| I1 | 62–72 | 118–136 | Restitusjon |
+| I2 | 72–82 | 137–156 | Rolig / langtur |
+| I3 | 82–87 | 156–165 | Sub-terskel — her ligger tempoøktene |
+| I4 | 87–92 | 166–175 | Terskel |
+| I5 | 92–100 | 175–190 | VO2 |
+
+Anaerob terskel: **puls 170 ± 3**, terskelfart 6:20–6:30/km flatt.
+Forankret i 10 km 22.07 (64:40, snittpuls 166, siste km 178).
+
+Intensiteten i tempoøktene er uendret — de het bare feil. Rettet er
+VO2-øktene, der gulvet på puls 185 lå over det han når.
+
+## Testprotokoll — solo
+
+**Referanseøkt «8K Flat», hver 3.–4. uke.** 8,0 km på samme flate asfaltrunde,
+solo, 15 min oppvarming logget separat, deretter **pulslås 145 ± 3**. Farten er
+utfallet, ikke målet. Logges: GAP-fart, snittpuls, EF, kadens per km, Pa:HR,
+temperatur, RPE. Ugyldig ved over 20 grader, under 48 t etter hardøkt, eller
+mageuro. Koster én rolig økt, ikke en kvalitetsøkt.
+
+**Testløp:** 10 km hardt uke 8 (slutten av okt) · halvmaraton uke 18 (midten av
+jan) · 10 km eller HM uke 26 (slutten av feb).
+
+**Solo langturer:** uke 10 (nov) og uke 22 (feb), 18–20 km i egen I2-fart.
+Gruppelangturer beholdes for volum, men EF derfra føres i egen kolonne og
+sammenlignes kun mot andre gruppelangturer.
