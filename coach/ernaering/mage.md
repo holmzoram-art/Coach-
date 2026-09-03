@@ -24,3 +24,11 @@ underveis, om han drakk, og temperaturen.
 tretthet og dårlig restitusjon. Med mageproblemer som forklaring er den
 tolkningen minst usikker, kanskje feil. En løper som holder igjen og leter
 etter et do løper ikke normalt.
+
+**Hypoteser (03.09.26, rangert, ikke konkludert):** 1) ingen/for lite karbo før
+en 2t23-økt — tom mage + gruppetempo. 2) Frokost for nær start eller for fet/
+fiberrik. 3) For konsentrert drikke/gel uten væske. 4) Gruppefart over egen
+komfortsone i perioder. 5) Uspesifikk mage/infeksjon (dårlig søvn, hvilepuls 45).
+
+**Test 11.09 (16 km):** samme frokost 2–2,5 t før, ingenting nytt, én gel ved
+45 min med vann. Noter klokkeslett for frokost, gel og eventuelt magetrøbbel.
