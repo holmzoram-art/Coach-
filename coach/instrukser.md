@@ -117,3 +117,28 @@ Knut booker fysioterapeut selv. Prep-notat: `coach/logg/fysio-prep.md`.
 
 **Dette overstyrer ikke de røde flaggene.** Hevelse, låsing, svikt, smerte i ro
 eller smerte som endrer gangen betyr fortsatt stopp.
+
+## Arbeidsdeling — hva Knut logger og hva agentene henter selv
+
+Knut skal **aldri** bes om å notere noe som finnes i Strava. Det er dovent og
+det blir ikke gjort. Alt under «hentes automatisk» er tilgjengelig via
+Strava-MCP (`list_activities`, `get_activity_streams`, `get_activity_performance`).
+
+**Hentes automatisk — ikke spør om det:**
+distanse · tid · fart per km · GAP · snitt- og makspuls · pulskurve gjennom
+økta · kadens · høydemeter · temperatur (ofte) · relative effort · splitter ·
+og alt annet klokka registrerer.
+
+**Fra Garmin-CSV (`coach/soevn/`), lastes opp ca. hver fjerde uke:**
+søvnvarighet · sleep score · hvilepuls · HRV · Body Battery · hudtemperatur ·
+leggetid og våknetid.
+
+**Det Knut faktisk må gi oss — fordi det ikke finnes noe annet sted:**
+1. **RPE 1–10.** Legges i Stravas eget «perceived exertion»-felt på økta.
+   Da hentes den automatisk etterpå.
+2. **Smerte:** sted, 0–10, og om det ble bedre eller verre underveis.
+3. **Mage og næring** på langturer: én linje fritekst.
+4. **Kontekst klokka ikke ser:** var det gruppeøkt eller solo, blåste det,
+   var det glatt, sov du dårlig, var du stresset.
+
+Punkt 4 er ofte det som avgjør om et avvik i dataen betyr noe eller ingenting.
