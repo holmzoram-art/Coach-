@@ -23,6 +23,9 @@ som utløste den.)_
   (Knut: «Det som er viktig er vi bygger MP og ikke hva den er nå.»)
 - [2026-09-03] Fjerde løpeøkt lagt inn: søndag, 4 km rolig fra 13. sept,
   progresjon 4 → 5 → 6 → 7 km. Puls 130–142. Droppes/kortes i deload-uker.
+- [2026-09-03] **Uka starter på mandag.** Søndagsøkta hører til slutten av
+  uka, ikke starten. Første søndag (13.09) tilhører uke 2, ikke uke 3.
+  Gjelder all planlegging og alle rapporter.
 - [2026-09-03] Langturen står på 16–18 km til langturandelen er under 40 %
   av ukesvolumet.
 
