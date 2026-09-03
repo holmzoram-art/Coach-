@@ -18,15 +18,41 @@ Akutt nok til at det var på håret.
 - Gruppeøkt — farten var ikke hans egen
 
 **Inntak (oppgitt 03.09):**
-- **Før:** loffskiver med syltetøy + en liten bit lasagne
-- **Ca. 1 time før:** 1 banan
+- **Kl. 10:40–11:10 (lunsj, ~5 t før start):** loffskiver med syltetøy +
+  en liten bit lasagne
+- **Ca. kl. 15:18 (1 t før):** 1 banan
 - **Underveis:** sportsdrikk med elektrolytter + seigmenn
+
+Økta startet **16:18**. Lasagnen lå altså 5 timer bak og er ute av bildet som
+årsak — fett bremser magesekken i timevis, ikke i fem. Men det betyr samtidig
+at han gikk inn i 2t23 med ett karbomåltid 5 timer før og én banan. Det er
+tynt drivstoff inn i økta, uavhengig av magen.
 
 **Knuts egen hypotese:** sportsdrikken med elektrolytter gjorde magen ustabil.
 
-**Fortsatt ukjent:** hvor lenge før start loff/lasagne ble spist, hvor
-konsentrert sportsdrikken var blandet, hvor mye han drakk, om han hadde vann
-ved siden av, og temperaturen den dagen.
+**Fortsatt ukjent:** hvor konsentrert sportsdrikken var blandet, hvor mye han
+drakk, om han hadde vann ved siden av, og temperaturen den dagen.
+
+---
+
+## Test 1 — langtur 11.09.2026 (16 km)
+
+Knut velger å **fjerne sportsdrikken og beholde seigmennene**. Det avviker fra
+`ernaering` sitt forslag om kun vann, men er et gyldig oppsett: det bryter
+nettopp kombinasjonen som er hovedmistenkt, og tester seigmenn med vann alene.
+
+**Opplegg:**
+- Lunsj som vanlig, men **uten lasagne** — loff med syltetøy holder.
+- Banan ca. 1 t før.
+- Underveis: **seigmenn + vann. Ingen sportsdrikk.**
+- Vann *sammen med* seigmennene, ikke i stedet for. Det er hele poenget.
+- Rolig, egen fart.
+
+**Hva vi lærer:** går det bra, er seigmenn med vann trygt, og mistanken flyttes
+til drikken eller kombinasjonen. Går det galt, er seigmennene selv implisert.
+
+**Noteres:** «Frokost/lunsj kl. __, banan kl. __, __ seigmenn, ca. __ dl vann,
+mage: rolig / meldte seg ved km __.»
 
 **Merk:** kadensfallet og deler av HR-driften ble opprinnelig tolket som
 tretthet og dårlig restitusjon. Med mageproblemer som forklaring er den
