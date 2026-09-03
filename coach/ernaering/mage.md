@@ -17,8 +17,16 @@ Akutt nok til at det var på håret.
 - Morgenen: hvilepuls 45 (periodetopp), HRV 73 (periodebunn)
 - Gruppeøkt — farten var ikke hans egen
 
-**Ukjent, må avklares:** hva han spiste før, hvor lenge før, om han tok noe
-underveis, om han drakk, og temperaturen.
+**Inntak (oppgitt 03.09):**
+- **Før:** loffskiver med syltetøy + en liten bit lasagne
+- **Ca. 1 time før:** 1 banan
+- **Underveis:** sportsdrikk med elektrolytter + seigmenn
+
+**Knuts egen hypotese:** sportsdrikken med elektrolytter gjorde magen ustabil.
+
+**Fortsatt ukjent:** hvor lenge før start loff/lasagne ble spist, hvor
+konsentrert sportsdrikken var blandet, hvor mye han drakk, om han hadde vann
+ved siden av, og temperaturen den dagen.
 
 **Merk:** kadensfallet og deler av HR-driften ble opprinnelig tolket som
 tretthet og dårlig restitusjon. Med mageproblemer som forklaring er den
