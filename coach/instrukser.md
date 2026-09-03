@@ -14,3 +14,22 @@ som utløste den.)_
 - Mål: Holmestrand Maraton, lørdag 3. april 2027.
 - Treningsplanen ligger i artifact «Marathon».
 - Primærkilde for gjennomførte økter: Strava-MCP.
+
+## Beslutninger
+
+- [2026-09-03] **MP er et mål vi bygger, ikke en måling av dagsformen.** Planen
+  skal alltid vise begge: målfart (7:05–7:15) og arbeidsfart nå (7:35–7:50).
+  MP-økter kjøres på arbeidsfarten; målet er det vi sikter mot i april.
+  (Knut: «Det som er viktig er vi bygger MP og ikke hva den er nå.»)
+- [2026-09-03] Fjerde løpeøkt lagt inn: søndag, 4 km rolig fra 13. sept,
+  progresjon 4 → 5 → 6 → 7 km. Puls 130–142. Droppes/kortes i deload-uker.
+- [2026-09-03] Langturen står på 16–18 km til langturandelen er under 40 %
+  av ukesvolumet.
+
+## Åpne punkter
+
+- **HRmax ikke verifisert.** Høyeste målte i år: 187 (25. juli). Sonetabellen
+  forutsetter ~207. Krever ekte makstest før sonene justeres.
+- **Banedata mangler:** høydeprofil/GPX for 5 km-runden i Holmestrand,
+  plassering av de 3 drikkestasjonene, hvor de siste 2,195 km legges.
+- Maks tid i løpet er **6 timer** — reell begrensning.
