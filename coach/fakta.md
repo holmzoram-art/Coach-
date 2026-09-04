@@ -118,3 +118,23 @@ Stravas råtall — ellers stemmer det ikke med det han ser.
 På gruppelangturer får de beskjed om å gå når det blir tungt, og dårlig sti
 tvinger fram gange. **Gangpauser er derfor ikke automatisk et tretthetssignal.**
 Spør før du tolker.
+
+## Hvilke økter som teller som formmåling
+
+Knut, 04.09: «Deloadøkter burde jo ikke ha noe å si om formen min. Det er
+terskel og økter som skal være tunge og der man skal pushe, som har noe å si.»
+
+**Teller:**
+- Kalibrerings- og terskeløkter (I3/I4), solo, flat rute
+- Referanseøkta «8K Flat» — pulslås 145, samme rute, solo
+- Testløp
+
+**Teller ikke. Ikke analyser dem som formmåling:**
+- Deloaduker
+- Gruppelangturer
+- Økter med gåpauser
+- Økter under 40 minutter
+- Kupert terreng uten kontroll på ruta
+
+Rolig løping *kan* måle aerob utvikling — men bare under kontrollerte forhold,
+og det er akkurat det «8K Flat» er laget for. Alt annet rolig er bare volum.
