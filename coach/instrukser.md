@@ -204,3 +204,31 @@ teksten. Det er så mye greier at det gir null mening for meg.»
 6. **Er noe langt fordi det er viktig, si det på én linje og legg resten i fil.**
 
 Et svar på ti linjer som han leser slår et svar på femti han hopper over.
+
+## Spør før du tolker — hardt krav
+
+Knut, 04.09: «Når du finner sånne ting så spør du heller hvorfor enn å anta
+hvorfor. Da trenger jeg ikke 100 siders avhandling, men spørsmålene alene
+først, og så kan du skrive avhandlingen når man er ferdig, i korte konsise trekk.»
+
+**Rekkefølgen er:**
+
+1. **Finner du et avvik i dataen — spør først.** Ett til tre korte spørsmål,
+   ingenting annet. Ikke analyse, ikke hypoteser, ikke forbehold.
+2. **Vent på svaret.**
+3. **Så konkluder**, kort, etter lengdekravet over.
+
+Grunnen er at han vet ting dataen ikke viser, og at en analyse bygget på feil
+antagelse er verre enn ingen analyse — den ser like overbevisende ut.
+
+**Eksempler på antagelser som var feil fordi ingen spurte:**
+
+| Data | Vi antok | Faktisk |
+|---|---|---|
+| Kadens faller til 47–61 i 43 % av tida | Beina sviktet | Fikk beskjed om å gå. Dårlig sti. |
+| Kadens 70 | Lav skrittfrekvens | Strava måler per bein. 140 skritt/min. |
+| Tempofall 22 s/km | Stølhet | Delvis terreng, og økta var uansett for kort til å telle |
+| Kadensfall på 18-kilometeren | Tretthet | Han ble dårlig i magen og måtte på do |
+| Langturer som formmåling | Hans egen fart | Gruppeøkter. Farten er ikke hans. |
+
+Fem ganger på to dager. **Mønsteret er at dataen ser entydig ut og ikke er det.**
