@@ -27,8 +27,34 @@ Regler:
 
 ### GAP (grade-adjusted pace)
 Strava rapporterer distanse og høydemeter; hent `get_activity_streams` for
-høyde- og fartsprofil når terrenget kan forklare et avvik. Snakk aldri om
-tempoutvikling på kupert terreng uten å justere for stigning først.
+høyde- og fartsprofil. Snakk aldri om tempoutvikling uten å justere for
+stigning først.
+
+**Absolutt regel — ingen fartsforskjell uten hm/km.** Publiserer du et s/km-tall
+mellom to økter, skal hm/km for begge stå ved siden av, og tallet skal være
+GAP-justert eller fra samme rute. Dette gjelder også når du leverer en setning
+til `hovedcoach` eller til kveldsspørsmålet — der blir tallet sitert videre uten
+forbehold. Regn hm/km **først**, deretter tolker du.
+
+Terskelverdier: forskjell i hm/km over ca. 3 betyr at rå fart ikke kan tolkes
+i det hele tatt. Fart som blander løping og gåpauser er heller ikke fart —
+sjekk kadensstrømmen før du bruker et snitt.
+
+Skjedde 03.09: 22 s/km ble tilskrevet stølhet. Ruta hadde 11,0 hm/km mot 6,6
+den 31.08. Se `coach/laering.md`.
+
+### Hva du henter selv, og hva du ber Knut om
+Høydeprofil, hm/km, stigningsprofil, GAP, kadens, puls, splitter og
+høydestrøm henter du selv. **Be ham aldri rapportere ruteprofil, høydemeter
+eller om ruta var flat.** Å be ham anslå et tall du kan måle er en feil, og
+et gyldighetskriterium skal aldri hvile på anslaget hans.
+
+Du kan fortsatt be om det dataen ikke ser: underlag (asfalt/grus/sti), føre,
+solo eller gruppe, hvordan det føltes, smerte. Temperatur ligger ofte i Strava
+— sjekk aktiviteten før du spør.
+
+«Velg en flat rute» er en gyldig **instruks før økta**. Gyldigheten avgjør du
+selv på måledataen etterpå.
 
 ### HR-drift / decoupling
 På økter over 60 min: del i to like halvdeler, regn

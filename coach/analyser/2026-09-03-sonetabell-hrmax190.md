@@ -27,6 +27,19 @@ Anaerob terskel anslått til puls 170 +/- 3 (89 % HRmax), terskelfart 6:20–6:3
   til 172 for rep 1–2 og taket til 183.
 - Z2 125–154 overlapper I1/I2 og er tilfeldigvis brukbar, men gulvet 125 er 7 slag for lavt.
 
+## Forbehold lagt til 04.09 — pacekolonnen er ikke gjennomgående GAP-justert
+Kolonnen heter «Pace (flatt)», men flere av grunnlagsøktene er rå snittfart fra
+ruter som ikke var flate. 27.08-langturen, som bærer I2-raden, hadde 9,9 hm/km.
+14.08 (7,3 km) er den eneste eksplisitt flate i I2-grunnlaget.
+
+Konsekvens: I1- og I2-pacene er trolig **for konservative** — reell flat fart
+ved samme puls ligger sannsynligvis noe raskere. Tallene er brukbare som
+arbeidsrammer, men skal ikke brukes som referanse for formutvikling før de er
+regnet om med GAP eller festet på en kjent flat rute (8K Flat / parkrun-traseen).
+I4/I5 hviler på parkrun-runden og er mindre berørt.
+
+Regelen som gjelder framover: `coach/fakta.md`, «Fart-sammenligninger».
+
 ## Usikkerhet
 I3-pacene er interpolert — ingen registrert økt ligger stabilt på puls 156–165.
 Kjør én 2 x 15 min på puls 160 for å feste I3-fart før tallene brukes i plan.

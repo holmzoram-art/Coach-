@@ -13,6 +13,9 @@ Grunnlag: Strava 1. juni–1. september 2026. GAP-modell: (distanse + 7,5 x høy
 
 Trend: +12 % juni -> slutten av august. Men flat/sagtannet siden 27. juli (16,50 -> 16,01).
 Forbehold: ulik distanse (6,2–10,5 km) og delvis ulik rute. Konfidens [foreløpig].
+Lagt til 04.09: EF-tallene er GAP-justert, så trenden står. Men tabellen mangler
+hm/km per økt, som gjør den vanskelig å ettergå. Før inn den kolonnen ved neste
+oppdatering. Se `coach/fakta.md`, «Fart-sammenligninger».
 
 ## HR-drift (Pa:HR, halvdeler, GAP-justert)
 - 13.08, 14,5 km, snittpuls 135: 6,4 %

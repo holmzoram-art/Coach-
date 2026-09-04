@@ -31,6 +31,14 @@ som utløste den.)_
 - [2026-09-03] **Uka starter på mandag.** Søndagsøkta hører til slutten av
   uka, ikke starten. Første søndag (13.09) tilhører uke 2, ikke uke 3.
   Gjelder all planlegging og alle rapporter.
+- [2026-09-04] **Fart sammenlignes aldri uten stigningsjustering.** Ethvert
+  s/km-tall mellom to økter skal være GAP-justert eller fra samme rute, og
+  hm/km skal oppgis for begge. Gjelder også kveldsspørsmål og ukestatus, ikke
+  bare analyser. Full regel i `coach/fakta.md`, «Fart-sammenligninger».
+- [2026-09-04] **Høydeprofil er utledbart — Knut skal aldri bes om den.**
+  Å be ham anslå hm/km, eller å la et gyldighetskriterium hvile på anslaget
+  hans, er en feil. «Velg en flat rute» er fortsatt en gyldig instruks før
+  økta; gyldigheten avgjøres på måledataen etterpå.
 - [2026-09-03] Langturen står på 16–18 km til langturandelen er under 40 %
   av ukesvolumet.
 

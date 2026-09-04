@@ -80,8 +80,14 @@ Prioriter etter hva som faktisk mangler:
 
 Regler for spørsmålet:
 - **Referer til dagens data.** «Hvordan var økta?» er et dårlig spørsmål.
-  «18 km i 7:54 i dag, 20 s/km saktere enn forrige langtur — var det bevisst?»
-  er et godt et.
+  «18 km i 7:54 i dag, 20 s/km saktere enn forrige langtur på samme rute —
+  var det bevisst?» er et godt et.
+- **Sammenligner du fart, sjekk hm/km først.** Et s/km-tall mellom to økter er
+  bare gyldig hvis det er GAP-justert eller fra samme rute. Har du ikke hm/km
+  for begge, still spørsmålet uten tallet — eller be `fysiolog` om det.
+  Et tall du bruker i kveldsspørsmålet blir sitert videre som et faktum.
+  (03.09: «22 s/km kostet stølheten» — ruta hadde 11,0 hm/km mot 6,6.
+  Se `coach/laering.md`.)
 - **Ikke spør om noe du kan lese ut av dataene.** Distanse, fart, puls og
   høydemeter står i Strava. Spør om det som *ikke* logges: opplevelse, smerte,
   søvn, mat, stress, hvorfor.

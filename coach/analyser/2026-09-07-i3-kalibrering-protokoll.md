@@ -7,7 +7,9 @@ Bygger på "8K Flat"-logikken i `2026-09-03-testprotokoll-solo.md`. Sonene fra `
 3. Lopt FOR fysiotimen, eller minst 6 t etter.
 4. Temperatur under 20 grader.
 5. Tort underlag, asfalt eller grus. Ikke sti.
-6. Rute under 5 hm/km, ingen enkeltbakke over 15 hm.
+6. Rute valgt flat — under 5 hm/km, ingen enkeltbakke over 15 hm.
+   (Instruks til Knut for FOR okta. Om kravet faktisk ble oppfylt, avgjor jeg
+   pa hoydestrommen etterpa — han skal ikke anslaa det selv.)
 7. Begge nettene over 7 t. Hvilepuls <= 44, HRV >= 74, Body Battery >= 45.
 8. Start mellom 16:30 og 18:00.
 9. Solo.
@@ -21,13 +23,23 @@ Til onsdag 9.9 samme tid. Beinokta flyttes til torsdag, slik at 48-timerskravet 
 
 ## Logging
 To aktiviteter. Oppvarming 15 min separat. Testen doper "I3-kalibrering 20 min".
-Beskrivelse: temperatur, underlag, rute, solo, RPE (sett ogsa perceived_exertion),
-kne 0-10, sovn siste to netter, gapauser ja/nei, om pulsen laa i 156-165 hele veien.
-Jeg henter selv: GAP, pulskurve, kadens per km, hoydeprofil, splitter, Pa:HR.
 
-## Rutekrav
+Knut skriver i beskrivelsen — kun det dataen ikke ser:
+underlag (asfalt/grus/sti), fore, solo ja/nei, RPE (sett ogsa perceived_exertion),
+kne 0-10, hvordan det foltes.
+
+Jeg henter selv, og spor aldri om: GAP, pulskurve, kadens per km, hoydeprofil,
+hm/km, stigningsprofil, splitter, Pa:HR, gapauser (leses av kadensstrommen),
+om pulsen laa i 156-165 (leses av pulsstrommen), sovn siste to netter
+(Garmin-CSV). Temperatur ligger ofte i Strava — jeg sjekker aktiviteten for
+jeg eventuelt sporr.
+
+## Rutekrav — instruks for okta, malt etterpa
 Under 5 hm/km, ingen sammenhengende stigning over 2 % i mer enn 200 m.
-Til sammenligning: langturen 04.09 hadde 15 hm/km, 18-kilometeren 27.08 hadde 10 hm/km.
+Jeg verifiserer mot hoydestrommen etter okta. Er kravet brutt, er testen
+ugyldig som EF-punkt — det er min vurdering, ikke hans.
+Til sammenligning: langturen 04.09 hadde 15,3 hm/km, 18-kilometeren 27.08 hadde 9,9 hm/km,
+den rolige 31.08 hadde 6,6 og okta 03.09 hadde 11,0.
 Flat gang- og sykkelvei / parkrun-traseen. Ikke Slottsfjellet.
 
 ## Dagens okt 04.09 som datapunkt
