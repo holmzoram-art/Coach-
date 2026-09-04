@@ -2,9 +2,9 @@
 
 ## Symptomet
 
-- Kommer ved **15–16 km**, aldri før. Doseavhengig.
+- Kommer ved **15–16 km** på flatt. Men **04.09 kom det alt på 12 km** i ulendt terreng med mye bratt utfor — terreng ser ut til å utløse det like mye som distanse.
 - **Venstre kne**, under og på siden av kneskåla. Litt i høyre også, men venstre er normalen.
-- Stivhet. Vondt det **første minuttet** når jeg starter opp igjen etter en gåpause, så gir det seg.
+- **Ingen smerte når jeg går.** Ved oppstart av løping igjen er det vondt i **10–20 sekunder**, så er det helt borte.
 - **Borte dagen etter.** Ingen hevelse, ingen låsing, ingen svikt, ikke vondt i trapper.
 - Ubehag, ikke smerte.
 
