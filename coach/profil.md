@@ -62,3 +62,5 @@ Han vurderer å kontakte lege om vekt, men holder igjen fordi han mener han
 «burde klare det på egenhånd». Anbefalt 03.09 å ta kontakt — både for
 utredning (stoffskifte, søvnapné) og fordi det finnes etablert behandling.
 Pulse Ox er ikke slått på i Garmin; bør aktiveres før legetimen.
+
+**Legetime booket 16.09.2026.**
