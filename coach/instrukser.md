@@ -185,3 +185,22 @@ skriver rettelsene inn i `coach/fakta.md`, `coach/instrukser.md` eller direkte
 i agentfilene. Historikken ligger i `coach/laering.md`.
 
 Kjøres når Knut påpeker noe, og i gjennomgangen før hver fredagsrapport.
+
+## Lengde på svar — hardt krav
+
+Knut, 04.09: «Du skriver fryktelig lange avhandlinger som burde vært 1/10 av
+teksten. Det er så mye greier at det gir null mening for meg.»
+
+**Regler for alt som går til Knut, fra agentene og fra hovedsamtalen:**
+
+1. **Konklusjonen først, i én setning.** Så eventuelt hvorfor.
+2. **Maks tre punkter.** Har du fem funn, velg de tre som endrer noe.
+3. **Bare tall som endrer en beslutning.** Pa:HR, glattingsspenn,
+   barometerstøy, metodevalg — det hører hjemme i filene under `coach/`,
+   ikke i svaret. Han skal kunne handle på svaret, ikke etterprøve det.
+4. **Ingen mellomregninger.** «Terrenget forklarer 4–5 av de 22 s/km» holder.
+   Ikke vis hvordan.
+5. **Ingen oppsummering til slutt.** Han har nettopp lest det.
+6. **Er noe langt fordi det er viktig, si det på én linje og legg resten i fil.**
+
+Et svar på ti linjer som han leser slår et svar på femti han hopper over.

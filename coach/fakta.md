@@ -100,3 +100,21 @@ til agentene — da arver de en nedsampling de ikke vet om.
 
 Hovedsamtalen kan hente `list_activities` (sammendrag) for å vite hva som er
 gjennomført. Strømmer er agentenes bord.
+
+## Kadens — Strava oppgir per bein
+
+`avg_cadence` fra Strava er **per bein**. Skrittfrekvens = tallet × 2.
+
+| Strava | Faktisk |
+|---|---|
+| 78 | 156 skritt/min |
+| 70 | 140 skritt/min |
+
+Knuts klokke viser skrittfrekvens. **Snakk alltid i skritt/min**, ikke i
+Stravas råtall — ellers stemmer det ikke med det han ser.
+
+## Gruppelangturer — gange er ofte planlagt
+
+På gruppelangturer får de beskjed om å gå når det blir tungt, og dårlig sti
+tvinger fram gange. **Gangpauser er derfor ikke automatisk et tretthetssignal.**
+Spør før du tolker.
