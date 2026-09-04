@@ -1,7 +1,160 @@
 # Vektplan — Knut, sept 2026 → Holmestrand 3. april 2027
 
-Eies av `ernaering`. Skrevet 03.09.2026. Utgangspunkt: 119 kg, 195 cm, 38 år.
-Vekt er et åpent tema (se `coach/profil.md`). Ærlig, ikke pakket inn.
+Eies av `ernaering`. Skrevet 03.09.2026. **Revidert 04.09.2026** etter
+`coach/ernaering/kartlegging.md`.
+
+> **REVISJON 04.09.2026 — les seksjon 0 først.**
+> Den opprinnelige planen bygde på at Knut hadde vært vektstabil på 119 kg
+> i lengre tid og kunne gå rett inn i et nytt underskudd. Det var feil.
+> Han har vært i **sammenhengende underskudd siden februar 2026 — sju
+> måneder** — og platået fra juli følger en kostholdsendring i juni
+> (protein og fiber ned, karbo opp).
+> **Seksjon 0 overstyrer § 2, § 9.4 og § 9.5.** Resten av planen står.
+
+---
+
+## 0. Revidert hovedløp (04.09.2026)
+
+### 0.1 Ja — vedlikeholdsperiode først. Tre uker, 08.–28. september.
+
+Sju måneder sammenhengende underskudd er lenge nok til at følgende er
+etablert: leptin ligger lavere enn fettmassen tilsier, ghrelin ligger
+forhøyet, metthetssignalene (GLP-1, PYY) er dårligere, skjoldbrusk- og
+kjønnshormonakser er dempet, og forbruket utenom trening (NEAT) er skrudd ned
+noen prosent under det kroppsvekten skulle tilsi. Det er nettopp derfor
+løpsvolumet kunne øke fra 19 til 29 km/uke uten at vekta rikket seg: kroppen
+sparte inn økningen et annet sted i døgnet.
+
+**Viktig presisering — dette er ikke bare å spise mer.** Energimessig har han
+allerede ligget på vedlikehold siden juli; vekta står stille, altså er
+regnskapet i balanse. Det som mangler er ikke kalorier, det er
+**sammensetning og struktur**. Derfor er de tre ukene en *reparasjonsfase*,
+ikke en refeed:
+
+- Protein tilbake opp (§ 4 står: ~2 g/kg målvekt).
+- Fiber og grønnsaksvolum tilbake opp.
+- Fire faste luker i døgnet (§ 0.4), inkludert frokost — som er helt ny.
+- **Null bevisst underskudd.** Vekta skal stå stille, og det er *målet*.
+- Søvn: dette er også vinduet der 25-minutters-underskuddet skal lukkes.
+
+Hvorfor tre uker og ikke fire: han er allerede energimessig på vedlikehold,
+så den hormonelle responsen har et forsprang. Hvorfor ikke null uker:
+vi får aldri vite om et nytt underskudd virker så lenge kostholdet er feil
+sammensatt. Vi fikser sammensetningen først, med vekta i ro, så vet vi hva
+underskuddet faktisk gjør når det kommer.
+
+**Underskuddet starter mandag 28. september.**
+
+### 0.2 Hva juni-endringen betyr konkret
+
+Han gikk ned 12 kg på høyt protein og lav karbo, og stanset da han snudde
+det. Konklusjonen er **ikke** «å tilbake til lavkarbo» — han løper 29 km/uke
+nå og skal opp mot 45–60. Konklusjonen er at han byttet ut den ene
+matvaregruppen som gir metthet og beskytter muskelmasse (protein) med den
+ene som gir minst metthet per kalori (rask karbo), og fjernet fiberen på
+kjøpet.
+
+| Skal opp | Skal ned |
+|---|---|
+| **Protein** — tydelig kilde i hvert eneste måltid | **Rask karbo utenfor øktvinduet** — hvitt brød, granola, søt yoghurt, saft, brus |
+| **Fiber** — grønnsaker, poteter, belgfrukter, fullkorn | **Fett som base** — olje, dressing, ost, smør. Fett er smak, ikke bunn |
+| **Treg karbo** rundt øktene | **Karbo i timene uten trening** — kveld, hviledager |
+| **Volum/vann i maten** — gryter, supper, wok | **Flytende kalorier** generelt |
+
+**Total karbomengde skal ikke ned. Den skal flyttes.** Karboen hører hjemme
+rundt mandag, torsdag og fredag — kvalitet, intervaller og langtur. Onsdag,
+lørdag og alle kvelder er der den er billigst å kutte. Type-regelen: **rask
+karbo bare når beina skal bruke den innen to timer. Ellers treg.**
+
+Restitusjonsdrikken (YT Protein, 30 g protein / 50 g karbo) er riktig kl. 14
+på en løpedag. På en hviledag er den 50 g rask karbo uten mottaker — da er
+det kesam/cottage cheese med bær i stedet.
+
+### 0.3 Revidert tidslinje og målvekt
+
+| Periode | Uker | Innhold |
+|---|---|---|
+| 08.–28. sept | 3 | **Vedlikehold.** Struktur, protein, fiber, søvn. Vekt: uendret. |
+| 28. sept – 8. nov | 6 | Underskudd, 0,3–0,4 kg/uke |
+| 9.–15. nov | 1 | Vedlikeholdsuke |
+| 16. nov – 20. des | 5 | Underskudd |
+| 21. des – 3. jan | 2 | **Vedlikehold gjennom jula.** Planlagt, ikke et sviktområde. |
+| 4.–15. jan | 2 | Underskudd, siste bolk |
+| **Fra 15. jan** | — | **Vedlikehold. Ikke forhandlingsbart.** Spesifikk fase. |
+
+Det gir **13 uker reelt underskudd**, ikke 19. Regner vi årlig svinn (sykdom,
+reise, en platåuke) på 2–3 uker, står vi igjen med ~10–11 effektive uker à
+0,3–0,4 kg.
+
+**Revidert mål: 113–115 kg innen 15. januar 2027.** 110–112 står ikke lenger
+— det gamle tallet forutsatte 19 uker sammenhengende underskudd hos en som
+ikke hadde vært i underskudd før. Det er ikke situasjonen. 4–6 kg gjort
+riktig, med styrken og øktkvaliteten i behold, er verdt mer inn mot april enn
+8 kg som koster magert vev og en sesong.
+
+### 0.4 Dagsstruktur — revidert (erstatter § 9.5)
+
+Strukturen han la om til 04.09 er riktig. Frokosten er det største enkeltgrepet
+på sju måneder. Justeringen ligger i **hva** som ligger i lukene:
+
+| Kl. | Innhold | Prinsipp |
+|---|---|---|
+| 07 | Frokost | **Protein først.** 2 egg / skyr / kesam — ikke bare brødskive. Brødskiva er følget, ikke retten. |
+| 11 | Lunsj (kantine) | Se § 0.5. Protein + fiber + treg karbo. |
+| 14 | Mellommåltid | **Løpedag:** banan + restitusjonsdrikk (som 04.09) — riktig. **Hviledag:** kesam/cottage cheese + frukt. Ikke valgfritt, ikke hoppes over. |
+| Etter økt | Karbo + protein innen en time | Ikke vent til middag. |
+| Middag | Volumbasert, § 9.2 | Dobbel grønnsak, protein i håndflatestørrelse+, karbo etter dagens økt. |
+| Kveld | **Fast, planlagt kveldsmåltid** | Dette er den tunge timen. Kesam/cottage cheese/skyr med bær. Granola måles opp én gang og står ikke på bordet. |
+
+Kveldsluka er ny og viktig: sulten hans er verst i sofaen etter middag, og
+han beskriver den selv som delvis lyst. **Et planlagt måltid der slår et
+uplanlagt.** Tomrom kl. 21 fylles ikke av viljestyrke.
+
+De to hullene som er lukket: 07 (var tomt) og kveld (var ustyrt). De to som
+fortsatt må følges: at 14-måltidet faktisk skjer hver dag, også onsdag og
+lørdag.
+
+### 0.5 Kantina — regelen uten tall
+
+Han vet ikke innholdet, og han skal ikke måtte vite det. **Tallerkenregelen,
+i denne rekkefølgen:**
+
+1. **Fyll halve tallerkenen fra salatbaren først.** Før han ser på varmmaten.
+   Grønt, ikke pastasalat eller potetsalat.
+2. **En kvart tallerken tydelig protein** fra varmretten — kjøtt, fisk, egg,
+   belgfrukter. Den delen av retten man kan peke på.
+3. **Siste kvart karbo** — ris, poteter, pasta. På kvalitets-, intervall- og
+   langturdager: ta en god porsjon. På onsdag og lørdag: halver den.
+4. **Dressing og saus ved siden av, ikke over.** Dette er den stille kalorien
+   i enhver kantine.
+5. **Brødmåltid er lunsj bare hvis pålegget er proteinet** — egg, makrell,
+   kylling, kjøttpålegg. To skiver med ost er et mellommåltid, ikke en lunsj.
+
+Én test hvis alt annet glipper: **kan du peke på proteinet på tallerkenen?**
+Nei → gå tilbake.
+
+### 0.6 Hva som ikke endres
+
+§ 3 (ukesplan), § 3b (fredagsdøgnet), § 4 (protein), § 5 (fellene), § 6
+(når vi sier stopp), § 7 (veieprotokoll), § 9.1–9.3 og § 9.6 står uendret.
+§ 6 gjelder også i vedlikeholdsperioden — den er ikke en pause fra
+overvåkingen.
+
+### 0.7 Spørsmål som må besvares før 28. september
+
+Erstatter § 8.
+
+1. Er «stabilt 119» et ukesnitt eller enkeltmålinger — og hvor mye spretter
+   tallet i løpet av en uke?
+2. Hvor mye protein får du i deg på en vanlig dag nå, grovt: har du en tydelig
+   proteinkilde i **alle** måltider, i noen, eller bare til middag?
+3. Hva skjer på kvelden etter middag — hvor ofte ender det i noe utover
+   yoghurten, og hvor stor er granolaporsjonen?
+4. Flytende kalorier: brus, saft, juice, melk i kaffen, alkohol — hvor mye i
+   en vanlig uke?
+5. Hvordan ser onsdag og lørdag ut matmessig — de to dagene uten øktramme?
+
+---
 
 Målet er **to ting samtidig**: ned i vekt og beholde kvalitet i øktene.
 Det er mulig, men bare hvis underskuddet legges på bestemte dager og
@@ -36,7 +189,9 @@ kveldsspising, og hvordan han faktisk veier seg.
 
 ---
 
-## 2. Realistisk mål og tempo
+## 2. Realistisk mål og tempo — ERSTATTET av § 0.3 (04.09.2026)
+
+_Beholdt for historikk. Tallene 110–112 kg og «19 uker» gjelder ikke lenger._
 
 - **Tempo: 0,3–0,4 kg/uke.** Ikke mer. Over det ryker magert vev, og han har
   tre års styrke å beskytte.
@@ -174,7 +329,9 @@ stille i tre uker på rad med planen fulgt: da justerer vi, ikke før.
 
 ---
 
-## 8. Hva `hovedcoach` bør spørre om
+## 8. Hva `hovedcoach` bør spørre om — ERSTATTET av § 0.7 (04.09.2026)
+
+_Beholdt for historikk._
 
 1. Hvordan veier han seg i dag — daglig, ukentlig, samme tid? Er «stabilt
    119» ukesnitt eller en enkeltmåling?
@@ -235,7 +392,9 @@ er planlagt inn, ikke kjempet mot.**
 - Ingen matvare er forbudt. Det finnes bare «i dag» og «på fredag».
 - Ingen matvare skal «tjenes inn» med trening.
 
-### 9.4 Diettpauser
+### 9.4 Diettpauser — ERSTATTET av § 0.1 og § 0.3 (04.09.2026)
+
+_Beholdt for historikk._
 
 Ja. Legg inn **én vedlikeholdsuke etter hver 5.–6. uke med underskudd**:
 ca. midten av oktober, slutten av november, og en glidende overgang inn i
@@ -243,7 +402,9 @@ januar. Full vedlikeholdsspising, ikke overspising. Det gir delvis
 leptinrespons, roer matfokuset, fyller glykogen, og koster i praksis lite
 totalt fordi ukene etter blir bedre. Vinduet i § 2 tåler dette.
 
-### 9.5 Dagsstruktur på en arbeidsdag
+### 9.5 Dagsstruktur på en arbeidsdag — ERSTATTET av § 0.4 (04.09.2026)
+
+_Beholdt for historikk._
 
 Lunsj 10:40 og løping 16:18 med én banan mellom er oppskriften på en dårlig
 kveld. Ramme:
