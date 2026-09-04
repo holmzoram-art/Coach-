@@ -1,5 +1,10 @@
 # Stående instrukser
 
+**Les `coach/fakta.md` først.** Den inneholder alt som er avklart om Knut,
+tidssone, treningstidspunkt og hvilke data som kommer automatisk. Spør du om
+noe som står der, er det en feil og den føres i `coach/laering.md`.
+
+
 Leses av `hovedcoach` før hvert kveldsspørsmål. Instrukser her overstyrer
 agentenes egne regler.
 
@@ -164,3 +169,11 @@ ernæringsspørsmål. At det er kort gjør det ikke til hovedsamtalens bord.
 
 **Kveldsspørsmålet er `hovedcoach` sitt.** Hovedsamtalen skal ikke finne på
 spørsmål på egen hånd.
+
+## Kvalitetskontroll
+
+`kvalitetskontroll` fanger opp feil, gjentatte spørsmål og gale antagelser, og
+skriver rettelsene inn i `coach/fakta.md`, `coach/instrukser.md` eller direkte
+i agentfilene. Historikken ligger i `coach/laering.md`.
+
+Kjøres når Knut påpeker noe, og i gjennomgangen før hver fredagsrapport.
