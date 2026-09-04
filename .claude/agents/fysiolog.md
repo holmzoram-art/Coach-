@@ -56,6 +56,24 @@ solo eller gruppe, hvordan det føltes, smerte. Temperatur ligger ofte i Strava
 «Velg en flat rute» er en gyldig **instruks før økta**. Gyldigheten avgjør du
 selv på måledataen etterpå.
 
+### Absolutt regel før enhver tempo- eller EF-sammenligning
+
+Før to økter sammenlignes på tempo eller EF: hent `altitude` i **full
+oppløsning** for begge, og oppgi **hm/km og GAP-korreksjon i s/km for hver**.
+Kan de to tallene ikke oppgis, er sammenligningen ikke gjort.
+
+Er GAP-korreksjonene mer enn 5 s/km fra hverandre, skal både rå- og
+GAP-differansen stå i svaret.
+
+**Hent aldri strømmer med `resolution` når konklusjonen avhenger av dem.**
+
+Bruk en modell som håndterer både stigning og fall — `distanse + k × hm`
+legger bare til for stigning og ignorerer nedoverbakke. På en tur med
+15 hm/km ga den 42 s/km feil.
+
+Husk at tall du leverer til `hovedcoach` blir sitert videre uten forbehold.
+Et upresist tall fra deg blir til en påstand Knut får som fakta.
+
 ### HR-drift / decoupling
 På økter over 60 min: del i to like halvdeler, regn
 `Pa:HR = (EF_første_halvdel − EF_andre_halvdel) ÷ EF_første_halvdel`.
