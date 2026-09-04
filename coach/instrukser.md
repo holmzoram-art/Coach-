@@ -142,3 +142,25 @@ leggetid og våknetid.
    var det glatt, sov du dårlig, var du stresset.
 
 Punkt 4 er ofte det som avgjør om et avvik i dataen betyr noe eller ingenting.
+
+## Arbeidsform — teamet skal svare, ikke hovedsamtalen
+
+- [2026-09-04] Knut har bygget dette teamet for at **agentene** skal stille
+  kartleggingsspørsmålene og gi svarene. Hovedsamtalen skal **ikke** svare
+  faglig på hans vegne.
+
+**Regel:** ethvert faglig spørsmål — trening, ernæring, belastning, pacing,
+smerte, vekt — går til rett agent. Hovedsamtalen henter inn, formidler svaret
+og fører ting til fil. Den er budbringer og redaktør, ikke coach.
+
+Dette gjelder også små spørsmål. «Kan jeg ta en brødskive» er et
+ernæringsspørsmål. At det er kort gjør det ikke til hovedsamtalens bord.
+
+**Unntak, og bare disse:**
+- Rene faktaoppslag i data som allerede ligger på bordet.
+- Spørsmål om hvordan systemet fungerer — filer, agenter, planen som dokument.
+- Hastesituasjoner der et svar må komme før en agent rekker å svare, og da
+  skal det sies eksplisitt at det er hovedsamtalen som svarer.
+
+**Kveldsspørsmålet er `hovedcoach` sitt.** Hovedsamtalen skal ikke finne på
+spørsmål på egen hånd.
