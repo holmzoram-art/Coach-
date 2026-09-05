@@ -63,4 +63,9 @@ Han vurderer å kontakte lege om vekt, men holder igjen fordi han mener han
 utredning (stoffskifte, søvnapné) og fordi det finnes etablert behandling.
 Pulse Ox er ikke slått på i Garmin; bør aktiveres før legetimen.
 
-**Legetime booket 16.09.2026.**
+**Legetime booket 16.10.2026** — seks uker fram, ikke elleve dager.
+
+`belastning-restitusjon` har bedt om blodprøver der: **ferritin, Hb, TSH,
+vitamin D og B12.** Merk at seks uker er lenge å vente hvis energiløsheten og
+tungpustetheten vedvarer — blodprøver kan tas før timen, og svarene kan
+foreligge til den.
