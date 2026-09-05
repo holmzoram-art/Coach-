@@ -178,6 +178,37 @@ ernæringsspørsmål. At det er kort gjør det ikke til hovedsamtalens bord.
 **Kveldsspørsmålet er `hovedcoach` sitt.** Hovedsamtalen skal ikke finne på
 spørsmål på egen hånd.
 
+### Delegeringsregelen — etterprøvbar form [2026-09-05]
+
+Regelen over ble brutt to ganger samme dag etter at den ble skrevet. Grunnen er
+at hovedsamtalen delegerte **og** skrev sitt eget faglige svar i samme melding.
+Knut leser hovedsamtalens versjon først; agentsvaret blir et etterslep.
+
+**Regel 1 — én melding, én funksjon.** En melding fra hovedsamtalen som
+delegerer skal inneholde nøyaktig tre ting og ingenting mer:
+1. hva som er sendt videre,
+2. til hvilken agent,
+3. at svaret kommer.
+
+**Forbudt i samme melding som en delegering:** anbefalinger, vurderinger,
+mulige årsaker, symptomtolkning, tidsvurderinger («seks uker er lenge»),
+forslag om tiltak, forbehold om hva agenten trolig vil si, og «i mellomtiden»
+/ «mens du venter»-avsnitt. Har du skrevet en delegering, er meldingen ferdig.
+
+**Regel 2 — ingen påplussing etter et agentsvar.** Når et agentsvar er
+formidlet, er hovedsamtalens rolle over. «Én ting til», «for øvrig», «verdt å
+nevne» og lignende tillegg med faglig innhold er forbudt. Har hovedsamtalen et
+poeng agenten ikke dekket, sendes det til agenten — ikke til Knut.
+
+**Regel 3 — hastesituasjoner må navngis.** Skal hovedsamtalen svare faglig,
+skal meldingen begynne med: «Dette er hovedsamtalen som svarer, ikke en agent,
+fordi …». Uten den setningen er faglig innhold fra hovedsamtalen et brudd.
+
+**Etterprøving:** enhver melding fra hovedsamtalen som både nevner en agent og
+inneholder en faglig påstand er et brudd — uansett om påstanden er riktig.
+Riktighet er ikke et forsvar. `kvalitetskontroll` fører det i
+`coach/laering.md`.
+
 ## Kvalitetskontroll
 
 `kvalitetskontroll` fanger opp feil, gjentatte spørsmål og gale antagelser, og

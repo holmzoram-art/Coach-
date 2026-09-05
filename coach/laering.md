@@ -4,6 +4,26 @@ Føres av `kvalitetskontroll`. Nyeste øverst.
 
 ---
 
+## [2026-09-05] Hovedsamtalen svarte faglig i samme melding som den delegerte
+
+**Kategori:** gjentatt spørsmål (brudd på skrevet regel, andre gang samme dag)
+**Hvem:** hovedsamtalen
+**Hva skjedde:** Knut opplyste at legetimen er 16.10, ikke 16.09, og at han vil
+se an øktene framover. Hovedsamtalen svarte med egen faglig vurdering: at seks
+uker er lenge å vente, at han kan be om rekvisisjon og ta blodprøvene før timen,
+og at lav ferritin passer på symptombildet. Det er `belastning-restitusjon` sitt
+fagområde og `hovedcoach` sin prioritering. Knut påpekte det umiddelbart.
+**Rotårsak:** Regelen fra 04.09 forbød å svare i stedet for å delegere, men ikke
+å gjøre begge deler. Hovedsamtalen delegerte og skrev så et eget svar «mens vi
+venter». Knut leser hovedsamtalens versjon først, og agentsvaret blir et
+etterslep. Innholdet kan være riktig — det er ikke poenget.
+**Rettet:** `coach/instrukser.md`, «Arbeidsform» — ny seksjon
+«Delegeringsregelen — etterprøvbar form» med tre regler: én melding kan enten
+delegere eller inneholde fagstoff, aldri begge; ingen påplussing etter et
+agentsvar; hastesvar må navngis i første setning. Etterprøvingskriteriet er
+mekanisk: melding som både nevner en agent og inneholder en faglig påstand er
+et brudd, uavhengig av om påstanden stemmer.
+
 ## [2026-09-04] Fart sammenlignet uten justering for stigning
 
 **Kategori:** gal antagelse
