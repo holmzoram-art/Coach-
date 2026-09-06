@@ -12,6 +12,24 @@ etter (sier 122 kg).
 | Makspuls | 190 (Garmin) |
 | Mål | Holmestrand Maraton, lørdag 3. april 2027 |
 
+## Langsiktig mål — viktig for all planlegging
+
+> «Vi byttet over til løpetrening fra styrke fordi jeg ønsket å bli bedre på
+> løping og en overall bedre praktisk styrke. Jeg sikter nå på maraton, men har
+> lyst å løpe ultra og lange ultraløp i framtiden. Men må først starte å krabbe
+> før jeg kan gå.»
+
+**Maraton 3. april 2027 er et delmål, ikke endestasjonen. Målet er ultra.**
+
+To ting følger av det, og agentene skal ta hensyn til begge:
+
+1. **Pausen i styrke januar–august 2026 var et bevisst bytte**, ikke et
+   opphold eller manglende gjennomføring. Ikke beskriv den som at «styrken røk».
+2. **Ultra endrer hva som er viktig.** Eksentrisk styrke og
+   nedoverbakketoleranse er ikke en detalj — det er kjernen i lange løp i
+   terreng. Knesmerten hans i bratt utfor er derfor mer relevant på lang sikt
+   enn den er for en flat maraton.
+
 ## Treningsbakgrunn
 
 - **Styrke: 3 år sammenhengende.** Ikke nybegynner. Bench 4 × 5 @ 75 kg,
