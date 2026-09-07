@@ -191,7 +191,7 @@ header.top h1{font-size:21px;font-weight:700;letter-spacing:-.01em}
 const FASTE = [
   {n:"frokost",kl:"07",min:420,
    hva:"Beger skyr eller kvarg + 1 dl havregryn + neve frosne bær + <b>1 skje nøtter</b>",
-   sub:"Nøttene er ikke valgfrie — de er det eneste fettet i planen."},
+   sub:"Havregrynene måles tørre, rett ned i begeret. Nøttene er ikke valgfrie — de er det eneste fettet i planen."},
   {n:"lunsj",kl:"11",min:660,
    hva:"<b>Kantina.</b> Halv tallerken salat først, kvart protein, kvart karbo",
    sub:"Velg porsjonen, ikke retten.",laast:true},
@@ -199,7 +199,8 @@ const FASTE = [
    hva:"Beger kvarg eller kesam + en frukt",
    sub:"Det som avgjør kvelden din."},
   {n:"middag",kl:"middag",min:1140,
-   hva:"Protein på størrelse med håndflaten · <b>dobbel</b> grønnsak · <b>én neve</b> poteter eller ris"},
+   hva:"Protein på størrelse med håndflaten · <b>dobbel</b> grønnsak · <b>halv pose ferdigris</b> eller 3 poteter",
+   sub:"Proteinet måles rått. Risen er ferdig kokt i posen."},
   {n:"kveld",kl:"21",min:1260,
    hva:"Beger cottage cheese eller skyr + bær"}
 ];
@@ -373,7 +374,7 @@ function tegnIdag(){
   h+='</section>';
 
   h+='<div class="regel"><span class="lab">Den ene regelen</span>'+
-     'Løper du <b>over 10 km</b>: ta full karboporsjon i kantina, og <b>to never</b> karbo til middag i stedet for én.</div>';
+     'Løper du <b>over 10 km</b>: ta full karboporsjon i kantina, og <b>dobbel karbo</b> til middag — hel pose ris eller 6 poteter.</div>';
 
   if(iDagN < UNDERSKUDD_FRA){
     h+='<div class="varsel">Fra <b>28. september</b> tar du liten karboporsjon i kantina på vanlige dager. '+

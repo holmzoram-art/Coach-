@@ -11,10 +11,10 @@ detaljer. **Du trenger dem ikke.**
 
 | Kl. | Hva |
 |---|---|
-| **07** | Beger skyr eller kvarg + 1 dl havregryn + neve frosne bær + **1 skje nøtter** |
+| **07** | Beger skyr eller kvarg + **1 dl havregryn (tørt, rett i begeret)** + neve frosne bær + **1 spiseskje nøtter** |
 | **11** | **Kantina:** halv tallerken salat først · kvart tallerken protein · kvart tallerken karbo |
 | **14** | Beger kvarg eller kesam + en frukt |
-| **Middag** | Protein på størrelse med håndflaten din · **dobbel** grønnsak · **én neve** poteter eller ris |
+| **Middag** | Protein på størrelse med håndflaten din (**mål det rått**) · **dobbel** grønnsak · **halv pose ferdigris eller 3 poteter** |
 | **21** | Beger cottage cheese eller skyr + bær |
 
 Fem måltider. De er like hver dag. **Du velger ingenting.**
@@ -36,10 +36,27 @@ Det er alt. Ingen andre justeringer på en vanlig løpedag.
 
 ## Den ene regelen du må huske
 
-> **Løper du over 10 km: ta full karboporsjon i kantina, og to never karbo
-> til middag i stedet for én.**
+> **Løper du over 10 km: ta full karboporsjon i kantina, og dobbel karbo til
+> middag — hel pose ris i stedet for halv, eller 6 poteter i stedet for 3.**
 
 Én regel. Den henger på et tall du ser på klokka.
+
+### Porsjonene, uten tvil
+
+| | Vanlig dag | Over 10 km |
+|---|---|---|
+| **Ferdigris (250 g-pose, ferdig kokt)** | **Halv pose** | **Hel pose** |
+| **Poteter** | **3 middels** | **6 middels** |
+| Pasta, hvis du lager det | 1,5 dl tørr | 3 dl tørr |
+| Gryta fra søndag | 1 dyp tallerken | 1 dyp tallerken + poteter ved siden av |
+
+**Alle porsjoner i planen er ferdig tilberedt, bortsett fra to:**
+- **Havregrynene måles tørre** — 1 dl rett i yoghurtbegeret.
+- **Proteinet måles rått** — en håndflate rå kylling eller fisk blir litt
+  mindre i panna. Det er meningen.
+
+Pasta er det eneste som må måles tørt fordi det tredobler seg. Ris slipper du
+å tenke på i det hele tatt når du bruker ferdigpose.
 
 ---
 
@@ -97,7 +114,7 @@ Fylles **når den er tom**, ikke etter en plan. Står på handlelista permanent.
 
 ## Middagene — fire, gå i ring
 
-Alle bygges likt: **protein · dobbel grønnsak · én neve karbo.**
+Alle bygges likt: **protein (håndflate, målt rått) · dobbel grønnsak · halv pose ris eller 3 poteter.**
 
 1. **Gryta fra søndag** (varmes, 8 min) — to ganger i uka
 2. **Kylling eller svin + potetene fra søndag + grønnsaker** (15 min)
