@@ -45,18 +45,39 @@ Det er alt. Ingen andre justeringer på en vanlig løpedag.
 
 | | Vanlig dag | Over 10 km |
 |---|---|---|
-| **Ferdigris (250 g-pose, ferdig kokt)** | **Halv pose** | **Hel pose** |
+| **Ferdigris i pose** (allerede kokt) | **Halv pose** | **Hel pose** |
+| **Ris du koker selv** | **50 g tørr** = en tiendedel av en 1 kg-pose | **100 g tørr** = en femtedel |
+| **Pasta** | **60 g tørr** = en åttedel av en 500 g-pakke | **125 g tørr** = **en kvart pakke** |
 | **Poteter** | **3 middels** | **6 middels** |
-| Pasta, hvis du lager det | 1,5 dl tørr | 3 dl tørr |
-| Gryta fra søndag | 1 dyp tallerken | 1 dyp tallerken + poteter ved siden av |
+| **Gryta fra søndag** | 1 dyp tallerken | + poteter ved siden av |
 
-**Alle porsjoner i planen er ferdig tilberedt, bortsett fra to:**
-- **Havregrynene måles tørre** — 1 dl rett i yoghurtbegeret.
-- **Proteinet måles rått** — en håndflate rå kylling eller fisk blir litt
-  mindre i panna. Det er meningen.
+**Hvorfor gram akkurat her:** pasta og ris er de eneste varene der volum
+lyver. Penne og spagetti fyller samme desiliter med helt ulik mengde. Alt
+annet i planen er utformet slik at det ikke kan misforstås.
 
-Pasta er det eneste som må måles tørt fordi det tredobler seg. Ris slipper du
-å tenke på i det hele tatt når du bruker ferdigpose.
+**Du trenger ikke kjøkkenvekt.** Alle tallene er brøkdeler av en pakke:
+en kvart 500 g-pakke pasta, en tiendedel av en riskilo. Har du vekt, bruk den
+gjerne — men det er ikke forutsetningen.
+
+### De tre tørrvarene, i gram
+
+| | Mål | ≈ gram |
+|---|---|---|
+| **Havregryn** | 1 dl, tørt, rett i begeret | **35 g** |
+| **Nøtter** | 1 spiseskje | **15 g** |
+| **Rosiner** | 1 neve | **40 g** |
+
+Havregryn og rosiner er ett produkt hver, så desiliteren og neven er trygge
+der — gramtallet står bare hvis du vil ha det.
+
+### Resten måles som før
+
+**Håndflate** (protein, målt rått) · **beger** (yoghurt, kvarg, cottage
+cheese) · **neve** (bær) · **pose** (ferdigris) · **dobbel grønnsak**.
+Ingen av dem skal veies. De er entydige som de er.
+
+**Alle porsjoner er ferdig tilberedt, bortsett fra tre:**
+havregryn, pasta og ris måles tørt, og proteinet måles rått.
 
 ---
 
