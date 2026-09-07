@@ -577,3 +577,87 @@ på man–fre. Det er hele Knuts bestilling i ett filter.
    ikke i et ukesystem.
 9. **Vis holdbarhet på prepede retter som nedtelling** — «gryte: 2 dager
    igjen, frys i kveld». Det er onsdagsregelen i § 11.5, automatisert.
+
+---
+
+## 10. Katalogendringer 07.09.2026 (nr. 2) — jobb-måltidene
+
+**Bakgrunn:** Knut jobber 08–16. Både kl. 14 og 15:30 spises på jobb.
+Kantina koster ekstra utenom lunsjen, og matboks hjemmefra hver dag er
+utelukket. Løsningen er en **skuff med romtemperaturvarer** (hovedløsning) og
+**én ukentlig kjøleskapspåfylling** (kl. 14). Full begrunnelse i
+`matplan.md` § 12.
+
+### 10.1 FJERNET
+
+| # | Rett | Grunn |
+|---|---|---|
+| **P-15:30-gammel** | «1 banan + 2 skiver loff med syltetøy» som standard | Forutsatte at han var hjemme. Beholdes kun som hjemme-variant |
+
+### 10.2 LAGT TIL — kl. 15:30, skuff (romtemperatur)
+
+| # | Rett | Porsjon | kcal | P | K | F | Lagring |
+|---|---|---|---|---|---|---|---|
+| **J1** | **Corny Big + rosiner** — standardvalget | 1 bar (50 g) + 1 neve Sun-Maid (~40 g) | 320 | 4 | 60 | 6 | Skuff |
+| **J2** | **Corny Big alene** — minimumsvarianten | 1 bar (50 g) | 200 | 3 | 30 | 6 | Skuff |
+| **J3** | **Riskaker + rosiner** — fettfattigst, ved urolig mage | 4 riskaker + 1 neve rosiner | 240 | 4 | 55 | 2 | Skuff |
+| **J4** | **Banan + Corny Big** — når han har banan med | 1 banan + 1 bar | 305 | 4 | 55 | 6 | Delvis |
+| **J5** | **Fredag 13:30** — juice + bar + riskaker | 1 Sunniva 0,33 l + 1 Corny Big + 3 riskaker | 440 | 7 | 82 | 7 | Skuff |
+
+### 10.3 LAGT TIL — kl. 14, skuffereserve
+
+| # | Rett | Porsjon | kcal | P | K | F | Lagring |
+|---|---|---|---|---|---|---|---|
+| **M8** | **Barebells proteinbar** — reserve når kjøleskapet er tomt | 1 bar (55 g) | 200 | 20 | 17 | 7 | Skuff |
+
+M8 erstatter den generiske M6 «proteinbar + frukt» med et konkret produkt som
+tåler skuff. M6 kan beholdes eller slås sammen.
+
+### 10.4 ENDRET
+
+| # | Endring |
+|---|---|
+| **M1, M2, M4** | Merkes **`krever_kjoleskap`**. Inngår i mandagens påfylling, ikke daglig medbringing |
+| **P-fre (09:30)** | Endret fra «banan + 2 skiver grovbrød m/syltetøy» til **J1 fra skuffen** (320 · 4 · 60 · 6). Samme rolle, ingen medbringing |
+| **Fredag 15:15** | Endret fra «1 banan» til **1 neve rosiner** (120 · 1 · 30 · 0) |
+| **Alle 15:30-poster** | Nytt minimumskrav: **≥ 40 g karbo, < 10 g fett, lavt fiber** |
+
+### 10.5 Nye felter
+
+| Felt | Verdier |
+|---|---|
+| `lagring` | `skuff` / `kjoleskap_jobb` / `hjemme` |
+| `krever_medbringing` | true/false. **Alt med true skal merkes visuelt** |
+| `holdbarhet_skuff_uker` | Se `matplan.md` § 12.5 |
+
+**Designregel:** artifacten skal alltid **foreslå skuffvarianten først** på
+man–fre. Hjemme-variantene (banan, loff) vises som sekundærvalg. En plan som
+krever daglig handling hjemmefra er en plan som ryker.
+
+### 10.6 Handleliste — nye poster
+
+**Månedskjøp, én gang hver fjerde uke:**
+
+| Vare | Innkjøpsenhet | Antall | Rekker |
+|---|---|---|---|
+| **Corny Big musli-bar** | 6-pk | **3** | 4 uker (18 barer) |
+| **Sun-Maid rosiner** | Pose 500 g | **1** | 4–5 uker |
+| **Sunda/Kavli riskaker** | Liten pk | **2** | 3–4 uker |
+| **Sunniva juice 0,33 l** | 4-pk | **1** | 4 fredager |
+| **Barebells proteinbar** | Boks | **1** | Nødreserve |
+| **Tett plastboks** | 1 stk | **1** | Engangskjøp |
+
+**Ukentlig, mandag morgen — «mandagsposen» til kjøleskapet på jobb:**
+
+| Vare | Antall |
+|---|---|
+| Tine Skyr eller Q Kesam, beger | **5** |
+| Litago sjokolademelk 0,33 l | **4** |
+
+**Handleregler — tillegg:**
+
+10. **Skuffvarer er et månedskjøp, ikke et ukeskjøp.** Egen liste, egen
+    påminnelse hver fjerde uke.
+11. **Mandagsposen er én påminnelse i uka**, søndag kveld. Ikke fem.
+12. **Ingenting med sjokoladetrekk, nøtter eller melk i skuffen.**
+    Smelter, harskner eller blir dårlig.

@@ -110,7 +110,7 @@ Dette er dagene karboen hører hjemme. Her sparer du ikke.
 | **07:00** | **Velg fritt fra frokostmenyen, § 0b** | Full versjon: 2 skiver brød. Halv avokado ja. Kaffe. |
 | **11:00** | **Kantina.** Halv tallerken salatbar → kvart tallerken protein → kvart tallerken karbo | Karboen tas i **god porsjon** i dag: ris, poteter, pasta. Dressing ved siden av. |
 | **14:00** | **Beger kesam/cottage cheese (~4 dl) + 1 neve bær eller en frukt** | Dette er måltidet som avgjør kvelden din. Ikke valgfritt. |
-| **15:30** | **1 banan + 2 skiver loff med syltetøy** | Rask karbo, én time før. Dette er svaret på «energi før økta». |
+| **15:30** | **Fra skuffen på jobb: 1 Corny Big + 1 neve rosiner** (§ 12) | Rask karbo, 45 min før. Dette er svaret på «energi før økta». Banan/loff kun hvis du er hjemme |
 | **16:30** | Økt | Vann før og etter |
 | **~18:15** | **Rett etter økt, innen en halvtime:** YT Protein restitusjonsdrikk **eller** 5 dl sjokolademelk | Ikke vent på middagen. |
 | **~19:00** | **Middag:** håndflate + halv protein · **dobbel** grønnsak · 1,5 neve karbo | F.eks. 200–250 g kylling/laks/kjøttdeig, stor porsjon grønnsaker, 4–5 poteter eller 2 never ris |
@@ -131,7 +131,7 @@ Dette er dagen muskelmassen forsvares.
 | **07:00** | **Frokostmenyen, § 0b** — gjerne alt. 1 eller 4 (mest protein) |
 | **11:00** | Kantina. Halv salat, **kvart tallerken protein — ta rikelig**, kvart karbo i **normal** porsjon |
 | **14:00** | Beger kesam + frukt. **Legg til en neve nøtter** hvis styrkeøkta er tung — dette er dagen du tåler dem |
-| **15:30** | 1 banan |
+| **15:30** | 1 Corny Big fra skuffen (eller banan hvis du har) |
 | **~18:00** | Rett etter styrke: proteindrikk eller 5 dl melk |
 | **~19:00** | Middag: **stor** proteinporsjon (2 håndflater), dobbel grønnsak, 1 neve karbo |
 | **21:00** | Beger cottage cheese + bær. Cottage cheese er tregere enn skyr — bedre før senger på beindag |
@@ -173,8 +173,8 @@ Med start ca. 16:15:
 |---|---|---|
 | **07:00** | **Frokostmenyen, § 0b — men velg en mager variant.** Alt. 3 eller 6, eller eggerøre uten avokado. **Ingen nøtter, ingen avokado, ingen ost i dag** | Fett bremser magesekken i timevis. Ikke på langturdagen |
 | **11:00** | Kantina — **ukas største karbomåltid.** Halv salat, kvart protein, **full** karboporsjon | Ris, pasta eller poteter. **Ingenting fett og tungt.** Ikke lasagne, ikke fløtesaus, ikke panert. |
-| **13:30** | **Måltid nr. 2, 2,5–3 t før start:** 3 skiver loff med syltetøy eller honning + 1 stort glass vann | Treg-nok karbo, lite fiber, null fett. **Dette er måltidet som manglet 27.08.** |
-| **15:15** | **1 banan** + 2 dl vann | Rask karbo, én time før |
+| **13:30** | **Måltid nr. 2, 2,5–3 t før start, fra skuffen:** 1 Sunniva juice 0,33 l + 1 Corny Big + 3 riskaker | ~82 g karbo, nesten null fett. **Dette er måltidet som manglet 27.08.** Er du hjemme: 3 skiver loff med syltetøy |
+| **15:15** | **1 neve rosiner** (eller banan hvis du har) + 2 dl vann | Rask karbo, én time før |
 | **16:15** | **Start.** Se testopplegget i `mage.md` | |
 | **Under** | **Følg gjeldende test i `coach/ernaering/mage.md`.** Ikke improviser her. | Vi vet ennå ikke hva magen tåler |
 | **Rett etter** | YT Protein restitusjonsdrikk + 1 banan, **innen 30 min** | |
@@ -562,10 +562,128 @@ nøyaktig det vi flytter.
 
 ---
 
+## 12. Ettermiddagsmåltidene på jobb — skuff og kjøleskap
+
+**Lagt til 07.09.2026.** Knut jobber 08–16. **Både kl. 14-måltidet og
+15:30-måltidet spises på jobb**, ikke hjemme. Planen forutsatte implisitt at
+han var hjemme, og det var feil. Kantina koster ekstra utenom lunsjen, og
+matboks hjemmefra hver dag er utelukket — det er en løsning som ryker.
+
+### 12.1 Hva 15:30-måltidet faktisk skal levere
+
+Det er **45 minutter før økt**. Da er oppgaven smal:
+
+| | |
+|---|---|
+| **Poenget** | Rask karbo. **Minimum 40 g.** Målet er 50–60 g |
+| **Protein** | Uviktig her. Det er dekket kl. 14 og etter økta |
+| **Fett** | **Hold det under 10 g.** Fett bremser magesekken |
+| **Fiber** | **Lavt.** Ikke fullkorn, ikke store mengder tørket frukt |
+| **Godt nok når** | Du har fått i deg **minst 40 g rask karbo** 30–60 min før start |
+
+Dette er ikke et måltid som skal mette. Det skal fylle tanken.
+
+### 12.2 Skuffen — hovedløsningen. Romtemperatur, ingen daglig handling.
+
+**Dette er den robuste delen.** Fylles én gang i måneden, krever ingenting av
+deg på en tirsdag morgen.
+
+| Vare | Porsjon | Rolle |
+|---|---|---|
+| **Corny Big musli-bar** (50 g) | 1 stk | **Grunnvaren.** ~30 g karbo, lite fett |
+| **Sun-Maid rosiner** i tett boks | 1 neve (~40 g) | ~30 g rask karbo. Fyller opp til 60 |
+| **Sunda eller Kavli riskaker** | 3–4 stk | Fettfattigst alternativ. Bruk når magen er urolig |
+| **Sunniva juice 0,33 l** (tetra) | 1 stk | **Kun fredag.** ~33 g karbo + væske |
+| **Barebells proteinbar** | 1 stk | **Nødreserve for kl. 14** når kjøleskapet er tomt |
+
+**De tre kombinasjonene du trenger:**
+
+| Når | Hva | Karbo |
+|---|---|---|
+| **Standard (man/tir/tor)** | 1 Corny Big + 1 neve rosiner | ~60 g |
+| **Minimum — travel dag** | 1 Corny Big alene | ~30 g. Under målet, men langt bedre enn ingenting |
+| **Urolig mage** | 4 riskaker + 1 neve rosiner | ~55 g, nesten fettfritt |
+
+### 12.3 Kjøleskapet — én påfylling mandag morgen
+
+Kjøleskapet dekker **kl. 14-måltidet**, som trenger protein. Det krever at du
+husker det **én gang i uka**, ikke fem.
+
+**Mandagsposen — sett den inn når du kommer på jobb:**
+- **5 × Tine Skyr eller Q Kesam** (beger) — kl. 14, alle dager
+- **4 × Litago sjokolademelk 0,33 l** — kl. 14 på treningsdager, eller som
+  ekstra karbo 15:30
+- Merk dem med navn. Det er et delt kjøleskap.
+
+**Glemmer du mandagsposen:** Barebells-baren i skuffen dekker kl. 14. Derfor
+ligger den der.
+
+### 12.4 Fredag — samme problem, større behov
+
+Fredag skal du ha **to** måltider på jobb før langturen: kl. 09:30 og kl. 13:30.
+13:30-måltidet er det store — det skal levere ~75 g karbo, og det er
+måltidet som manglet den 27. august.
+
+| Kl. | Hva | Hvor fra |
+|---|---|---|
+| **09:30** | 1 Corny Big + 1 neve rosiner | Skuffen |
+| **11:00** | Kantinelunsj, full karbo. **Ingenting fett** — ikke lasagne, ikke panert, ikke fløtesaus | Kantina |
+| **13:30** | **1 Sunniva juice 0,33 l + 1 Corny Big + 3 riskaker** | Skuffen |
+| **15:15** | 1 neve rosiner (eller banan hvis du har) | Skuffen |
+
+Det gir ~82 g karbo kl. 13:30 og nesten ikke fett. Hele fredagsopplegget
+ligger nå i skuffen din, og krever ingenting hjemmefra.
+
+### 12.5 Holdbarhet i en varm kontorskuff
+
+En kontorskuff er varmere enn et kjøkkenskap — regn 22–26 °C.
+
+| Vare | Uåpnet | Etter åpning i skuff |
+|---|---|---|
+| **Corny Big** | 6–9 mnd (trykt dato) | Enkeltpakket — ingen forringelse |
+| **Rosiner** | 12 mnd | **4 uker i tett boks.** Klumper i varme, blir ikke dårlige |
+| **Riskaker** | 6 mnd | **2–3 uker.** Blir bløte. Kjøp små pakker |
+| **Sunniva juice, tetra** | 6–9 mnd romtemp | **Drikk hele. Åpnet juice hører ikke hjemme i en skuff** |
+| **Barebells proteinbar** | 6–9 mnd | Blir myk over 25 °C. Fortsatt fin |
+
+**Dette skal ikke i skuffen:** sjokolade (smelter), nøtter (harskner på 2–3
+måneder i varme), alt med melk i, og alt som ikke er enkeltpakket.
+
+### 12.6 Mengde — hva du handler av gangen
+
+Du trenger 15:30-måltid **fire dager i uka** (man, tir, tor, fre). Onsdag og
+lørdag er hviledager uten økt, og søndag er du hjemme.
+
+**Kjøp fire ukers forbruk om gangen:**
+
+| Vare | Antall | Rekker |
+|---|---|---|
+| Corny Big, 6-pk | **3 pakker** (18 barer) | 4 uker |
+| Sun-Maid rosiner, 500 g | **1 pose** | 4–5 uker |
+| Riskaker, liten pakke | **2 pakker** | 3–4 uker |
+| Sunniva juice 0,33 l, 4-pk | **1 pakke** | 4 fredager |
+| Barebells proteinbar | **1 boks** | Nødreserve, varer lenge |
+| **Tett plastboks til rosinene** | 1 stk | Engangskjøp |
+
+Én lørdagshandel, én pose inn på jobb, og så er ettermiddagene løst i en måned.
+
+---
+
+## 12.7 Én anbefaling — hva du kjøper denne lørdagen
+
+> **3 pakker Corny Big og 1 pose Sun-Maid rosiner. Legg dem i skuffen mandag
+> sammen med en tett boks til rosinene.**
+
+Det er alt. Det dekker 15:30-måltidet i fire uker, krever null planlegging på
+ukedager, og koster deg ingenting i kantina. Resten av lista i § 12.6 er
+finjustering du kan ta neste gang.
+
+---
+
 ## 10. Hvis du bare klarer tre ting denne uka
 
 1. **14-måltidet, hver eneste dag.**
 2. **Loff + banan kl. 15:30 på treningsdager.** Det er «energi før økta».
-3. **Søndagsprepen.** Uten den ryker resten på en tirsdag.
+3. **Skuffen på jobb** — 3 pk Corny Big og en pose rosiner. Se § 12.7.
 
 Resten kommer etter.
