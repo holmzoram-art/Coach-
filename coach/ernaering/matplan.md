@@ -758,6 +758,89 @@ slipper du problemet helt, og du bruker dem uansett bare to dager i uka.
 
 ---
 
+## 12.76 Proteinbar — hva han skal kjøpe. Vurdert 07.09.2026
+
+### Star Nutrition Soft Protein Bar — usikker, og det sier jeg heller enn å gjette
+
+Jeg kjenner produktkategorien, men **jeg har ikke sikre næringstall for akkurat
+denne baren**, og den selges på Gymgrossisten og Proteinfabrikken, ikke i vanlig
+dagligvare. Jeg gjetter ikke på tall du skal handle etter.
+
+Sjekk selv med regelen under. Myke proteinbarer i denne klassen ligger typisk
+på 20 g protein, men **den mykheten kommer ofte fra sukkeralkoholer**, og det
+er det du må se etter — se «Magen» lenger nede.
+
+**Terskelen som teller mest:** den må bestilles på nett. Det er nok til at den
+ofte ikke blir kjøpt, og at du står uten reserve i skuffen om tre uker.
+
+### Regelen — hva du ser etter på baksiden
+
+| | Krav |
+|---|---|
+| **Protein** | **≥ 20 g.** Under det er det en sjokolade med litt protein |
+| **Fett** | **≤ 10 g** |
+| **Herav polyoler / sukkeralkoholer** | **≤ 5 g.** Dette er den viktigste linjen for deg |
+| **Fiber** | ≤ 6 g. Og se etter «inulin» eller «sikorirotfiber» i ingredienslista — de gir gass |
+| **Kalorier** | Under 250 |
+
+**Er «herav polyoler» over 5 g, sett den tilbake.** Det er hele testen.
+
+### Anbefaling
+
+**Kjøp Barebells i dagligvaren.** Ikke fordi den er billigst, men fordi du får
+den på Rema, Kiwi og Coop, og en bar du faktisk har slår en bedre bar du ikke
+har bestilt. Sjekk polyollinja på den varianten du velger.
+
+**Alternativ i samme hylle:** Maxim proteinbar, eller Be-Kind proteinvariant
+hvis 12 g protein holder til formålet.
+
+**Vil du ha nettbutikk likevel:** bestill i kartong, ikke enkeltvis — da blir
+prisen per bar konkurransedyktig, og du er dekket i månedsvis. Men gjør det
+til én bestilling du ikke må gjenta.
+
+### Pris per gram protein
+
+| Vare | Ca. pris | g protein per krone | Hvor |
+|---|---|---|---|
+| **Q Kvarg** | ~20 kr | **1,0** | Dagligvare, kjøleskap |
+| Star Nutrition Soft (kartong) | ~20–25 kr | ~0,9 *(anslag, ikke verifisert)* | **Kun nett** |
+| Be-Kind protein | 15 kr | 0,8 | Dagligvare |
+| Barebells | 30–35 kr | 0,6 | Dagligvare |
+
+**Q Kvarg vinner fortsatt klart.** Baren kjøper du for at den skal ligge i en
+skuff og tåle det — ikke fordi den er god butikk.
+
+### Hvilken luke — bekreftet: nødreserve, ikke et måltid
+
+**2–3 barer i skuffen, ikke mer.** De er der for dagen du glemte mandagsposen
+og kjøleskapet er tomt. En proteinbar er ikke et planlagt kl. 14-måltid — det
+er kvarg, kesam eller skyr.
+
+Grunnen er enkel: baren koster dobbelt så mye per gram protein, metter
+dårligere, og gir deg ingen volum. Blir den standardvalget ditt, ryker både
+budsjettet og metthetsfølelsen på hviledagene.
+
+### Magen — det viktigste avsnittet her
+
+**Sukkeralkoholer (maltitol, sorbitol, isomalt, xylitol) trekker vann inn i
+tarmen.** Det er nøyaktig samme mekanisme som hovedhypotesen for det som
+skjedde på 18-kilometeren — for høy osmotisk last i tarmen. Mange myke
+proteinbarer inneholder 10–20 g polyoler per bar. For en løper med uavklart
+mage er det en dårlig idé.
+
+**Styr unna:** maltitol, sorbitol, isomalt, høyt innhold av inulin eller
+sikorirotfiber.
+
+**Og: ingen proteinbar på fredag.** Ikke kl. 14, ikke kl. 09:30. Fredag er
+langturdag, magen er fortsatt uavklart, og en bar med fett, fiber og polyoler
+to timer før start er en variabel vi ikke trenger. Fredagen er dekket av
+kantina og skuffkarboen.
+
+Vil du teste en bar mot magen: gjør det på **en hviledag først**, ikke før en
+økt. Går det bra der, kan den flyttes til en rolig treningsdag.
+
+---
+
 ## 12.8 Norsk tilgjengelighet — kvalitetssikret 07.09.2026
 
 Gjennomgått etter Knuts påminnelse. **Alt i planen finnes i vanlig norsk

@@ -761,3 +761,37 @@ Sjokoladetrukne varianter blir myke etter 4–6 uker over 25 °C.
 
 Be-Kind slår Barebells som proteinbar. **Q Kvarg er fortsatt billigst**, men
 krever kjøleskap — Be-Kind gjør ikke det.
+
+---
+
+## 13. Katalogdelta 07.09.2026 (nr. 5) — proteinbar
+
+Begrunnelse i `matplan.md` § 12.76.
+
+### 13.1 ENDRET
+
+| # | Endring |
+|---|---|
+| **M8** | Presisert: **Barebells (dagligvare)** er standard. Navn beholdt generisk. **Maks 2–3 i skuffen — nødreserve, ikke planvalg** |
+| **M8, M9** | Nytt: **`blokkert_fredag` = true**. Ingen proteinbar på langturdag |
+
+### 13.2 Nytt felt — merkevalidering
+
+| Felt | Krav |
+|---|---|
+| `polyoler_g` | **≤ 5 g.** Over dette skal produktet ikke kunne legges inn |
+| `protein_g` | ≥ 20 for å telle som proteinbar |
+| `fett_g` | ≤ 10 |
+| `krever_nettbutikk` | true/false. **Merkes visuelt** — nettbestilling er en terskel som gjør at varen ikke blir kjøpt |
+
+**Star Nutrition Soft Protein Bar er ikke lagt inn i katalogen.**
+Grunn: `ernaering` har ikke verifiserte næringstall for produktet, og gjetter
+ikke på tall Knut handler etter. Legges inn hvis han oppgir tallene fra
+baksiden.
+
+### 13.3 Magebegrensning — inn i `mage.md`-logikken
+
+Sukkeralkoholer over ~5 g per porsjon er samme osmotiske mekanisme som
+hovedhypotesen etter 27.08. Artifacten skal **blokkere alle
+polyolholdige produkter på fredager**, og advare hvis de velges dagen før
+en langtur.
