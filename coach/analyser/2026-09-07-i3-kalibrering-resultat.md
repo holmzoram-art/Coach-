@@ -221,3 +221,119 @@ RPE kommer på kveldsspørsmålet og skal ikke spørres om her.
      bestilte formål ble ikke oppfylt.
    - **Til oppfølging:** I1/I2-pacene i sonetabellen ser for konservative ut
      (GAP 6:45/km ved puls 145 i oppvarmingen). Bør festes på en flat 40+ min I2-økt.
+
+---
+
+# TILLEGG 07.09 — korreksjon etter innspill fra Knut
+
+Knut kjente seg ikke igjen i punkt 2. Han oppga samtidig en opplysning jeg ikke
+hadde da jeg regnet: **han hadde ikke med seg brystbeltet.** Pulsen er optisk
+målt på håndleddet. Begge deler er sjekket mot dataen under.
+
+## A. Han har rett. Overskriften min var misvisende
+
+«66,3 % over 165» er aritmetisk riktig og retorisk feil. Fordelingen:
+
+| Puls | Sekunder | Andel |
+|---|---|---|
+| ≤155 | 60 | 5,0 % |
+| **156–165 (i vinduet)** | **345** | **28,7 %** |
+| 166–167 | 316 | 26,3 % |
+| 168–169 | 341 | 28,3 % |
+| 170–171 | 77 | 6,4 % |
+| 172–173 | 33 | 2,7 % |
+| 174–175 | 31 | 2,6 % |
+
+- **Median puls i blokka: 166.** Ett slag over vinduet.
+- **59,9 % lå på eller under 167. 83,8 % lå på eller under 168.**
+- Bare **5,7 %** lå over 170, og **2,6 %** nådde 174–175.
+
+Og det avgjørende: **all puls over 170 lå i én eneste sammenhengende periode på
+69 sekunder, som startet 18,9 minutter inn i blokka.** Altså helt på slutten.
+
+Minutt 0–15: snitt 163,7, median 166, maks 170.
+Siste 5 min: snitt 169,1, median 168, maks 175.
+
+**Knuts beskrivelse — «156 til 165–167-ish, og 175 helt på slutten» — er en
+presis gjengivelse av det som faktisk skjedde.** Min var det ikke.
+
+## B. Hvorfor klokka og jeg viste ulikt
+
+Klokka viser et glattet øyeblikkstall; jeg regnet på hvert sekund.
+Med 10 s glatting (omtrent det klokka viser) blir bildet nesten identisk med hans:
+toppen framstår som 174, og bare 21,3 % av tiden ligger over 168.
+
+I tillegg: han fulgte tallet i sanntid og husker der han **korrigerte**.
+Snittet mitt teller også sekundene mellom korrigeringene.
+
+Merk også at pulsen lå på 156–165 ved snittgradient **−0,14 %** og på 170+ ved
+**+0,23 %**, maks +2,33 %. Bakkeeffekten han beskriver finnes i dataen, men
+er liten — ruta er for flat til at bakkene forklarer stort.
+
+## C. Brystbelte manglet — hva dataen viser
+
+Sjekket eksplisitt for de kjente optiske feilmodusene:
+
+| Test | Funn | Vurdering |
+|---|---|---|
+| **Kadenslåsing** | \|puls − spm\| i snitt 7,2 slag; bare 21,9 % innenfor 3 slag; korrelasjon puls~kadens **r = +0,37** | **Utelukket.** Ved kadenslåsing ville pulsen klistret seg til 161. Den gjør den ikke. |
+| **Dropouts / nullverdier** | Ingen nuller, ingen hull i 3377 punkter | Ingen |
+| **Plutselige hopp** | Maks endring 5 slag/s i blokka, 6 slag/s i hele økta; null endringer ≥8 | Ingen hoppartefakter |
+| **Fysiologisk respons** | Opptrekk 106 → 155 på 60 s ved start, jevn nedgang 172 → 155 på 30 s etter blokka | Ser ekte ut |
+| **Trappetrinn / kvantisering** | 26 sekvenser ≥10 s med identisk verdi, lengste 39 s (på 168, 12,3 min inn) | **Mildt tegn på optisk glatting.** Ikke diskvalifiserende, men det er der. |
+
+**Konklusjon: dataen viser ingen grov optisk feil.** Kurveformen er troverdig.
+
+Men — og dette er poenget — optisk måling kan ligge **systematisk noen slag feil**
+uten å etterlate et eneste synlig artefakt i strømmen. Det kan jeg ikke utelukke
+fra dataen. Absoluttnivået bærer derfor en usikkerhet på anslagsvis **±3–5 slag**
+som jeg ikke kan måle bort.
+
+## D. Hva som står, og hva som nå er usikkert
+
+**Står uendret — måles av GPS og høydestrøm, ikke av pulsmåleren:**
+- 20 min, 3378 m, **GAP 5:54,0/km**, rå 5:55,8/km.
+- **4,65 hm/km**, **GAP-korreksjon +1,8 s/km**.
+- Kadens 161 spm, helt flat gjennom begge halvdeler.
+- Fartsfallet på 8,3 s/km GAP fra første til andre halvdel.
+- Sammenligningen mot 01.08 på **fart**: +5,0 s/km GAP.
+
+**Står, men av en annen grunn enn jeg først skrev:**
+Konklusjonen «på eller like over MLSS» hvilte på at pulsen klatret monotont.
+Den hviler nå like mye på at **farten falt 8,3 s/km ved uendret kadens** — et
+GPS-målt forhold som er helt uavhengig av pulsbeltet. Konklusjonen overlever
+selv om pulstallene skulle være noen slag feil.
+
+**Blir mer usikkert:**
+- **Terskelanslaget «puls 168–171»** hviler direkte på absolutt puls fra optisk
+  måler. Nedgrader til **[foreløpig, usikker absoluttverdi]**.
+- **Snittpuls 165,0** og dermed sammenligningen «samme puls som 01.08» — 01.08 er
+  fra en annen dag og muligens en annen målemetode. Differansen på +5,0 s/km GAP
+  skal leses med det forbeholdet.
+- **Fartsanslaget 6:10–6:25/km for terskel står bedre enn pulsanslaget**, fordi
+  det er forankret i GPS.
+
+## E. Krav framover — brystbelte
+
+Foreslås lagt inn som **kriterium 12** i gyldighetsprotokollen:
+
+> **12. Brystbelte på alle kalibrerings- og terskeløkter.** Optisk håndleddsmåling
+> godtas for I1/I2-økter, men ikke som grunnlag for å feste en sonegrense eller et
+> terskelanslag. Mangler brystbelte, er økta gyldig som treningsøkt og som
+> **fart**-punkt, men pulstallene skal merkes med usikkerhet og ikke brukes til
+> å revidere sonetabellen.
+
+Begrunnelse: hele poenget med en kalibreringsøkt er å knytte en fart til en puls.
+Er pulsen usikker, er koblingen usikker — selv når farten er perfekt målt.
+
+## F. Revidert leveranse
+
+1. **Retning:** Uendret — for tidlig å si. Terskelen står stille.
+2. **Utførelse — revidert:** Han lå **nærmere målet enn jeg først formidlet**.
+   Median 166, ett slag over vinduet; 84 % av tiden på eller under 168; all puls
+   over 170 lå i de siste 69 sekundene. Dette er en akseptabelt utført økt med et
+   for hardt sluttdrag, ikke en bommet økt.
+3. **Konfidens:** fart/GAP **[foreløpig]**. Absolutt puls og terskelanslag
+   **[for tidlig]** inntil en økt med brystbelte foreligger.
+4. **Flagg:** Brystbelte manglet. Ingen grov målefeil påvist, men absoluttnivået
+   kan ikke verifiseres. Kadenslåsing eksplisitt utelukket (r = +0,37).
