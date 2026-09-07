@@ -26,13 +26,78 @@ oppskriftens.
 
 ---
 
+## 0b. Frokostmeny — velg fritt, byttes når du vil
+
+**Oppdatert 07.09.2026** etter innvending fra Knut: én fast frokost hver dag
+er en plan man går lei av på tre uker, og en plan man går lei av følger man
+ikke. Frokosten er derfor et **valg mellom likeverdige alternativer**.
+
+Alle fem treffer samme mål: **en solid proteinporsjon (~30 g) tidlig**, og
+karbo tilpasset dagen. Bytt så ofte du vil. Ingen av dem er «riktigere».
+
+| # | Frokost | Mengde | Tid |
+|---|---|---|---|
+| **1** | **Eggerøre** + grovbrød | 3 egg, en skvett melk, salt/pepper. 2 skiver brød | 5 min |
+| **2** | **Stekt egg** + grovbrød | 2–3 egg, 2 skiver | 3 min |
+| **3** | **Proteinyoghurt + havregryn + bær** | 1 stort beger (~350–400 g) YT/Synnøve naturell, 1 dl havregryn, 1 neve bær | 1 min |
+| **4** | **Skyr eller kesam + havregryn + bær + nøtter** | Beger (~350 g), 1 dl havregryn, bær, 1 spiseskje nøtter | 1 min |
+| **5** | **Havregrøt kokt på melk + proteinpulver eller skyr på toppen** | 1 dl havregryn, 3 dl melk, 1 skiv/skje protein, bær | 6 min |
+| **6** | **Brødmåltid med proteinpålegg** | 2–3 skiver grovbrød med **makrell i tomat, kaviar, kokt skinke, kalkun eller kyllingfilet** — pålegget er proteinet | 3 min |
+
+**Kombinasjoner som funker godt:**
+- Eggerøre + 1 skive brød + halv avokado
+- Stekt egg + 1 skive brød med makrell i tomat
+- Proteinyoghurt + kaffe når du er sent ute (dette er den raskeste)
+
+**Det ene kravet:** kan du peke på proteinet? To skiver med brunost eller
+syltetøy alene er ikke frokost — det er et mellommåltid. Loff med syltetøy
+til frokost hører kun hjemme på fredag (langturdag), der det står med hensikt.
+
+### Frokostvarianter på hviledag (ons/lør)
+Samme meny, men ta **én skive brød i stedet for to**, eller **halv porsjon
+havregryn**. Proteinet er uendret. Alternativ 3 og 6 er de letteste å
+hviledagsjustere.
+
+---
+
+## 0c. Avokado, nøtter og fett — hvor de hører hjemme
+
+Knut spurte om avokado. Ærlig svar på hvorfor det ikke sto der:
+
+**Ikke fordi fett er usunt.** Avokado, nøtter, olivenolje, laks og egg er
+gode matvarer. Grunnen er **energitetthet i et underskudd**: en hel avokado
+er omtrent like mye energi som hele frokosten din, og den metter mindre per
+kalori enn protein og fiber gjør. Når vekta skal ned er fett den billigste
+plassen å kutte og den dyreste å la stå ubevisst — særlig som *base*
+(dressing, olje i panna, ost på alt), der du ikke merker det.
+
+**Så: avokado er inne. Med en ramme.**
+
+| | Mengde | Når |
+|---|---|---|
+| **Avokado** | **Halv, ikke hel** | Til frokost 3–4 dager i uka. Erstatter smøret på brødskiva, kommer ikke i tillegg |
+| **Nøtter** | 1 spiseskje / liten neve | Til frokost eller kl. 14. Alltid oppmålt, aldri fra posen |
+| **Olivenolje** | 1 spiseskje til middag | Til steking eller dressing — ikke begge |
+| **Ost** | Til et måltid, ikke som tillegg til alle | |
+| **Fet fisk** | Ubegrenset innenfor proteinporsjonen | Laks, makrell, ørret — 2–3 ganger i uka. Dette er fettet som gir mest tilbake |
+
+**Regelen som gjelder alle fem:** fettet **erstatter** noe, det kommer ikke i
+tillegg. Halv avokado på brødet betyr ikke smør under. Olje i panna betyr
+ikke dressing over.
+
+**Den ene dagen fettet skal holdes lavt uansett:** fredag før langtur. Fett
+bremser magesekken i timevis, og magen din er allerede et åpent spørsmål.
+Ingen avokado, ingen nøtter, ingen ost etter kl. 11 på fredag.
+
+---
+
 ## 1. Mandag og torsdag — kvalitetsøkt / intervaller
 
 Dette er dagene karboen hører hjemme. Her sparer du ikke.
 
 | Kl. | Hva | Mengde |
 |---|---|---|
-| **07:00** | **2 stekte egg + 2 skiver grovbrød** | Eggene først, brødet er følget. Smør tynt. Kaffe. |
+| **07:00** | **Velg fritt fra frokostmenyen, § 0b** | Full versjon: 2 skiver brød. Halv avokado ja. Kaffe. |
 | **11:00** | **Kantina.** Halv tallerken salatbar → kvart tallerken protein → kvart tallerken karbo | Karboen tas i **god porsjon** i dag: ris, poteter, pasta. Dressing ved siden av. |
 | **14:00** | **Beger kesam/cottage cheese (~4 dl) + 1 neve bær eller en frukt** | Dette er måltidet som avgjør kvelden din. Ikke valgfritt. |
 | **15:30** | **1 banan + 2 skiver loff med syltetøy** | Rask karbo, én time før. Dette er svaret på «energi før økta». |
@@ -53,7 +118,7 @@ Dette er dagen muskelmassen forsvares.
 
 | Kl. | Hva |
 |---|---|
-| **07:00** | 2 stekte egg + 2 skiver grovbrød |
+| **07:00** | **Frokostmenyen, § 0b** — gjerne alt. 1 eller 4 (mest protein) |
 | **11:00** | Kantina. Halv salat, **kvart tallerken protein — ta rikelig**, kvart karbo i **normal** porsjon |
 | **14:00** | Beger kesam + frukt. **Legg til en neve nøtter** hvis styrkeøkta er tung — dette er dagen du tåler dem |
 | **15:30** | 1 banan |
@@ -73,7 +138,7 @@ Her tas hoveddelen av underskuddet, fra **28.09**. I vedlikeholdsperioden
 
 | Kl. | Hva |
 |---|---|
-| **07:00** | 2 stekte egg + **1** skive grovbrød (ikke 2) |
+| **07:00** | **Frokostmenyen, § 0b — hviledagsversjon:** én skive brød, eller halv porsjon havregryn. Protein uendret |
 | **11:00** | Kantina. Halv salat, kvart protein, **halv karboporsjon** — én øse ris, to poteter |
 | **14:00** | Beger kesam/cottage cheese + frukt. **Uendret.** Denne kuttes aldri. |
 | **~17:00** | **Middag:** volumbasert. Gryte, suppe, wok. Dobbel grønnsak, håndflate + halv protein, **liten** karboporsjon |
@@ -96,7 +161,7 @@ Med start ca. 16:15:
 
 | Kl. | Hva | Hvorfor |
 |---|---|---|
-| **07:00** | 2 stekte egg + 2 skiver grovbrød + syltetøy | Vanlig frokost, litt mer karbo |
+| **07:00** | **Frokostmenyen, § 0b — men velg en mager variant.** Alt. 3 eller 6, eller eggerøre uten avokado. **Ingen nøtter, ingen avokado, ingen ost i dag** | Fett bremser magesekken i timevis. Ikke på langturdagen |
 | **11:00** | Kantina — **ukas største karbomåltid.** Halv salat, kvart protein, **full** karboporsjon | Ris, pasta eller poteter. **Ingenting fett og tungt.** Ikke lasagne, ikke fløtesaus, ikke panert. |
 | **13:30** | **Måltid nr. 2, 2,5–3 t før start:** 3 skiver loff med syltetøy eller honning + 1 stort glass vann | Treg-nok karbo, lite fiber, null fett. **Dette er måltidet som manglet 27.08.** |
 | **15:15** | **1 banan** + 2 dl vann | Rask karbo, én time før |
@@ -132,8 +197,8 @@ eneste tallet i hele denne planen jeg vil ha presist.
 
 | Kl. | Hva |
 |---|---|
-| **08:00** | Frokost: 2 egg + 2 skiver grovbrød. **Eller** kjør økta fastende først — dette er den ene økta der det ikke koster kvalitet |
-| **Etter økt** | Frokost hvis du kjørte fastende. Egg + brød + frukt |
+| **08:00** | Frokost fra menyen (§ 0b). **Eller** kjør økta fastende først — dette er den ene økta der det ikke koster kvalitet |
+| **Etter økt** | Frokost hvis du kjørte fastende. Fra menyen, gjerne alt. 1 eller 5 |
 | **12:30** | Lunsj: som en vanlig kantinelunsj, laget hjemme. Protein + grønt + normal karbo |
 | **15:00** | Beger kesam + frukt |
 | **18:00** | Middag: volumbasert, som hviledag men litt mer karbo |
@@ -161,6 +226,59 @@ manglende vilje. Fire grep, i rekkefølge etter hvor mye de betyr:
 
 **Det som ikke virker:** å legge seg sulten, å forby noe, eller å hoppe over
 kl. 21-måltidet «for å spare». Det ender i et større inntak, ikke et mindre.
+
+---
+
+## 6b. Variantmenyer — samme prinsipp, andre retter
+
+Frokosten var ikke den eneste som var låst. Her er valgene for de andre lukene.
+**Alle alternativer i samme kolonne er likeverdige. Bytt fritt.**
+
+### Kl. 14-måltidet — velg én
+
+| # | Hva | Merk |
+|---|---|---|
+| 1 | Beger kesam/cottage cheese + frukt eller bær | Grunnvarianten |
+| 2 | **Proteinyoghurt** (YT/Synnøve naturell) + 1 neve bær | Raskest |
+| 3 | 2 kokte egg (kokt kvelden før) + en frukt | Bra når du er lei melkeprodukter |
+| 4 | **YT proteinsjokolademelk** + en frukt | **Kun på treningsdager** — den har rask karbo som skal brukes |
+| 5 | Grovt knekkebrød med makrell i tomat eller kyllingfilet + gulrot | Når du vil ha noe salt |
+| 6 | Proteinbar + frukt | Nødløsning, ikke førstevalg |
+
+**Alt. 4 på hviledag = 50 g rask karbo uten mottaker.** Velg 1, 2, 3 eller 5
+på onsdag og lørdag.
+
+### Middag — seks rammer, ikke seks oppskrifter
+
+Du lager god mat selv, så dette er rammer du fyller. Alle bygges likt:
+**dobbel grønnsak · protein i håndflate + halv · karbo etter dagens økt.**
+
+| # | Ramme | Eksempler |
+|---|---|---|
+| 1 | **Panne/ovn:** protein + rotgrønnsaker + poteter | Kylling, laks, svinefilet, kjøttkaker |
+| 2 | **Wok:** protein + stor grønnsaksblanding + ris eller nudler | Kylling, biff, reker, tofu |
+| 3 | **Gryte/suppe:** høyt volum, mye væske | Kjøttdeiggryte, linsesuppe, fiskesuppe, chili |
+| 4 | **Fisk-dag:** fet fisk + poteter + grønnsaker | Laks, ørret, makrell. 2–3 ganger i uka |
+| 5 | **Pasta/ris-rett** med kjøttsaus eller tunfisk + stor salat | Karbodag (man/tor/fre) |
+| 6 | **Taco/wraps-varianten** med magert kjøttdeig, bønner, mye grønt | Fredagsvarianten |
+
+**Hviledag (ons/lør):** velg 2, 3 eller 4 — de har mest volum per kalori.
+**Karbodag (man/tor/fre):** velg 1, 5 eller 6.
+
+### Kl. 21-måltidet — velg én
+
+| # | Hva | Hviledag? |
+|---|---|---|
+| 1 | Skyr/kesam + bær (+ 1 dl granola på treningsdag) | Ja, uten granola |
+| 2 | Cottage cheese + bær eller ananas | Ja |
+| 3 | Proteinyoghurt + 1 spiseskje nøtter | Ja, uten nøtter |
+| 4 | 2 kokte egg + gulrot/agurk | Ja |
+| 5 | Kvarg/proteinpudding | Ja |
+| 6 | Varm kakao på skummet melk + en liten porsjon skyr | Ja — bra når det er kaldt og du vil ha noe koselig |
+
+**Poenget med seks varianter:** kl. 21 er timen der planen ryker. Den ryker
+oftere av kjedsomhet enn av sult. Har du seks ting å velge mellom, velger du
+én av dem — har du én, velger du noe annet.
 
 ---
 
@@ -215,10 +333,15 @@ spiser du mer. Ikke mindre.
 løses på én lørdagshandel.**
 
 ### Fast, hver uke
-- **Egg — 2 brett (24 stk).** Du bruker 12–14 i uka på frokost alene.
+- **Egg — 2 brett (24 stk).** Frokost, kl. 14-måltid og kveldsmåltid. Du går
+  ikke tom.
+- **Avokado — 3–4 stk.** Halv om gangen, til frokost.
 - **Kesam mager — 5 begre.** Kl. 14-måltidet.
 - **Cottage cheese — 3 begre.** Kveld, tregere enn skyr.
 - **Skyr naturell — 4–5 begre.** Kveld.
+- **Proteinyoghurt (YT/Synnøve naturell) — 4–5 begre.** Frokost og kl. 14.
+- **YT proteinsjokolademelk — 3–4 stk.** Kun treningsdager.
+- **Havregryn — 1 stor pose.** Frokost alt. 3–5.
 - **Frosne bær — 1 stor pose.** Til kveldsmåltidet, hele uka.
 - **Bananer — 7–8.** Én før hver økt, resten til frokost.
 - **Grovbrød — 2 brøt (frys det ene).**
@@ -240,6 +363,10 @@ løses på én lørdagshandel.**
 
 ### Fast lager
 - YT Protein restitusjonsdrikk — 4–5 stk
+- Proteinpulver eller kvarg/proteinpudding — til frokost alt. 5 og kveld alt. 5
+- Grovt knekkebrød
+- Olivenolje
+- Tunfisk på boks
 - Granola — **1 liten pose**, ikke storpakke. Kjøp aldri kilospose.
 - Linser og kikerter på boks — 4–5 bokser
 - Havregryn
@@ -251,6 +378,24 @@ løses på én lørdagshandel.**
 **Det som ikke er hjemme, spiser du ikke. Det som er hjemme, spiser du.**
 Det gjelder begge veier — derfor liten granolapose og små nøtteposer, og
 derfor to brett egg.
+
+---
+
+## 9b. Variasjon er en del av planen, ikke et avvik
+
+En plan du går lei av på tre uker er ikke en plan. Derfor er frokost,
+kl. 14-måltidet, middag og kveldsmåltidet nå **menyer, ikke retter**.
+
+Det som ligger fast er ikke *hva* du spiser, men fire ting:
+
+1. **Tidspunktene** — 07 · 11 · 14 · etter økt · 21.
+2. **At det er protein i hvert måltid.**
+3. **At karboen er stor på man/tor/fre og mindre på ons/lør.**
+4. **At fettet erstatter noe i stedet for å komme i tillegg.**
+
+Innenfor det kan du bytte så mye du vil. Blir du lei av noe: si fra, så
+utvider vi menyen. Det er en bedre bruk av tiden min enn å overtale deg til
+å spise stekt egg i syv måneder.
 
 ---
 
