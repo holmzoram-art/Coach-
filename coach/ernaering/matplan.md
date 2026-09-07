@@ -173,7 +173,7 @@ Med start ca. 16:15:
 |---|---|---|
 | **07:00** | **Frokostmenyen, § 0b — men velg en mager variant.** Alt. 3 eller 6, eller eggerøre uten avokado. **Ingen nøtter, ingen avokado, ingen ost i dag** | Fett bremser magesekken i timevis. Ikke på langturdagen |
 | **11:00** | Kantina — **ukas største karbomåltid.** Halv salat, kvart protein, **full** karboporsjon | Ris, pasta eller poteter. **Ingenting fett og tungt.** Ikke lasagne, ikke fløtesaus, ikke panert. |
-| **13:30** | **Måltid nr. 2, 2,5–3 t før start, fra skuffen:** 1 Sunniva juice 0,33 l + 1 Corny Big + 3 riskaker | ~82 g karbo, nesten null fett. **Dette er måltidet som manglet 27.08.** Er du hjemme: 3 skiver loff med syltetøy |
+| **13:30** | **Måltid nr. 2, 2,5–3 t før start, fra skuffen:** 1 stort glass saft + 1 Corny Big + 3 riskaker | ~82 g karbo, nesten null fett. **Dette er måltidet som manglet 27.08.** Er du hjemme: 3 skiver loff med syltetøy |
 | **15:15** | **1 neve rosiner** (eller banan hvis du har) + 2 dl vann | Rask karbo, én time før |
 | **16:15** | **Start.** Se testopplegget i `mage.md` | |
 | **Under** | **Følg gjeldende test i `coach/ernaering/mage.md`.** Ikke improviser her. | Vi vet ennå ikke hva magen tåler |
@@ -588,13 +588,14 @@ Dette er ikke et måltid som skal mette. Det skal fylle tanken.
 **Dette er den robuste delen.** Fylles én gang i måneden, krever ingenting av
 deg på en tirsdag morgen.
 
-| Vare | Porsjon | Rolle |
-|---|---|---|
-| **Corny Big musli-bar** (50 g) | 1 stk | **Grunnvaren.** ~30 g karbo, lite fett |
-| **Sun-Maid rosiner** i tett boks | 1 neve (~40 g) | ~30 g rask karbo. Fyller opp til 60 |
-| **Sunda eller Kavli riskaker** | 3–4 stk | Fettfattigst alternativ. Bruk når magen er urolig |
-| **Sunniva juice 0,33 l** (tetra) | 1 stk | **Kun fredag.** ~33 g karbo + væske |
-| **Barebells proteinbar** | 1 stk | **Nødreserve for kl. 14** når kjøleskapet er tomt |
+| Vare | Porsjon | Rolle | Hvis utsolgt — se etter |
+|---|---|---|---|
+| **Corny Big musli-bar** (50 g) | 1 stk | **Grunnvaren.** ~30 g karbo, lite fett | Hvilken som helst **musli-/havrebar på ~50 g med under 8 g fett**. Unngå alt med sjokoladetrekk |
+| **Rosiner** i tett boks — Eldorado, First Price eller Coop | 1 neve (~40 g) | ~30 g rask karbo. Fyller opp til 60 | Tørkede aprikoser eller dadler, men i mindre mengde (mer fiber) |
+| **Riskaker** — Eldorado, First Price, Sunda | 3–4 stk | Fettfattigst alternativ. Bruk når magen er urolig | Saltfrie riskaker eller Sætre Bixit |
+| **Nidar Seigmenn eller Bamsemums** | Liten pose | Rent sukker, null fett og fiber. **Magen din tåler dem allerede** | Andre vingummi uten fett |
+| **Lerum saft** (flaske konsentrat) | Blandes med vann | **Fredag.** Billig, står i skuffen i månedsvis | Liten holdbar juicekartong (Eldorado/First Price) |
+| **Proteinbar, ~20 g protein** | 1 stk | **Nødreserve for kl. 14** når kjøleskapet er tomt | Barebells, Maxim eller YT. **Se prisnotatet i § 12.8** |
 
 **De tre kombinasjonene du trenger:**
 
@@ -603,6 +604,7 @@ deg på en tirsdag morgen.
 | **Standard (man/tir/tor)** | 1 Corny Big + 1 neve rosiner | ~60 g |
 | **Minimum — travel dag** | 1 Corny Big alene | ~30 g. Under målet, men langt bedre enn ingenting |
 | **Urolig mage** | 4 riskaker + 1 neve rosiner | ~55 g, nesten fettfritt |
+| **Lei av bar** | 1 liten pose seigmenn + 1 glass saft | ~60 g, null fett |
 
 ### 12.3 Kjøleskapet — én påfylling mandag morgen
 
@@ -628,7 +630,7 @@ måltidet som manglet den 27. august.
 |---|---|---|
 | **09:30** | 1 Corny Big + 1 neve rosiner | Skuffen |
 | **11:00** | Kantinelunsj, full karbo. **Ingenting fett** — ikke lasagne, ikke panert, ikke fløtesaus | Kantina |
-| **13:30** | **1 Sunniva juice 0,33 l + 1 Corny Big + 3 riskaker** | Skuffen |
+| **13:30** | **1 stort glass saft + 1 Corny Big + 3 riskaker** | Skuffen |
 | **15:15** | 1 neve rosiner (eller banan hvis du har) | Skuffen |
 
 Det gir ~82 g karbo kl. 13:30 og nesten ikke fett. Hele fredagsopplegget
@@ -643,8 +645,9 @@ En kontorskuff er varmere enn et kjøkkenskap — regn 22–26 °C.
 | **Corny Big** | 6–9 mnd (trykt dato) | Enkeltpakket — ingen forringelse |
 | **Rosiner** | 12 mnd | **4 uker i tett boks.** Klumper i varme, blir ikke dårlige |
 | **Riskaker** | 6 mnd | **2–3 uker.** Blir bløte. Kjøp små pakker |
-| **Sunniva juice, tetra** | 6–9 mnd romtemp | **Drikk hele. Åpnet juice hører ikke hjemme i en skuff** |
-| **Barebells proteinbar** | 6–9 mnd | Blir myk over 25 °C. Fortsatt fin |
+| **Saftkonsentrat, uåpnet flaske** | 12 mnd | **Måneder.** Tåler skuff fint. Åpnet juicekartong gjør det ikke |
+| **Seigmenn** | 6 mnd | 4–6 uker. Blir klissete i varme, ikke dårlige |
+| **Proteinbar** | 6–9 mnd | Blir myk over 25 °C. Fortsatt fin |
 
 **Dette skal ikke i skuffen:** sjokolade (smelter), nøtter (harskner på 2–3
 måneder i varme), alt med melk i, og alt som ikke er enkeltpakket.
@@ -659,10 +662,11 @@ lørdag er hviledager uten økt, og søndag er du hjemme.
 | Vare | Antall | Rekker |
 |---|---|---|
 | Corny Big, 6-pk | **3 pakker** (18 barer) | 4 uker |
-| Sun-Maid rosiner, 500 g | **1 pose** | 4–5 uker |
+| Rosiner, 500 g (Eldorado/First Price) | **1 pose** | 4–5 uker |
 | Riskaker, liten pakke | **2 pakker** | 3–4 uker |
-| Sunniva juice 0,33 l, 4-pk | **1 pakke** | 4 fredager |
-| Barebells proteinbar | **1 boks** | Nødreserve, varer lenge |
+| Lerum saft, 1 flaske | **1** | Månedsvis |
+| Nidar Seigmenn, liten pose | **2** | Variasjon |
+| Proteinbar | **2–3 stk** | Nødreserve, varer lenge |
 | **Tett plastboks til rosinene** | 1 stk | Engangskjøp |
 
 Én lørdagshandel, én pose inn på jobb, og så er ettermiddagene løst i en måned.
@@ -671,12 +675,56 @@ lørdag er hviledager uten økt, og søndag er du hjemme.
 
 ## 12.7 Én anbefaling — hva du kjøper denne lørdagen
 
-> **3 pakker Corny Big og 1 pose Sun-Maid rosiner. Legg dem i skuffen mandag
-> sammen med en tett boks til rosinene.**
+> **3 pakker Corny Big og 1 pose rosiner (Eldorado eller First Price). Legg dem
+> i skuffen mandag sammen med en tett boks til rosinene.**
 
 Det er alt. Det dekker 15:30-måltidet i fire uker, krever null planlegging på
 ukedager, og koster deg ingenting i kantina. Resten av lista i § 12.6 er
 finjustering du kan ta neste gang.
+
+---
+
+## 12.8 Norsk tilgjengelighet — kvalitetssikret 07.09.2026
+
+Gjennomgått etter Knuts påminnelse. **Alt i planen finnes i vanlig norsk
+dagligvare (Rema, Kiwi, Coop Extra, Meny).** Fem endringer og fire avvisninger:
+
+### Endret
+
+| Var | Er nå | Hvorfor |
+|---|---|---|
+| **Sun-Maid rosiner** | **Rosiner, Eldorado / First Price / Coop** | Sun-Maid er amerikansk og finnes her, men kjedenes egne merker gjør nøyaktig samme jobb til under halv pris |
+| **Sunniva juice 0,33 l** | **Lerum saft (konsentrat)** | Sunniva selges hovedsakelig kjølt i Norge, og jeg er ikke trygg på at den holdbare varianten står i alle butikker. Saft er norsk, billig, og en flaske står i skuffen i månedsvis |
+| **Barebells proteinbar** | **Proteinbar, ~20 g protein** | Barebells er svensk. Den finnes overalt her, men koster 30–35 kr. Se pris under |
+| **Sunda/Kavli riskaker** | **Riskaker, hvilket som helst merke** | Ingen grunn til å låse merke |
+| — | **Nidar Seigmenn lagt til** | Norsk, billig, rent sukker uten fett og fiber — og **magen din har allerede tålt dem på langtur** |
+
+### Bekreftet norsk og lett tilgjengelig
+Corny musli-bar · Tine YT Protein og YT proteinsjokolademelk · Tine Kesam ·
+Tine/Q Skyr · Tine cottage cheese · **Q Kvarg** · Synnøve proteinyoghurt ·
+Litago og Q sjokolademelk · Møllerens havregryn · Stabburet makrell i tomat ·
+Mills kaviar · Gilde og Nordfjord kjøtt · Prior egg og kylling · Findus
+frossengrønnsaker · chiafrø (alle kjeder).
+
+### Vurdert og avvist
+
+| Vare | Hvorfor ikke |
+|---|---|
+| **Kvikk Lunsj** | 30 % fett og smelter i en varm skuff. Feil produkt 45 min før en økt — ikke fordi det er usunt, men fordi fettet bremser magesekken |
+| **Sørlandschips** | Fett og salt, nesten ingen brukbar karbo til formålet |
+| **Nugatti** | Krever brød, og er fett med litt sukker i |
+| **Fun Light** | Null kalorier. Fin som smak i vannflaska, men den løser ikke oppgaven her |
+
+### Pris — to flagg
+
+1. **Proteinbar er den dyreste protein-kronen i planen.** Barebells ligger på
+   30–35 kr for 20 g protein. **Q Kvarg** gir 20 g protein for rundt 20 kr og
+   smaker bedre. Bruk kvarg i kjøleskapet og ha bare 2–3 barer i skuffen som
+   nødreserve — ikke som daglig løsning.
+2. **Chiafrø i overnight oats er valgfritt.** Det er en dyr ingrediens som
+   gjør lite. Sløyf den hvis du synes den koster for mye.
+
+Alt annet ligger i normalt prisleie for det det erstatter.
 
 ---
 

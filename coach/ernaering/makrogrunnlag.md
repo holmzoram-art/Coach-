@@ -661,3 +661,58 @@ krever daglig handling hjemmefra er en plan som ryker.
 11. **Mandagsposen er én påminnelse i uka**, søndag kveld. Ikke fem.
 12. **Ingenting med sjokoladetrekk, nøtter eller melk i skuffen.**
     Smelter, harskner eller blir dårlig.
+
+---
+
+## 11. Katalogdelta 07.09.2026 (nr. 3) — norsk tilgjengelighet
+
+Gjennomgang av alle merkenavn mot norsk dagligvare. **Ingen makrotall er
+endret** — bare produktnavn, ett nytt alternativ og generiske fallbacks.
+Begrunnelser i `matplan.md` § 12.8.
+
+### 11.1 ENDRET — produktnavn, tall uendret
+
+| # | Var | Er nå | kcal · P · K · F |
+|---|---|---|---|
+| **J1** | Corny Big + **Sun-Maid** rosiner | Corny Big + **rosiner (Eldorado/First Price/Coop)** | 320 · 4 · 60 · 6 |
+| **J3** | **Sunda/Kavli** riskaker + rosiner | **Riskaker (hvilket som helst merke)** + rosiner | 240 · 4 · 55 · 2 |
+| **J5** | **Sunniva juice 0,33 l** + Corny Big + 3 riskaker | **1 stort glass Lerum saft** + Corny Big + 3 riskaker | 440 · 7 · 82 · 7 |
+| **M8** | **Barebells** proteinbar | **Proteinbar, ~20 g protein** (Barebells / Maxim / YT) | 200 · 20 · 17 · 7 |
+
+### 11.2 LAGT TIL
+
+| # | Rett | Porsjon | kcal | P | K | F | Lagring |
+|---|---|---|---|---|---|---|---|
+| **J6** | **Nidar Seigmenn + glass saft** | Liten pose (~60 g) + 1 glass | 300 | 0 | 72 | 0 | Skuff |
+| **K7** | **Q Kvarg + bær** | 1 beger + neve bær | 200 | 20 | 22 | 1 | Kjøleskap |
+
+**J6** er null fett og null fiber, og magen hans har allerede tålt seigmenn på
+langtur 11.09-testen. Egnet når han er lei av bar.
+**K7** erstatter/supplerer K5 med et konkret norsk produkt til lavere pris.
+
+### 11.3 Nytt felt
+
+| Felt | Verdi |
+|---|---|
+| `fallback_generisk` | Tekststreng: hva han ser etter hvis merkevaren er utsolgt |
+
+Alle skuffvarer skal ha denne utfylt. Eksempel for J1:
+*«musli-/havrebar ca. 50 g med under 8 g fett, uten sjokoladetrekk»*.
+
+### 11.4 Handleliste — endrede poster
+
+| Var | Er nå |
+|---|---|
+| Sun-Maid rosiner, 500 g × 1 | **Rosiner (Eldorado/First Price), 500 g × 1** |
+| Sunniva juice 0,33 l, 4-pk × 1 | **Lerum saft, 1 flaske** (varer måneder) |
+| Barebells proteinbar, 1 boks | **Proteinbar × 2–3 stk** — nødreserve, ikke daglig |
+| — | **Nidar Seigmenn, liten pose × 2** (nytt) |
+| — | **Q Kvarg × 2 begre** i mandagsposen (nytt) |
+
+### 11.5 Prisflagg til grensesnittet
+
+Artifacten bør merke to varer som **dyre for det de leverer**:
+- **Proteinbar** — 30–35 kr for 20 g protein. Q Kvarg gir det samme for ~20 kr
+- **Chiafrø** — valgfri ingrediens i F5n, kan sløyfes uten konsekvens
+
+Ingen andre varer i planen er påfallende dyre i norsk sammenheng.
