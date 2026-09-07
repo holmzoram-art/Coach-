@@ -13,7 +13,7 @@ detaljer. **Du trenger dem ikke.**
 |---|---|
 | **07** | Beger skyr eller kvarg + **1 dl havregryn (tørt, rett i begeret)** + neve frosne bær + **1 spiseskje nøtter** |
 | **11** | **Kantina:** halv tallerken salat først · kvart tallerken protein · kvart tallerken karbo |
-| **14** | Beger kvarg eller kesam + en frukt |
+| **14** | **Hele begeret** kvarg eller kesam + en frukt. Ikke en «porsjon» fra pakken — hele |
 | **Middag** | Protein på størrelse med håndflaten din (**mål det rått**) · **dobbel** grønnsak · **halv pose ferdigris eller 3 poteter** |
 | **21** | Beger cottage cheese eller skyr + bær |
 
@@ -127,7 +127,7 @@ kastes. Det er hele holdbarhetsregelen.
 Fylles **når den er tom**, ikke etter en plan. Står på handlelista permanent.
 
 - **Corny Big** — 3 pakker om gangen, varer en måned
-- **Rosiner** i en tett boks
+- **Rosiner** i en tett boks — tørkede tranebær funker like bra, men koster mer
 - **Riskaker** og en flaske **saft**
 - **3 proteinbarer** — nødreserve for dagen du glemte posen
 
