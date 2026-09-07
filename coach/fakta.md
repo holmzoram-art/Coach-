@@ -146,3 +146,10 @@ biblioteket lagrer tallet rått (subfeltet har `offset = 0`). Skal en grense på
 150 bpm inn i fila, må verdien settes til **250**. Feltet er uint32, så det
 finnes ikke noe 255-tak. Verifiser alltid ved å lese fila tilbake og trekke
 fra 100.
+
+## Garmin Connect: «Import Data» tar ikke øktfiler
+Importsiden i Garmin Connect på nett godtar bare **aktivitetsfiler** (fullførte
+økter, .fit/.gpx/.tcx). Øktmaler (workout-FIT) avvises med «One of your files
+was not accepted by the system». Øktmaler må inn via USB til `GARMIN/NewFiles/`
+på klokka. FIT-filer skal ha 14-byte header med header-CRC — `fit-tool` skriver
+12-byte header som standard.

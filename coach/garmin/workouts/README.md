@@ -4,9 +4,14 @@ Sju ferdige øktfiler med pulsalarm. Bygget med `fit-tool`, verifisert ved å
 lese filene tilbake og dekode pulsverdiene.
 
 ## Import
-Kobl klokka til PC, legg filene i `GARMIN/NewFiles/` på enheten, koble fra.
-Øktene dukker opp under Trening → Økter. (Alternativt: Garmin Connect →
-Trening → Økter → Importer.)
+**USB er eneste vei.** Koble klokka til PC, legg filene i `GARMIN/NewFiles/`
+på enheten, koble fra. Øktene dukker opp under Trening → Økter.
+
+Siden «Import Data» i Garmin Connect på nett tar **kun aktivitetsfiler**
+(fullførte økter) og avviser øktmaler — det er ikke en feil i filene.
+
+Filene har 14-byte header med header-CRC, gyldig fil-CRC og er lest tilbake
+og dekodet. Verifiser med `python3 build_fit.py` og sjekken i git-historikken.
 
 ## Innhold
 

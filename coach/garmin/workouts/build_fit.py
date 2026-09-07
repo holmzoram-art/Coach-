@@ -1,5 +1,7 @@
 import os, datetime
-from fit_tool.fit_file_builder import FitFileBuilder
+from fit_tool.fit_file import FitFile
+from fit_tool.fit_file_builder import FitFileBuilder, calc_crc, calc_records_size
+from fit_tool.fit_file_header import FitFileHeader
 from fit_tool.profile.messages.file_id_message import FileIdMessage
 from fit_tool.profile.messages.workout_message import WorkoutMessage
 from fit_tool.profile.messages.workout_step_message import WorkoutStepMessage
@@ -62,8 +64,13 @@ def build(filename, wkt_name, steps):
     w.num_valid_steps = len(steps)
     b.add(w)
     b.add_all(steps)
+    # Bygg med klassisk 14-byte header (med header-CRC). fit-tool skriver
+    # 12-byte header som standard; Garmin-enheter forventer 14.
+    records = b.build().records
+    header = FitFileHeader(records_size=calc_records_size(records), gen_crc=True)
+    ff = FitFile(header, records, calc_crc(header, records))
     path = os.path.join(OUT, filename)
-    b.build().to_file(path)
+    ff.to_file(path)
     return path
 
 # 3 bpm luft utenfor grensen (fysiolog); tak-økter får gulv 90 så alarmen
