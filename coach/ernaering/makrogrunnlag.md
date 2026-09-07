@@ -716,3 +716,48 @@ Artifacten bør merke to varer som **dyre for det de leverer**:
 - **Chiafrø** — valgfri ingrediens i F5n, kan sløyfes uten konsekvens
 
 Ingen andre varer i planen er påfallende dyre i norsk sammenheng.
+
+---
+
+## 12. Katalogdelta 07.09.2026 (nr. 4) — Be-Kind
+
+Vurdert på forespørsel. Full begrunnelse i `matplan.md` § 12.75.
+
+### 12.1 LAGT TIL
+
+| # | Rett | Porsjon | kcal | P | K | F | Lagring | Tilgjengelig på |
+|---|---|---|---|---|---|---|---|---|
+| **M9** | **Be-Kind-bar** — tillegg til kl. 14 på hviledag | 1 bar (40–50 g) | 210 | 8 | 17 | 13 | Skuff | **Kun ons og lør** |
+
+Tallene er seriesnitt. Proteinvariantene: P 10–12, K 15–18.
+**M9 velges sammen med M1, M2 eller K7 — aldri alene.** Den er et fett- og
+metthetstillegg, ikke et proteinmåltid.
+
+### 12.2 Nye regler
+
+| Regel | Verdi |
+|---|---|
+| `kun_hviledag` | true på M9 |
+| `blokkert_15:30` | true på M9 — **skal ikke kunne velges til 15:30-luka** |
+| `blokkert_fredag` | true på M9 — fett før langtur |
+| `dekker_fettgulv` | true. Oppfyller ons/lør-kravet i § 7.1 alene |
+
+### 12.3 Handleliste
+
+| Vare | Enhet | Antall | Rekker |
+|---|---|---|---|
+| **Be-Kind** — Honey Roasted Nuts & Seasalt eller proteinvariant | Kartong à 12, 179 kr | **1** | 6 uker (2/uke) |
+
+**Oppbevaring:** kartongen hjemme, 2–3 barer om gangen i skuffen.
+Sjokoladetrukne varianter blir myke etter 4–6 uker over 25 °C.
+
+### 12.4 Prisnotat — oppdatert rangering, protein per krone
+
+| Vare | g protein per krone |
+|---|---|
+| Q Kvarg | **1,0** |
+| Be-Kind protein | 0,8 |
+| Barebells | 0,6 |
+
+Be-Kind slår Barebells som proteinbar. **Q Kvarg er fortsatt billigst**, men
+krever kjøleskap — Be-Kind gjør ikke det.

@@ -684,6 +684,80 @@ finjustering du kan ta neste gang.
 
 ---
 
+## 12.75 Be-Kind-barer — vurdert 07.09.2026
+
+Knut fant Be-Kind i kartong, 12 barer til 179 kr. **Svaret er ja, men til en
+annen luke enn han tror.**
+
+Typiske tall for serien (les baksiden — de varierer litt mellom varianter):
+**~200–220 kcal · 6–12 g protein · 15–20 g karbo · 13–14 g fett · 3–6 g fiber.**
+
+### Nei til kl. 15:30
+
+Kravet der er **minst 40 g karbo, under 10 g fett, lite fiber**. Be-Kind er
+nøttebasert og leverer det motsatte: én bar gir ~17 g karbo og 13 g fett.
+For å nå 40 g karbo måtte han spist 2–2,5 barer — og da er han på **30 g fett
+45 minutter før en økt**. Det gjelder **alle syv variantene**; proteinvariantene
+er ikke magrere, de har bare byttet litt karbo mot protein.
+
+**Og det er en magerisiko, ikke bare et regnestykke.** Hypotese 3 i `mage.md`
+etter 18-kilometeren var nettopp fett og fiber for nær start. Fett bremser
+magesekken i timevis. Å legge 13–30 g fett pluss 5–12 g fiber inn 45 minutter
+før en økt er å teste den hypotesen med vilje, i feil retning.
+
+### Ja til kl. 14 på hviledager — der løser de et faktisk problem
+
+**Fettgulvet ryker systematisk på onsdag og lørdag** (60 g mot 75, se
+`makrogrunnlag.md` § 7.1), og fiksen var «halv avokado eller 1 ss nøtter».
+En Be-Kind gjør nøyaktig den jobben, ferdig innpakket, i en skuff, uten
+kjøleskap. Det er et bedre svar enn løse nøtter, som harskner.
+
+**Bruk: 1 bar til kl. 14-måltidet på onsdag og lørdag, sammen med et beger
+kvarg eller kesam.** Ikke i stedet for — i tillegg til.
+
+### Nei som proteinreserve alene
+
+10–12 g protein er for lite til å telle som et måltid mot gulvet på 220 g/dag.
+Kl. 14-måltidet skal bidra med 35–45 g. En Be-Kind dekker en fjerdedel.
+Som **nødreserve når alt annet svikter** er den fin — men da er den en
+nødløsning, ikke planen.
+
+### Prisen — god pris, delvis feil produkt
+
+| | Pris | Til jobben |
+|---|---|---|
+| **Corny Big** | ~6–8 kr | **~4 g karbo per krone.** Riktig produkt til 15:30 |
+| **Be-Kind** | 15 kr | ~1 g karbo per krone — **fire ganger dyrere for den jobben** |
+| **Be-Kind protein** | 15 kr | **0,8 g protein per krone** |
+| **Barebells** | 30–35 kr | 0,6 g protein per krone |
+| **Q Kvarg** | ~20 kr | **1,0 g protein per krone** — fortsatt best |
+
+**179 kr for 12 er en helt grei pris på en Be-Kind.** Poenget er ikke at den
+er dyr, men at den er feil verktøy for 15:30. Til kl. 14 på hviledager er den
+prisverdig — og den slår Barebells klart som proteinbar.
+
+### Varm skuff — de tåler det dårligst av alt du har der
+
+Disse er både nøtter og sjokolade, altså begge tingene jeg advarte mot.
+
+| Variant | I skuff |
+|---|---|
+| **Honey Roasted Nuts & Seasalt**, **Caramel Almond & Sea Salt** | Best egnet. 2–3 måneder |
+| **Dark Chocolate Nuts**, **Peanut Butter & Dark Chocolate**, **Milk & White Chocolate Nut**, **Milk Chocolate Latte** | Sjokoladen blir matt og myk etter **4–6 uker** over 25 °C. Fortsatt spiselig, bare stygg |
+
+**Praktisk: la kartongen stå hjemme og ta med 2–3 barer om gangen.** Da
+slipper du problemet helt, og du bruker dem uansett bare to dager i uka.
+
+### Konklusjon
+
+- **Kl. 15:30: nei.** Corny + rosiner står.
+- **Kl. 14 onsdag og lørdag: ja.** Kjøp én kartong. Velg **Honey Roasted Nuts
+  & Seasalt** eller en av proteinvariantene — de tåler skuffen best og gir
+  mest tilbake.
+- **Fredag: aldri.** Ingen nøtter og ingen fett før langtur.
+
+---
+
 ## 12.8 Norsk tilgjengelighet — kvalitetssikret 07.09.2026
 
 Gjennomgått etter Knuts påminnelse. **Alt i planen finnes i vanlig norsk
