@@ -30,6 +30,17 @@ To ting følger av det, og agentene skal ta hensyn til begge:
    terreng. Knesmerten hans i bratt utfor er derfor mer relevant på lang sikt
    enn den er for en flat maraton.
 
+## Knuts egen prioritering — 06.09
+
+> «Jeg har jo booket time hos legen for å få hjelp til å gå ned i vekt. Det
+> burde jo være mitt hovedfokus nå å komme meg ned og bli kvitt fett som gir
+> belastning på ledd.»
+
+Han vil altså at **vektnedgang skal være hovedfokus**, med leddbelastning som
+begrunnelse — ikke løpsøkonomi. Det er en prioriteringsbeslutning som `hovedcoach`
+må ta stilling til, og den står delvis i spenn mot at `ernaering` har lagt inn
+tre uker vedlikehold 08.–28.09.
+
 ## Treningsbakgrunn
 
 - **Styrke: 3 år sammenhengende.** Ikke nybegynner. Bench 4 × 5 @ 75 kg,
