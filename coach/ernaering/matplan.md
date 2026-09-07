@@ -8,6 +8,11 @@ Gjelder fra **mandag 08.09**. Seksjon 8 forteller hva som endres 28.09.
 
 ---
 
+> **Tallgrunnlag:** makromål per dagstype, næringsinnhold per rett,
+> avviksterskler og handlelistegrunnlag ligger i
+> `coach/ernaering/makrogrunnlag.md`. Du trenger ikke lese den — den er
+> underlag for appen.
+
 ## 0. Fem regler som gjelder alle dager
 
 1. **Fem faste luker: 07 · 11 · 14 · etter økt · 21.** Aldri hopp over en luke
