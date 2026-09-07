@@ -110,17 +110,51 @@ Samme liste hver uke. Se nederst.
 
 **Tre ting, det meste passivt:**
 1. **Ovnen på 200°: 3 kg poteter i båter.** 35 min, du gjør noe annet
-2. **Cottage cheese-rundstykker på samme brett** (10 min røring, samme ovntid):
-   1 beger cottage cheese + 5 egg + 150 g havregryn + 1 ts bakepulver + salt.
-   Blir 10 stk. **Frys det du ikke spiser innen fire dager**
-3. **Én stor gryte eller suppe, 4 porsjoner.** Kjøttdeig eller linser,
+2. **Én stor gryte eller suppe, 4 porsjoner.** Kjøttdeig eller linser,
    hakkede tomater, frossen grønnsaksblanding, løk
-4. **Kok 10 egg.** La skallet være på
+3. **Kok 10 egg.** La skallet være på
 
 **Så pakker du jobbposen** og setter den i gangen: 5 begre cottage cheese. Inn i kjøleskapet på jobb mandag morgen.
 
 **Det som er laget søndag spises innen torsdag.** Torsdag kveld: fryses eller
 kastes. Det er hele holdbarhetsregelen.
+
+---
+
+## Én gang i måneden — bak rundstykker
+
+**Én ovnsomgang, to brett, 24 rundstykker. 45 minutter, hvorav 30 er ovntid.**
+
+| Ingrediens | Mengde |
+|---|---|
+| Cottage cheese | **1 kg** (2,5 begre) |
+| Egg | **12** |
+| Havregryn | **375 g** |
+| Bakepulver | 2 ts |
+| Salt | 1 ts |
+
+Rør alt sammen, la det svelle 10 min, klatt ut 12 per brett. **200 °C, 30 min.**
+
+Vil du ha forsyning til en hel måned: **rør dobbelt og stek i to omganger.**
+Totalt ~1 t 20 min, det meste venting. 48 stk tar en hel fryserhylle — sjekk
+at du har plass før du gjør det.
+
+**Frys dem 3 og 3 i små poser.** Da tar du én pose om morgenen og slipper å
+telle. Avkjøl helt før frysing, ellers blir de seige.
+
+**Tining:** 40–60 sekunder i mikro fra frossen, eller ta posen ut kl. 07 så er
+de tint til lunsj. De tåler å ligge i veska hele dagen — men **legg på skinke
+først når du skal spise**, eller sett dem i kjøleskapet på jobb.
+
+**Hva de dekker:**
+
+| Luke | Antall | Dom |
+|---|---|---|
+| **Frokost** | 3 stk + kokt skinke | **Ja.** ~400 kcal, 32 g protein |
+| **Kl. 14 på jobb** | 2 stk + skinke | **Ja.** Bedre enn en bar |
+| **Kl. 21** | 2 stk | Går an, men cottage cheese med bær metter bedre |
+| **15:30 før økt** | — | **Nei.** For lite karbo, for mye fett. Skuffen står |
+| **Erstatte kantinelunsjen** | 4 stk | **Bare når du må.** Kantina gir deg en halv tallerken grønnsaker som rundstykkene ikke har |
 
 ---
 
