@@ -196,11 +196,24 @@ i vinduet i 28,7 % av tiden. Vi har fått et I4-punkt i stedet — verdifullt, m
 ikke det som ble bestilt. **I3-kalibreringen bør gjentas**, med instruks om å
 starte på 6:10/km og la pulsen komme opp til vinduet, ikke starte på følelse.
 
-**To ting er ikke i dataen og må spørres om:**
+**Fysio — avklart, skal ikke etterspørres igjen.**
+Knut var hos fysio 07.09 før økta. Vurderingen var at det ikke er annet enn
+**vev som har blitt godt brukt**, ikke noe farlig, og at han kan fortsette som før
+og si ifra om det blir verre. **Ingen restriksjoner, ingen øvelser, ingen
+belastningsbegrensning.** `hovedcoach` har konkludert med at kneet er **avklart
+inntil videre, ikke lukket** — det er ikke lenger en betingelse i planleggingen,
+men symptomet følges.
+
+Konsekvens for denne økta: kriterium 3 (løpt før fysiotimen eller minst 6 t etter)
+er formelt brutt — økta lå rett etter timen. Men da fysio ikke ga noen
+belastningsbegrensning og ikke behandlet med noe som påvirker prestasjon, er
+bruddet uten måleteknisk betydning. **Gyldigheten står.**
+
+**To ting er fortsatt ikke i dataen og må spørres om (koordinator spør nå):**
 - **Solo eller gruppe?** Kriterium 9. Ingen beskrivelse på aktiviteten.
-- **Underlag og temperatur.** `temp`-strømmen mangler i Strava for denne økta,
-  så kriterium 4 (under 20 grader) og 5 (tørt, asfalt/grus) kan ikke verifiseres.
-- Hva fysio sa, siden økta lå etter timen.
+- **Underlag og temperatur.** `temp`-strømmen er tom i Strava for denne økta
+  (verifisert på nytt), så kriterium 4 (under 20 grader) og 5 (tørt, asfalt/grus)
+  kan ikke verifiseres av meg.
 
 RPE kommer på kveldsspørsmålet og skal ikke spørres om her.
 
@@ -337,3 +350,47 @@ Er pulsen usikker, er koblingen usikker — selv når farten er perfekt målt.
    **[for tidlig]** inntil en økt med brystbelte foreligger.
 4. **Flagg:** Brystbelte manglet. Ingen grov målefeil påvist, men absoluttnivået
    kan ikke verifiseres. Kadenslåsing eksplisitt utelukket (r = +0,37).
+
+
+---
+
+# TILLEGG 2 — kneet avklart, og hva økta betyr for volumopptrappingen
+
+## Kneet
+Fysio 07.09: vev som har vært godt brukt, ikke noe farlig, fortsett som før,
+si ifra om det forverres. Ingen restriksjoner. `hovedcoach`: **avklart inntil
+videre, ikke lukket.**
+
+Dette fjerner det viktigste forbeholdet som lå rundt tolkningen av dagens økt.
+Fartsfallet på 8,3 s/km GAP gjennom tempoblokka kan nå leses **rent
+sirkulatorisk**. Det var aldri sannsynlig at det var mekanisk — kadensen sto på
+161 spm i begge halvdeler uten antydning til fall — men med fysiosvaret er
+kne som forklaringsfaktor ute. Ett mindre.
+
+## Hva dagens måling sier om volumplanen
+Opptrapping: 24–26 km denne uka, 28–30 neste, 33–35 uka etter. Alt I1/I2,
+én hardøkt i uka.
+
+Dagens tall støtter den planen, av tre grunner:
+
+1. **Terskelen er ikke flaskehalsen.** GAP 5:54/km ved terskelnær innsats gir
+   terskelfart anslagsvis 6:10–6:25/km. Maratonmålet 7:05–7:15/km ligger 40–65 s/km
+   saktere. Han trenger ikke raskere terskel for å nå målet — han trenger å
+   kunne bære en lav intensitet lenge. Det er nøyaktig det volumopptrapping gir.
+2. **Holdbarhet er flaskehalsen.** 4,2 % decoupling på 18 minutter er mye på så
+   kort tid. Det er den kurven volumet skal flate ut.
+3. **Én hardøkt i uka er riktig dosering.** Pulsen fant aldri platå i 20 min.
+   Han tåler intensiteten, men den koster. Mer enn én slik i uka under
+   opptrapping ville spist av I1/I2-volumet som faktisk flytter maratonformen.
+
+**Advarsel til `belastning-restitusjon`:** hopp fra 24–26 til 33–35 km er
++35 % over to uker. Det ligger over 10 %-regelen. Dagens økt sier ingenting om
+at det er utrygt — men EF-grunnlaget er for tynt til å oppdage om det blir for
+mye. Jeg trenger **flate I1/I2-økter over 40 min** for å kunne følge det. Uten
+dem er jeg blind på nøyaktig den variabelen opptrappingen setter på spill.
+
+## Konsekvens for målebehovet framover
+Kalibreringsøkta bør gjentas med brystbelte (kriterium 12), men den haster ikke
+mest. **Det som haster mest er EF-punkter:** 40+ min i I1/I2, flat rute,
+brystbelte ikke påkrevd. Det er den serien som avgjør om volumopptrappingen
+virker eller sliter ham ned, og jeg har fortsatt ikke ett eneste gyldig punkt i den.
