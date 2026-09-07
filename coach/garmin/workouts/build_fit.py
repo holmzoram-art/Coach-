@@ -132,5 +132,12 @@ W.append(("07_Dagens_I2_40-50min.fit", "I2 40-50 min flatt", [
          lo=FLOOR, hi=141),
 ]))
 
+# 8. Dagens okt (Knut oppgav den selv): 2 km oppv, 20 min 156-165, 2 km ned
+W.append(("08_Dagens_2k_20min_tempo_2k.fit", "2k + 20min tempo + 2k", [
+    step(0, "Oppvarming 2 km", "distance", meters=2000, intensity=Intensity.WARMUP),
+    step(1, "20 min i 156-165", "time", seconds=1200, lo=153, hi=168),
+    step(2, "Nedvarming 2 km", "distance", meters=2000, intensity=Intensity.COOLDOWN),
+]))
+
 for fn, name, steps in W:
     print(build(fn, name, steps))

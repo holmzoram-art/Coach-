@@ -24,6 +24,7 @@ og dekodet. Verifiser med `python3 build_fit.py` og sjekken i git-historikken.
 | 05_I3_tempo_kalibrering | I3 tempo / kalibrering | 157–166 | 154–169 |
 | 06_I4_terskelintervaller | I4 terskel 4×6 min | under 176 | 90–179 |
 | 07_Dagens_I2_40-50min | 40–50 min flatt I2 | 137–150 | 134–153 |
+| 08_Dagens_2k_20min_tempo_2k | 2 km + 20 min tempo + 2 km | 156–165 | 153–168 |
 
 Alarmgrensa ligger **3 bpm utenfor** målsonen (fysiologens krav) så klokka
 ikke maser på grensa. Tak-økter har gulv 90 slik at alarmen bare fyrer
