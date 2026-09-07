@@ -11,11 +11,11 @@ detaljer. **Du trenger dem ikke.**
 
 | Kl. | Hva |
 |---|---|
-| **07** | Beger skyr eller kvarg + **1 dl havregryn (tørt, rett i begeret)** + neve frosne bær + **1 spiseskje nøtter** |
+| **07** | Beger skyr eller yoghurt + **1 dl havregryn (tørt, rett i begeret)** + neve frosne bær + **1 spiseskje nøtter** — *eller 3 cottage cheese-rundstykker med kokt skinke* |
 | **11** | **Kantina:** halv tallerken salat først · kvart tallerken protein · kvart tallerken karbo |
-| **14** | **Hele begeret** kvarg eller kesam + en frukt. Ikke en «porsjon» fra pakken — hele |
+| **14** | **Hele begeret cottage cheese** + en frukt. Ikke en «porsjon» fra pakken — hele |
 | **Middag** | Protein på størrelse med håndflaten din (**mål det rått**) · **dobbel** grønnsak · **halv pose ferdigris eller 3 poteter** |
-| **21** | Beger cottage cheese eller skyr + bær |
+| **21** | Beger cottage cheese + bær. Varm bærene i mikroen og hell over — ikke varm osten |
 
 Fem måltider. De er like hver dag. **Du velger ingenting.**
 
@@ -110,12 +110,14 @@ Samme liste hver uke. Se nederst.
 
 **Tre ting, det meste passivt:**
 1. **Ovnen på 200°: 3 kg poteter i båter.** 35 min, du gjør noe annet
-2. **Én stor gryte eller suppe, 4 porsjoner.** Kjøttdeig eller linser,
+2. **Cottage cheese-rundstykker på samme brett** (10 min røring, samme ovntid):
+   1 beger cottage cheese + 5 egg + 150 g havregryn + 1 ts bakepulver + salt.
+   Blir 10 stk. **Frys det du ikke spiser innen fire dager**
+3. **Én stor gryte eller suppe, 4 porsjoner.** Kjøttdeig eller linser,
    hakkede tomater, frossen grønnsaksblanding, løk
-3. **Kok 10 egg.** La skallet være på
+4. **Kok 10 egg.** La skallet være på
 
-**Så pakker du jobbposen** og setter den i gangen: 5 begre kvarg og 5 begre
-skyr/cottage cheese. Inn i kjøleskapet på jobb mandag morgen.
+**Så pakker du jobbposen** og setter den i gangen: 5 begre cottage cheese. Inn i kjøleskapet på jobb mandag morgen.
 
 **Det som er laget søndag spises innen torsdag.** Torsdag kveld: fryses eller
 kastes. Det er hele holdbarhetsregelen.
@@ -149,10 +151,10 @@ Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.
 ## Handlelista — nesten lik hver uke
 
 **Fast:**
-egg 2 brett · kvarg 5 begre · skyr eller cottage cheese 5 begre · frosne bær
+egg 2 brett · **cottage cheese 8 begre** · skyr eller yoghurt 5 begre · frosne bær
 1 pose · nøtter 1 liten pose · poteter 3 kg · frossen grønnsaksblanding 2 poser
 · ferdigris 4 poser · hakkede tomater 2 bokser · løk · kjøtt eller fisk til
-4 middager · grovbrød · bananer
+4 middager · kokt skinke · bananer
 
 **Når det er tomt:**
 havregryn · Corny Big 3 pk · rosiner · riskaker · saft · proteinbar · frossen fisk
