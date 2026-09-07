@@ -149,6 +149,19 @@ forberedelsen til den timen, ikke et hinder for den:
 Hva `ernaering` **ikke** uttaler seg om: om han skal ha medisinen, hvilket
 preparat, dose eller kontraindikasjoner. Det er legens bord.
 
+### 0.76 Muskelmasse — Knuts beslutning 07.09.2026
+
+Knut har vurdert avveiningen og landet: han aksepterer noe tap av magert vev
+mot større fettreduksjon. Det er hans beslutning og den respekteres.
+`ernaering` gjentar ikke advarselen.
+
+Konsekvens for planen: motmidlene skjerpes i stedet.
+**Protein og styrketrening er ikke lenger «anbefalt» — de er det som avgjør
+om beslutningen hans holder.** § 4 (protein hver dag, også lavdager) og
+styrkeøkta tirsdag er ikke forhandlingsbare, uansett hva vekta gjør.
+
+Konkret måltid-for-måltid-plan ligger i `coach/ernaering/matplan.md`.
+
 ### 0.5 Kantina — regelen uten tall
 
 Han vet ikke innholdet, og han skal ikke måtte vite det. **Tallerkenregelen,
