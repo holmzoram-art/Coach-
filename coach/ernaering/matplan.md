@@ -31,37 +31,42 @@ oppskriftens.
 
 ---
 
-## 0b. Frokostmeny — velg fritt, byttes når du vil
+## 0b. Frokostmeny — **REVIDERT 07.09.2026: alt tar under 5 minutter**
 
-**Oppdatert 07.09.2026** etter innvending fra Knut: én fast frokost hver dag
-er en plan man går lei av på tre uker, og en plan man går lei av følger man
-ikke. Frokosten er derfor et **valg mellom likeverdige alternativer**.
+Knuts krav: frokosten skal kunne gjøres kl. 07 av en som ikke er våken.
+Alle alternativer under er **under 5 minutter**, de fleste under to.
+Fleksibiliteten er beholdt — det er tilberedningen som er kuttet.
 
-Alle fem treffer samme mål: **en solid proteinporsjon (~30 g) tidlig**, og
-karbo tilpasset dagen. Bytt så ofte du vil. Ingen av dem er «riktigere».
+| # | Frokost | Mengde | **Tid** | Prep? |
+|---|---|---|---|---|
+| **F3** | **Proteinyoghurt + havregryn + bær** | 1 stort beger, 1 dl havregryn, 1 neve frosne bær | **1 min** | Nei |
+| **F4** | **Skyr/kesam + havregryn + bær + nøtter** | Beger, 1 dl havregryn, bær, 1 ss nøtter | **1 min** | Nei |
+| **F5n** | **Overnight oats** | 1 glass fra kjøleskapet | **0 min** | **Ja, søndag** |
+| **F7** | **Egg-muffins + grovbrød** | 3 stk + 1 skive | **2 min** (mikro) | **Ja, søndag** |
+| **F6** | **Grovbrød med proteinpålegg** | 3 skiver + makrell/skinke/kaviar | **3 min** | Nei |
+| **F2** | **Stekt egg + grovbrød** | 3 egg, 2 skiver | **3 min** | Nei |
+| **F8** | **Proteinsmoothie** | Frosne bær, skyr, melk, havregryn i blender | **2 min** + blender å vaske | Nei |
+| **F1** | **Eggerøre + grovbrød** | 3 egg, 2 skiver | **5 min** + panne | Helg |
 
-| # | Frokost | Mengde | Tid |
-|---|---|---|---|
-| **1** | **Eggerøre** + grovbrød | 3 egg, en skvett melk, salt/pepper. 2 skiver brød | 5 min |
-| **2** | **Stekt egg** + grovbrød | 2–3 egg, 2 skiver | 3 min |
-| **3** | **Proteinyoghurt + havregryn + bær** | 1 stort beger (~350–400 g) YT/Synnøve naturell, 1 dl havregryn, 1 neve bær | 1 min |
-| **4** | **Skyr eller kesam + havregryn + bær + nøtter** | Beger (~350 g), 1 dl havregryn, bær, 1 spiseskje nøtter | 1 min |
-| **5** | **Havregrøt kokt på melk + proteinpulver eller skyr på toppen** | 1 dl havregryn, 3 dl melk, 1 skiv/skje protein, bær | 6 min |
-| **6** | **Brødmåltid med proteinpålegg** | 2–3 skiver grovbrød med **makrell i tomat, kaviar, kokt skinke, kalkun eller kyllingfilet** — pålegget er proteinet | 3 min |
+**Endringer fra forrige versjon:**
+- **Havregrøt kokt på melk er ute.** 6 minutter og en kjele å vaske kl. 07 er
+  ikke en frokost, det er en oppgave. Erstattet av **overnight oats**, som er
+  samme mat laget søndag.
+- **Eggerøre er flyttet til helg.** Du spurte om den — den er helt greit mat,
+  men fem minutter og en panne er det dyreste alternativet på lista, og på en
+  tirsdag morgen taper det mot et beger yoghurt.
+- **Egg-muffins er nytt.** Løser «jeg vil ha egg, men ikke steke». 12 stk i
+  ovnen søndag, 3 om gangen, 60 sekunder i mikroen.
 
-**Kombinasjoner som funker godt:**
-- Eggerøre + 1 skive brød + halv avokado
-- Stekt egg + 1 skive brød med makrell i tomat
-- Proteinyoghurt + kaffe når du er sent ute (dette er den raskeste)
+**Standardvalg hvis du ikke gidder å velge:**
+- **Treningsdag:** F5n (overnight oats) eller F3.
+- **Hviledag (ons/lør):** **F4** — den har nøttene, og hviledagene er der
+  fettgulvet ryker. Se § 0c.
+- **Fredag:** F3 eller F5n. **Ingen nøtter, ingen avokado, ingen egg-muffins
+  med ost.** Magrest mulig.
 
-**Det ene kravet:** kan du peke på proteinet? To skiver med brunost eller
-syltetøy alene er ikke frokost — det er et mellommåltid. Loff med syltetøy
-til frokost hører kun hjemme på fredag (langturdag), der det står med hensikt.
-
-### Frokostvarianter på hviledag (ons/lør)
-Samme meny, men ta **én skive brød i stedet for to**, eller **halv porsjon
-havregryn**. Proteinet er uendret. Alternativ 3 og 6 er de letteste å
-hviledagsjustere.
+**Merk F6:** eneste frokost under 25 g protein. Velger du den, legg til et egg
+eller et glass melk.
 
 ---
 
@@ -404,10 +409,163 @@ utvider vi menyen. Det er en bedre bruk av tiden min enn å overtale deg til
 
 ---
 
+## 11. Mealprep — maks 30 minutter på en ukedag
+
+**Lagt til 07.09.2026** på Knuts krav. Dette er den viktigste endringen i
+planen siden den ble skrevet, fordi en plan som tar 45 minutter på en tirsdag
+ikke blir fulgt uansett hvor riktige makroene er.
+
+### 11.1 Prinsippet: prep komponenter, ikke ferdige middager
+
+Klassisk mealprep er sju like bokser i kjøleskapet. **Det gjør vi ikke** — du
+sa selv at du går lei, og du er god til å lage mat. Da er ferdigporsjonert mat
+feil løsning på riktig problem.
+
+Vi preper i stedet **byggeklosser**: kokte poteter, kokt ris, en ferdig
+kjøttsaus, en gryte, kokte egg, kuttede grønnsaker. Så settes middagen sammen
+på 10–20 minutter, og den kan bli forskjellig hver dag.
+
+**Det som tar tid i en middag er ikke matlagingen — det er koketiden på karboen
+og hakkingen.** Begge deler flyttes til søndag.
+
+### 11.2 Hvilke retter overlever 30-minutterskravet
+
+| Rett | Fra bunnen | Med prep | Dom |
+|---|---|---|---|
+| **R1** Panne/ovn + poteter | 45–55 min (ovn) | **15 min** | **Overlever kun med prepede poteter** |
+| **R2** Wok | 25 min | **15 min** | Overlever |
+| **R3** Gryte/suppe | 40–50 min | **8 min** (varmes) | **Blir selv en prep-rett** |
+| **R4** Fet fisk + poteter | 30 min | **18 min** | Overlever med prepede poteter |
+| **R5** Pasta med kjøttsaus | 40 min | **12 min** | **Overlever kun med prepet saus** |
+| **R6** Taco/wraps | 25 min | **12 min** | Overlever med prepet kjøttdeig |
+
+**Ingen rammer er fjernet.** Fire av seks fungerte ikke på en ukedag uten prep,
+og alle fire reddes av at karboen og kjøttbasen er laget søndag.
+
+**Frokost:** havregrøt fjernet (6 min + kjele), eggerøre flyttet til helg.
+Se § 0b.
+
+**Kl. 14 og kl. 21:** ingen av dem tar over to minutter. Uendret, bortsett fra
+at eggene i M3 og K4 kokes søndag.
+
+### 11.3 Prep-økta — søndag, 90 minutter
+
+Du handler lørdag. **Én økt søndag ettermiddag.** 90 minutter totalt, hvorav
+~35 er passiv ovntid der du kan gjøre noe annet.
+
+| Rekkefølge | Hva | Aktiv tid |
+|---|---|---|
+| **1. Ovnen på 200 °C med én gang** | To brett inn: **2 kg poteter i båter** (brett 1) og **12 egg-muffins** i muffinsform (brett 2) | 10 min kutting, så 35 min passivt |
+| **2. Stor kjele: ukas gryte eller suppe** | 4 porsjoner R3. Kjøttdeig eller linser, hakkede tomater, frossen grønnsaksblanding, løk | 10 min, så 30 min passivt |
+| **3. Liten kjele: kjøttsaus til R5** | 4 porsjoner. Kan droppes annenhver uke — se § 11.6 | 10 min |
+| **4. Kjele 3: ris, 4 porsjoner** | Kok, **avkjøl raskt**, i boks | 5 min |
+| **5. Samme kjele etterpå: 8 egg** | Kokes, **beholdes med skall** | 3 min |
+| **6. Overnight oats, 5 glass** | Havregryn + skyr + melk + bær + chiafrø. Rett i glass med lokk | 8 min |
+| **7. Kutt grønnsaker** | Paprika, gulrot, løk, brokkoli til wok og til kl. 14 | 15 min |
+
+**Egg-muffins:** 12 egg pisket, litt melk, hakket paprika/spinat, revet ost,
+salt. Muffinsform, 200 °C, 20–25 min. De går i ovnen sammen med potetene.
+
+**Alternativ hvis 90 minutter søndag ikke går:** del i to — **søndag 55 min**
+(punkt 1, 2, 4, 5) og **onsdag kveld 30 min** (punkt 3, 6, 7). Da er
+overnight oats til torsdag/fredag ferske, og gryta fra søndag er spist opp.
+
+### 11.4 Ukedagene — faktisk tid på kjøkkenet
+
+| Dag | Middag | Tid |
+|---|---|---|
+| **Man** | R2 wok: prepet ris + frossen wokblanding + strimlet kylling | **15 min** |
+| **Tir** | R4: fisk fra frossen (tint i kjøleskap fra mandag) + prepede poteter | **18 min** |
+| **Ons** | R3: gryta fra søndag, varmes | **8 min** |
+| **Tor** | R5: prepet kjøttsaus + pasta kokes | **12 min** |
+| **Fre** | R6 taco eller gryte fra fryser. Sen middag etter langtur | **12–15 min** |
+| **Lør** | Fritt. Rester, eller lag noe du har lyst på | Valgfritt |
+| **Søn** | Prep-økta + middag rett fra den | 90 min |
+
+**Ingen ukedag over 18 minutter.** Kravet ditt var 30.
+
+### 11.5 Holdbarhet — konkret, i dager
+
+Du har hatt muggen leverpostei én gang. Derfor står dette i dager, ikke i
+«et par».
+
+| Vare | Kjøleskap | Fryser |
+|---|---|---|
+| **Kokte egg med skall** | **7 dager** | — |
+| Kokte egg uten skall | 3 dager | — |
+| **Egg-muffins** | **4 dager** | 2 måneder |
+| **Kokt ris** | **3 dager** — og må avkjøles raskt | 1 måned |
+| **Kokte/ovnsbakte poteter** | **4 dager** | Egner seg dårlig |
+| **Kjøttsaus / gryte med kjøtt** | **3 dager** | **3 måneder** |
+| Grønnsakssuppe uten kjøtt | 4 dager | 3 måneder |
+| **Kokt kylling** | **3 dager** | 2 måneder |
+| **Rå fisk** | **1–2 dager** | Kjøp frossen |
+| Stekt fisk | 2 dager | — |
+| **Kuttet paprika/gulrot/brokkoli** i tett boks | **4 dager** | — |
+| Salatblader | 2 dager | — |
+| **Overnight oats** | **4 dager** | — |
+| **Åpnet beger kesam/skyr/cottage cheese** | **3 dager** | — |
+| **Åpnet leverpostei** | **3–4 dager** — dette var den som mugnet | — |
+| Makrell i tomat, åpnet boks | 2 dager, i glass ikke boks | — |
+| Oppskåret avokado | 1 dag | — |
+
+**Den ene regelen som løser mugg-problemet:**
+
+> **Onsdag kveld, ti minutter: alt fra søndagsprepen som ikke skal spises
+> innen torsdag, går i fryseren. Ikke i kjøleskapet «litt til».**
+
+Kokt ris er den ene å være nøye med — ikke fordi den blir mugne, men fordi
+ris som står lunkent er den vanligste kilden til matforgiftning fra
+oppvarmet mat. Avkjøl raskt, i kjøleskap innen en time, maks tre dager.
+
+### 11.6 Hva som dobles opp
+
+**Middag mandag → lunsjboks tirsdag gir ikke mening for deg.** Du har en god
+kantine på jobb med salatbar og varmmat, og den er både gratis tid og gratis
+variasjon. Å bytte den mot en boks er å betale for noe du får.
+
+**Det som dobles er middager:**
+- **Gryta (R3) lages i 4 porsjoner og dekker to middager** — typisk onsdag og
+  fredag, eller onsdag pluss én fryserporsjon til en dårlig uke.
+- **Kjøttsausen (R5) lages i 4 porsjoner:** to spises torsdag, to fryses.
+- **Potetene dekker tre middager:** tirsdag, torsdag og lørdag.
+- **Risen dekker to:** mandag og én til.
+- **Eggene (8 stk) dekker kl. 14 og kl. 21 hele uka.**
+
+**Annenhver uke-regelen:** lag gryte den ene uka og kjøttsaus den andre, og ha
+alltid to fryserporsjoner av den du ikke lagde. Da har du fire ulike middager
+tilgjengelig uten å lage fire.
+
+### 11.7 Hva mealprep koster deg — ærlig
+
+1. **Variasjonen faller — og det er nettopp det du klaget på.** Preper vi
+   ferdige middager, spiser du to retter i uka. Det er derfor vi preper
+   komponenter i stedet. Men selv da: du får realistisk **3–4 ulike middager
+   i uka i stedet for 6**. Det er en reell kostnad, ikke en detalj.
+2. **Søndagen din blir 90 minutter kortere.** Netto sparer du tid — 4 × 30
+   minutter på ukedager mot 90 på søndag — men tiden er **flyttet til en dag
+   som kanskje er familiedag.** Det er den prisen du faktisk betaler.
+3. **Oppvasken samler seg.** To brett, tre kjeler, en skjærefjøl og 8–10
+   bokser på én kveld. Det er dobbelt så mye som en vanlig middag.
+4. **Du trenger utstyr:** 8–10 tette bokser, 5 glass med lokk til overnight
+   oats, og en muffinsform. Uten det virker ikke systemet.
+5. **Kjøleskapsplass.** To brett mat og fem glass tar en hylle.
+6. **Fisk blir vanskeligere.** Fersk fisk holder 1–2 dager, så den må enten
+   kjøpes frossen og tines i kjøleskapet dagen før, eller spises tirsdag.
+   Frossen fisk er helt greit — dette er en planleggingssak, ikke en kvalitetssak.
+7. **Det du IKKE mister:** matlagingen du liker. Lørdag er fortsatt fri, og
+   søndagsprepen er faktisk matlaging, ikke porsjonspakking.
+
+**Min ærlige vurdering:** dette er en god bytte for deg. Du bruker mest tid på
+det som gir minst — koking av poteter og ris og hakking av løk. Det er
+nøyaktig det vi flytter.
+
+---
+
 ## 10. Hvis du bare klarer tre ting denne uka
 
 1. **14-måltidet, hver eneste dag.**
 2. **Loff + banan kl. 15:30 på treningsdager.** Det er «energi før økta».
-3. **Handlelista.**
+3. **Søndagsprepen.** Uten den ryker resten på en tirsdag.
 
 Resten kommer etter.

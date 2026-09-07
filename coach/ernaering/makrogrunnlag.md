@@ -36,53 +36,86 @@ teller seg selv, og det hører hjemme i `mage.md`, ikke her.
 
 ## 1. Makromål per dag og dagstype
 
-### Forutsetninger (så de kan justeres når de endrer seg)
+### Forutsetninger — **REVIDERT 07.09.2026**
 
 | | |
 |---|---|
 | Vekt | 119 kg · 195 cm · 38 år |
 | Hvilestoffskifte | ~2 225 kcal |
-| Forbruk uten trening | ~2 950 kcal/dag (hvilestoffskifte × 1,35, justert ned for sju måneders adaptasjon) |
-| Løping | ~1 kcal per kg per km ≈ 120 kcal/km |
+| Forbruk uten trening | ~2 950 kcal/dag |
+| **Løping** | **~105 kcal/km — korrigert ned fra 120** |
 | Styrkeøkt | ~320 kcal |
-| Planlagt ukesvolum | 34–40 km |
-| Vedlikeholdsbehov | **~24 800 kcal/uke** |
+| Vedlikeholdsbehov | ~2 950 kcal/dag + 105 per km + 320 på styrkedag |
 | Underskuddsmål | 2 700 kcal/uke ≈ **0,35 kg/uke** |
 
-**Volumavhengighet — viktig akkurat nå.** Ukesvolumet er 16,8 km, ikke 34–40.
-Tallene under forutsetter planlagt volum. Regelen artifacten skal bruke:
-**faller ukesvolumet mer enn 30 % under plan, trekk 120 kcal per manglende km
-fra kvalitets- og langturdagene** — ikke fra hviledagene, som allerede er lave.
+**Hvorfor 105 og ikke 120.** Sjekket mot faktiske Strava-tall: 18,1 km ga
+2 026 kcal, 16,4 km ga 1 819 kcal, 12,3 km ga 1 336 kcal. Det er
+**110–112 kcal/km brutto**, og trekker vi fra hvileforbruket i samme tidsrom
+lander netto på ~105. Den gamle forutsetningen overvurderte
+langturdagen med rundt 250 kcal.
 
-### 1.1 Vedlikeholdsfasen — 08.–28.09.2026
+### 1.0 Grunnregel — målene er volumstyrte, ikke faste
 
-| Dag | Type | kcal | Protein | Karbo | Fett |
-|---|---|---|---|---|---|
-| **Man** | Kvalitet | 3 900 | 220 g | 480 g | 120 g |
-| **Tir** | Styrke | 3 300 | 220 g | 380 g | 100 g |
-| **Ons** | Hvile | 2 900 | 220 g | 280 g | 100 g |
-| **Tor** | Intervaller | 3 900 | 220 g | 480 g | 120 g |
-| **Fre** | Langtur | 4 500 | 220 g | 650 g | 113 g |
-| **Lør** | Hvile | 2 900 | 220 g | 280 g | 100 g |
-| **Søn** | Rolig | 3 400 | 220 g | 380 g | 110 g |
-| **Uke** | | **24 800** | 1 540 g | 2 930 g | 763 g |
+Faste dagstall holder ikke når ukesvolumet svinger mellom 17 og 40 km.
+**Målet for en dag = basis for dagstypen + 105 kcal per km faktisk løpt.**
 
-### 1.2 Underskuddsfasen — fra 28.09.2026
+| Dag | Basis, vedlikehold | Basis, underskudd | Tillegg |
+|---|---|---|---|
+| **Man** kvalitet | 2 950 | 2 750 | + 105 × km |
+| **Tir** styrke | 3 270 | 2 875 | fast |
+| **Ons** hvile | 2 950 | 2 250 | — |
+| **Tor** intervaller | 2 950 | 2 750 | + 105 × km |
+| **Fre** langtur | 2 950 | 2 950 | + 105 × km |
+| **Lør** hvile | 2 950 | 2 250 | — |
+| **Søn** rolig | 2 950 | 2 450 | + 105 × km |
 
-| Dag | Type | kcal | Protein | Karbo | Fett | Endring |
-|---|---|---|---|---|---|---|
-| **Man** | Kvalitet | 3 700 | 220 g | 470 g | 105 g | −200 |
-| **Tir** | Styrke | 2 900 | 220 g | 300 g | 90 g | −400 |
-| **Ons** | Hvile | 2 200 | 220 g | 170 g | 70 g | **−700** |
-| **Tor** | Intervaller | 3 700 | 220 g | 470 g | 105 g | −200 |
-| **Fre** | Langtur | **4 500** | 220 g | 650 g | 113 g | **0** |
-| **Lør** | Hvile | 2 200 | 220 g | 170 g | 70 g | **−700** |
-| **Søn** | Rolig | 2 900 | 220 g | 300 g | 90 g | −500 |
-| **Uke** | | **22 100** | 1 540 g | 2 530 g | 643 g | **−2 700** |
+**Tre regler til:**
+1. **Blir en planlagt løpeøkt ikke gjennomført, blir dagen en hviledag.**
+   Bruk hviledagsbasis (2 250 i underskudd), ikke kvalitetsdagsbasis.
+2. **Fredag har tak på 4 500 kcal.** Overskytende legges på torsdag som
+   karbolading. Ingen spiser 4 900 kcal på en fredag med langtur.
+3. **Fredag får aldri underskuddsfradrag**, uansett hva vekta gjør.
 
-**Merk at fredag er identisk i begge faser.** Det er ikke en glipp. Langturen
-er ukas viktigste økt og den eneste magetreningen vi har. Artifacten skal
-**aldri** foreslå å kutte på fredag, uansett hvor mye vekta har stått stille.
+### 1.1 Kontrollregning ved planlagt volum (37 km: man 8 · tor 8 · fre 16 · søn 5)
+
+| Dag | kcal | Protein | Karbo | Fett |
+|---|---|---|---|---|
+| Man | 3 590 | 220 | 460 | 105 |
+| Tir | 2 875 | 220 | 300 | 90 |
+| Ons | 2 250 | 220 | 170 | **75** |
+| Tor | 3 720 | 220 | 480 | 105 |
+| Fre | 4 500 | 220 | 650 | 113 |
+| Lør | 2 250 | 220 | 170 | **75** |
+| Søn | 2 975 | 220 | 310 | 90 |
+| **Uke** | **22 160** | 1 540 | 2 540 | 653 |
+
+Stemmer med underskuddsmålet på 22 100 kcal/uke. **Fettet på hviledager er
+hevet fra 70 til 75 g** — se § 7.1.
+
+### 1.2 Hva som faktisk gjelder nå — ACWR 0,51, volum 16,8 km
+
+Siste uke (Strava): torsdag 4,5 km, fredag 12,3 km. Ingen mandagsøkt.
+
+| Dag | Faktisk | kcal-mål nå | mot § 1.1 |
+|---|---|---|---|
+| Man | ingen økt | **2 250** | −1 340 |
+| Tir | styrke | 2 875 | 0 |
+| Ons | hvile | 2 250 | 0 |
+| Tor | 4,5 km | **3 225** | −495 |
+| Fre | 12,3 km | **4 240** | −260 |
+| Lør | hvile | 2 250 | 0 |
+| Søn | 4 km | **2 870** | −105 |
+| **Uke** | 20,8 km | **19 960** | **−2 200** |
+
+**Svar på spørsmålet: nei, tallene i den gamle § 1.2 gjelder ikke nå.**
+De var 22 100 kcal/uke. Ved dagens volum er vedlikehold ~23 150 kcal/uke, og
+riktig inntak for 0,35 kg/uke er **~19 960**, altså 2 200 kcal lavere per uke
+enn den faste tabellen sa. Hadde han spist etter den gamle tabellen ville han
+ligget nær vedlikehold og lurt på hvorfor vekta sto stille — nøyaktig samme
+feil som juli.
+
+**Dette er grunnen til at artifacten må regne per km, ikke slå opp i en
+tabell.** Den skal hente distansen fra Strava og regne målet samme kveld.
 
 ---
 
@@ -95,7 +128,7 @@ Dette avgjør hvordan avvik skal vises. Tre nivåer, tre visuelle uttrykk.
 | Krav | Verdi | Hvorfor |
 |---|---|---|
 | **Protein** | **≥ 220 g, hver eneste dag** | Avgjør om vekttapet er fett eller muskel. Knut har akseptert noe tap av magert vev — nettopp derfor er dette gulvet skjerpet, ikke løsnet. Gjelder også hviledager. |
-| **Fett** | **≥ 70 g** | Hormoner og fettløselige vitaminer. Brytes typisk på underskuddshviledager — se § 7. |
+| **Fett** | **≥ 70 g, og ≥ 75 g på hviledager i underskudd** | Hormoner og fettløselige vitaminer. Ryker systematisk på ons/lør — se § 7.1. |
 | **Karbo man/tor/fre** | **≥ 400 g (man/tor), ≥ 550 g (fre)** | Under dette er øktkvaliteten og magetreningen borte. Dette er de tre dagene karboen er et gulv og ikke et tak. |
 
 Protein har **ingen øvre grense** og skal aldri flagges oppover.
@@ -375,26 +408,69 @@ langtur.
 
 ---
 
-## 7. Kjente problemer artifacten må håndtere
+## 7. Gjennomgang 07.09.2026 — leverer planen?
 
-Regnet gjennom på faktiske dagskombinasjoner. Tre reelle funn:
+Regnet gjennom på faktiske menykombinasjoner. **Kort svar: to av de tre
+problemene fra forrige versjon står fortsatt åpne, og det har kommet ett nytt.**
 
-1. **Fettgulvet ryker på hviledager i underskuddsfasen.** En typisk
-   ons/lør-kombinasjon (F3 + halv karbo-lunsj + M2 + R3 hviledag + K2) lander
-   på ca. 60 g fett mot gulvet på 70. **Fiks:** artifacten skal foreslå
-   halv avokado til frokost eller 1 ss nøtter til kl. 14 på hviledager. Ikke
-   som advarsel — som forslag ved planlegging.
+### 7.1 Fettgulvet på hviledager — FORTSATT ÅPENT, nå fikset med regel
 
-2. **Karboen på fredag underleveres nesten alltid.** Målet er 650 g, og en
-   full fredag med alle måltider lander typisk på 550–600. Det er den ene
-   dagen karbogapet skal vises **før** dagen, ikke etter — som et forslag om
-   ekstra brød eller en ekstra porsjon karbo til middag.
+Typisk underskuddshviledag: F3 + halv karbo-lunsj + M2 + R3 hviledag + K2
+→ **60 g fett** mot gulvet på 70. Menyene løser det ikke av seg selv, fordi
+alle de magre valgene er de som ellers er mest praktiske.
 
-3. **Proteinet treffer lett — for lett.** De fleste kombinasjoner lander på
-   230–270 g, altså godt over gulvet på 220. Det er bra og skal ikke
-   «korrigeres» ned. Men det betyr at proteinvarselet nesten aldri utløses —
-   og da må det bety noe når det først gjør det. Ikke svekk terskelen for å
-   få det til å vises oftere.
+**Fiks (hardt, ikke forslag): på ons og lør skal minst ett av disse med —
+halv avokado, 1 ss nøtter, eller K3 som kveldsmåltid.** Det gir +11 g fett og
+lander på 71–78. Fettmålet på hviledag er samtidig hevet til **75 g**, og
+karbotaket justert til 170 g slik at kaloriene går opp.
+Artifacten skal legge dette inn automatisk når en hviledag settes opp, og
+markere hvis det fjernes.
+
+### 7.2 Fredagskarboen — FORTSATT ÅPENT, og verre enn antatt
+
+Full fredag med alle måltider (F3 + full lunsj + loff 13:30 + banan +
+seigmenn underveis + YT etter + R5 + K1+) summerer til:
+
+| | Sum | Mål (12,3 km) | Avvik |
+|---|---|---|---|
+| kcal | 3 705 | 4 240 | **−535** |
+| Karbo | 511 g | 592 g | **−81 g (−14 %)** |
+| Protein | 235 g | 220 g | ✓ |
+| Fett | 69 g | 110 g | **under gulvet** |
+
+Fredagen underleverer på alle tre. **To faste poster inn:**
+1. **Kl. 09:30: banan + 2 skiver grovbrød med syltetøy** (+340 kcal, +65 g
+   karbo). Fredag er den eneste dagen med et femte måltid.
+2. **Fettet legges i fredagsmiddagen, ikke i frokosten** — +1 ss olje og ost
+   i middagen (+15 g fett). Fett før langtur er fortsatt forbudt.
+
+Med disse: kcal 4 045, karbo 576 g, fett 84 g. Fortsatt litt under, men
+innenfor 15 %-terskelen og realistisk å spise.
+
+### 7.3 Proteinvarselet — LØST, men motsatt av antatt
+
+Forrige versjon sa at varselet nesten aldri utløses. Det var feil.
+**Det finnes en fullt lovlig kombinasjon som lander på 157 g protein:**
+F6 (brødmåltid, 20 g) + halv karbo-lunsj (50) + M5 (12) + R3 hviledag (60) +
+K4 (15). Det er 63 g under gulvet, og alle fem valgene er tilgjengelige i
+katalogen.
+
+**Fiks: artifacten skal summere protein ved planlegging, ikke ved logging.**
+Faller en planlagt dag under 200 g, skal den si fra *mens han velger* — ikke
+dagen etter. De tre lavproteinrettene (F6, M3, M5, K4) skal ha et lite merke.
+
+### 7.4 Nytt funn: energiforbruket var overvurdert med ~10 %
+
+Se § 1. Dette er det som betyr mest av alt i denne gjennomgangen.
+Ved dagens volum lå de gamle måltallene 2 200 kcal/uke for høyt — han ville
+spist på vedlikehold og trodd han var i underskudd.
+
+### 7.5 Konklusjon
+
+Menyene leverer protein, variasjon og karbo på kvalitetsdager. De svikter på
+tre punkter, alle nå adressert: **fett på hviledager, karbo og fett på
+fredag, og volumjustering av kaloriene.** Det fjerde — tidsbruk på kjøkkenet
+— er behandlet i `matplan.md` § 11.
 
 ---
 
@@ -411,3 +487,93 @@ Artifacten skal **ikke** justere målene selv. Regelen er:
 
 **Og: fra 15. januar 2027 slås underskuddsfasen av.** Det er ikke
 forhandlingsbart og bør ligge som en hard dato i systemet.
+
+---
+
+## 9. Katalogendringer 07.09.2026 — for bygging
+
+Alle endringer fra mealprep-omleggingen. Samme kolonner som § 4 og § 6.
+**Kcal · P · K · F i gram.**
+
+### 9.1 FJERNET
+
+| # | Rett | Grunn |
+|---|---|---|
+| **F5** | Havregrøt kokt på melk + protein | 6 min og en kjele kl. 07. Erstattet av F5n |
+
+### 9.2 LAGT TIL — frokost
+
+| # | Rett | Porsjon | kcal | P | K | F | Tid | Prep |
+|---|---|---|---|---|---|---|---|---|
+| **F5n** | Overnight oats | 1 glass: 1 dl havregryn, 250 g skyr, 1 dl melk, bær, 1 ts chiafrø | 375 | 35 | 40 | 6 | **0 min** | Søndag, 5 stk |
+| **F7** | Egg-muffins + grovbrød | 3 muffins + 1 skive | 380 | 30 | 20 | 21 | **2 min** | Søndag, 12 stk |
+| **F8** | Proteinsmoothie | 100 g frosne bær, 250 g skyr, 2 dl melk, 0,5 dl havregryn | 350 | 35 | 35 | 5 | **2 min** | Nei |
+
+### 9.3 LAGT TIL — kl. 14 og faste poster
+
+| # | Rett | Porsjon | kcal | P | K | F | Tid |
+|---|---|---|---|---|---|---|---|
+| **M7** | Skyr-boks (samme prep som F5n) | 1 liten boks: skyr, bær, havregryn | 250 | 25 | 28 | 3 | 0 min |
+| **P-fre** | **Fredag kl. 09:30:** banan + 2 skiver grovbrød m/syltetøy | — | 340 | 9 | 65 | 2 | 2 min |
+
+**P-fre er obligatorisk på fredager.** Se § 7.2. Skal ikke kunne velges bort.
+
+### 9.4 ENDRET — status og tidsmerking, tall uendret
+
+| # | Rett | Endring |
+|---|---|---|
+| **F1** Eggerøre | **5 min + panne.** Merkes «helg». Ikke standardvalg på ukedag |
+| **F2** Stekt egg | Merkes 3 min. Beholdt som ukedagsvalg |
+| **F3** Proteinyoghurt | **Nytt standardvalg på treningsdag.** 1 min |
+| **F4** Skyr + havregryn + nøtter | **Nytt standardvalg på hviledag** — dekker fettgulvet. 1 min |
+| **F6** Grovbrød m/pålegg | Lavproteinmerke (20 g) |
+| **M3** 2 kokte egg | Eggene kokes søndag. Lavproteinmerke |
+| **M5** Knekkebrød + makrell | Lavproteinmerke |
+| **K4** 2 kokte egg + grønnsaker | Eggene kokes søndag. Lavproteinmerke |
+| **R1** Panne/ovn | **Krever prepede poteter.** 15 min med prep, 50 uten |
+| **R2** Wok | Krever prepet ris. 15 min |
+| **R3** Gryte/suppe | **Er selv en prep-rett.** 4 porsjoner søndag, 8 min å varme |
+| **R4** Fet fisk | Krever prepede poteter + frossen fisk tint dagen før. 18 min |
+| **R5** Pasta m/kjøttsaus | **Krever prepet saus.** 12 min med, 40 uten |
+| **R6** Taco | Krever prepet kjøttdeig. 12 min |
+| **R3–R6 fredag** | +1 ss olje og ost: **+150 kcal, +15 g fett.** Se § 7.2 |
+| **K1+** granola | Uendret. Fortsatt kun treningsdag, kun til 28.09 |
+
+### 9.5 Nye felter artifacten trenger per rett
+
+| Felt | Verdier |
+|---|---|
+| `tid_min` | Minutter aktiv tid. Vises alltid |
+| `krever_prep` | Hvilken prep-komponent retten avhenger av |
+| `prep_dag` | søndag / onsdag / ingen |
+| `holdbarhet_dager` | Fra § 11.5 i matplanen |
+| `lavprotein` | true på F6, M3, M5, K4 |
+| `kun_treningsdag` | true på M4, K1+ |
+| `obligatorisk` | true på P-fre |
+
+**Ukedagsfilter:** artifacten skal kunne skjule alt over 20 minutter aktiv tid
+på man–fre. Det er hele Knuts bestilling i ett filter.
+
+### 9.6 Handleliste — nye og endrede poster
+
+| Rett | Råvarer (innkjøpsenhet · porsjoner) |
+|---|---|
+| **F5n** | Havregryn 1 kg · 25 · Skyr 1 kg-beger · 4 · Melk 1 l · mange · Frosne bær 500 g · 6 · **Chiafrø, 1 liten pose · 30** |
+| **F7** | Egg, brett à 12 · **4 porsjoner** (12 muffins) · Revet ost 1 pk · 3 · Paprika 1 stk · 2 · Spinat 1 pose · 3 |
+| **F8** | Frosne bær · Skyr · Melk · Havregryn |
+| **M7** | Samme som F5n |
+| **P-fre** | Grovbrød 1 brød · Syltetøy · Bananer |
+| **Prep generelt** | Poteter **3 kg** (fast, hver uke) · Ris 1 kg · Frossen wokblanding 750 g · 2 · Hakkede tomater 2 bokser · Løk 1 nett |
+| **Fisk** | **Kjøpes frossen.** Laks/torsk 400 g frossen · 2 |
+
+**Utstyr — engangskjøp, må på lista første uke:**
+8–10 tette matbokser · 5 glass med lokk (overnight oats) · 1 muffinsform.
+
+### 9.7 Handleregler — tillegg
+
+7. **Grupper etter prep-økt i tillegg til butikkavdeling.** Vis hvilke varer
+   som brukes på søndag, så han vet hva som må være hjemme før prepen.
+8. **Fisk foreslås alltid frossen.** Fersk fisk holder 1–2 dager og passer
+   ikke i et ukesystem.
+9. **Vis holdbarhet på prepede retter som nedtelling** — «gryte: 2 dager
+   igjen, frys i kveld». Det er onsdagsregelen i § 11.5, automatisert.
