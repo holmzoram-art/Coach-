@@ -138,3 +138,11 @@ terskel og økter som skal være tunge og der man skal pushe, som har noe å si.
 
 Rolig løping *kan* måle aerob utvikling — men bare under kontrollerte forhold,
 og det er akkurat det «8K Flat» er laget for. Alt annet rolig er bare volum.
+
+## FIT-øktfiler: pulskoding
+I FIT-formatet betyr `custom_target_heart_rate_low/high` **1–100 = prosent av
+makspuls, over 100 = bpm + 100**. `fit-tool` gjør *ikke* denne omregningen —
+biblioteket lagrer tallet rått (subfeltet har `offset = 0`). Skal en grense på
+150 bpm inn i fila, må verdien settes til **250**. Feltet er uint32, så det
+finnes ikke noe 255-tak. Verifiser alltid ved å lese fila tilbake og trekke
+fra 100.
