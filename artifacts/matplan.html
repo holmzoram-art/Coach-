@@ -250,6 +250,11 @@ const HANDLE_FAST = [
   ["Hakkede tomater","2 bokser"],["Løk","1 nett"],["Kjøtt eller fisk","til 4 middager"],
   ["Grovbrød","1 brød"],["Bananer","7–8 stk"]
 ];
+const HANDLE_BAKE = [
+  ["Cottage cheese til baking","2,5 begre (1 kg)"],["Egg til baking","12 stk"],
+  ["Havregryn","375 g"],["Bakepulver","2 ts"],["Kokt skinke","1 pk"],
+  ["Fryseposer, små","1 pk"]
+];
 const HANDLE_TOMT = [
   ["Havregryn","1 pose"],["Corny Big","3 pk"],["Rosiner","1 pose"],["Riskaker","1 pk"],
   ["Saft","1 flaske"],["Proteinbar","3 stk"],["Frossen fisk","1 pose"]
@@ -442,6 +447,17 @@ function tegnUka(){
      '<p class="kilde" style="border:none;margin-top:10px;padding:0">Alle bygges likt: protein · dobbel grønnsak · én neve karbo. '+
      'Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.</p>';
 
+  h+='<div class="tit">Rundstykker — bakes hver 3. uke</div><section class="card pad">'+
+     '<p style="margin:0 0 10px"><b>1 kg cottage cheese</b> (2,5 begre) · <b>12 egg</b> · '+
+     '<b>375 g havregryn</b> · <b>2 ts bakepulver</b> · <b>1 ts salt</b></p>'+
+     '<p style="margin:0 0 10px">Rør sammen, la svelle 10 min, klatt ut 12 per brett. '+
+     '<b>200 °C i 30 min.</b> Blir 24 stk — to brett, én ovnsomgang, 45 minutter der 30 er ovntid.</p>'+
+     '<p style="margin:0;color:var(--ink-3);font-size:15px">Avkjøl helt, frys <b>3 og 3 i små poser</b> — '+
+     'én pose er ett måltid. 40–60 sek i mikro fra frossen, eller ta posen ut kl. 07 så er de tint til lunsj. '+
+     'Legg på skinken først når du skal spise. Holder 4 dager i kjøleskap, 2–3 måneder i fryseren.</p>'+
+     '<p style="margin:10px 0 0;color:var(--ink-3);font-size:15px">Per stykke ~10 g protein. '+
+     '3 med skinke er frokost, 2 er kl. 14 på jobb. <b>Ikke 15:30</b> — for lite karbo og for mye fett før økt.</p>'+
+     '</section>';
   h+='<div class="tit">Skuffen på jobb</div><section class="card pad">'+
      '<p style="margin:0 0 8px">Fylles <b>når den er tom</b>, ikke etter en plan. Står permanent på handlelista.</p>'+
      '<ul style="margin:0;padding-left:20px"><li>Corny Big — 3 pakker om gangen, varer en måned</li>'+
@@ -456,7 +472,8 @@ function tegnUka(){
 
 function alleVarer(){
   const v=HANDLE_FAST.map(([n,m])=>({id:"f|"+n,navn:n,mengde:m,gruppe:"fast"}))
-    .concat(HANDLE_TOMT.map(([n,m])=>({id:"t|"+n,navn:n,mengde:m,gruppe:"tomt"})));
+    .concat(HANDLE_TOMT.map(([n,m])=>({id:"t|"+n,navn:n,mengde:m,gruppe:"tomt"})))
+    .concat(HANDLE_BAKE.map(([n,m])=>({id:"b|"+n,navn:n,mengde:m,gruppe:"bake"})));
   hl().egne.forEach((e,i)=>v.push({id:"e|"+i,navn:e,mengde:"",gruppe:"egen"}));
   return v;
 }
@@ -466,7 +483,8 @@ function tegnHandle(){
   let h='<div class="teller"><span class="n">'+av+' av '+varer.length+'</span>'+
         '<span class="u">Uke '+hUkeN.slice(6)+' · samme liste hver uke</span></div>';
 
-  const grupper=[["fast","Fast — hver uke"],["tomt","Når det er tomt"],["egen","Lagt til av deg"]];
+  const grupper=[["fast","Fast — hver uke"],["tomt","Når det er tomt"],
+                 ["bake","Rundstykker — uka du baker"],["egen","Lagt til av deg"]];
   for(const [g,tit] of grupper){
     const iG=varer.filter(v=>v.gruppe===g);
     if(!iG.length) continue;
