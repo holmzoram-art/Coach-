@@ -133,20 +133,34 @@ jan) · 10 km eller HM uke 26 (slutten av feb).
 Gruppelangturer beholdes for volum, men EF derfra føres i egen kolonne og
 sammenlignes kun mot andre gruppelangturer.
 
-## Beslutning om kneet — 03.09.26
+## Kneet — avklart inntil videre 07.09.26
 
-Knut: «Jeg ønsker ikke at du endrer noe på planen min, det er ikke vondt vondt
-men litt ubehagelig bare.» **Planen står uendret.** Ingen reduksjon av langtur,
-ingen frys på styrkelast.
+Fysio 07.09: ingen strukturell skade, ingen restriksjoner, ingen øvelser,
+ingen belastningsbegrensning. «Vev som sa ifra at det hadde blitt godt brukt.»
+Beskjed: fortsett som før, ta kontakt igjen hvis det blir verre.
 
-`belastning-restitusjon` sine anbefalinger (langtur maks 16 km, frys last på
-belt squat og bulgarians) ligger i `coach/logg/2026-09-03-kne.md` som råd, ikke
-som gjennomført endring.
+**Status: avklart inntil videre — ikke lukket.** Det er ingen betingelse i
+planleggingen lenger, og ingen agent skal bremse volum eller styrkelast på
+grunn av kneet. Men symptomet er ikke borte, bare forklart, og det følges.
 
-Knut booker fysioterapeut selv. Prep-notat: `coach/logg/fysio-prep.md`.
+**«Verre» — konkrete kriterier. Ett av disse = si ifra samme dag:**
+1. Oppstartsstivheten varer **over 60 sekunder** (dagens: 10–20 s).
+2. Ubehag melder seg **før 15 km** i en langtur, eller i en økt under 10 km.
+3. **Hevelse**, varme, eller at kneet ser annerledes ut enn det andre.
+4. Smerte **i ro**, om natta, eller når du reiser deg fra stol.
+5. Låsing, svikt, eller at du **endrer gangen** for å slippe unna.
+6. Ubehag som **fortsatt er der dagen etter** en økt.
 
-**Dette overstyrer ikke de røde flaggene.** Hevelse, låsing, svikt, smerte i ro
-eller smerte som endrer gangen betyr fortsatt stopp.
+Punkt 3–5 er stopp umiddelbart, ikke «si ifra». De sto som røde flagg før
+og står uendret — fysios klarering endrer dem ikke.
+
+**Hypotesen står fortsatt.** `belastning-restitusjon` mener stivheten fra
+15–16 km kommer av at knedominert styrke stoppet 28.12.2025 mens løpevolumet
+ble bygget. «Ikke farlig» avkrefter ikke det — det sier bare at det ikke er en
+skade. Knedominert styrke skal derfor **holdes ved like og progrederes**, ikke
+fryses. Merk at legday 01.09 inneholdt belt squat 4×10 @100 kg og bulgarians
+3×10 @20 kg — knedominert arbeid er altså gjenopptatt. Progresjonen skal
+dokumenteres, ikke antas.
 
 ## Arbeidsdeling — hva Knut logger og hva agentene henter selv
 
