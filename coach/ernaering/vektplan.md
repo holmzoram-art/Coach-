@@ -114,6 +114,41 @@ De to hullene som er lukket: 07 (var tomt) og kveld (var ustyrt). De to som
 fortsatt må følges: at 14-måltidet faktisk skjer hver dag, også onsdag og
 lørdag.
 
+### 0.75 GLP-1 og legetimen 16.10 — tillegg 07.09.2026
+
+Legetimen 16.10 er konkret for å vurdere vektreduserende legemidler (GLP-1).
+Det **endrer ikke** § 0.1–0.3. Tre uker vedlikehold er den beste
+forberedelsen til den timen, ikke et hinder for den:
+
+- GLP-1 virker gjennom nettopp de metthetssignalene som er nedregulert etter
+  sju måneders underskudd. Protein-, fiber- og måltidsstrukturen fra § 0.4
+  er de vanene han vil *trenge* når appetitten forsvinner — de blir vanskelige
+  å etablere etterpå, ikke lettere.
+- Underskuddet starter fortsatt 28.09, som planlagt. Ingen innstramming før
+  timen, ingen avventing heller.
+
+**Hvis medisin startes — hva ernæringssiden må endre:**
+
+1. **Fartsgrense, ikke fartsmål.** § 7 gjelder skjerpet: ukesnitt som faller
+   > 0,5 kg/uke i to uker på rad er et signal til *legen* om dose, ikke til
+   Knut om mer disiplin.
+2. **Protein blir den harde oppgaven.** ~220 g/dag (§ 4) med dempet appetitt
+   krever aktive grep — flytende protein blir sannsynligvis nødvendig, selv om
+   § 0.2 ellers vil bort fra flytende kalorier. Muskelmassetap er den største
+   enkeltrisikoen ved GLP-1 for en løper. Styrketreningen er ikke valgfri.
+3. **Magen må kartlegges på nytt.** Forsinket magetømming er en del av
+   virkningsmekanismen og trekker direkte mot målet 60–90 g karbo/time.
+   Alt som er testet i `mage.md` før medisinstart er **ugyldig** etter.
+   Testrekka starter forfra, på rolige langturer.
+4. **Doseopptrapping legges i basefasen.** Oktober–desember, lavt volum.
+   Aldri i spesifikk fase (fra 15. januar), og ingen doseendring de siste
+   6–8 ukene før 3. april.
+5. **Løpsdagen:** hele race-planen må være kjørt gjennom *på* medisin.
+   Regelen om at ingenting skal være uprøvd står uendret.
+
+Hva `ernaering` **ikke** uttaler seg om: om han skal ha medisinen, hvilket
+preparat, dose eller kontraindikasjoner. Det er legens bord.
+
 ### 0.5 Kantina — regelen uten tall
 
 Han vet ikke innholdet, og han skal ikke måtte vite det. **Tallerkenregelen,
