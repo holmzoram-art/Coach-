@@ -52,24 +52,41 @@ som utløste den.)_
 
 ## Flaggterskler — søvn og restitusjon
 
-Satt av `belastning-restitusjon` 03.09.26 på 28 dagers Garmin-data.
-Baseline: hvilepuls 43,5 ± 1,5 · HRV 74,8 ± 1,6 · varighet 7t21 ± 58 min.
+**Korrigert 07.09.26 av `belastning-restitusjon`.** Den forrige tabellen sto på
+CSV-ens *Resting Heart Rate* (baseline 43,46 · SD 1,48 · spenn 41–47 på 28
+netter). Tallene Knut ser daglig i appen er *avg overnight HR* — et snitt, ikke
+et minimum, og systematisk **+4,4 bpm** høyere. Å lese den gamle tabellen på
+skjermtallet ga falske flagg: gulvet hans er 46, så «to netter under 46» kunne
+aldri innfris. Samme feil lå i HRV-raden, motsatt vei.
+
+**Tabellen under gjelder metrikken vi faktisk får inn daglig: avg overnight HR
+og nattlig HRV.**
 
 | Signal | Terskel | Handling |
 |---|---|---|
-| Hvilepuls | ≥ 46 én natt | Rolig I1, maks 45 min |
-| Hvilepuls | ≥ 45 to netter | Ingen hard økt eller langtur på 48 t |
-| HRV | ≤ 72 | Ingen hard økt i dag |
-| HRV | ≤ 73 to netter | Deload uka |
+| Nattpuls, én natt | ≥ 51 | Rolig I1, maks 45 min |
+| Nattpuls, to netter på rad | ≥ 49 | Ingen hard økt eller langtur på 48 t |
+| Nattpuls | ≥ 7-dagerssnitt + 3 | Som én-natt-flagget. **Står permanent** — robust hvis metrikken byttes igjen |
+| HRV, én natt | ≤ 67 | Ingen hard økt i dag |
+| HRV | < 62 | Deload uka |
 | Varighet | < 6t30 | Flytt dagens harde økt |
 | Varighet | **< 7t to netter før langtur** | **Økta flyttes. Ingen unntak.** |
 | Body Battery | < 45 / < 40 | Rolig / fri |
-| Hudtemp ≥ +0,5° + hvilepuls ≥ 45 | — | Infeksjonsmistanke, ingenting over I2 |
+| Hudtemp ≥ +0,5° + nattpuls ≥ 49 | — | Infeksjonsmistanke, ingenting over I2 |
 | Sleep Score | < 60 | Fri fra løping |
 
+Testet mot uke 36 flagger tabellen **lørdag 05.09 (nattpuls 52, HRV 65)** og
+ingenting annet. Det er riktig: lørdag var konfirmasjonsdagen.
+
+**Forbehold:** n=7 for nattpulsmetrikken, ingen parede netter mot CSV-en.
+Tersklene skal reberegnes på en 28-dagers eksport av den daglige metrikken.
+
+**Ved sammenligning av pulstall: oppgi alltid hvilken metrikk tallet er fra.**
+Et hvilepulstall uten metrikkangivelse er ubrukelig og skal avvises.
+
 Bakgrunn: 18-kilometeren 27.08 fikk 7,2 % HR-drift og kadensfall 77,7 → 64,5.
-Nettene før var 6t18 og 6t58, og morgenen hadde hvilepuls 45 (periodetopp) og
-HRV 73 (periodebunn). Økta var ikke for lang — han var for dårlig uthvilt.
+Nettene før var 6t18 og 6t58 med periodetopp i puls og periodebunn i HRV.
+Økta var ikke for lang — han var for dårlig uthvilt.
 
 ## Treningskontekst — viktig for tolkning av data
 
