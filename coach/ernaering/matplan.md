@@ -1,5 +1,12 @@
 # Matplan — Knut
 
+> **REFERANSE, IKKE BRUKSANVISNING — 07.09.2026.**
+> Den gjeldende planen er `coach/ernaering/planen.md`. Den er én side og
+> inneholder alt Knut trenger. Denne fila er oppslagsverk: variasjonsmenyer,
+> næringstall, begrunnelser og alternativer han *kan* hente ut når han vil —
+> ikke noe han skal huske. Ved motstrid går `planen.md` foran.
+
+
 Skrevet 07.09.2026 av `ernaering`. **Dette er hva du skal spise.** Prinsippene
 bak står i `coach/ernaering/vektplan.md` — den trenger du ikke lese for å følge
 denne.

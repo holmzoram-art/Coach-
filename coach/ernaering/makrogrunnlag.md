@@ -1,5 +1,12 @@
 # Tallgrunnlag for matplan-artifacten
 
+> **REFERANSE, IKKE BRUKSANVISNING — 07.09.2026.**
+> Den gjeldende planen er `coach/ernaering/planen.md`. Den er én side og
+> inneholder alt Knut trenger. Denne fila er oppslagsverk: variasjonsmenyer,
+> næringstall, begrunnelser og alternativer han *kan* hente ut når han vil —
+> ikke noe han skal huske. Ved motstrid går `planen.md` foran.
+
+
 Skrevet 07.09.2026 av `ernaering`. Datagrunnlag for grensesnittet som skal
 bygges. Menyene og prinsippene står i `coach/ernaering/matplan.md` — denne fila
 inneholder bare tallene.
@@ -795,3 +802,101 @@ Sukkeralkoholer over ~5 g per porsjon er samme osmotiske mekanisme som
 hovedhypotesen etter 27.08. Artifacten skal **blokkere alle
 polyolholdige produkter på fredager**, og advare hvis de velges dagen før
 en langtur.
+
+---
+
+## 14. Forenklingen 07.09.2026 — hva som ble fjernet og hva det koster
+
+Knut: «Det må være veldig enkelt og lite å planlegge og ikke være masse greier
+å huske.» Planen hadde vokst til et system han måtte huske, og et system man
+må huske er et system som ryker. Gjeldende plan er nå `planen.md`.
+
+### 14.1 Hva den forenklede planen faktisk leverer
+
+Basisdag (ingen løping), samme fem måltider hver dag:
+
+| | Sum |
+|---|---|
+| kcal | ~2 405 |
+| Protein | **238 g** |
+| Karbo | 190 g |
+| Fett | **71 g** |
+
+Løpedag = basis + skuffmåltid (320) + restitusjonsdrikk (350) = **~3 245 kcal,
+276 g protein, 337 g karbo, 80 g fett.**
+
+**Uke ved dagens volum (20,8 km): ~20 300 kcal.**
+Vedlikehold ligger på ~23 150. **Underskudd 2 845 kcal/uke ≈ 0,37 kg/uke.**
+Det er *innenfor* måltempoet på 0,3–0,4. **Forenklingen koster ingenting på
+vekttapet.**
+
+### 14.2 Forenklingen gjorde to ting bedre
+
+1. **Fettgulvet er løst uten en eneste betinget regel.** Skjeen med nøtter
+   til frokost hver dag gir 71 g, hver dag. Den gamle ons/lør-regelen om
+   avokado-eller-nøtter er borte fordi den ikke lenger trengs.
+2. **Proteingulvet kan ikke lenger brytes.** Den gamle katalogen hadde en
+   lovlig kombinasjon på 157 g (§ 7.3). Med faste måltider er bunnen 238 g.
+   **Feilmuligheten er designet bort, ikke advart mot.**
+
+### 14.3 Hva som ble fjernet
+
+| Fjernet | Erstattet av |
+|---|---|
+| Seks valg per luke × fire luker | **Ett standardmåltid per luke.** Menyene ligger i `matplan.md` som frivillig variasjon |
+| Fem dagstyper med egne makrotall | **Én basisdag** + to automatiske tillegg på løpedager |
+| «Kun treningsdag» på M4 og K1+ | Litago og granola er **ute av planen** |
+| Granola oppmålt i kopp | Ute. Det var regelen som krevde mest disiplin for minst gevinst |
+| Egne hviledagsporsjoner på middag | **Én regel:** over 10 km → mer karbo |
+| Be-Kind kun på hviledager | Ute som regel. Be-Kind er nå bare et frivillig bytte |
+| Proteinbar-regler | 3 i skuffen. Ferdig |
+| Holdbarhet per komponent (13 rader) | **Én regel:** laget søndag → spist innen torsdag |
+| Kokt ris + avkjølingsregel | **Ferdigris i pose.** Fjerner et prep-steg og hele matvaresikkerhetsregelen |
+| Overnight oats, egg-muffins, kjøttsaus i prepen | Prepen er nå tre ting og 45 min, ikke syv og 90 |
+| Mandagspåfylling som egen rutine | **Slått sammen med søndagen** — posen pakkes søndag kveld |
+| Månedlig skuffpåfyll som egen rutine | Står permanent på handlelista, kjøpes når det er tomt |
+| Fase-skille 08.–28.09 vs etter | **Én dato, én endring:** karboporsjonen i kantina |
+
+**Fra fire ukentlige rutiner til to. Fra ~15 betingede regler til to.**
+
+### 14.4 Hva det koster — tallfestet
+
+1. **Karbo på kvalitetsdager.** Ved planlagt volum (8 km kvalitetsøkt) lander
+   han på ~337 g karbo mot idealet 460. **Rundt 120 g under.** Ved dagens
+   volum på 4–5 km er avviket uten betydning. **Når volumet passerer ~30
+   km/uke må dette tas opp igjen** — sannsynligvis som en fast ekstra
+   karboporsjon på man/tor.
+2. **Variasjon.** Én fast frokost, ett fast kl. 14, ett fast kveldsmåltid,
+   fire middager i rotasjon. Han sa selv at han går lei — **dette er den
+   reelle risikoen ved forenklingen.** Motgrepet er at menyene fortsatt står i
+   `matplan.md` og kan byttes fritt uten at noe annet endres. Variasjon er nå
+   en mulighet, ikke en beslutning han må ta.
+3. **Finjustering forsvinner.** Ingen volumjustert dagsmålsberegning i
+   praksis. Vi styrer på ukesnitt på vekta i stedet, som uansett er det eneste
+   tallet som er presist nok.
+
+### 14.5 Hva som ikke kunne forenkles bort
+
+| | Hvorfor |
+|---|---|
+| **Kl. 14-måltidet** | Det er hele svaret på kveldssulten. Uten det ryker kvelden, og med den kvelden ryker uka |
+| **Fredagsopplegget** | Magen er uavklart etter 27.08. Fett før langtur og et måltid 2,5 t før er ikke stil — det er årsaken til at det gikk galt sist |
+| **Protein i hvert måltid** | Det er det som avgjør om vekttapet er fett eller muskel. Knut har akseptert noe tap av magert vev, og da er dette det eneste motmiddelet vi har igjen |
+| **Søndagsøkta** | Uten prepede poteter og en ferdig gryte tar ukedagsmiddagene 45 min |
+
+### 14.6 Konsekvens for artifacten
+
+**Bygg den forenklede versjonen.** Katalogdeltaene i § 9–13 er fortsatt
+gyldige som *datagrunnlag*, men grensesnittet skal ikke eksponere dem som
+daglige valg.
+
+| Skjerm | Innhold |
+|---|---|
+| **Hovedskjerm** | Dagens fem måltider, ferdig utfylt. Ett spørsmål: **«løp du over 10 km i dag?»** |
+| **Handleliste** | Den faste lista, nesten uendret hver uke. Hakes av i butikken |
+| **Søndag** | Tre prep-oppgaver + «pakk posen» |
+| **Bytt måltid** | Skjult bak ett trykk. Menyene fra `matplan.md` ligger der for den som vil |
+
+**Ikke bygg:** dagstypevelger, makroringer, varslingsregler per rett,
+holdbarhetsnedtelling per komponent, «kun treningsdag»-logikk.
+Alt dette var riktig i modellen og feil i bruk.
