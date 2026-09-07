@@ -13,7 +13,6 @@
   --shadow:0 1px 2px rgba(24,26,23,.06), 0 6px 20px rgba(24,26,23,.05);
   color-scheme:light;
 }
-:root:not([data-theme="light"]){ }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --ground:#14170F; --surface:#1C201A; --surface-2:#232821;
@@ -37,966 +36,463 @@
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-body{
-  margin:0; background:var(--ground); color:var(--ink);
+body{margin:0;background:var(--ground);color:var(--ink);
   font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  font-size:17px; line-height:1.5; -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,.disp{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;text-wrap:balance;margin:0}
+  font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;text-wrap:balance;margin:0}
 .mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
-button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
-.wrap{max-width:760px;margin:0 auto;padding:18px 16px 108px}
-
-/* ---- topp ---- */
-header.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:16px}
+.wrap{max-width:660px;margin:0 auto;padding:18px 16px 108px}
+header.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px}
 header.top h1{font-size:21px;font-weight:700;letter-spacing:-.01em}
-.fase{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.dato{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
 
-/* ---- kort ---- */
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);margin-top:14px}
 .pad{padding:16px}
-.stack{display:flex;flex-direction:column;gap:14px}
+.tit{font-family:Archivo,sans-serif;font-weight:700;font-size:14px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--ink-3);margin:24px 0 0}
 
-/* ---- dagtype ---- */
-.daghead{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.dagnavn{font-family:Archivo,sans-serif;font-weight:700;font-size:19px;letter-spacing:-.01em}
-.pill{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
-  padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
-.pill.hard{background:var(--accent-soft);color:var(--accent-ink)}
-.pill.lang{background:var(--note-soft);color:var(--note)}
+/* måltider */
+.maaltid{display:grid;grid-template-columns:56px 1fr 18px;gap:12px;align-items:start;
+  width:100%;padding:15px 16px;border-bottom:1px solid var(--line);min-height:64px}
+.maaltid:last-child{border-bottom:none}
+.maaltid .kl{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;padding-top:2px}
+.maaltid .hva{font-size:17px;line-height:1.42}
+.maaltid .hva b{font-weight:600}
+.maaltid .sub{display:block;color:var(--ink-3);font-size:14px;margin-top:3px}
+.maaltid .chev{color:var(--line-2);font-size:19px;line-height:1.2}
+.maaltid.na{background:var(--accent-soft)}
+.maaltid.ekstra{background:var(--surface-2)}
+.maaltid.byttet .hva b::after{content:" · byttet";font-weight:400;font-size:13px;color:var(--ink-3)}
 
-/* ---- luker ---- */
-.luker{display:flex;flex-direction:column;margin-top:12px;border-top:1px solid var(--line)}
-.luke{display:grid;grid-template-columns:62px 1fr auto;align-items:center;gap:10px;
-  min-height:56px;padding:9px 2px;border-bottom:1px solid var(--line);text-align:left;width:100%}
-.luke:last-child{border-bottom:none}
-.luke .kl{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-3);font-variant-numeric:tabular-nums}
-.luke .navn{font-size:17px}
-.luke .navn small{display:block;color:var(--ink-3);font-size:13.5px;line-height:1.35}
-.luke .tom{color:var(--ink-3);font-style:italic}
-.luke .chev{color:var(--ink-3);font-size:19px;line-height:1}
-.luke.na{background:var(--accent-soft);border-radius:8px;padding-left:8px;padding-right:8px}
-.luke.laast{cursor:default}
-.dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-left:6px;vertical-align:middle}
-.dot.warn{background:var(--warn)}
-.dot.note{background:var(--note)}
-.anslag{border:1px dashed var(--line-2);border-radius:8px;padding:2px 7px;font-size:12px;color:var(--ink-3)}
+/* bryter */
+.bryter{display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:15px 16px;border-top:1px solid var(--line);width:100%}
+.bryter .sp{font-size:16.5px;font-weight:600}
+.bryter .sp small{display:block;font-weight:400;color:var(--ink-3);font-size:14px;margin-top:2px}
+.knapp2{display:flex;gap:6px;flex:none}
+.knapp2 button{padding:9px 16px;border-radius:9px;border:1px solid var(--line-2);
+  font-size:15px;font-weight:600;min-height:44px;background:var(--surface)}
+.knapp2 button.pa{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .knapp2 button.pa{color:#0F1A13}}
+:root[data-theme="dark"] .knapp2 button.pa{color:#0F1A13}
 
-/* ---- makrostripe ---- */
-.makro{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:2px}
-.mfelt{padding:13px 12px;border-right:1px solid var(--line);text-align:left}
-.mfelt:last-child{border-right:none}
-.mlab{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
-.mval{font-family:"IBM Plex Mono",monospace;font-size:20px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:3px;letter-spacing:-.02em}
-.mval small{font-size:13px;font-weight:400;color:var(--ink-3)}
-.bar{height:5px;border-radius:3px;background:var(--surface-2);margin-top:7px;overflow:hidden}
-.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
-.bar i.warn{background:var(--warn)}
-.band{display:flex;gap:3px;margin-top:8px}
-.band span{flex:1;height:5px;border-radius:3px;background:var(--surface-2)}
-.band span.on{background:var(--accent)}
-.band span.on.warn{background:var(--warn)}
-.band span.krav{box-shadow:inset 0 0 0 1.5px var(--ink-3)}
-.bandtxt{font-size:13px;color:var(--ink-3);margin-top:5px}
+.regel{background:var(--accent-soft);color:var(--accent-ink);border-radius:11px;
+  padding:15px 17px;font-size:17px;line-height:1.45;margin-top:14px}
+.regel b{font-weight:700}
+.regel .lab{display:block;font-family:Archivo,sans-serif;font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;margin-bottom:6px;opacity:.75;font-weight:600}
+.varsel{background:var(--note-soft);color:var(--note);border-radius:11px;padding:14px 16px;
+  font-size:16px;margin-top:14px}
+.varsel.rod{background:var(--warn-soft);color:var(--warn)}
 
-/* ---- meldinger ---- */
-.melding{display:flex;gap:9px;align-items:flex-start;padding:11px 13px;border-radius:9px;font-size:15.5px;line-height:1.4}
-.melding.rod{background:var(--warn-soft);color:var(--warn)}
-.melding.gul{background:var(--note-soft);color:var(--note)}
-.melding.rolig{background:var(--surface-2);color:var(--ink-2)}
-.melding b{font-weight:600}
-.meldinger{display:flex;flex-direction:column;gap:7px;padding:13px 16px 16px}
+/* oppgaver */
+.oppg{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;width:100%;
+  padding:14px 16px;border-bottom:1px solid var(--line);min-height:58px}
+.oppg:last-child{border-bottom:none}
+.boks{width:22px;height:22px;border-radius:6px;border:2px solid var(--line-2);
+  display:grid;place-items:center;font-size:14px;color:transparent;margin-top:2px}
+.av .boks{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .av .boks{color:#0F1A13}}
+:root[data-theme="dark"] .av .boks{color:#0F1A13}
+.av .navn{text-decoration:line-through}
+.av{opacity:.45}
+.oppg .navn{font-size:17px}
+.oppg .sub{display:block;color:var(--ink-3);font-size:14px;margin-top:2px}
 
-/* ---- ukestripe ---- */
-.uke{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
-.ukedag{padding:9px 2px 10px;border-radius:9px;background:var(--surface);border:1px solid var(--line);text-align:center}
-.ukedag.valgt{border-color:var(--accent);background:var(--accent-soft)}
-.ukedag .d{font-family:Archivo,sans-serif;font-weight:600;font-size:13px}
-.ukedag .t{font-size:10.5px;color:var(--ink-3);margin-top:2px;letter-spacing:.03em}
-.ukedag .s{width:7px;height:7px;border-radius:50%;margin:6px auto 0;background:var(--line-2)}
-.ukedag .s.ok{background:var(--accent)}
-.ukedag .s.warn{background:var(--warn)}
-.ukedag .s.del{background:var(--line-2);box-shadow:inset 0 0 0 2px var(--accent)}
-
-/* ---- knapper ---- */
-.knapper{display:flex;gap:8px;flex-wrap:wrap}
-.btn{padding:10px 15px;border-radius:9px;border:1px solid var(--line-2);background:var(--surface);
-  font-size:15px;font-weight:600;min-height:44px}
-.btn.primar{background:var(--accent);color:#fff;border-color:var(--accent)}
-:root[data-theme="dark"] .btn.primar,
-:root:not([data-theme="light"]) .btn.primar{color:#0F1A13}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]) .btn.primar{color:#fff}}
-.btn:disabled{opacity:.45;cursor:default}
-
-/* ---- meny ---- */
-.seksjon-tit{font-family:Archivo,sans-serif;font-weight:700;font-size:15px;letter-spacing:.03em;
-  text-transform:uppercase;color:var(--ink-3);margin:22px 0 9px}
-.rett{display:grid;grid-template-columns:1fr auto;gap:10px;padding:13px 16px;border-bottom:1px solid var(--line);align-items:start}
-.rett:last-child{border-bottom:none}
-.rett h3{font-size:16.5px;font-weight:600;font-family:"Source Sans 3",sans-serif}
-.rett p{margin:3px 0 0;font-size:14.5px;color:var(--ink-3)}
-.rett .tall{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-3);margin-top:6px;font-variant-numeric:tabular-nums}
-.merker{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}
-.merke{font-size:11.5px;padding:2px 7px;border-radius:999px;background:var(--surface-2);color:var(--ink-2);letter-spacing:.02em}
-.merke.regel{background:var(--note-soft);color:var(--note)}
-.hjerte{font-size:20px;line-height:1;padding:6px;color:var(--line-2)}
-.hjerte.pa{color:var(--warn)}
-.prinsipp{background:var(--surface-2);border-radius:10px;padding:14px 16px;font-size:15.5px}
-.prinsipp h3{font-family:Archivo,sans-serif;font-size:15px;margin-bottom:6px}
-.prinsipp ul{margin:6px 0 0;padding-left:19px}
-.prinsipp li{margin:3px 0}
-
-/* ---- ark ---- */
-.ark-bak{position:fixed;inset:0;background:rgba(24,26,23,.42);z-index:40;display:none}
-.ark-bak.apen{display:block}
-.ark{position:fixed;left:0;right:0;bottom:0;z-index:41;background:var(--surface);
-  border-radius:16px 16px 0 0;max-height:86vh;display:none;flex-direction:column;
-  box-shadow:0 -8px 32px rgba(0,0,0,.22)}
-.ark.apen{display:flex}
-.ark-topp{padding:14px 16px 10px;border-bottom:1px solid var(--line);flex:none}
-.ark-topp h2{font-size:18px;font-weight:700}
-.ark-topp p{margin:3px 0 0;font-size:14px;color:var(--ink-3)}
-.ark-liste{overflow-y:auto;-webkit-overflow-scrolling:touch;flex:1}
-.valg{display:grid;grid-template-columns:1fr auto;gap:10px;width:100%;text-align:left;
-  padding:14px 16px;border-bottom:1px solid var(--line);align-items:center;min-height:60px}
-.valg:last-child{border-bottom:none}
-.valg.aktiv{background:var(--accent-soft)}
-.valg.frarad{opacity:.62}
-.valg .grunn{font-size:13.5px;color:var(--note);margin-top:4px}
-.valg .hake{color:var(--accent);font-size:19px}
-.ark-bunn{padding:11px 16px;border-top:1px solid var(--line);flex:none;display:flex;gap:8px}
-
-/* ---- handleliste ---- */
-.teller{position:sticky;top:0;z-index:5;background:var(--ground);padding:11px 0 12px;
+/* handleliste */
+.teller{position:sticky;top:0;z-index:5;background:var(--ground);padding:12px 0;
   display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line)}
 .teller .n{font-family:"IBM Plex Mono",monospace;font-size:21px;font-weight:600;font-variant-numeric:tabular-nums}
 .teller .u{font-size:13.5px;color:var(--ink-3)}
-.avd{margin-top:14px}
-.avd-tit{position:sticky;top:52px;background:var(--ground);z-index:4;display:flex;
-  justify-content:space-between;align-items:center;padding:7px 2px;
-  font-family:Archivo,sans-serif;font-weight:700;font-size:13px;letter-spacing:.07em;
-  text-transform:uppercase;color:var(--ink-3);width:100%;text-align:left}
-.avd-tit .antall{font-family:"IBM Plex Mono",monospace;letter-spacing:0;font-weight:500}
-.vare{display:grid;grid-template-columns:26px 1fr auto;gap:11px;align-items:center;width:100%;
-  text-align:left;min-height:58px;padding:8px 10px;border-bottom:1px solid var(--line);border-radius:8px}
-.vare .boks{width:22px;height:22px;border-radius:6px;border:2px solid var(--line-2);display:grid;place-items:center;font-size:14px;color:transparent}
-.vare.av{opacity:.45}
-.vare.av .boks{background:var(--accent);border-color:var(--accent);color:#fff}
-:root[data-theme="dark"] .vare.av .boks,
-:root:not([data-theme="light"]) .vare.av .boks{color:#0F1A13}
-.vare.av .navn{text-decoration:line-through}
+.vare{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;width:100%;
+  min-height:58px;padding:9px 12px;border-bottom:1px solid var(--line);border-radius:8px}
 .vare .navn{font-size:17px}
-.vare .mengde{font-family:"IBM Plex Mono",monospace;font-size:20px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
-.vare .kilde{display:block;font-size:13px;color:var(--ink-3);margin-top:2px}
-.angre{position:fixed;left:50%;transform:translateX(-50%);bottom:82px;z-index:30;
+.vare .mengde{font-family:"IBM Plex Mono",monospace;font-size:19px;font-weight:600;
+  font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink-2)}
+.leggtil{display:flex;gap:8px;margin-top:16px}
+.leggtil input{flex:1;padding:12px 13px;border-radius:9px;border:1px solid var(--line-2);
+  background:var(--surface);color:var(--ink);font:inherit;font-size:16px;min-height:48px}
+.btn{padding:11px 16px;border-radius:9px;border:1px solid var(--line-2);background:var(--surface);
+  font-size:15px;font-weight:600;min-height:48px}
+.btn.primar{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primar{color:#0F1A13}}
+:root[data-theme="dark"] .btn.primar{color:#0F1A13}
+
+.angre{position:fixed;left:50%;transform:translateX(-50%);bottom:84px;z-index:30;
   background:var(--ink);color:var(--ground);padding:11px 15px;border-radius:10px;
-  font-size:15px;display:none;align-items:center;gap:14px;box-shadow:var(--shadow);white-space:nowrap}
+  font-size:15px;display:none;align-items:center;gap:14px;box-shadow:var(--shadow)}
 .angre.vis{display:flex}
 .angre button{font-weight:700;color:var(--ground);text-decoration:underline}
-.leggtil{display:flex;gap:8px;margin-top:16px}
-.leggtil input{flex:1;padding:11px 13px;border-radius:9px;border:1px solid var(--line-2);
-  background:var(--surface);color:var(--ink);font:inherit;font-size:16px;min-height:46px}
 
-/* ---- faner ---- */
+/* ark */
+.ark-bak{position:fixed;inset:0;background:rgba(24,26,23,.42);z-index:40;display:none}
+.ark-bak.apen{display:block}
+.ark{position:fixed;left:0;right:0;bottom:0;z-index:41;background:var(--surface);
+  border-radius:16px 16px 0 0;max-height:82vh;display:none;flex-direction:column;
+  box-shadow:0 -8px 32px rgba(0,0,0,.22)}
+.ark.apen{display:flex}
+.ark-topp{padding:15px 16px 11px;border-bottom:1px solid var(--line);flex:none}
+.ark-topp h2{font-size:18px;font-weight:700}
+.ark-topp p{margin:4px 0 0;font-size:14.5px;color:var(--ink-3)}
+.ark-liste{overflow-y:auto;flex:1}
+.valg{display:grid;grid-template-columns:1fr auto;gap:10px;width:100%;padding:15px 16px;
+  border-bottom:1px solid var(--line);align-items:center;min-height:60px}
+.valg:last-child{border-bottom:none}
+.valg.aktiv{background:var(--accent-soft)}
+.valg .hake{color:var(--accent);font-size:19px}
+.ark-bunn{padding:11px 16px;border-top:1px solid var(--line);flex:none;display:flex;gap:8px;justify-content:flex-end}
+
 .faner{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);
   border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);
   padding-bottom:env(safe-area-inset-bottom)}
-.fane{padding:13px 4px 15px;font-family:Archivo,sans-serif;font-weight:600;font-size:14px;
-  color:var(--ink-3);border-top:2px solid transparent;margin-top:-1px}
+.fane{padding:14px 4px 16px;font-family:Archivo,sans-serif;font-weight:600;font-size:14px;
+  color:var(--ink-3);border-top:2px solid transparent;margin-top:-1px;text-align:center}
 .fane.pa{color:var(--accent);border-top-color:var(--accent)}
 .fane .tall{font-family:"IBM Plex Mono",monospace;font-size:11.5px;display:block;font-weight:500;opacity:.8}
 
 .banner{background:var(--note-soft);color:var(--note);padding:11px 14px;border-radius:9px;
-  font-size:14.5px;margin-bottom:14px}
-.kilde{font-size:13px;color:var(--ink-3);margin-top:22px;padding-top:14px;border-top:1px solid var(--line)}
-.skjul{display:none}
+  font-size:14.5px;margin-top:12px}
+.kilde{font-size:13px;color:var(--ink-3);margin-top:24px;padding-top:14px;border-top:1px solid var(--line)}
 </style>
 
 <div class="wrap">
-  <header class="top">
-    <h1>Ukesmat</h1>
-    <span class="fase mono" id="faselab"></span>
-  </header>
+  <header class="top"><h1>Ukesmat</h1><span class="dato mono" id="datolab"></span></header>
   <div id="banner"></div>
   <main id="innhold"></main>
-  <p class="kilde">Menyer og porsjoner fra <b>matplan.md</b>, måltall fra <b>makrogrunnlag.md</b>.
-     Alle tall er anslag fra husholdningsmål — ±15–20 % per måltid. Under langtur gjelder <b>mage.md</b>.</p>
+  <p class="kilde">Hele planen står i <b>planen.md</b>. Under langtur gjelder <b>mage.md</b>.
+     Vil du ha flere alternativer, ligger de i <b>matplan.md</b> — men du trenger dem ikke.</p>
 </div>
 
 <div class="ark-bak" id="arkbak"></div>
 <div class="ark" id="ark" role="dialog" aria-modal="true" aria-labelledby="arktit">
   <div class="ark-topp"><h2 id="arktit"></h2><p id="arksub"></p></div>
   <div class="ark-liste" id="arkliste"></div>
-  <div class="ark-bunn">
-    <button class="btn" id="arkfjern">Tøm luka</button>
-    <button class="btn" id="arkgjenta">Gjenta hele uka</button>
-    <button class="btn primar" style="margin-left:auto" id="arklukk">Lukk</button>
-  </div>
+  <div class="ark-bunn"><button class="btn primar" id="arklukk">Lukk</button></div>
 </div>
 
 <div class="angre" id="angre"><span id="angretxt"></span><button id="angreknapp">Angre</button></div>
 
 <nav class="faner">
-  <button class="fane pa" data-fane="uka">Uka</button>
-  <button class="fane" data-fane="meny">Meny</button>
+  <button class="fane pa" data-fane="idag">I dag</button>
   <button class="fane" data-fane="handle">Handleliste<span class="tall" id="fanetall"></span></button>
+  <button class="fane" data-fane="uka">Søndag</button>
 </nav>
 
 <script>
 "use strict";
 
-/* =========================================================================
-   KATALOG — fra coach/ernaering/matplan.md og makrogrunnlag.md
-   Endres menyene der, republiseres denne siden.
-   p = protein g, k = karbo g, f = fett g (avrundede anslag)
-   fm = fettmarkører (avokado / nøtter / olje / ost), matplan § 0c
-   ing = [vare, avdeling, porsjoner per innkjøpsenhet, enhetsnavn]
-   ========================================================================= */
+/* Hele innholdet er planen.md. Endres den, republiseres siden. */
 
-const AVD = {
-  frukt:"Frukt & grønt", brod:"Brød & bakeri", meieri:"Meieri",
-  kjott:"Kjøtt & fisk", frys:"Frys", torr:"Tørrvarer & kolonial", annet:"Annet"
-};
-const AVD_REKKE = ["frukt","brod","meieri","kjott","frys","torr","annet"];
-
-const EGG   = ["Egg","meieri",4,"brett à 12"];
-const GROV  = ["Grovbrød","brod",8,"brød"];
-const HAVRE = ["Havregryn","torr",25,"kg-pose"];
-const BAER  = ["Frosne bær","frys",6,"pose 500 g"];
-const FRUKT = ["Frukt","frukt",1,"stk"];
-const POTET = ["Poteter","frukt",7,"pose 3 kg"];
-
-const MENYER = {
-  frokost:{ tittel:"Frokost", kl:"07:00", valgfri:false, retter:[
-    {id:"F1",navn:"Eggerøre + grovbrød",porsjon:"3 egg, skvett melk, 2 skiver, tynt smør",p:30,k:35,f:22,fm:0,
-     ing:[EGG,GROV,["Smør","meieri",20,"pakke"],["Melk","meieri",20,"liter"]]},
-    {id:"F2",navn:"Stekt egg + grovbrød",porsjon:"3 egg stekt, 2 skiver, tynt smør",p:30,k:30,f:22,fm:0,
-     ing:[EGG,GROV,["Smør","meieri",20,"pakke"]]},
-    {id:"F3",navn:"Proteinyoghurt + havregryn + bær",porsjon:"1 stort beger, 1 dl havregryn, 1 neve bær",p:40,k:45,f:5,fm:0,merker:["raskest"],
-     ing:[["Proteinyoghurt","meieri",1,"beger"],HAVRE,BAER]},
-    {id:"F4",navn:"Skyr/kesam + havregryn + bær + nøtter",porsjon:"1 beger, 1 dl havregryn, bær, 1 ss nøtter",p:45,k:40,f:12,fm:1,
-     ing:[["Skyr eller kesam","meieri",1,"beger"],HAVRE,BAER,["Nøtter","torr",12,"liten pose 200 g",true]]},
-    {id:"F5",navn:"Havregrøt på melk + protein",porsjon:"1 dl havregryn, 3 dl melk, 1 skje protein, bær",p:35,k:45,f:8,fm:0,
-     ing:[HAVRE,["Melk","meieri",3,"liter"],["Proteinpulver","torr",25,"boks"],BAER]},
-    {id:"F6",navn:"Grovbrød med proteinpålegg",porsjon:"3 skiver + makrell i tomat / skinke / kaviar",p:20,k:45,f:10,fm:0,
-     tips:"Eneste frokost under 25 g protein — legg på et egg eller et glass melk.",
-     ing:[["Grovbrød","brod",5,"brød"],["Proteinpålegg (makrell, skinke, kaviar, kalkun)","kjott",3,"pakke",false,true]]}
-  ]},
-  kl14:{ tittel:"Kl. 14", kl:"14:00", valgfri:false, retter:[
-    {id:"M1",navn:"Kesam eller cottage cheese + frukt",porsjon:"4 dl beger + frukt eller neve bær",p:45,k:30,f:2,fm:0,
-     ing:[["Kesam eller cottage cheese","meieri",1,"beger"],FRUKT]},
-    {id:"M2",navn:"Proteinyoghurt + bær",porsjon:"1 stort beger + 1 neve bær",p:35,k:25,f:2,fm:0,merker:["raskest"],
-     ing:[["Proteinyoghurt","meieri",1,"beger"],BAER]},
-    {id:"M3",navn:"2 kokte egg + frukt",porsjon:"2 egg + 1 frukt",p:12,k:20,f:10,fm:0,
-     tips:"Under 15 g protein — legg gjerne på et beger kesam.",
-     ing:[["Egg","meieri",6,"brett à 12"],FRUKT]},
-    {id:"M4",navn:"YT proteinsjokolademelk + frukt",porsjon:"0,5 l + 1 frukt",p:30,k:70,f:2,fm:0,kunTrening:true,
-     ing:[["YT proteinsjokolademelk","meieri",1,"flaske"],FRUKT]},
-    {id:"M5",navn:"Knekkebrød + makrell/kylling + gulrot",porsjon:"3 knekkebrød, ½ boks, 1 gulrot",p:12,k:30,f:8,fm:0,
-     tips:"Under 15 g protein — legg gjerne på et beger kesam.",
-     ing:[["Grovt knekkebrød","torr",8,"pakke"],["Makrell i tomat el. kyllingfilet i skiver","kjott",2,"boks/pakke",false,true],["Gulrot","frukt",10,"pose"]]},
-    {id:"M6",navn:"Proteinbar + frukt",porsjon:"1 bar + 1 frukt",p:20,k:40,f:6,fm:0,merker:["raskest"],
-     ing:[["Proteinbar","torr",1,"stk"],FRUKT]}
-  ]},
-  middag:{ tittel:"Middag", kl:"19:00", valgfri:false, retter:[
-    {id:"R1",navn:"Panne eller ovn: kylling/svin + poteter + rotgrønnsaker",porsjon:"Protein = håndflate og en halv · karbo 1,5–2 never",p:55,k:90,f:17,fm:1,
-     hvile:{p:50,k:55,f:17},
-     ing:[["Kylling- eller svinefilet","kjott",2,"pakke 500 g",false,true],POTET,["Rotgrønnsaker","frukt",3,"pose"],["Olivenolje","torr",30,"flaske"]]},
-    {id:"R2",navn:"Wok: biff/kylling/reker + grønnsaker + ris",porsjon:"Protein = håndflate og en halv · ris 1,5–2 never",p:55,k:90,f:28,fm:1,
-     hvile:{p:55,k:65,f:27},
-     ing:[["Biffstrimler, kylling eller reker","kjott",2,"pakke",false,true],["Frossen wokblanding","frys",2,"pose 750 g"],["Ris","torr",8,"kg-pose"],["Soyasaus","torr",30,"flaske"]]},
-    {id:"R3",navn:"Gryte eller suppe: kjøttdeig eller linser + mye grønt",porsjon:"Karbodag med brød eller poteter",p:70,k:100,f:26,fm:0,
-     hvile:{p:60,k:55,f:25},
-     ing:[["Kjøttdeig 5 % el. linser/kikerter","kjott",2,"pakke/2 bokser",false,true],["Frossen grønnsaksblanding","frys",2,"pose"],["Hakkede tomater","torr",1,"boks"],["Løk","frukt",6,"nett"]]},
-    {id:"R4",navn:"Fet fisk + poteter + grønnsaker",porsjon:"Protein = håndflate og en halv",p:50,k:90,f:28,fm:0,merker:["fet fisk"],
-     hvile:{p:50,k:55,f:28},
-     ing:[["Laks, ørret eller makrellfilet","kjott",2,"pakke 400 g",false,true],POTET,["Grønnsaker","frukt",3,"pose"]]},
-    {id:"R5",navn:"Pasta eller ris med kjøttsaus + stor salat",porsjon:"Kun karbodag",p:65,k:110,f:27,fm:0,kunKarbodag:true,
-     ing:[["Kjøttdeig el. tunfisk","kjott",2,"pakke/2 bokser",false,true],["Fullkornspasta","torr",4,"pakke 500 g"],["Hakkede tomater","torr",1,"boks"],["Salat","frukt",3,"pose"]]},
-    {id:"R6",navn:"Taco eller wraps: magert kjøttdeig, bønner, mye grønt",porsjon:"Hviledag: uten tortilla, som bolle",p:60,k:80,f:22,fm:1,
-     hvile:{p:55,k:45,f:20},
-     ing:[["Kjøttdeig 5 %","kjott",2,"pakke 400 g"],["Fullkornstortilla","brod",2,"pakke"],["Bønner","torr",2,"boks"],["Lettrømme","meieri",3,"beger"],["Paprika, salat og mais","frukt",2,"handel"]]}
-  ]},
-  kveld:{ tittel:"Kl. 21", kl:"21:00", valgfri:true, retter:[
-    {id:"K1",navn:"Skyr eller kesam + bær",porsjon:"1 beger + neve bær",p:35,k:20,f:2,fm:0,
-     ing:[["Skyr eller kesam","meieri",1,"beger"],BAER]},
-    {id:"K1G",navn:"Skyr eller kesam + bær + granola",porsjon:"+ 1 dl oppmålt granola",p:40,k:45,f:6,fm:0,kunTrening:true,kunVedlikehold:true,
-     ing:[["Skyr eller kesam","meieri",1,"beger"],BAER,["Granola","torr",8,"liten pose 350 g",true]]},
-    {id:"K2",navn:"Cottage cheese + bær eller ananas",porsjon:"4 dl beger + 1 neve frukt",p:50,k:25,f:8,fm:0,
-     ing:[["Kesam eller cottage cheese","meieri",1,"beger"],["Ananas i boks el. bær","torr",3,"boks"]]},
-    {id:"K3",navn:"Proteinyoghurt + nøtter",porsjon:"1 beger + 1 ss nøtter",p:40,k:20,f:10,fm:1,
-     ing:[["Proteinyoghurt","meieri",1,"beger"],["Nøtter","torr",12,"liten pose 200 g",true]]},
-    {id:"K4",navn:"2 kokte egg + grønnsaksstaver",porsjon:"2 egg + gulrot og agurk",p:15,k:5,f:10,fm:0,
-     ing:[["Egg","meieri",6,"brett à 12"],["Gulrot og agurk","frukt",8,"handel"]]},
-    {id:"K5",navn:"Kvarg eller proteinpudding",porsjon:"1 beger",p:25,k:10,f:3,fm:0,merker:["raskest"],
-     ing:[["Kvarg eller proteinpudding","meieri",1,"beger"]]},
-    {id:"K6",navn:"Varm kakao på skummet melk + liten skyr",porsjon:"4 dl + 150 g",p:30,k:25,f:2,fm:0,
-     ing:[["Skummet melk","meieri",2,"liter"],["Kakaopulver","torr",30,"boks"],["Skyr","meieri",2,"beger"]]}
-  ]}
-};
-
-/* Kantina — forhåndsvalg, ikke innfylling. makrogrunnlag § 5 */
-const LUNSJ = [
-  {id:"L1",navn:"Full karbo",porsjon:"Halv salat · kvart protein · full karboporsjon",p:50,k:95,f:25},
-  {id:"L2",navn:"Normal",porsjon:"Halv salat · kvart protein · normal karbo",p:50,k:65,f:22},
-  {id:"L3",navn:"Halv karbo",porsjon:"Halv salat · kvart protein · halv karbo",p:50,k:35,f:20},
-  {id:"L4",navn:"Brødmåltid",porsjon:"3 skiver med proteinpålegg + salat",p:30,k:55,f:15}
+const FASTE = [
+  {n:"frokost",kl:"07",min:420,
+   hva:"Beger skyr eller kvarg + 1 dl havregryn + neve frosne bær + <b>1 skje nøtter</b>",
+   sub:"Nøttene er ikke valgfrie — de er det eneste fettet i planen."},
+  {n:"lunsj",kl:"11",min:660,
+   hva:"<b>Kantina.</b> Halv tallerken salat først, kvart protein, kvart karbo",
+   sub:"Velg porsjonen, ikke retten.",laast:true},
+  {n:"kl14",kl:"14",min:840,
+   hva:"Beger kvarg eller kesam + en frukt",
+   sub:"Det som avgjør kvelden din."},
+  {n:"middag",kl:"middag",min:1140,
+   hva:"Protein på størrelse med håndflaten · <b>dobbel</b> grønnsak · <b>én neve</b> poteter eller ris"},
+  {n:"kveld",kl:"21",min:1260,
+   hva:"Beger cottage cheese eller skyr + bær"}
 ];
 
-/* Faste poster rundt økta. makrogrunnlag § 4.5 */
-const FAST = {
-  banan:      {navn:"Banan før økt",p:1,k:25,f:0},
-  loff2:      {navn:"2 skiver loff + syltetøy",p:6,k:50,f:2},
-  loff3:      {navn:"3 skiver loff + syltetøy",p:9,k:75,f:3},
-  restitusjon:{navn:"YT Protein restitusjonsdrikk",p:30,k:50,f:3},
-  melk:       {navn:"5 dl lettmelk etter styrke",p:17,k:24,f:8}
+const BYTTER = {
+  frokost:[
+    "Skyr eller kvarg + havregryn + bær + nøtter",
+    "Overnight oats — laget kvelden før",
+    "Egg-muffins fra søndag, 60 sek i mikro",
+    "Eggerøre + grovbrød (helg — tar fem minutter)"
+  ],
+  kl14:["Beger kvarg + frukt","Beger kesam eller cottage cheese + frukt",
+        "Proteinyoghurt + bær","Proteinbar — nødreserve fra skuffen"],
+  middag:["Gryta fra søndag — 8 min","Kylling eller svin + poteter fra søndag + grønnsaker — 15 min",
+          "Fisk fra frossen + poteter + grønnsaker — 18 min",
+          "Wok: kjøtt eller kylling + frossen wokblanding + ferdigris — 15 min"],
+  kveld:["Cottage cheese + bær","Skyr + bær","Q Kvarg + bær",
+         "Varm kakao på skummet melk + liten skyr"]
 };
 
-const DAGER = [
-  {id:"man",navn:"Mandag",kort:"Man",type:"kvalitet",tekst:"Kvalitetsøkt"},
-  {id:"tir",navn:"Tirsdag",kort:"Tir",type:"styrke",tekst:"Styrke"},
-  {id:"ons",navn:"Onsdag",kort:"Ons",type:"hvile",tekst:"Hvile"},
-  {id:"tor",navn:"Torsdag",kort:"Tor",type:"kvalitet",tekst:"Intervaller"},
-  {id:"fre",navn:"Fredag",kort:"Fre",type:"langtur",tekst:"Langtur"},
-  {id:"lor",navn:"Lørdag",kort:"Lør",type:"hvile",tekst:"Hvile"},
-  {id:"son",navn:"Søndag",kort:"Søn",type:"rolig",tekst:"Rolig"}
-];
-const DAGTYPE = Object.fromEntries(DAGER.map(d=>[d.id,d.type]));
-const TRENINGSDAG = {man:true,tir:true,ons:false,tor:true,fre:true,lor:false,son:true};
-const KARBODAG    = {man:true,tir:false,ons:false,tor:true,fre:true,lor:false,son:false};
-
-/* Måltall per fase × dagtype. makrogrunnlag § 1 */
-const MAAL = {
-  vedlikehold:{
-    kvalitet:{p:220,k:480,f:120}, styrke:{p:220,k:380,f:100},
-    hvile:{p:220,k:280,f:100}, langtur:{p:220,k:650,f:113}, rolig:{p:220,k:380,f:110}
-  },
-  underskudd:{
-    kvalitet:{p:220,k:470,f:105}, styrke:{p:220,k:300,f:90},
-    hvile:{p:220,k:170,f:70}, langtur:{p:220,k:650,f:113}, rolig:{p:220,k:300,f:90}
-  }
-};
-const FASER = [
-  {fra:"2026-09-08",til:"2026-09-27",id:"vedlikehold",navn:"Vedlikehold"},
-  {fra:"2026-09-28",til:"2027-01-14",id:"underskudd",navn:"Underskudd"},
-  {fra:"2027-01-15",til:"2027-04-03",id:"vedlikehold",navn:"Vedlikehold — mot løpet"}
+const LOPEEKSTRA = [
+  {kl:"15:30",hva:"<b>1 Corny Big + 1 neve rosiner</b>",sub:"Fra skuffen på jobb"},
+  {kl:"etter",hva:"1 YT Protein restitusjonsdrikk",sub:"Rett etter økta"}
 ];
 
-/* =========================================================================
-   DATO OG UKE
-   ========================================================================= */
+const FREDAG = [
+  {kl:"07",hva:"Frokost som vanlig, <b>men uten nøtter</b>"},
+  {kl:"09:30",hva:"1 Corny Big + neve rosiner",sub:"Skuffen"},
+  {kl:"11",hva:"Kantina, <b>full karbo</b>. Ingenting fett",sub:"Ikke lasagne, ikke panert, ikke fløtesaus"},
+  {kl:"13:30",hva:"1 stort glass saft + 1 Corny Big + 3 riskaker",sub:"Skuffen"},
+  {kl:"15:15",hva:"Neve rosiner",sub:"Skuffen"},
+  {kl:"under",hva:"Følg det som står i <b>mage.md</b>",sub:"Ikke improviser"},
+  {kl:"etter",hva:"YT Protein restitusjonsdrikk, så middag som vanlig"}
+];
+
+const SONDAG = [
+  {id:"poteter",navn:"Ovnen på 200°: 3 kg poteter i båter",sub:"35 min — du gjør noe annet imens"},
+  {id:"gryte",navn:"Én stor gryte eller suppe, 4 porsjoner",sub:"Kjøttdeig eller linser, hakkede tomater, frossen grønnsaksblanding, løk"},
+  {id:"egg",navn:"Kok 10 egg",sub:"La skallet være på — de holder en uke"},
+  {id:"pose",navn:"Pakk jobbposen og sett den i gangen",sub:"5 begre kvarg, 5 begre skyr eller cottage cheese. Inn i kjøleskapet på jobb mandag morgen"}
+];
+
+const HANDLE_FAST = [
+  ["Egg","2 brett"],["Kvarg","5 begre"],["Skyr eller cottage cheese","5 begre"],
+  ["Frosne bær","1 pose"],["Nøtter","1 liten pose"],["Poteter","3 kg"],
+  ["Frossen grønnsaksblanding","2 poser"],["Ferdigris","4 poser"],
+  ["Hakkede tomater","2 bokser"],["Løk","1 nett"],["Kjøtt eller fisk","til 4 middager"],
+  ["Grovbrød","1 brød"],["Bananer","7–8 stk"]
+];
+const HANDLE_TOMT = [
+  ["Havregryn","1 pose"],["Corny Big","3 pk"],["Rosiner","1 pose"],["Riskaker","1 pk"],
+  ["Saft","1 flaske"],["Proteinbar","3 stk"],["Frossen fisk","1 pose"]
+];
+
+const UKEDAG=["Mandag","Tirsdag","Onsdag","Torsdag","Fredag","Lørdag","Søndag"];
+const MND=["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember"];
+const UNDERSKUDD_FRA="2026-09-28";
+
+/* ---------- tilstand ---------- */
+const naa=new Date();
+const dagIdx=(naa.getDay()+6)%7;
+let fane=les("fane","idag");
+let db=null,dbOk=false;
+let dager={};        // "2026-09-07" -> {lop:true|false, bytte:{luke:tekst}}
+let sondag={};       // "2026-W37" -> {oppg:{id:true}}
+let handle={};       // "2026-W37" -> {av:{}, egne:[]}
+let angreTid=null,sisteAngre=null,arkLuke=null;
+
+function les(n,f){try{const v=localStorage.getItem("ukesmat."+n);return v===null?f:JSON.parse(v)}catch(e){return f}}
+function skriv(n,v){try{localStorage.setItem("ukesmat."+n,JSON.stringify(v))}catch(e){}}
 function iso(d){return d.toISOString().slice(0,10)}
-function mandagI(d){const x=new Date(d);const dag=(x.getDay()+6)%7;x.setDate(x.getDate()-dag);x.setHours(12,0,0,0);return x}
 function ukeNokkel(d){
-  const x=new Date(d); x.setHours(12,0,0,0);
+  const x=new Date(d);x.setHours(12,0,0,0);
   x.setDate(x.getDate()+3-((x.getDay()+6)%7));
-  const uke1=new Date(x.getFullYear(),0,4);
-  const n=1+Math.round(((x-uke1)/86400000-3+((uke1.getDay()+6)%7))/7);
-  return x.getFullYear()+"-W"+String(n).padStart(2,"0");
+  const u1=new Date(x.getFullYear(),0,4);
+  return x.getFullYear()+"-W"+String(1+Math.round(((x-u1)/86400000-3+((u1.getDay()+6)%7))/7)).padStart(2,"0");
 }
-function datoFor(mandag,i){const x=new Date(mandag);x.setDate(x.getDate()+i);return x}
-function faseFor(dato){
-  const s=iso(dato);
-  for(const f of FASER) if(s>=f.fra&&s<=f.til) return f;
-  return FASER[0];
+/* Handleuka: fra torsdag peker lista på uka som kommer */
+function handleUke(){
+  const d=new Date(naa);
+  if(dagIdx>=3) d.setDate(d.getDate()+7);
+  return ukeNokkel(d);
 }
-function norskDato(d){return d.getDate()+". "+["jan","feb","mars","april","mai","juni","juli","aug","sep","okt","nov","des"][d.getMonth()]}
+const iDagN=iso(naa), ukeN=ukeNokkel(naa), hUkeN=handleUke();
+function dag(){ if(!dager[iDagN]) dager[iDagN]={bytte:{}}; return dager[iDagN]; }
+function sond(){ if(!sondag[ukeN]) sondag[ukeN]={oppg:{}}; return sondag[ukeN]; }
+function hl(){ if(!handle[hUkeN]) handle[hUkeN]={av:{},egne:[]}; return handle[hUkeN]; }
 
-/* =========================================================================
-   TILSTAND
-   ========================================================================= */
-const iDag = new Date();
-const iDagIdx = (iDag.getDay()+6)%7;
-let visUke   = mandagI(iDag);
-let valgtDag = DAGER[iDagIdx].id;
-let fane     = les("fane","uka");
-let db=null, dbOk=false;
-let planer={};          // ukeNokkel -> {dager:{man:{frokost:"F3",...}}}
-let handle={};          // ukeNokkel -> {av:{id:true}, egne:[{navn,fast}]}
-let favoritter=[];
-let arkKontekst=null, angreTid=null, sisteAngre=null, erEksempel=true;
-
-function les(n,f){try{const v=localStorage.getItem("matplan."+n);return v===null?f:JSON.parse(v)}catch(e){return f}}
-function skriv(n,v){try{localStorage.setItem("matplan."+n,JSON.stringify(v))}catch(e){}}
-
-function plan(nokkel){
-  if(!planer[nokkel]) planer[nokkel]={dager:{}};
-  return planer[nokkel];
-}
-function dagValg(nokkel,dagId){
-  const p=plan(nokkel);
-  if(!p.dager[dagId]) p.dager[dagId]={};
-  return p.dager[dagId];
-}
-
-/* Handleuka: fra torsdag peker lista på uka som kommer (Knuts valg) */
-function handleUkeMandag(){
-  const m=mandagI(iDag);
-  if(iDagIdx>=3){ const n=new Date(m); n.setDate(n.getDate()+7); return n; }
-  return m;
-}
-
-/* =========================================================================
-   LAGRING
-   ========================================================================= */
 async function koble(){
-  try{ db = await claude.use("db"); }catch(e){ db=null; }
+  try{ db=await claude.use("db"); }catch(e){ db=null; }
   if(!db){ tegn(); return; }
   dbOk=true;
   try{
-    const pref = await db.doc("preferanser/knut").get();
-    if(pref && Array.isArray(pref.favoritter)) favoritter=pref.favoritter;
-    for(const m of [mandagI(iDag), handleUkeMandag()]){
-      const n=ukeNokkel(m);
-      const u=await db.doc("uker/"+n).get();
-      if(u && u.dager){ planer[n]={dager:u.dager}; erEksempel=false; }
-      const h=await db.doc("handlelister/"+n).get();
-      if(h) handle[n]={av:h.av||{}, egne:h.egne||[]};
-    }
+    const d=await db.doc("dager/"+iDagN).get();      if(d) dager[iDagN]={lop:d.lop,bytte:d.bytte||{}};
+    const s=await db.doc("sondag/"+ukeN).get();      if(s) sondag[ukeN]={oppg:s.oppg||{}};
+    const h=await db.doc("handle/"+hUkeN).get();     if(h) handle[hUkeN]={av:h.av||{},egne:h.egne||[]};
   }catch(e){}
   tegn();
 }
-let lagreTimer=null;
-function lagre(nokkel){
-  erEksempel=false;
+let t=null;
+function lagre(){
   if(!db) return;
-  clearTimeout(lagreTimer);
-  lagreTimer=setTimeout(async()=>{
+  clearTimeout(t);
+  t=setTimeout(async()=>{
     try{
-      await db.doc("uker/"+nokkel).set({dager:plan(nokkel).dager, endret:new Date().toISOString()});
-      const h=handle[nokkel]||{av:{},egne:[]};
-      await db.doc("handlelister/"+nokkel).set({av:h.av, egne:h.egne});
-      await db.doc("preferanser/knut").set({favoritter});
+      await db.doc("dager/"+iDagN).set({lop:dag().lop??null,bytte:dag().bytte});
+      await db.doc("sondag/"+ukeN).set({oppg:sond().oppg});
+      await db.doc("handle/"+hUkeN).set({av:hl().av,egne:hl().egne});
     }catch(e){}
   },400);
 }
 
-/* =========================================================================
-   REGNESTYKKET
-   ========================================================================= */
-function rettFor(id){
-  if(!id) return null;
-  for(const m of Object.values(MENYER)){ const r=m.retter.find(x=>x.id===id); if(r) return r; }
-  return LUNSJ.find(x=>x.id===id)||null;
-}
-function middagPorsjon(rett,dagId){
-  if(!rett) return null;
-  if(KARBODAG[dagId]) return {p:rett.p,k:rett.k,f:rett.f};
-  if(DAGTYPE[dagId]==="hvile") return rett.hvile||{p:rett.p,k:rett.k,f:rett.f};
-  // tir og søn: karbodagsporsjon minus én neve karbo
-  return {p:rett.p-4,k:rett.k-37,f:rett.f};
-}
-function fasteFor(dagId){
-  const l=[];
-  if(TRENINGSDAG[dagId]) l.push(FAST.banan);
-  if(dagId==="man"||dagId==="tor") l.push(FAST.loff2);
-  if(dagId==="fre") l.push(FAST.loff3);
-  if(dagId==="tir") l.push(FAST.melk);
-  else if(TRENINGSDAG[dagId]) l.push(FAST.restitusjon);
-  return l;
-}
-function summer(nokkel,dagId){
-  const v=dagValg(nokkel,dagId);
-  let p=0,k=0,f=0,fm=0;
-  const fr=rettFor(v.frokost); if(fr){p+=fr.p;k+=fr.k;f+=fr.f;fm+=fr.fm||0}
-  if(v.avokado){p+=2;k+=2;f+=11;fm+=1}
-  const lu=rettFor(v.lunsj||standardLunsj(dagId)); if(lu){p+=lu.p;k+=lu.k;f+=lu.f}
-  const m=rettFor(v.kl14); if(m){p+=m.p;k+=m.k;f+=m.f;fm+=m.fm||0}
-  const mi=rettFor(v.middag);
-  if(mi){const q=middagPorsjon(mi,dagId);p+=q.p;k+=q.k;f+=q.f;fm+=mi.fm||0}
-  const kv=rettFor(v.kveld); if(kv){p+=kv.p;k+=kv.k;f+=kv.f;fm+=kv.fm||0}
-  for(const x of fasteFor(dagId)){p+=x.p;k+=x.k;f+=x.f}
-  return {p,k,f,fm};
-}
-function standardLunsj(dagId){
-  if(dagId==="man"||dagId==="tor"||dagId==="fre") return "L1";
-  if(dagId==="ons"||dagId==="lor") return "L3";
-  return "L2";
-}
-function maalFor(mandag,dagId){
-  const dato=datoFor(mandag,DAGER.findIndex(d=>d.id===dagId));
-  return MAAL[faseFor(dato).id][DAGTYPE[dagId]];
-}
-/* Karbobånd: Lav < 250 · Middels 250–420 · Høy > 420 */
-function baand(g){return g<250?0:(g<=420?1:2)}
-
-function vurder(mandag,dagId){
-  const v=dagValg(ukeNokkel(mandag),dagId);
-  const s=summer(ukeNokkel(mandag),dagId);
-  const m=maalFor(mandag,dagId);
-  const meld=[];
-  const tomme=["frokost","kl14","middag"].filter(x=>!v[x]);
-
-  if(!v.kl14) meld.push({niva:"rod",txt:"<b>14-måltidet kuttes aldri.</b> Fem timer mellom lunsj og trening er grunnen til at kveldene blir tunge."});
-  if(tomme.length && v.kl14) meld.push({niva:"rolig",txt:"Uferdig dag — "+tomme.length+" luke"+(tomme.length>1?"r":"")+" står tom."});
-
-  if(!tomme.length){
-    if(s.p<180) meld.push({niva:"rod",txt:"<b>Mangler et proteinmåltid.</b> Et beger kesam eller to egg fikser dette."});
-    else if(s.p<200) meld.push({niva:"gul",txt:"Litt lavt på protein. Et beger kesam tar deg over."});
-
-    if(KARBODAG[dagId] && s.k < m.k*0.8)
-      meld.push({niva:"rod",txt:dagId==="fre"?"<b>For lite karbo før langturen.</b> Legg på brød til lunsj eller en ekstra porsjon karbo til middag.":"<b>Kvalitetsøkt på for lite karbo.</b> Økta blir dårligere enn den trenger å bli."});
-    if(DAGTYPE[dagId]==="hvile" && s.k > m.k+60)
-      meld.push({niva:"gul",txt:"Lavdagen er ikke lav."});
-    if(s.f<60) meld.push({niva:"gul",txt:"Fettet er lavt. Halv avokado til frokost eller en spiseskje nøtter til kl. 14."});
-    else if(s.f>160) meld.push({niva:"gul",txt:"Fett over dagens ramme."});
-  }
-  if(dagId==="fre"){
-    const m14=rettFor(v.kl14);
-    if((m14&&m14.fm) || v.avokado)
-      meld.push({niva:"rod",txt:"<b>Ikke fett etter kl. 11 i dag.</b> Fett bremser magesekken i timevis, og magen er fortsatt et åpent punkt."});
-  }
-  return {sum:s,maal:m,meld,tomme};
-}
-function dagStatus(mandag,dagId){
-  const r=vurder(mandag,dagId);
-  if(r.tomme.length===3) return "";
-  if(r.meld.some(x=>x.niva==="rod")) return "warn";
-  if(r.tomme.length) return "del";
-  return "ok";
-}
-
-/* =========================================================================
-   HANDLELISTE
-   ========================================================================= */
-function byggHandleliste(mandag){
-  const nokkel=ukeNokkel(mandag);
-  const p=plan(nokkel);
-  const poster={};
-  function legg(ing,kilde){
-    const [vare,avd,perEnhet,enhet,regel,fersk]=ing;
-    const n=vare+"|"+enhet;
-    if(!poster[n]) poster[n]={id:n,vare,avd,perEnhet,enhet,porsjoner:0,kilder:[],regel:!!regel,fersk:!!fersk};
-    poster[n].porsjoner++;
-    if(!poster[n].kilder.includes(kilde)) poster[n].kilder.push(kilde);
-  }
-  let eggPorsjoner=0;
-  for(const d of DAGER){
-    const v=p.dager[d.id]||{};
-    for(const luke of ["frokost","kl14","middag","kveld"]){
-      const r=rettFor(v[luke]); if(!r||!r.ing) continue;
-      for(const ing of r.ing){ legg(ing,r.id); if(ing[0]==="Egg") eggPorsjoner++; }
-    }
-    if(v.avokado) legg(["Avokado","frukt",2,"stk"],"tillegg");
-  }
-  const varer=Object.values(poster).map(x=>{
-    let enheter=Math.ceil(x.porsjoner/x.perEnhet);
-    if(x.vare==="Egg"&&eggPorsjoner>2) enheter=Math.max(enheter,2);
-    const rest=enheter*x.perEnhet-x.porsjoner;
-    return {...x,enheter,rest};
-  });
-  /* Faste poster, uavhengig av valg. makrogrunnlag § 6.5 */
-  const faste=[
-    ["Bananer","frukt","8 stk"],["Loff","brod","1 brød"],["Syltetøy","torr","1 glass"],
-    ["YT Protein restitusjonsdrikk","meieri","5 stk"],["Kaffe","torr","1 pk"],
-    ["Te","torr","1 pk"],["Seigmenn til langtur","torr","1 pose"]
-  ].map(([vare,avd,mengde])=>({id:"fast|"+vare,vare,avd,mengde,fastPost:true,kilder:[]}));
-  return varer.concat(faste);
-}
-const FASTLAGER=["Olivenolje","Knekkebrød","Tunfisk","Linser","Proteinpulver","Salt og krydder"];
-
-function mengdeTekst(v){
-  if(v.mengde) return v.mengde;
-  const e=v.enhet;
-  if(e==="stk") return v.enheter+" stk";
-  return v.enheter+" "+e+(v.enheter>1&&!/à|pose|brett/.test(e)?"":"");
-}
-
-/* =========================================================================
-   TEGNING
-   ========================================================================= */
+/* ---------- tegning ---------- */
 const innhold=document.getElementById("innhold");
 
 function tegn(){
   document.querySelectorAll(".fane").forEach(b=>b.classList.toggle("pa",b.dataset.fane===fane));
-  const f=faseFor(iDag);
-  document.getElementById("faselab").textContent=f.navn;
-  const b=document.getElementById("banner");
-  b.innerHTML = !dbOk
-    ? '<div class="banner">Lagring utilgjengelig — valgene dine blir ikke husket i denne visningen.</div>'
-    : (erEksempel
-       ? '<div class="banner">Dette er en eksempeluke som viser hvordan siden fungerer. Endre én luke, så er uka din.</div>'
-       : "");
-  const hn=ukeNokkel(handleUkeMandag());
-  const liste=byggHandleliste(handleUkeMandag());
-  const av=(handle[hn]||{av:{}}).av;
-  const igjen=liste.filter(v=>!av[v.id]).length;
-  document.getElementById("fanetall").textContent = liste.length ? igjen+" igjen" : "";
-  if(fane==="uka") tegnUka();
-  else if(fane==="meny") tegnMeny();
-  else tegnHandle();
+  document.getElementById("datolab").textContent=UKEDAG[dagIdx]+" "+naa.getDate()+". "+MND[naa.getMonth()];
+  document.getElementById("banner").innerHTML = dbOk ? "" :
+    '<div class="banner">Lagring utilgjengelig — avhukinger blir ikke husket i denne visningen.</div>';
+  const liste=alleVarer();
+  document.getElementById("fanetall").textContent=liste.filter(v=>!hl().av[v.id]).length+" igjen";
+  if(fane==="idag") tegnIdag(); else if(fane==="handle") tegnHandle(); else tegnUka();
   window.scrollTo(0,0);
 }
 
-function tegnUka(){
-  const nokkel=ukeNokkel(visUke);
-  const erDenneUka = ukeNokkel(visUke)===ukeNokkel(iDag);
-  const dag=DAGER.find(d=>d.id===valgtDag);
-  const dagIdx=DAGER.findIndex(d=>d.id===valgtDag);
-  const dato=datoFor(visUke,dagIdx);
-  const r=vurder(visUke,valgtDag);
-  const v=dagValg(nokkel,valgtDag);
-  const erIDag = erDenneUka && valgtDag===DAGER[iDagIdx].id;
-  const naa=iDag.getHours()*60+iDag.getMinutes();
-
-  const luker=[
-    {n:"frokost",kl:"07:00",min:420,tit:"Frokost"},
-    {n:"lunsj",  kl:"10:40",min:640,tit:"Lunsj i kantina",laast:true},
-    {n:"kl14",   kl:"14:00",min:840,tit:"Kl. 14"},
-    {n:"pre",    kl:"15:30",min:930,tit:"Før økt",fast:true},
-    {n:"middag", kl:"19:00",min:1140,tit:"Middag"},
-    {n:"kveld",  kl:"21:00",min:1260,tit:"Kl. 21"}
-  ].filter(l=>!(l.n==="pre" && !TRENINGSDAG[valgtDag]));
-  let neste=-1;
-  if(erIDag){ for(let i=0;i<luker.length;i++){ if(luker[i].min>=naa){neste=i;break} } }
-
+function tegnIdag(){
+  const erFredag=dagIdx===4;
+  const d=dag();
+  const min=naa.getHours()*60+naa.getMinutes();
   let h="";
 
-  /* ukestripe */
-  h+='<div class="uke">'+DAGER.map((d,i)=>{
-    const st=dagStatus(visUke,d.id);
-    const dd=datoFor(visUke,i);
-    return '<button class="ukedag'+(d.id===valgtDag?" valgt":"")+'" data-dag="'+d.id+'">'+
-      '<div class="d">'+d.kort+'</div><div class="t mono">'+dd.getDate()+'.</div>'+
-      '<div class="s '+st+'"></div></button>';
-  }).join("")+'</div>';
+  if(erFredag){
+    h+='<div class="regel"><span class="lab">Fredag — langtur</span>'+
+       'Ingenting fett etter frokost, og spis av skuffen tre ganger.</div>';
+    h+='<section class="card">'+FREDAG.map(m=>
+       '<div class="maaltid"><span class="kl">'+m.kl+'</span><span class="hva">'+m.hva+
+       (m.sub?'<span class="sub">'+m.sub+'</span>':'')+'</span><span></span></div>').join("")+'</section>';
+    h+='<p class="kilde" style="margin-top:18px;border:none;padding:0">Fredag er den eneste dagen som er annerledes, '+
+       'og den er annerledes fordi magen ennå ikke er avklart.</p>';
+    innhold.innerHTML=h; return;
+  }
 
-  h+='<div class="knapper" style="margin:12px 0 16px">'+
-     '<button class="btn" id="forrigeuke">← Forrige uke</button>'+
-     '<button class="btn" id="nesteuke">Neste uke →</button>'+
-     '<button class="btn" id="kopieruke" style="margin-left:auto">Kopier forrige uke</button>'+
-     '</div>';
+  /* fem faste måltider */
+  let neste=-1;
+  for(let i=0;i<FASTE.length;i++){ if(FASTE[i].min>=min){neste=i;break} }
+  h+='<section class="card">';
+  h+=FASTE.map((m,i)=>{
+    const byttet=d.bytte[m.n];
+    const tekst=byttet?"<b>"+byttet+"</b>":m.hva;
+    const kl=m.kl==="middag"?"middag":m.kl;
+    return '<'+(m.laast?"div":"button")+' class="maaltid'+(i===neste?" na":"")+(byttet?" byttet":"")+'"'+
+      (m.laast?"":' data-luke="'+m.n+'"')+'>'+
+      '<span class="kl">'+kl+'</span>'+
+      '<span class="hva">'+tekst+(m.sub&&!byttet?'<span class="sub">'+m.sub+'</span>':'')+'</span>'+
+      '<span class="chev">'+(m.laast?"":"›")+'</span>'+
+      '</'+(m.laast?"div":"button")+'>';
+  }).join("");
 
-  /* dagkort */
-  h+='<section class="card"><div class="pad">';
-  h+='<div class="daghead"><span class="dagnavn">'+dag.navn+' '+norskDato(dato)+'</span>'+
-     '<span class="pill '+(dag.type==="kvalitet"?"hard":dag.type==="langtur"?"lang":"")+'">'+dag.tekst+'</span>'+
-     (erIDag?'<span class="pill">i dag</span>':'')+'</div>';
+  /* løp du i dag? */
+  h+='<div class="bryter"><span class="sp">Løp du i dag?'+
+     '<small>Svarer du ja, kommer skuffmåltidet og restitusjonsdrikken i tillegg.</small></span>'+
+     '<span class="knapp2">'+
+     '<button data-lop="ja" class="'+(d.lop===true?"pa":"")+'">Ja</button>'+
+     '<button data-lop="nei" class="'+(d.lop===false?"pa":"")+'">Nei</button></span></div>';
 
-  h+='<div class="luker">';
-  luker.forEach((l,i)=>{
-    const erNa = i===neste;
-    if(l.n==="lunsj"){
-      const lid=v.lunsj||standardLunsj(valgtDag);
-      const lr=LUNSJ.find(x=>x.id===lid);
-      h+='<button class="luke'+(erNa?" na":"")+'" data-luke="lunsj">'+
-         '<span class="kl">'+l.kl+'</span><span class="navn">'+lr.navn+' i kantina'+
-         '<small>'+lr.porsjon+'</small></span><span class="anslag">anslag</span></button>';
-      return;
-    }
-    if(l.fast){
-      const t = valgtDag==="fre" ? "3 skiver loff + syltetøy · banan" :
-                (valgtDag==="man"||valgtDag==="tor") ? "2 skiver loff + syltetøy · banan" : "Banan";
-      h+='<div class="luke laast'+(erNa?" na":"")+'"><span class="kl">'+l.kl+'</span>'+
-         '<span class="navn">'+t+'<small>Fast før økt</small></span><span></span></div>';
-      return;
-    }
-    const r=rettFor(v[l.n]);
-    let prikk="";
-    if(r){
-      const pp = l.n==="middag" ? middagPorsjon(r,valgtDag).p : r.p;
-      if(pp<15) prikk='<span class="dot note" title="Kan du peke på proteinet?"></span>';
-    }
-    h+='<button class="luke'+(erNa?" na":"")+'" data-luke="'+l.n+'">'+
-       '<span class="kl">'+l.kl+'</span>'+
-       '<span class="navn">'+(r?r.navn+prikk+'<small>'+r.porsjon+'</small>':'<span class="tom">Velg '+l.tit.toLowerCase()+'</span>')+'</span>'+
-       '<span class="chev">›</span></button>';
-  });
-  h+='</div>';
-
-  /* avokado-tillegg */
-  h+='<div style="margin-top:12px"><button class="btn" id="avokado">'+
-     (v.avokado?"✓ ":"+ ")+'Halv avokado</button>'+
-     '<span style="font-size:13.5px;color:var(--ink-3);margin-left:10px">erstatter smøret</span></div>';
-  h+='</div>';
-
-  /* makrostripe */
-  const m=r.maal, s=r.sum;
-  const pAndel=Math.min(100,Math.round(s.p/m.p*100));
-  const pWarn=s.p<200;
-  const bb=baand(s.k), bk=baand(m.k);
-  const kWarn=KARBODAG[valgtDag]&&s.k<m.k*0.8;
-  h+='<div class="makro">';
-  h+='<div class="mfelt"><div class="mlab">Protein</div>'+
-     '<div class="mval">'+s.p+' <small>/ '+m.p+' g</small></div>'+
-     '<div class="bar"><i class="'+(pWarn?"warn":"")+'" style="width:'+pAndel+'%"></i></div></div>';
-  h+='<div class="mfelt"><div class="mlab">Karbo</div>'+
-     '<div class="mval">'+["Lav","Middels","Høy"][bb]+'</div>'+
-     '<div class="band">'+[0,1,2].map(i=>'<span class="'+(i<=bb?"on":"")+(kWarn?" warn":"")+(i===bk?" krav":"")+'"></span>').join("")+'</div>'+
-     '<div class="bandtxt mono">'+s.k+' g · krav '+["lav","middels","høy"][bk]+'</div></div>';
-  h+='<div class="mfelt"><div class="mlab">Fett</div>'+
-     '<div class="mval">'+s.f+' <small>g</small></div>'+
-     '<div class="bandtxt mono">'+s.fm+' av 3 fettmarkører</div></div>';
-  h+='</div>';
-
-  if(r.meld.length){
-    h+='<div class="meldinger">'+r.meld.map(x=>'<div class="melding '+x.niva+'">'+x.txt+'</div>').join("")+'</div>';
+  if(d.lop===true){
+    h+=LOPEEKSTRA.map(m=>'<div class="maaltid ekstra"><span class="kl">'+m.kl+'</span>'+
+      '<span class="hva">'+m.hva+'<span class="sub">'+m.sub+'</span></span><span></span></div>').join("");
   }
   h+='</section>';
 
-  /* faseskifte-varsel sju dager før */
-  const neste7=new Date(iDag); neste7.setDate(neste7.getDate()+7);
-  if(faseFor(neste7).id!==faseFor(iDag).id){
-    h+='<div class="banner" style="margin-top:14px">Underskuddet starter 28.09. Karboen halveres onsdag og lørdag, og granolaen går ut.</div>';
+  h+='<div class="regel"><span class="lab">Den ene regelen</span>'+
+     'Løper du <b>over 10 km</b>: ta full karboporsjon i kantina, og <b>to never</b> karbo til middag i stedet for én.</div>';
+
+  if(iDagN < UNDERSKUDD_FRA){
+    h+='<div class="varsel">Fra <b>28. september</b> tar du liten karboporsjon i kantina på vanlige dager. '+
+       'Full porsjon bare når du løper over 10 km, og på fredag. Det er den eneste endringen mellom nå og januar.</div>';
   }
 
-  if(valgtDag==="fre"){
-    h+='<div class="prinsipp" style="margin-top:14px"><h3>Under langturen</h3>'+
-       '<p style="margin:0">Næring under økta styres av <b>mage.md</b>, ikke av denne planen — den endres per test. '+
-       'Sportsdrikk med elektrolytter er ute. Seigmenn beholdes.</p></div>';
-  }
+  h+='<div class="tit">Hvis alt annet ryker</div>'+
+     '<div class="card pad"><b>14-måltidet.</b> Det er det som avgjør kvelden din. Alt annet kan glippe en dag.</div>';
 
   innhold.innerHTML=h;
-
-  innhold.querySelectorAll("[data-dag]").forEach(b=>b.onclick=()=>{valgtDag=b.dataset.dag;tegn()});
   innhold.querySelectorAll("[data-luke]").forEach(b=>b.onclick=()=>apneArk(b.dataset.luke));
-  innhold.querySelector("#forrigeuke").onclick=()=>{const d=new Date(visUke);d.setDate(d.getDate()-7);visUke=d;hentUke();};
-  innhold.querySelector("#nesteuke").onclick=()=>{const d=new Date(visUke);d.setDate(d.getDate()+7);visUke=d;hentUke();};
-  innhold.querySelector("#kopieruke").onclick=kopierForrigeUke;
-  innhold.querySelector("#avokado").onclick=()=>{
-    const vv=dagValg(nokkel,valgtDag); vv.avokado=!vv.avokado; lagre(nokkel); tegn();
-  };
+  innhold.querySelectorAll("[data-lop]").forEach(b=>b.onclick=()=>{
+    const ja=b.dataset.lop==="ja";
+    dag().lop = dag().lop===ja ? null : ja;
+    lagre(); tegn();
+  });
 }
 
-async function hentUke(){
-  const n=ukeNokkel(visUke);
-  if(!planer[n] && db){
-    try{ const u=await db.doc("uker/"+n).get(); if(u&&u.dager) planer[n]={dager:u.dager}; }catch(e){}
-  }
-  tegn();
-}
-async function kopierForrigeUke(){
-  const forrige=new Date(visUke); forrige.setDate(forrige.getDate()-7);
-  const fn=ukeNokkel(forrige);
-  if(!planer[fn] && db){ try{const u=await db.doc("uker/"+fn).get(); if(u&&u.dager) planer[fn]={dager:u.dager};}catch(e){} }
-  const kilde=planer[fn];
-  if(!kilde || !Object.keys(kilde.dager).length){ alert("Forrige uke er ikke satt opp ennå."); return; }
-  planer[ukeNokkel(visUke)]={dager:JSON.parse(JSON.stringify(kilde.dager))};
-  lagre(ukeNokkel(visUke)); tegn();
-}
-
-/* ---- velg-ark ---- */
 function apneArk(luke){
-  const nokkel=ukeNokkel(visUke);
-  const v=dagValg(nokkel,valgtDag);
-  arkKontekst={luke,nokkel};
-  const tit=document.getElementById("arktit"), sub=document.getElementById("arksub");
-  const liste=document.getElementById("arkliste");
-  const dag=DAGER.find(d=>d.id===valgtDag);
-
-  if(luke==="lunsj"){
-    tit.textContent="Lunsj i kantina";
-    sub.textContent="Tallerkenregelen: halv salat, kvart protein, resten karbo. Riktig porsjon er alt valgt for "+dag.navn.toLowerCase()+".";
-    const valgt=v.lunsj||standardLunsj(valgtDag);
-    liste.innerHTML=LUNSJ.map(l=>{
-      const std=l.id===standardLunsj(valgtDag);
-      return '<button class="valg'+(l.id===valgt?" aktiv":"")+'" data-id="'+l.id+'">'+
-        '<span><b>'+l.navn+'</b>'+(std?' <span class="merke">standard i dag</span>':'')+
-        '<div style="font-size:14px;color:var(--ink-3);margin-top:3px">'+l.porsjon+'</div>'+
-        '<div class="tall mono" style="font-size:13px;color:var(--ink-3);margin-top:4px">'+l.p+' g protein · '+l.k+' g karbo · anslag</div></span>'+
-        (l.id===valgt?'<span class="hake">✓</span>':'<span></span>')+'</button>';
-    }).join("");
-    document.getElementById("arkgjenta").classList.add("skjul");
-    document.getElementById("arkfjern").classList.add("skjul");
-  } else {
-    const meny=MENYER[luke];
-    tit.textContent=meny.tittel;
-    sub.textContent=dag.navn+" — "+dag.tekst.toLowerCase()+". Vi tonet ned det som passer dårlig, men du kan velge det likevel.";
-    const sortert=meny.retter.slice().sort((a,b)=>(favoritter.includes(b.id)?1:0)-(favoritter.includes(a.id)?1:0));
-    liste.innerHTML=sortert.map(r=>{
-      const grunn=frarad(r,luke);
-      const q = luke==="middag" ? middagPorsjon(r,valgtDag) : {p:r.p,k:r.k,f:r.f};
-      const valgt=v[luke]===r.id;
-      return '<button class="valg'+(valgt?" aktiv":"")+(grunn?" frarad":"")+'" data-id="'+r.id+'">'+
-        '<span><b>'+r.navn+'</b>'+
-        '<div style="font-size:14px;color:var(--ink-3);margin-top:3px">'+r.porsjon+'</div>'+
-        '<div class="tall mono" style="font-size:13px;color:var(--ink-3);margin-top:4px">'+q.p+' g protein · '+q.k+' g karbo · '+q.f+' g fett</div>'+
-        (r.tips?'<div class="grunn">'+r.tips+'</div>':'')+
-        (grunn?'<div class="grunn">'+grunn+'</div>':'')+'</span>'+
-        (valgt?'<span class="hake">✓</span>':'<span></span>')+'</button>';
-    }).join("");
-    document.getElementById("arkgjenta").classList.remove("skjul");
-    document.getElementById("arkfjern").classList.remove("skjul");
-  }
+  arkLuke=luke;
+  const navn={frokost:"Frokost",kl14:"Kl. 14",middag:"Middag",kveld:"Kl. 21"}[luke];
+  document.getElementById("arktit").textContent="Bytt "+navn.toLowerCase();
+  document.getElementById("arksub").textContent="Bare for i dag. I morgen står standarden igjen.";
+  const valgt=dag().bytte[luke];
+  document.getElementById("arkliste").innerHTML=BYTTER[luke].map((x,i)=>
+    '<button class="valg'+(valgt===x?" aktiv":"")+'" data-i="'+i+'"><span>'+x+
+    (i===0&&!valgt?' <span style="color:var(--ink-3);font-size:14px">— standard</span>':'')+'</span>'+
+    (valgt===x?'<span class="hake">✓</span>':'<span></span>')+'</button>').join("");
   document.getElementById("ark").classList.add("apen");
   document.getElementById("arkbak").classList.add("apen");
-}
-function frarad(r,luke){
-  const fase=faseFor(datoFor(visUke,DAGER.findIndex(d=>d.id===valgtDag))).id;
-  if(r.kunTrening && !TRENINGSDAG[valgtDag])
-    return "Rask karbo uten mottaker på en hviledag.";
-  if(r.kunVedlikehold && fase!=="vedlikehold")
-    return "Granolaen går ut når underskuddet starter.";
-  if(r.kunKarbodag && !KARBODAG[valgtDag])
-    return "Full karboporsjon — laget for kvalitets- og langturdager.";
-  if(luke==="middag" && !r.hvile && !KARBODAG[valgtDag] && DAGTYPE[valgtDag]==="hvile")
-    return "Har ingen hviledagsvariant.";
-  if(luke==="kl14" && valgtDag==="fre" && r.fm)
-    return "Fett før langturen bremser magesekken.";
-  return "";
 }
 function lukkArk(){
   document.getElementById("ark").classList.remove("apen");
   document.getElementById("arkbak").classList.remove("apen");
-  arkKontekst=null;
+  arkLuke=null;
 }
 document.getElementById("arkbak").onclick=lukkArk;
 document.getElementById("arklukk").onclick=lukkArk;
-document.getElementById("arkfjern").onclick=()=>{
-  if(!arkKontekst) return;
-  delete dagValg(arkKontekst.nokkel,valgtDag)[arkKontekst.luke];
-  lagre(arkKontekst.nokkel); lukkArk(); tegn();
+document.getElementById("arkliste").onclick=e=>{
+  const b=e.target.closest("[data-i]"); if(!b||!arkLuke) return;
+  const v=BYTTER[arkLuke][+b.dataset.i];
+  if(dag().bytte[arkLuke]===v || +b.dataset.i===0) delete dag().bytte[arkLuke];
+  else dag().bytte[arkLuke]=v;
+  lagre(); lukkArk(); tegn();
 };
-document.getElementById("arkgjenta").onclick=()=>{
-  if(!arkKontekst) return;
-  const id=dagValg(arkKontekst.nokkel,valgtDag)[arkKontekst.luke];
-  if(!id){ lukkArk(); return; }
-  for(const d of DAGER){
-    const r=rettFor(id);
-    if(arkKontekst.luke==="middag" && !r.hvile && DAGTYPE[d.id]==="hvile") continue;
-    if(r.kunTrening && !TRENINGSDAG[d.id]) continue;
-    dagValg(arkKontekst.nokkel,d.id)[arkKontekst.luke]=id;
-  }
-  lagre(arkKontekst.nokkel); lukkArk(); tegn();
-};
-document.getElementById("arkliste").onclick=(e)=>{
-  const b=e.target.closest("[data-id]"); if(!b||!arkKontekst) return;
-  const v=dagValg(arkKontekst.nokkel,valgtDag);
-  if(arkKontekst.luke==="lunsj") v.lunsj=b.dataset.id;
-  else v[arkKontekst.luke]=b.dataset.id;
-  lagre(arkKontekst.nokkel); lukkArk(); tegn();
-};
+document.addEventListener("keydown",e=>{if(e.key==="Escape") lukkArk()});
 
-/* ---- meny ---- */
-function tegnMeny(){
-  let h='<div class="prinsipp"><h3>Fem regler som gjelder uansett hva du velger</h3><ul>'+
-    '<li>Protein i hvert eneste måltid — du skal kunne peke på det.</li>'+
-    '<li>Kl. 14-måltidet kuttes aldri. Det er femtimershullet som gjør kveldene tunge.</li>'+
-    '<li>Karboen følger økta: stor mandag, torsdag og fredag, mindre onsdag og lørdag.</li>'+
-    '<li>Fettet erstatter noe — det kommer aldri i tillegg.</li>'+
-    '<li>Fredag før langtur: ikke fett etter kl. 11.</li>'+
-    '</ul></div>';
+function tegnUka(){
+  const s=sond();
+  let h='<div class="regel"><span class="lab">To rutiner i uka</span>'+
+        'Handle <b>lørdag</b>. 45 minutter på kjøkkenet <b>søndag</b>, og pakk jobbposen samtidig.</div>';
 
-  for(const [nokkel,meny] of Object.entries(MENYER)){
-    h+='<div class="seksjon-tit">'+meny.tittel+' — '+meny.retter.length+' valg</div>';
-    h+='<section class="card">'+meny.retter.map(r=>{
-      const fav=favoritter.includes(r.id);
-      let merker=(r.merker||[]).slice();
-      if(r.kunTrening) merker.push("kun treningsdag");
-      if(r.kunKarbodag) merker.push("kun karbodag");
-      if(r.kunVedlikehold) merker.push("ut ved underskudd");
-      if(r.hvile) merker.push("egen hviledagsporsjon");
-      if(r.fm) merker.push("fettmarkør");
-      return '<div class="rett"><div>'+
-        '<h3>'+r.navn+'</h3><p>'+r.porsjon+'</p>'+
-        '<div class="tall">'+r.p+' g protein · '+r.k+' g karbo · '+r.f+' g fett</div>'+
-        (r.tips?'<p style="color:var(--note)">'+r.tips+'</p>':'')+
-        (merker.length?'<div class="merker">'+merker.map(m=>'<span class="merke">'+m+'</span>').join("")+'</div>':'')+
-        '</div><button class="hjerte'+(fav?" pa":"")+'" data-fav="'+r.id+'" aria-label="Favoritt">'+(fav?"♥":"♡")+'</button></div>';
-    }).join("")+'</section>';
-  }
+  h+='<div class="tit">Søndag — 45 minutter</div><section class="card">'+
+     SONDAG.map(o=>'<button class="oppg'+(s.oppg[o.id]?" av":"")+'" data-oppg="'+o.id+'">'+
+       '<span class="boks">✓</span><span><span class="navn">'+o.navn+'</span>'+
+       '<span class="sub">'+o.sub+'</span></span></button>').join("")+'</section>';
 
-  h+='<div class="seksjon-tit">Rundt økta — fast, ikke valgfritt</div>';
-  h+='<section class="card">'+[
-    ["Banan før økt","1 stk · alle øktdager","1 g protein · 25 g karbo"],
-    ["2 skiver loff + syltetøy","15:30 mandag og torsdag","6 g protein · 50 g karbo"],
-    ["3 skiver loff + syltetøy","13:30 fredag, før langturen","9 g protein · 75 g karbo"],
-    ["YT Protein restitusjonsdrikk","Rett etter løpeøkt","30 g protein · 50 g karbo"],
-    ["5 dl lettmelk","Etter styrke, tirsdag","17 g protein · 24 g karbo"]
-  ].map(([n,p,t])=>'<div class="rett"><div><h3>'+n+'</h3><p>'+p+'</p><div class="tall">'+t+'</div></div><span></span></div>').join("")+'</section>';
+  h+='<div class="varsel">Det som er laget søndag spises <b>innen torsdag</b>. Torsdag kveld: fryses eller kastes. '+
+     'Det er hele holdbarhetsregelen.</div>';
 
-  h+='<div class="seksjon-tit">Fettrammen</div>'+
-    '<div class="prinsipp"><p style="margin:0">Halv avokado, ikke hel, tre–fire dager i uka — og den <b>erstatter smøret</b>. '+
-    'Samme for nøtter (oppmålt) og olje (én skje). Maks tre fettmarkører om dagen. '+
-    'Fet fisk to–tre ganger i uka er fettet som gir mest tilbake.</p></div>';
+  h+='<div class="tit">Middagene — fire, gå i ring</div><section class="card">'+
+     BYTTER.middag.map((m,i)=>'<div class="maaltid"><span class="kl mono">'+(i+1)+'</span>'+
+       '<span class="hva">'+m.replace(/ — (.+)$/,'<span class="sub">$1</span>')+'</span><span></span></div>').join("")+
+     '</section>'+
+     '<p class="kilde" style="border:none;margin-top:10px;padding:0">Alle bygges likt: protein · dobbel grønnsak · én neve karbo. '+
+     'Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.</p>';
 
-  h+='<div class="seksjon-tit">Kantina</div>'+
-    '<div class="prinsipp"><p style="margin:0">Tallerkenregelen: <b>halv tallerken salat og grønnsaker, en kvart protein, resten karbo.</b> '+
-    'Karboporsjonen følger dagen — full mandag, torsdag og fredag, halv onsdag og lørdag. '+
-    'Du skal ikke gjette hva kantina serverer; velg porsjonen, ikke retten.</p></div>';
+  h+='<div class="tit">Skuffen på jobb</div><section class="card pad">'+
+     '<p style="margin:0 0 8px">Fylles <b>når den er tom</b>, ikke etter en plan. Står permanent på handlelista.</p>'+
+     '<ul style="margin:0;padding-left:20px"><li>Corny Big — 3 pakker om gangen, varer en måned</li>'+
+     '<li>Rosiner i en tett boks</li><li>Riskaker og en flaske saft</li>'+
+     '<li>3 proteinbarer — nødreserve for dagen du glemte posen</li></ul></section>';
 
   innhold.innerHTML=h;
-  innhold.querySelectorAll("[data-fav]").forEach(b=>b.onclick=()=>{
-    const id=b.dataset.fav;
-    const i=favoritter.indexOf(id);
-    if(i>=0) favoritter.splice(i,1); else favoritter.push(id);
-    lagre(ukeNokkel(visUke)); tegn();
+  innhold.querySelectorAll("[data-oppg]").forEach(b=>b.onclick=()=>{
+    const id=b.dataset.oppg; s.oppg[id]=!s.oppg[id]; lagre(); tegnUka();
   });
 }
 
-/* ---- handleliste ---- */
+function alleVarer(){
+  const v=HANDLE_FAST.map(([n,m])=>({id:"f|"+n,navn:n,mengde:m,gruppe:"fast"}))
+    .concat(HANDLE_TOMT.map(([n,m])=>({id:"t|"+n,navn:n,mengde:m,gruppe:"tomt"})));
+  hl().egne.forEach((e,i)=>v.push({id:"e|"+i,navn:e,mengde:"",gruppe:"egen"}));
+  return v;
+}
 function tegnHandle(){
-  const mandag=handleUkeMandag();
-  const nokkel=ukeNokkel(mandag);
-  if(!handle[nokkel]) handle[nokkel]={av:{},egne:[]};
-  const h_=handle[nokkel];
-  const sondag=datoFor(mandag,6);
-  let varer=byggHandleliste(mandag);
-  h_.egne.forEach((e,i)=>varer.push({id:"egen|"+i,vare:e.navn,avd:"annet",mengde:e.mengde||"",egen:true,fast:e.fast,kilder:[]}));
+  const h_=hl(), varer=alleVarer();
+  const av=varer.filter(v=>h_.av[v.id]).length;
+  let h='<div class="teller"><span class="n">'+av+' av '+varer.length+'</span>'+
+        '<span class="u">Uke '+hUkeN.slice(6)+' · samme liste hver uke</span></div>';
 
-  const total=varer.length, avkrysset=varer.filter(v=>h_.av[v.id]).length;
-  let h='<div class="teller"><span class="n">'+avkrysset+' av '+total+'</span>'+
-        '<span class="u">Uke '+nokkel.slice(6)+' · '+norskDato(mandag)+'–'+norskDato(sondag)+'</span></div>';
-
-  if(!total){
-    h+='<div class="prinsipp" style="margin-top:16px"><p style="margin:0">Ingen retter valgt for denne uka ennå. Sett opp uka under <b>Uka</b>, så bygger lista seg selv.</p></div>';
+  const grupper=[["fast","Fast — hver uke"],["tomt","Når det er tomt"],["egen","Lagt til av deg"]];
+  for(const [g,tit] of grupper){
+    const iG=varer.filter(v=>v.gruppe===g);
+    if(!iG.length) continue;
+    h+='<div class="tit">'+tit+'</div><section class="card">'+
+      iG.slice().sort((a,b)=>(h_.av[a.id]?1:0)-(h_.av[b.id]?1:0)).map(v=>
+        '<button class="vare'+(h_.av[v.id]?" av":"")+'" data-vare="'+v.id+'">'+
+        '<span class="boks">✓</span><span class="navn">'+v.navn+'</span>'+
+        '<span class="mengde">'+v.mengde+'</span></button>').join("")+'</section>';
   }
-
-  for(const avd of AVD_REKKE){
-    const iAvd=varer.filter(v=>v.avd===avd);
-    if(!iAvd.length) continue;
-    const ferdig=iAvd.every(v=>h_.av[v.id]);
-    const gjort=iAvd.filter(v=>h_.av[v.id]).length;
-    h+='<div class="avd"><button class="avd-tit" data-avd="'+avd+'">'+AVD[avd]+
-       '<span class="antall">'+gjort+' av '+iAvd.length+(ferdig?" ✓":"")+'</span></button>';
-    if(!ferdig || h_.apen===avd){
-      const sortert=iAvd.slice().sort((a,b)=>(h_.av[a.id]?1:0)-(h_.av[b.id]?1:0));
-      h+=sortert.map(v=>{
-        const av=!!h_.av[v.id];
-        const kilder=v.kilder&&v.kilder.length?v.kilder.join(", "):"";
-        return '<button class="vare'+(av?" av":"")+'" data-vare="'+v.id+'">'+
-          '<span class="boks">✓</span>'+
-          '<span><span class="navn">'+v.vare+'</span>'+
-          (kilder?'<span class="kilde">'+kilder+(v.rest>0?' · '+v.rest+' porsjon'+(v.rest>1?'er':'')+' til overs':'')+'</span>':'')+
-          (v.regel?'<span class="kilde">Alltid liten pose — det som er hjemme, blir spist.</span>':'')+
-          (v.fersk?'<span class="kilde">Sjekk holdbarhetsdato.</span>':'')+
-          '</span><span class="mengde">'+(mengdeTekst(v)||"")+'</span></button>';
-      }).join("");
-    }
-    h+='</div>';
-  }
-
-  h+='<div class="avd"><div class="avd-tit">Fast lager — sjekk om du har</div>'+
-     FASTLAGER.map(x=>'<div class="vare" style="opacity:.75"><span></span><span class="navn">'+x+'</span><span></span></div>').join("")+'</div>';
 
   h+='<form class="leggtil" id="leggtil"><input id="nyvare" placeholder="Legg til en vare" autocomplete="off">'+
      '<button class="btn primar" type="submit">Legg til</button></form>';
-
   innhold.innerHTML=h;
 
   innhold.querySelectorAll("[data-vare]").forEach(b=>b.onclick=()=>{
     const id=b.dataset.vare;
     h_.av[id]=!h_.av[id];
-    sisteAngre={nokkel,id};
-    visAngre(h_.av[id]?"Krysset av":"Angret avkryssing");
-    lagre(nokkel); tegnHandle();
+    sisteAngre=id; visAngre(h_.av[id]?"Krysset av":"Angret");
+    lagre(); tegnHandle();
   });
-  innhold.querySelectorAll("[data-avd]").forEach(b=>b.onclick=()=>{
-    h_.apen = h_.apen===b.dataset.avd ? null : b.dataset.avd; tegnHandle();
-  });
-  const skjema=innhold.querySelector("#leggtil");
-  if(skjema) skjema.onsubmit=(e)=>{
+  innhold.querySelector("#leggtil").onsubmit=e=>{
     e.preventDefault();
-    const inp=innhold.querySelector("#nyvare");
-    const t=inp.value.trim(); if(!t) return;
-    h_.egne.push({navn:t}); inp.value="";
-    lagre(nokkel); tegnHandle();
+    const inp=innhold.querySelector("#nyvare"), t=inp.value.trim();
+    if(!t) return;
+    h_.egne.push(t); inp.value=""; lagre(); tegnHandle();
   };
 }
-
 function visAngre(txt){
   const el=document.getElementById("angre");
   document.getElementById("angretxt").textContent=txt;
@@ -1006,30 +502,13 @@ function visAngre(txt){
 }
 document.getElementById("angreknapp").onclick=()=>{
   if(!sisteAngre) return;
-  const {nokkel,id}=sisteAngre;
-  handle[nokkel].av[id]=!handle[nokkel].av[id];
+  hl().av[sisteAngre]=!hl().av[sisteAngre];
   document.getElementById("angre").classList.remove("vis");
-  lagre(nokkel); tegnHandle();
+  lagre(); tegnHandle();
 };
-
 document.querySelectorAll(".fane").forEach(b=>b.onclick=()=>{
   fane=b.dataset.fane; skriv("fane",fane); tegn();
 });
-document.addEventListener("keydown",e=>{ if(e.key==="Escape") lukkArk(); });
-
-/* Startvisning: en uke som allerede er satt opp, så siden viser hva den gjør */
-(function frø(){
-  const n=ukeNokkel(visUke);
-  planer[n]={dager:{
-    man:{frokost:"F3",kl14:"M4",middag:"R5",kveld:"K1"},
-    tir:{frokost:"F1",kl14:"M1",middag:"R1",kveld:"K5"},
-    ons:{frokost:"F4",kl14:"M2",middag:"R3",kveld:"K2",avokado:true},
-    tor:{frokost:"F3",kl14:"M4",middag:"R2",kveld:"K1"},
-    fre:{frokost:"F5",kl14:"M2",middag:"R4",kveld:"K1"},
-    lor:{frokost:"F1",kl14:"M1",middag:"R6",kveld:"K2"},
-    son:{frokost:"F6",kl14:"M6",middag:"R1",kveld:"K6"}
-  }};
-})();
 
 tegn();
 koble();
