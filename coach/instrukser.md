@@ -263,3 +263,10 @@ antagelse er verre enn ingen analyse — den ser like overbevisende ut.
 | Langturer som formmåling | Hans egen fart | Gruppeøkter. Farten er ikke hans. |
 
 Fem ganger på to dager. **Mønsteret er at dataen ser entydig ut og ikke er det.**
+
+## FIT-øktfiler: droppet
+Knut har prøvd .FIT-øktfiler til klokka og forkastet løsningen — import via USB
+er for tungvint. **Ikke foreslå FIT-filer, øktimport eller strukturerte økter på
+klokka igjen.** Han følger pulssonen ved å se på klokka underveis. Skal en økt
+formidles, gjør det som tekst: oppvarming, hoveddel med pulsspenn, nedvarming.
+Filene under `coach/garmin/workouts/` blir liggende, men er ikke i bruk.
