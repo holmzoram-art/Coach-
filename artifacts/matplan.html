@@ -190,13 +190,13 @@ header.top h1{font-size:21px;font-weight:700;letter-spacing:-.01em}
 
 const FASTE = [
   {n:"frokost",kl:"07",min:420,
-   hva:"Beger skyr eller kvarg + 1 dl havregryn + neve frosne bær + <b>1 skje nøtter</b>",
+   hva:"Beger skyr + 1 dl havregryn + neve frosne bær + <b>1 skje nøtter</b>",
    sub:"Havregrynene måles tørre, 1 dl (35 g) rett ned i begeret. Nøttene er ikke valgfrie — de er det eneste fettet i planen."},
   {n:"lunsj",kl:"11",min:660,
    hva:"<b>Kantina.</b> Halv tallerken salat først, kvart protein, kvart karbo",
    sub:"Velg porsjonen, ikke retten.",laast:true},
   {n:"kl14",kl:"14",min:840,
-   hva:"Beger kvarg eller kesam + en frukt",
+   hva:"Beger cottage cheese + en frukt",
    sub:"Det som avgjør kvelden din."},
   {n:"middag",kl:"middag",min:1140,
    hva:"Protein på størrelse med håndflaten · <b>dobbel</b> grønnsak · <b>halv pose ferdigris</b> eller 3 poteter",
@@ -207,17 +207,17 @@ const FASTE = [
 
 const BYTTER = {
   frokost:[
-    "Skyr eller kvarg + havregryn + bær + nøtter",
+    "Skyr + havregryn + bær + nøtter",
     "Overnight oats — laget kvelden før",
     "Egg-muffins fra søndag, 60 sek i mikro",
     "Eggerøre + grovbrød (helg — tar fem minutter)"
   ],
-  kl14:["Beger kvarg + frukt","Beger kesam eller cottage cheese + frukt",
-        "Proteinyoghurt + bær","Proteinbar — nødreserve fra skuffen"],
+  kl14:["Beger cottage cheese + frukt","2 rundstykker med kokt skinke",
+        "Beger skyr + bær","Proteinbar — nødreserve fra skuffen"],
   middag:["Gryta fra søndag — 8 min","Kylling eller svin + poteter fra søndag + grønnsaker — 15 min",
           "Fisk fra frossen + poteter + grønnsaker — 18 min",
           "Wok: kjøtt eller kylling + frossen wokblanding + ferdigris — 15 min"],
-  kveld:["Cottage cheese + bær","Skyr + bær","Q Kvarg + bær",
+  kveld:["Cottage cheese + bær","Cottage cheese + lune bær","Skyr + bær",
          "Varm kakao på skummet melk + liten skyr"]
 };
 
@@ -240,13 +240,13 @@ const SONDAG = [
   {id:"poteter",navn:"Ovnen på 200°: 3 kg poteter i båter",sub:"35 min — du gjør noe annet imens"},
   {id:"gryte",navn:"Én stor gryte eller suppe, 4 porsjoner",sub:"Kjøttdeig eller linser, hakkede tomater, frossen grønnsaksblanding, løk"},
   {id:"egg",navn:"Kok 10 egg",sub:"La skallet være på — de holder en uke"},
-  {id:"pose",navn:"Pakk jobbposen og sett den i gangen",sub:"5 begre kvarg, 5 begre skyr eller cottage cheese. Inn i kjøleskapet på jobb mandag morgen"}
+  {id:"pose",navn:"Pakk jobbposen og sett den i gangen",sub:"5 begre cottage cheese og en pose rundstykker. Inn i kjøleskapet på jobb mandag morgen"}
 ];
 
 const HANDLE_FAST = [
-  ["Egg","2 brett"],["Kvarg","5 begre"],["Skyr eller cottage cheese","5 begre"],
-  ["Frosne bær","1 pose"],["Nøtter","1 liten pose"],["Poteter","3 kg"],
-  ["Frossen grønnsaksblanding","2 poser"],["Ferdigris","4 poser"],
+  ["Egg","2 brett"],["Cottage cheese","8 begre"],["Skyr","4 begre"],
+  ["Frosne bær","1 pose"],["Nøtter","1 liten pose"],["Poteter — til søndagsstekingen","3 kg"],
+  ["Frossen grønnsaksblanding","2 poser"],["Ferdigris — til wok-middagen","4 poser"],
   ["Hakkede tomater","2 bokser"],["Løk","1 nett"],["Kjøtt eller fisk","til 4 middager"],
   ["Grovbrød","1 brød"],["Bananer","7–8 stk"]
 ];
@@ -260,7 +260,18 @@ const HANDLE_TOMT = [
   ["Saft","1 flaske"],["Proteinbar","3 stk"],["Frossen fisk","1 pose"]
 ];
 
-const UKEDAG=["Mandag","Tirsdag","Onsdag","Torsdag","Fredag","Lørdag","Søndag"];
+/* Treningsplanen — man/tor kvalitet, tir styrke, ons/lør hvile, fre langtur, søn rolig.
+   Appen slår opp dagen selv i stedet for å spørre. */
+const PLAN=[
+  {navn:"Mandag", okt:"Kvalitetsøkt", lop:true,  styrke:false},
+  {navn:"Tirsdag",okt:"Styrke",       lop:false, styrke:true},
+  {navn:"Onsdag", okt:"Rolig I2",     lop:true,  styrke:false},
+  {navn:"Torsdag",okt:"Intervaller",  lop:true,  styrke:false},
+  {navn:"Fredag", okt:"Langtur",      lop:true,  styrke:false},
+  {navn:"Lørdag", okt:"Hvile",        lop:false, styrke:false},
+  {navn:"Søndag", okt:"Rolig",        lop:true,  styrke:false}
+];
+const UKEDAG=PLAN.map(d=>d.navn);
 const MND=["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember"];
 const UNDERSKUDD_FRA="2026-09-28";
 
@@ -365,17 +376,23 @@ function tegnIdag(){
       '</'+(m.laast?"div":"button")+'>';
   }).join("");
 
-  /* løp du i dag? */
-  h+='<div class="bryter"><span class="sp">Løp du i dag?'+
-     '<small>Svarer du ja, kommer skuffmåltidet og restitusjonsdrikken i tillegg.</small></span>'+
-     '<span class="knapp2">'+
-     '<button data-lop="ja" class="'+(d.lop===true?"pa":"")+'">Ja</button>'+
-     '<button data-lop="nei" class="'+(d.lop===false?"pa":"")+'">Nei</button></span></div>';
-
-  if(d.lop===true){
-    h+=LOPEEKSTRA.map(m=>'<div class="maaltid ekstra"><span class="kl">'+m.kl+'</span>'+
+  /* Øktdagene kommer fra treningsplanen. Spør ikke — vis, med mulighet til å slå av. */
+  const plan=PLAN[dagIdx];
+  const trener = d.lop===false ? false : (d.lop===true || plan.lop || plan.styrke);
+  if(trener){
+    const ekstra = plan.styrke && d.lop!==true
+      ? [{kl:"etter",hva:"5 dl lettmelk",sub:"Etter styrke"}]
+      : LOPEEKSTRA;
+    h+=ekstra.map(m=>'<div class="maaltid ekstra"><span class="kl">'+m.kl+'</span>'+
       '<span class="hva">'+m.hva+'<span class="sub">'+m.sub+'</span></span><span></span></div>').join("");
   }
+  h+='<div class="bryter"><span class="sp">'+
+     (trener ? plan.okt+" i dag" : "Ingen økt i dag")+
+     '<small>'+(trener
+       ? "Fra treningsplanen. Måltidene over kommer automatisk."
+       : (plan.lop||plan.styrke ? "Du har slått av dagens økt." : "Hviledag i planen."))+'</small></span>'+
+     '<span class="knapp2"><button data-lop="'+(trener?"av":"pa")+'">'+
+     (trener?"Ble ikke noe av":"Trente likevel")+'</button></span></div>';
   h+='</section>';
 
   h+='<div class="regel"><span class="lab">Den ene regelen</span>'+
@@ -392,8 +409,7 @@ function tegnIdag(){
   innhold.innerHTML=h;
   innhold.querySelectorAll("[data-luke]").forEach(b=>b.onclick=()=>apneArk(b.dataset.luke));
   innhold.querySelectorAll("[data-lop]").forEach(b=>b.onclick=()=>{
-    const ja=b.dataset.lop==="ja";
-    dag().lop = dag().lop===ja ? null : ja;
+    dag().lop = b.dataset.lop==="pa";
     lagre(); tegn();
   });
 }
@@ -481,7 +497,10 @@ function tegnHandle(){
   const h_=hl(), varer=alleVarer();
   const av=varer.filter(v=>h_.av[v.id]).length;
   let h='<div class="teller"><span class="n">'+av+' av '+varer.length+'</span>'+
-        '<span class="u">Uke '+hUkeN.slice(6)+' · samme liste hver uke</span></div>';
+        '<span class="u">Uke '+hUkeN.slice(6)+'</span></div>';
+  h+='<div class="varsel" style="margin-top:14px">Lista er <b>den samme hver uke</b>, fordi måltidene er det. '+
+     'Den viser hva du trenger for uka som kommer — ikke hva du spiste sist. '+
+     'Poteter og ris står begge fordi middagene går i ring: to av dem bruker potetene fra søndag, én bruker ris.</div>';
 
   const grupper=[["fast","Fast — hver uke"],["tomt","Når det er tomt"],
                  ["bake","Rundstykker — uka du baker"],["egen","Lagt til av deg"]];
