@@ -175,7 +175,10 @@ Alle bygges likt: **protein (håndflate, målt rått) · dobbel grønnsak · hal
 
 1. **Gryta fra søndag** (varmes, 8 min) — to ganger i uka
 2. **Kylling eller svin + potetene fra søndag + grønnsaker** (15 min)
-3. **Fisk fra frossen + potetene + grønnsaker** (18 min)
+3. **Fisk fra frossen + potetene + grønnsaker** (ovn 200°, 15–20 min).
+   Kjøp **torske- eller seifilet i blokk** — naturell, ikke panert.
+   **Ta en stor porsjon, 250–300 g** — hvitfisk er mager, så håndflaten
+   er for lite her
 4. **Wok: kjøtt eller kylling + frossen wokblanding + ferdigris fra pose** (15 min)
 
 Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.
@@ -191,7 +194,14 @@ egg 2 brett · **cottage cheese 8 begre** · skyr eller yoghurt 5 begre · frosn
 4 middager · kokt skinke · bananer
 
 **Når det er tomt:**
-havregryn · Corny Big 3 pk · rosiner · riskaker · saft · proteinbar · frossen fisk
+havregryn · Corny Big 3 pk · rosiner · riskaker · saft · proteinbar
+
+**Frossen fisk — kjøp disse:**
+**First Price Seifilet Blokk** eller **torskefilet i blokk** (naturell) til de
+vanlige fiskemiddagene · **laksefilet naturell** (Findus, Lerøy eller Norsk
+Sjømat) én gang i uka · **makrell i tomat på boks** til pålegg og kl. 14.
+
+Panert fisk: se `matplan.md` hvis du vil ha det. Kortversjonen står under.
 
 Det er hele lista. Den ser lik ut neste uke.
 

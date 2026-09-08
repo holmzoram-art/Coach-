@@ -892,6 +892,118 @@ Alt annet ligger i normalt prisleie for det det erstatter.
 
 ---
 
+## 13. Frossen fisk — vurdering 08.09.2026
+
+Bygger på `coach/ernaering/research-frossen-fisk.md`. **Merk datakvaliteten:**
+research-agenten fikk ikke lest produktsidene direkte (nettverksblokkering),
+så tallene er hentet via søk. De fleste er merket verifisert (V), men noen er
+usikre (U). Der det betyr noe for anbefalingen, står det.
+
+### 13.1 Kjøp disse — naturell filet
+
+| Produkt | Per 100 g | Kr per g protein | Rolle |
+|---|---|---|---|
+| **First Price Seifilet Blokk 400 g** | 69 kcal · 16,5 g protein · 0,3 g fett | **0,60** | **Hverdagsfisken.** Billigst per gram protein av all naturell fisk |
+| **First Price / Coop torskefilet i blokk** | 75–81 kcal · 18 g protein · 0,3–1,0 g fett | 0,51–0,97 | Litt mer protein, litt dyrere |
+| **Findus Torsk Naturell 400 g** | 75 kcal · 17 g protein · 0,7 g fett · **salt 0,1 g** | 1,00 | Dyrere, men kjent kvalitet |
+| **Laksefilet naturell** (Findus / Lerøy / Norsk Sjømat) | 224–230 kcal · 20 g protein · 16–17 g fett | 1,20 | **Én gang i uka.** Fet fisk |
+| **Lerøy Ørret Naturell frossen** | 161 kcal · 17,2 g protein · 10,2 g fett | ikke funnet | Magrere alternativ til laks |
+
+**Porsjonsjustering:** hvitfisk er så mager at håndflateporsjonen blir for
+liten. **Ta 250–300 g** — 300 g torsk gir 54 g protein for 225 kcal.
+Laks: 200 g holder (40 g protein, men 32 g fett).
+
+**Tilberedning fra frossen:** ovn 180–200 °C, 10–20 min. Verifisert. Stekepanne
+fra frossen frarådes av produsenten.
+
+### 13.2 Panert — svaret er «én er i en annen klasse, resten er ut»
+
+**Over 95 % av fettet i panert fisk kommer fra paneringen og forstekingsoljen,
+ikke fra fisken.** Paneringen utgjør 25–48 % av vekten.
+
+| Produkt | Fiskeandel | Protein | Fett | Dom |
+|---|---|---|---|---|
+| **Findus Steketorsk** (rå panering) | ikke funnet | 14,3 g | **0,5 g** | **Ja — men se forbeholdet** |
+| **Coop Sprø Torsk Fullkorn 320 g** | 70 % | 15,0 g | 5,3 g | **Ja. Beste forstekte produkt i datasettet** |
+| Findus Lettpanert Torsk | 75 % | 15,5 g | 9,0 g | Av og til |
+| Findus Våre Beste Fiskepinner | 100 % filet | 13 g | 7,7 g | Av og til |
+| First Price Fiskepinner | 65 % | 13 g | 8,9 g | Av og til |
+| Findus Fiskepinner Originalen | 61 % | 12 g | 9,6 g | Sjelden |
+| **Findus Fish & Crisp** | **52 %** | 11 g | 11–14 g | **Nei** |
+
+**Forbeholdet på Steketorsk:** fettallet er **usikkert** (to kilder oppgir 0 og
+0,5 g), og fiskeandelen står ikke oppgitt noe sted. Viktigere: tallet gjelder
+produktet **før** du steker det. Rå panering suger opp fett som en svamp.
+**Steketorsk er bare i en annen klasse hvis den ovnsbakes.** Steker du den i
+smør i panna, ender du på fiskepinnenivå.
+
+**Proteintettheten er det egentlige argumentet:** naturell torsk gir 0,23 g
+protein per kalori. Fiskepinner gir 0,065 — **tre ganger dårligere**. For å få
+50 g protein fra fiskepinner må han spise 400 g, altså ~840 kcal.
+Samme protein fra torskefilet: 280 g og 210 kcal.
+
+**Tidsforbehold:** Lerøy oppgir 22–25 min for sin panerte torsk. Det er over
+18-minuttersgrensen for ukedager.
+
+### 13.3 Testen på pakken — tre tall
+
+Står produktet ikke på lista, les disse tre:
+
+| | Ukemat | Av og til (1×/uke) | Ut |
+|---|---|---|---|
+| **Fiskeandel** | ≥ 65 % | ≥ 65 % | < 65 % |
+| **Protein** | ≥ 14 g/100 g | ≥ 13 g | < 13 g |
+| **Fett** | ≤ 6 g/100 g | ≤ 10 g | > 10 g |
+
+Fiskeandelen står alltid i ingredienslista. Er den ikke oppgitt, legg det
+tilbake.
+
+### 13.4 Fiskekaker, fiskeboller, grateng
+
+| | Dom |
+|---|---|
+| **Fiskegrateng — ut** | 19–24 % fisk og 6,8–9 g protein per 100 g. En porsjon på 300 g gir 20–27 g protein for over 400 kcal. Det er ikke et proteinmåltid, det er makaroni med fiskesmak |
+| **Fiskemannen Fiskekaker 80 % — ja** | 14,2 g protein, 7,2 g fett, 134 kcal. Bedre enn ethvert panert produkt. 1 gang i uka |
+| Lofoten Fiskekaker 60 % | 11 g protein, **1,4 g salt**. Middelmådig. Går an, ikke fast |
+| **Lofoten Hjemmelagde Fiskeboller 65 % — ja** | 69 kcal, 0,7 g fett, 11,4 g protein. Svært magert. Fin i fiskesuppe |
+
+### 13.5 Fet fisk — rådet mitt må justeres
+
+Jeg sa 2–3 ganger i uka. **Research fant ingen naturell frossen makrellfilet
+som kjedevare i det hele tatt** — makrell i norsk dagligvare er hermetikk og
+røkt kjølevare. Røkt og gravet laks selges heller ikke frossen.
+
+**Justert råd:**
+- **Én laks- eller ørretmiddag i uka** fra frossen filet.
+- **Makrell i tomat på boks** til pålegg eller kl. 14, 2–3 ganger i uka.
+  Det er den praktiske makrellkilden i Norge — romtemperatur, billig, og den
+  står allerede på handlelista.
+
+Det gir fet fisk 3–4 ganger i uka uten å lete etter varer som ikke finnes.
+
+### 13.6 Salt
+
+Naturell fisk: 0,1–0,2 g/100 g. Ingenting.
+Panert: 0,4–0,96 g. Fiskekaker: 1,2–1,6 g. Fiskeboller: opp til 2 g.
+
+**Betyr det noe for ham?** Lite. Han har ikke kjent blodtrykksproblem, og han
+taper salt i svette på langturer — salt er ikke fienden i en løperkost.
+Men 200 g fiskekaker med 1,5 g salt per 100 g er 3 g salt i ett måltid, som er
+mesteparten av et døgnråd. **Det er en grunn til ikke å gjøre fiskekaker til
+ukesmat, ikke en grunn til bekymring.** Saltdataene er dessuten ufullstendige
+for mange produkter, så vi styrer ikke etter dem.
+
+### 13.7 Usikkerhet — det jeg ikke vet
+
+- **Prisene** er fra Meny, Joker og Spar. Rema og Kiwi publiserer ikke priser
+  på nett. Faktisk pris i hans butikk er sannsynligvis lavere.
+- **Salt mangler** for alle naturelle laksefileter, Findus Sprøbakte,
+  Fish & Crisp og Lerøy pankopanert.
+- **Steketorsk:** fett usikkert, fiskeandel ikke funnet.
+- **«Enghav»** er ikke bekreftet som aktivt merke. Sjekk i butikk.
+
+---
+
 ## 10. Hvis du bare klarer tre ting denne uka
 
 1. **14-måltidet, hver eneste dag.**
