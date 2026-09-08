@@ -15,7 +15,7 @@ detaljer. **Du trenger dem ikke.**
 | **11** | **Kantina:** halv tallerken salat først · kvart tallerken protein · kvart tallerken karbo |
 | **14** | **Hele begeret cottage cheese** + en frukt. Ikke en «porsjon» fra pakken — hele |
 | **Middag** | Protein på størrelse med håndflaten din (**mål det rått**) · **dobbel** grønnsak · **halv pose ferdigris eller 3 poteter** |
-| **21** | Beger cottage cheese + bær. Varm bærene i mikroen og hell over — ikke varm osten |
+| **21** | **Halve begeret** (200 g) cottage cheese eller skyr + bær. Varm bærene i mikroen og hell over — ikke varm osten |
 
 Fem måltider. De er like hver dag. **Du velger ingenting.**
 
@@ -212,6 +212,10 @@ Det er hele lista. Den ser lik ut neste uke.
 |---|---|---|
 | **Cottage cheese** (Tine Mager, 2 %) | **400 g** | **~48 g** |
 | **Skyr** (Tine eller Q, naturell) | **350 g** | **~37 g** |
+
+**Kl. 14 = hele begeret. Kl. 21 = halve.** Kl. 14 er måltidet som avgjør
+kvelden din, og det skal være stort. Kl. 21 skal ta kanten av sulten, ikke
+være en ny middag.
 
 **Finner du bare en annen størrelse:** regn **11–12 g protein per 100 g**
 cottage cheese og **10–11 g per 100 g** skyr, og ta så mye at måltidet lander
