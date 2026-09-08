@@ -114,7 +114,8 @@ Samme liste hver uke. Se nederst.
    hakkede tomater, frossen grønnsaksblanding, løk
 3. **Kok 10 egg.** La skallet være på
 
-**Så pakker du jobbposen** og setter den i gangen: 5 begre cottage cheese. Inn i kjøleskapet på jobb mandag morgen.
+**Så pakker du jobbposen** og setter den i gangen: 5 begre cottage cheese
+(400 g hver). Inn i kjøleskapet på jobb mandag morgen.
 
 **Det som er laget søndag spises innen torsdag.** Torsdag kveld: fryses eller
 kastes. Det er hele holdbarhetsregelen.
@@ -188,7 +189,7 @@ Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.
 ## Handlelista — nesten lik hver uke
 
 **Fast:**
-egg 2 brett · **cottage cheese 8 begre** · skyr eller yoghurt 5 begre · frosne bær
+egg **24 stk (2 brett)** · **cottage cheese 8 begre à 400 g** · **skyr 5 begre à 350 g** · frosne bær
 1 pose · nøtter 1 liten pose · poteter 3 kg · frossen grønnsaksblanding 2 poser
 · ferdigris 4 poser · hakkede tomater 2 bokser · løk · kjøtt eller fisk til
 4 middager · kokt skinke · bananer
@@ -204,6 +205,21 @@ Sjømat) én gang i uka · **makrell i tomat på boks** til pålegg og kl. 14.
 Panert fisk: se `matplan.md` hvis du vil ha det. Kortversjonen står under.
 
 Det er hele lista. Den ser lik ut neste uke.
+
+### Hva et «beger» er
+
+| Vare | Beger | Protein |
+|---|---|---|
+| **Cottage cheese** (Tine Mager, 2 %) | **400 g** | **~48 g** |
+| **Skyr** (Tine eller Q, naturell) | **350 g** | **~37 g** |
+
+**Finner du bare en annen størrelse:** regn **11–12 g protein per 100 g**
+cottage cheese og **10–11 g per 100 g** skyr, og ta så mye at måltidet lander
+på **40–50 g protein**. I praksis: **et «beger» i planen er 350–400 g,
+uansett hva pakken heter.** Er begeret mindre, ta halvannet.
+
+Dette er innkjøpsmengder, ikke noe du skal måle opp hjemme. Du spiser hele
+begeret — det er hele poenget med tallet.
 
 ---
 

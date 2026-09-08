@@ -190,19 +190,19 @@ header.top h1{font-size:21px;font-weight:700;letter-spacing:-.01em}
 
 const FASTE = [
   {n:"frokost",kl:"07",min:420,
-   hva:"Beger skyr + 1 dl havregryn + neve frosne bær + <b>1 skje nøtter</b>",
+   hva:"Beger skyr (350 g) + 1 dl havregryn + neve frosne bær + <b>1 skje nøtter</b>",
    sub:"Havregrynene måles tørre, 1 dl (35 g) rett ned i begeret. Nøttene er ikke valgfrie — de er det eneste fettet i planen."},
   {n:"lunsj",kl:"11",min:660,
    hva:"<b>Kantina.</b> Halv tallerken salat først, kvart protein, kvart karbo",
    sub:"Velg porsjonen, ikke retten.",laast:true},
   {n:"kl14",kl:"14",min:840,
-   hva:"Beger cottage cheese + en frukt",
+   hva:"Beger cottage cheese (400 g) + en frukt",
    sub:"Det som avgjør kvelden din."},
   {n:"middag",kl:"middag",min:1140,
    hva:"Protein på størrelse med håndflaten · <b>dobbel</b> grønnsak · <b>halv pose ferdigris</b> eller 3 poteter",
    sub:"Proteinet måles rått. Koker du ris selv: 50 g tørr."},
   {n:"kveld",kl:"21",min:1260,
-   hva:"Beger cottage cheese eller skyr + bær"}
+   hva:"Beger cottage cheese (400 g) + bær"}
 ];
 
 const BYTTER = {
@@ -244,14 +244,14 @@ const SONDAG = [
 ];
 
 const HANDLE_FAST = [
-  ["Egg","2 brett = 24 stk"],["Cottage cheese","8 begre"],["Skyr","4 begre"],
-  ["Frosne bær","1 pose"],["Nøtter","1 liten pose"],["Poteter — til søndagsstekingen","3 kg"],
+  ["Egg","2 brett = 24 stk"],["Cottage cheese","8 × 400 g"],["Skyr","5 × 350 g"],
+  ["Frosne bær","1 pose 500 g"],["Nøtter","1 pose 200 g"],["Poteter — til søndagsstekingen","3 kg"],
   ["Frossen grønnsaksblanding","2 poser"],["Ferdigris — til wok-middagen","4 poser"],
   ["Hakkede tomater","2 bokser"],["Løk","1 nett"],["Kjøtt eller fisk","til 4 middager"],
   ["Grovbrød","1 brød"],["Bananer","7–8 stk"]
 ];
 const HANDLE_BAKE = [
-  ["Cottage cheese til baking","2,5 begre (1 kg)"],["Egg til baking","12 stk"],
+  ["Cottage cheese til baking","1 kg = 2,5 begre"],["Egg til baking","12 stk"],
   ["Havregryn","375 g"],["Bakepulver","2 ts"],["Kokt skinke","1 pk"],
   ["Fryseposer, små","1 pk"]
 ];
@@ -463,6 +463,10 @@ function tegnUka(){
      '<p class="kilde" style="border:none;margin-top:10px;padding:0">Alle bygges likt: protein · dobbel grønnsak · én neve karbo. '+
      'Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.</p>';
 
+  h+='<div class="tit">Hvis butikken har andre størrelser</div><div class="card pad">'+
+     '<p style="margin:0">Et «beger» i planen er <b>350–400 g</b>, uansett hva pakken heter. '+
+     'Regn 11–12 g protein per 100 g cottage cheese og 10–11 g per 100 g skyr, og ta så mye at måltidet '+
+     'lander på 40–50 g protein. Er begeret mindre, ta halvannet.</p></div>';
   h+='<div class="tit">Rundstykker — bakes hver 3. uke</div><section class="card pad">'+
      '<p style="margin:0 0 10px"><b>1 kg cottage cheese</b> (2,5 begre) · <b>12 egg</b> · '+
      '<b>375 g havregryn</b> · <b>2 ts bakepulver</b> · <b>1 ts salt</b></p>'+
