@@ -260,12 +260,13 @@ const HANDLE_TOMT = [
   ["Saft","1 flaske"],["Proteinbar","3 stk"],["Frossen fisk","1 pose"]
 ];
 
-/* Treningsplanen — man/tor kvalitet, tir styrke, ons/lør hvile, fre langtur, søn rolig.
-   Appen slår opp dagen selv i stedet for å spørre. */
+/* Den faste uka: man/tor kvalitet, tir styrke, ons/lør hvile, fre langtur, søn rolig.
+   Siden slår opp dagen selv. Legges det en ekstraøkt inn en uke — som EF-punktet
+   onsdag 09.09 — tar han den med «Trente likevel». Planen her er normalen, ikke unntakene. */
 const PLAN=[
   {navn:"Mandag", okt:"Kvalitetsøkt", lop:true,  styrke:false},
   {navn:"Tirsdag",okt:"Styrke",       lop:false, styrke:true},
-  {navn:"Onsdag", okt:"Rolig I2",     lop:true,  styrke:false},
+  {navn:"Onsdag", okt:"Hvile",        lop:false, styrke:false},
   {navn:"Torsdag",okt:"Intervaller",  lop:true,  styrke:false},
   {navn:"Fredag", okt:"Langtur",      lop:true,  styrke:false},
   {navn:"Lørdag", okt:"Hvile",        lop:false, styrke:false},
