@@ -130,11 +130,25 @@ kastes. Det er hele holdbarhetsregelen.
 |---|---|
 | Cottage cheese | **1 kg** (2,5 begre) |
 | Egg | **12** |
-| Havregryn | **375 g** |
+| Havregryn | **til røra er tykk nok å klatte ut** — ca. 375 g |
 | Bakepulver | 2 ts |
 | Salt | 1 ts |
 
-Rør alt sammen, la det svelle 10 min, klatt ut 12 per brett. **200 °C, 30 min.**
+Rør alt, la det svelle 10 min, klatt ut på to brett. **200 °C, 30 min.**
+
+**Forholdet som betyr noe: 1 beger cottage cheese til 5 egg.** Det er de to som
+gir proteinet. Havregrynene tilsetter du til konsistensen stemmer — de varierer
+med hvor våt cottage cheesen er, så et fast tall treffer sjelden.
+
+**Størrelsen bestemmer porsjonen:**
+
+| Stykker av full oppskrift | Per stykke | Frokost | Kl. 14 |
+|---|---|---|---|
+| **24 små** | ~120 kcal · 10 g protein | 3 stk | 2 stk |
+| **12–14 store** | ~210 kcal · 17 g protein | **2 stk** | **2 stk** |
+
+Regelen uansett størrelse: **frokost ≈ 30 g protein, kl. 14 ≈ 35 g med
+skinke.**
 
 Vil du ha forsyning til en hel måned: **rør dobbelt og stek i to omganger.**
 Totalt ~1 t 20 min, det meste venting. 48 stk tar en hel fryserhylle — sjekk
