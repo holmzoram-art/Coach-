@@ -167,15 +167,27 @@ den er ikke min å sette, men forskjellen er 1,2 km og den vokser hvis flere
 
 ## Flagg
 
-### 1. To harde økter samme uke — mot planen
-Planen er **én hardøkt i uka**, og mandagens I4-tempo var den.
-Torsdagens økt er hard **mekanisk**, selv om den ikke er det sirkulatorisk.
-8 maksimale drag i 12 % motbakke pluss ~600 m eksentrisk gange nedover, på 122 kg,
-er ikke en I1/I2-økt uansett hva pulskurven sier.
+### 1. ~~To harde økter samme uke~~ — TRUKKET 10.09
 
-**Dette er uke nummer to på rad med bakkesprint som ikke sto i planen** — sjekk
-mot `hovedcoach` om torsdagens intervalldag var ment å være dette, eller om
-innholdet ble valgt på stedet.
+**Dette flagget var feil, og jeg trekker det.** Økta sto i planen.
+`coach/treningsplan.md`, uke 2: «10.09 Tor · kvalitet · **6 km + 8 bakkesprint.**
+4 km rolig + 8 × 15 sek bratt bakke i full fart, gå rolig ned, 2 km ned.»
+
+Han gjorde nøyaktig det:
+- 4 km rolig → **3967 m oppvarming**. Treff.
+- 8 × 15 sek bratt bakke i full fart → **8 × 14 s, 10,6–13,3 % stigning**. Treff.
+- Gå rolig ned igjen → **gange ned, 130–225 s per drag**. Treff, og eksplisitt bestilt.
+- 2 km ned → **2117 m tilbake til bilen**. Treff på distanse.
+
+Ukestrukturen har **to kvalitetsøkter**, ikke én: mandag tempo og torsdag kort
+kvalitet. Jeg bygget flagget på en antakelse om «én hardøkt i uka» som ikke står
+i planen. Rotårsak: jeg leste ikke `coach/treningsplan.md` — jeg visste ikke at
+den fantes lokalt før 10.09. Regelen står nå i `coach/fakta.md`, og den gjelder
+meg: **les planen før du kaller noe et avvik.**
+
+Det som står igjen av observasjonen er ikke et planavvik, men et faktum om
+belastningstype: torsdagsøkta er mekanisk hard selv om pulsen er lav. Det er
+poenget med den.
 
 ### 2. Eksentrisk belastning mot et kne som er «avklart, ikke lukket»
 Fysio ga ingen restriksjoner, så dette er **ikke** et forbud. Men nedoverbakkegange
@@ -183,10 +195,27 @@ på 10–13 % er den enkeltbelastningen som oftest vekker et patellofemoralt sym
 igjen. **Verdt et konkret spørsmål på kveldsspørsmålet — ikke som bekymring, men
 fordi vi trenger å vite det før neste bakkeøkt.**
 
-### 3. Volumopptrappingen står i fare
-14,72 km etter fire dager mot et mål på 24–26 km. Det som gjenstår må komme som
-I1/I2 — og det er også det vi trenger for å få **det første EF-punktet**.
-Ett flatt 45–60 min I2-løp lørdag eller søndag ville løst begge deler samtidig.
+### 3. NYTT — to volumtall som ikke kan stemme samtidig
+`coach/treningsplan.md`: «**Ukesvolum ~34–45 km i byggeuker.**»
+`hovedcoach` 07.09: opptrapping **24–26** denne uka, 28–30 neste, 33–35 uka etter.
+
+Uke 2 slik planen faktisk er satt opp:
+| Dag | Økt | km |
+|---|---|---|
+| man 07.09 | Tempo 20 min | 7,65 |
+| tor 10.09 | 6 km + 8 bakkesprint | 7,07 |
+| fre 11.09 | Langtur | 16,0 |
+| søn 13.09 | Rolig | 4,0 |
+| **Sum** | | **34,7 km** |
+
+**34,7 km mot 24–26 km — planen ligger 33–45 % over opptrappingstallet.**
+Dette er ikke Knut som gjør for mye; det er to styringstall som spriker.
+Etter fredagens langtur står uka på **30,7 km**, allerede over.
+
+Jeg avgjør ikke hvilket tall som gjelder — det er `hovedcoach` sitt. Men de kan
+ikke begge være riktige, og det bør avklares **før uke 3**, ikke etterpå.
+Merk at planens 34,7 km er nådd med bare fire løpeøkter, og at 20 km av dem er
+rolig I1/I2. Det er ikke et aggressivt oppsett i seg selv.
 
 ### 4. Fortsatt uten brystbelte
 Absolutt puls bærer ±3–5 slag usikkerhet. For denne økta betyr det lite —
@@ -198,5 +227,105 @@ konklusjonene hviler på kadens, effekt, stigning og fart, ikke på puls.
    Den er et nevromuskulært stimulus, ikke en formmåling.
 2. **Grunnlaget:** Én økt, to filer, 77,4 min måletid.
 3. **Konfidens:** **[for tidlig]** — uendret. Fortsatt null gyldige EF-punkter.
-4. **Flagg:** to harde økter samme uke; eksentrisk belastning mot nyavklart kne;
-   ukesvolum 9,3–11,3 km bak målet med tre dager igjen.
+4. **Flagg:** ~~to harde økter~~ trukket — økta sto i planen. Står igjen:
+   eksentrisk belastning mot nyavklart kne; **volumkonflikt 34,7 km (plan) mot
+   24–26 km (hovedcoach)**; tidsbruk 82 min mot planens «under en time».
+
+
+---
+
+# TILLEGG — planen lest, og protokoll for fredagens langtur
+
+## A. Tidsbruken: 82 min mot planens «under en time»
+
+Planen sier om torsdagsøkta: «Kort oppvarming her. Økta skal være ferdig på under
+en time, så du er brukbar til langturen i morgen.» Han brukte **81,5 min**.
+
+Hvor de 22 ekstra minuttene gikk:
+
+| Fase | Brukt | Kommentar |
+|---|---|---|
+| Oppvarming | 28,3 min | Planen sa «kort oppvarming». 4 km på 7:04/km tar den tiden. |
+| Sprintblokk | 26,6 min | 112 s arbeid + 7 nedoverganger à 130–225 s + 140 s pause |
+| Retur | 24,8 min | **Her ligger overforbruket.** 2,1 km på 24,8 min, kadens 103 spm |
+| Klokkestopp | 1,8 min | Utenfor hans kontroll |
+
+**Overskridelsen ligger nesten helt i returen.** 2 km «ned» var ment som rolig
+jogg; den ble i praksis gått — runde 18 tok 14,6 min for 998 m ved kadens 84 spm.
+Jogget han den, hadde økta landet på ca. 70 min.
+
+**Betyr det noe før langturen? Lite.** De ekstra minuttene ble tilbragt i gange på
+2,1 km/t — metabolsk nesten gratis. Trettheten han tar med seg inn i fredagen
+kommer fra de 8 maksdragene og de eksentriske nedoverbakkene, og de sto i planen.
+**Planens hensikt er intakt: beina skal være trøtte i morgen, med vilje.**
+
+Til neste torsdag: jogg de siste 2 km i stedet for å gå dem. Det holder økta
+innenfor timen og gir aerob verdi i stedet for bare tid på beina.
+
+## B. Fredag 11.09 — 16 km blir vårt første EF-punkt
+
+Dette er den viktigste økta på flere uker for min del. **16 km strengt I2
+oppfyller 40+ min-kravet med god margin** — den blir på rundt to timer.
+
+### Fire krav for at den skal telle
+
+1. **Flat rute — under 5 hm/km.** Gang- og sykkelvei / parkrun-traseen, samme
+   underlag som mandagens tempoøkt (**4,65 hm/km**). **Ikke** dammene-traseen fra
+   i dag (**12,72 hm/km**) og ikke Slottsfjellet. Dette er en instruks før økta;
+   om kravet ble innfridd måler jeg selv på høydestrømmen etterpå.
+2. **Brystbelte.** Viktigere her enn på mandagens kalibrering. EF er fart delt på
+   puls — er pulsen usikker med ±3–5 slag, er EF usikker med 2–3 %, og de
+   endringene vi leter etter er 3–5 %. Dette er **det første punktet i serien**
+   og setter nullpunktet for alt som kommer. Får vi det feil, arver hele kurven feilen.
+3. **Sammenhengende løping, ingen gåpauser.** Jeg leser dette av kadensstrømmen.
+   I dag var 44 % av tiden gange; en langtur med gåpauser gir et fartssnitt som
+   blander løping og gange, og da er tallet ikke fart. **Blir han nødt til å gå,
+   er det greit — men da må han si fra, så merker jeg punktet i stedet for å
+   tolke det.**
+4. **Solo.** Tempoet skal være hans eget.
+
+### Farten
+Planen: strengt I2, puls **137–156**, pace **6:45–7:45**.
+Legg deg i **nedre halvdel av pulsbåndet, 140–150**. Dagen etter kvalitet er ikke
+dagen for å teste øvre I2. Går pulsen over 155, ned i fart — uansett hva klokka
+sier om tempo.
+
+### At beina er trøtte er ikke et problem for målingen
+Langturen ligger alltid dagen etter kvalitet i denne planen — hver uke, hele
+høsten. Det betyr at **alle framtidige EF-punkter får samme forutsetning**, og
+serien blir dermed sammenlignbar med seg selv. Trøtte bein senker nivået litt,
+men konsekvent, og det er utviklingen jeg måler, ikke absoluttverdien.
+
+### Hva jeg regner ut etterpå
+hm/km og GAP-korreksjon, EF, **Pa:HR-decoupling** (16 km er godt over 60 min, så
+her er tallet endelig meningsfullt — første halvdel mot andre), kadensutvikling
+gjennom turen, og pulsdrift. **Jevn fart hele veien gir det mest tolkbare
+decoupling-tallet** — starter han for hardt og faller av, måler jeg pacingfeil
+i stedet for utholdenhet.
+
+## C. Planens pacetabell mot det vi faktisk har målt
+
+Planens soner (revidert 03.09, HRmax 190):
+
+| Sone | Puls | Planens pace | Målt |
+|---|---|---|---|
+| I2 | 137–156 | 6:45–7:45 | **Passer.** I dag GAP 7:04/km @ puls ~146 |
+| I3 | 156–165 | 6:30–6:50 | **Passer ikke.** 07.09: GAP **5:54/km** @ puls 165 |
+| I4 | 166–175 | 6:20–6:30 | **Passer ikke.** 07.09 endte på puls 171 ved 5:52/km |
+
+**I2-båndet i planen er riktig** — det er min gamle `2026-09-03-sonetabell` som var
+for konservativ der (7:10–8:10). Planen er allerede korrigert. Bra.
+
+**I3- og I4-båndene henger derimot ikke sammen med mandagens måling.** Han løp
+36–56 s/km raskere enn I3-båndet ved en puls midt i I3. To mulige forklaringer:
+- pacetabellen for I3/I4 er fortsatt for konservativ, eller
+- den optiske pulsmålingen leser **for lavt**, slik at han i realiteten var høyere enn 165.
+
+Begge er mulige, og de har motsatt konsekvens for treningen. **Én terskeløkt med
+brystbelte skiller dem.** Inntil da skal I3/I4-pacene i planen brukes som
+arbeidsrammer, ikke som fasit.
+
+**Bonus fra dagens oppvarming:** GAP **7:04,4/km ved puls ~146** — det er
+praktisk talt midt i maratonmålet (7:05–7:15 ved puls 145–155), på en rute med
+7,97 hm/km. Ett enkeltpunkt på 28 min, så ikke overtolk det. Men det peker
+samme vei som mandagen: **farten er der, holdbarheten er det som skal bygges.**
