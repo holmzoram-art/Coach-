@@ -250,6 +250,23 @@ Det er den eneste endringen mellom nå og januar.
 
 ---
 
+## Testen på pakken — meieri
+
+> **Protein over 10 g per 100 g · fett under 5 g · karbo under 6 g.**
+> Ingredienslista skal være melk og syrningskultur. Ikke stort mer.
+
+Består: skyr, mager cottage cheese, naturell kvarg.
+Stryker: gresk yoghurt, all smakssatt yoghurt, vanlig naturell yoghurt.
+
+Karbogrensen fanger tilsatt sukker — naturelle melkeprodukter ligger på 3–5 g
+fra melkesukkeret alene, så alt over 6 er tilsatt.
+
+**Gresk yoghurt** er ikke en erstatning: rundt halvparten av proteinet for
+dobbelt så mange kalorier som skyr. Men den er fin som **2–3 spiseskjeer på
+toppen** for smak, og som **erstatning for rømme og dressing** i matlagingen.
+
+---
+
 ## Hvis alt annet ryker
 
 **14-måltidet.** Det er det som avgjør kvelden din. Alt annet kan glippe en dag.
