@@ -153,3 +153,10 @@ Importsiden i Garmin Connect på nett godtar bare **aktivitetsfiler** (fullført
 was not accepted by the system». Øktmaler må inn via USB til `GARMIN/NewFiles/`
 på klokka. FIT-filer skal ha 14-byte header med header-CRC — `fit-tool` skriver
 12-byte header som standard.
+
+## Treningsplanen ligger i repoet
+`coach/treningsplan.md` er en kopi av plandataen fra artifacten «Marathon»,
+lagt der fordi agenter ikke kan lese artifacter. **Les den før du spør Knut hva
+som sto på planen, og før du antar at en økt ble valgt spontant.** Han følger
+planen; avvik sier han fra om selv. Endres planen i artifacten, skal fila
+oppdateres samtidig.
