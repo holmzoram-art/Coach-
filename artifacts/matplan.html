@@ -428,11 +428,6 @@ function tegnIdag(){
      (trener?"Ble ikke noe av":"Trente likevel")+'</button></span></div>';
   h+='</section>';
 
-  const dagerTil = Math.round((new Date(UNDERSKUDD_FRA+"T12:00:00") - new Date(iDagN+"T12:00:00"))/86400000);
-  if(dagerTil > 0 && dagerTil <= 10){
-    h+='<div class="varsel">Om '+dagerTil+' dager, <b>28. september</b>, går kantineporsjonen ned til liten på vanlige dager. '+
-       'Full porsjon bare når du løper over 10 km, og på fredag. Det er den eneste endringen mellom nå og januar.</div>';
-  }
 
   innhold.innerHTML=h;
   innhold.querySelectorAll("[data-luke]").forEach(b=>b.onclick=()=>apneArk(b.dataset.luke));
