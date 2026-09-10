@@ -11,11 +11,11 @@ detaljer. **Du trenger dem ikke.**
 
 | Kl. | Hva |
 |---|---|
-| **07** | Beger skyr eller yoghurt + **1 dl havregryn (tørt, rett i begeret)** + neve frosne bær + **1 spiseskje nøtter** — *eller 3 cottage cheese-rundstykker med kokt skinke* |
+| **07** | **2 cottage cheese-rundstykker med kokt skinke.** Har du ikke rundstykker: 300 g cottage cheese + **1 dl havregryn (tørt)** + neve frosne bær + **1 spiseskje nøtter** |
 | **11** | **Kantina:** halv tallerken salat først · kvart tallerken protein · kvart tallerken karbo |
 | **14** | **Hele begeret cottage cheese** + en frukt. Ikke en «porsjon» fra pakken — hele |
 | **Middag** | Protein på størrelse med håndflaten din (**mål det rått**) · **dobbel** grønnsak · **halv pose ferdigris eller 3 poteter** |
-| **21** | **Halve begeret** (200 g) cottage cheese eller skyr + bær. Varm bærene i mikroen og hell over — ikke varm osten. *Orker du ikke fast føde: proteinshake i melk, ikke vann* |
+| **21** | **Halve begeret** (200 g) cottage cheese + bær. Varm bærene i mikroen og hell over — ikke varm osten. *Orker du ikke fast føde: proteinshake i melk, ikke vann* |
 
 Fem måltider. De er like hver dag. **Du velger ingenting.**
 
@@ -115,7 +115,7 @@ Samme liste hver uke. Se nederst.
 3. **Kok 10 egg.** La skallet være på
 
 **Så pakker du jobbposen** og setter den i gangen: 5 begre cottage cheese
-(400 g hver). Inn i kjøleskapet på jobb mandag morgen.
+(400 g hver) — eller rundstykker fra fryseren. Inn i kjøleskapet på jobb mandag morgen.
 
 **Det som er laget søndag spises innen torsdag.** Torsdag kveld: fryses eller
 kastes. Det er hele holdbarhetsregelen.
@@ -203,7 +203,7 @@ Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.
 ## Handlelista — nesten lik hver uke
 
 **Fast:**
-egg **24 stk (2 brett)** · **cottage cheese 8 begre à 400 g** · **skyr 5 begre à 350 g** · frosne bær
+egg **24 stk (2 brett)** · **cottage cheese 12 begre à 400 g** · frosne bær
 1 pose · nøtter 1 liten pose · poteter 3 kg · frossen grønnsaksblanding 2 poser
 · ferdigris 4 poser · hakkede tomater 2 bokser · løk · kjøtt eller fisk til
 4 middager · kokt skinke · bananer
@@ -225,7 +225,9 @@ Det er hele lista. Den ser lik ut neste uke.
 | Vare | Beger | Protein |
 |---|---|---|
 | **Cottage cheese** (Tine Mager, 2 %) | **400 g** | **~48 g** |
-| **Skyr** (Tine eller Q, naturell) | **350 g** | **~37 g** |
+
+**Cottage cheese er nå eneste meierivare i planen.** Skyr er ute — den koster
+2,4 ganger så mye per gram protein.
 
 **Kl. 14 = hele begeret. Kl. 21 = halve.** Kl. 14 er måltidet som avgjør
 kvelden din, og det skal være stort. Kl. 21 skal ta kanten av sulten, ikke
