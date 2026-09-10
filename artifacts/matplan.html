@@ -148,9 +148,9 @@ header.top h1{font-size:21px;font-weight:700;letter-spacing:-.01em}
 .ark-bunn{padding:11px 16px;border-top:1px solid var(--line);flex:none;display:flex;gap:8px;justify-content:flex-end}
 
 .faner{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);
-  border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);
   padding-bottom:env(safe-area-inset-bottom)}
-.fane{padding:14px 4px 16px;font-family:Archivo,sans-serif;font-weight:600;font-size:14px;
+.fane{padding:14px 2px 16px;font-family:Archivo,sans-serif;font-weight:600;font-size:13px;
   color:var(--ink-3);border-top:2px solid transparent;margin-top:-1px;text-align:center}
 .fane.pa{color:var(--accent);border-top-color:var(--accent)}
 .fane .tall{font-family:"IBM Plex Mono",monospace;font-size:11.5px;display:block;font-weight:500;opacity:.8}
@@ -180,6 +180,7 @@ header.top h1{font-size:21px;font-weight:700;letter-spacing:-.01em}
 <nav class="faner">
   <button class="fane pa" data-fane="idag">I dag</button>
   <button class="fane" data-fane="handle">Handleliste<span class="tall" id="fanetall"></span></button>
+  <button class="fane" data-fane="uke">Uka</button>
   <button class="fane" data-fane="uka">Søndag</button>
 </nav>
 
@@ -194,13 +195,11 @@ const FASTE = [
    sub:"Havregrynene måles tørre, 1 dl (35 g) rett ned i begeret. Nøttene er ikke valgfrie — de er det eneste fettet i planen."},
   {n:"lunsj",kl:"11",min:660,
    hva:"<b>Kantina.</b> Halv tallerken salat først, kvart protein, kvart karbo",
-   sub:"Velg porsjonen, ikke retten.",laast:true},
+   sub:"Velg porsjonen, ikke retten.",laast:true,kantine:true},
   {n:"kl14",kl:"14",min:840,
    hva:"Beger cottage cheese (400 g) + en frukt",
-   sub:"Det som avgjør kvelden din."},
-  {n:"middag",kl:"middag",min:1140,
-   hva:"Protein på størrelse med håndflaten · <b>dobbel</b> grønnsak · <b>halv pose ferdigris</b> eller 3 poteter",
-   sub:"Proteinet måles rått. Koker du ris selv: 50 g tørr."},
+   sub:"Kuttes aldri. Det er dette måltidet som avgjør kvelden din."},
+  {n:"middag",kl:"middag",min:1140,middag:true},
   {n:"kveld",kl:"21",min:1260,
    hva:"<b>Halvt</b> beger cottage cheese (200 g) + bær"}
 ];
@@ -220,6 +219,20 @@ const BYTTER = {
   kveld:["200 g cottage cheese + bær","200 g cottage cheese + lune bær","200 g cottage cheese + frukt",
          "Proteinshake i melk med bær — når du ikke orker fast føde"]
 };
+
+/* Middagene går i ring. Fast per ukedag, så handlelista og uka stemmer overens. */
+const MIDDAG_UKE = [
+  "Gryta fra søndag — varmes, 8 min",
+  "Kylling eller svin + poteter fra søndag + grønnsaker — 15 min",
+  "Gryta fra søndag — varmes, 8 min",
+  "Wok: kjøtt eller kylling + frossen wokblanding + ferdigris — 15 min",
+  "Fisk fra frossen + poteter + grønnsaker — 18 min",
+  "Lørdag — lag hva du vil",
+  "Ny gryte lages i dag, 4 porsjoner"
+];
+
+/* Langturdagen er den eneste over 10 km i den faste uka. */
+const OVER10 = [false,false,false,false,true,false,false];
 
 const LOPEEKSTRA = [
   {kl:"15:30",hva:"<b>1 Corny Big + 1 neve rosiner</b>",sub:"Fra skuffen på jobb"},
@@ -276,6 +289,17 @@ const UKEDAG=PLAN.map(d=>d.navn);
 const MND=["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember"];
 const UNDERSKUDD_FRA="2026-09-28";
 
+/* Kantina: porsjonen følger dagen og fasen. Regelen står på måltidet,
+   ikke som løs tekst nederst. */
+function kantinePorsjon(dagIdx, iso){
+  const underskudd = iso >= UNDERSKUDD_FRA;
+  if(OVER10[dagIdx]) return {navn:"full karboporsjon", grunn:"Over 10 km i dag"};
+  if(underskudd)     return {navn:"liten karboporsjon", grunn:"Underskuddsfasen — full bare over 10 km og på fredag"};
+  if(dagIdx===0||dagIdx===3) return {navn:"full karboporsjon", grunn:"Kvalitetsøkt i dag"};
+  if(dagIdx===2||dagIdx===5) return {navn:"halv karboporsjon", grunn:"Hviledag"};
+  return {navn:"normal karboporsjon", grunn:""};
+}
+
 /* ---------- tilstand ---------- */
 const naa=new Date();
 const dagIdx=(naa.getDay()+6)%7;
@@ -289,6 +313,7 @@ let angreTid=null,sisteAngre=null,arkLuke=null;
 function les(n,f){try{const v=localStorage.getItem("ukesmat."+n);return v===null?f:JSON.parse(v)}catch(e){return f}}
 function skriv(n,v){try{localStorage.setItem("ukesmat."+n,JSON.stringify(v))}catch(e){}}
 function iso(d){return d.toISOString().slice(0,10)}
+function norskDato(d){return d.getDate()+". "+MND[d.getMonth()]}
 function ukeNokkel(d){
   const x=new Date(d);x.setHours(12,0,0,0);
   x.setDate(x.getDate()+3-((x.getDay()+6)%7));
@@ -296,10 +321,14 @@ function ukeNokkel(d){
   return x.getFullYear()+"-W"+String(1+Math.round(((x-u1)/86400000-3+((u1.getDay()+6)%7))/7)).padStart(2,"0");
 }
 /* Handleuka: fra torsdag peker lista på uka som kommer */
-function handleUke(){
+function handleUke(){ return ukeNokkel(handleUkeMandag()); }
+/* Mandag i den uka handlelista gjelder for. Fra torsdag peker den framover. */
+function handleUkeMandag(){
   const d=new Date(naa);
   if(dagIdx>=3) d.setDate(d.getDate()+7);
-  return ukeNokkel(d);
+  d.setDate(d.getDate()-((d.getDay()+6)%7));
+  d.setHours(12,0,0,0);
+  return d;
 }
 const iDagN=iso(naa), ukeN=ukeNokkel(naa), hUkeN=handleUke();
 function dag(){ if(!dager[iDagN]) dager[iDagN]={bytte:{}}; return dager[iDagN]; }
@@ -340,7 +369,10 @@ function tegn(){
     '<div class="banner">Lagring utilgjengelig — avhukinger blir ikke husket i denne visningen.</div>';
   const liste=alleVarer();
   document.getElementById("fanetall").textContent=liste.filter(v=>!hl().av[v.id]).length+" igjen";
-  if(fane==="idag") tegnIdag(); else if(fane==="handle") tegnHandle(); else tegnUka();
+  if(fane==="idag") tegnIdag();
+  else if(fane==="handle") tegnHandle();
+  else if(fane==="uke") tegnUkesmeny();
+  else tegnUka();
   window.scrollTo(0,0);
 }
 
@@ -396,16 +428,11 @@ function tegnIdag(){
      (trener?"Ble ikke noe av":"Trente likevel")+'</button></span></div>';
   h+='</section>';
 
-  h+='<div class="regel"><span class="lab">Den ene regelen</span>'+
-     'Løper du <b>over 10 km</b>: ta full karboporsjon i kantina, og <b>dobbel karbo</b> til middag — hel pose ris (100 g tørr) eller 6 poteter.</div>';
-
-  if(iDagN < UNDERSKUDD_FRA){
-    h+='<div class="varsel">Fra <b>28. september</b> tar du liten karboporsjon i kantina på vanlige dager. '+
+  const dagerTil = Math.round((new Date(UNDERSKUDD_FRA+"T12:00:00") - new Date(iDagN+"T12:00:00"))/86400000);
+  if(dagerTil > 0 && dagerTil <= 10){
+    h+='<div class="varsel">Om '+dagerTil+' dager, <b>28. september</b>, går kantineporsjonen ned til liten på vanlige dager. '+
        'Full porsjon bare når du løper over 10 km, og på fredag. Det er den eneste endringen mellom nå og januar.</div>';
   }
-
-  h+='<div class="tit">Hvis alt annet ryker</div>'+
-     '<div class="card pad"><b>14-måltidet.</b> Det er det som avgjør kvelden din. Alt annet kan glippe en dag.</div>';
 
   innhold.innerHTML=h;
   innhold.querySelectorAll("[data-luke]").forEach(b=>b.onclick=()=>apneArk(b.dataset.luke));
@@ -490,6 +517,44 @@ function tegnUka(){
   innhold.querySelectorAll("[data-oppg]").forEach(b=>b.onclick=()=>{
     const id=b.dataset.oppg; s.oppg[id]=!s.oppg[id]; lagre(); tegnUka();
   });
+}
+
+/* Uka: hva du spiser hver dag neste uke. Ingen valg — den følger planen. */
+function tegnUkesmeny(){
+  const m=handleUkeMandag(), n=ukeNokkel(m);
+  const s0=new Date(m), s6=new Date(m); s6.setDate(s6.getDate()+6);
+  let h='<div class="regel"><span class="lab">Uke '+n.slice(6)+' · '+norskDato(s0)+'–'+norskDato(s6)+'</span>'+
+        'Frokost, kl. 14 og kl. 21 er like hver dag. Det som varierer er <b>middagen</b> og '+
+        '<b>karboporsjonen i kantina</b>. Handlelista er bygget på nettopp denne uka.</div>';
+
+  for(let i=0;i<7;i++){
+    const dd=new Date(m); dd.setDate(dd.getDate()+i);
+    const iso=dd.toISOString().slice(0,10);
+    const plan=PLAN[i], kp=kantinePorsjon(i,iso), dbl=OVER10[i];
+    const trener=plan.lop||plan.styrke;
+    h+='<div class="tit">'+UKEDAG[i]+' '+norskDato(dd)+' — '+plan.okt.toLowerCase()+'</div>';
+    h+='<section class="card">';
+    h+='<div class="maaltid"><span class="kl">07</span><span class="hva">'+
+       (i===5||i===6?"2 rundstykker med skinke, eller cottage cheese + havregryn":"2 rundstykker med skinke")+
+       (i===4?'<span class="sub">Fredag: <b>ingen nøtter</b> — ikke fett før langturen</span>':'')+
+       '</span><span></span></div>';
+    h+='<div class="maaltid"><span class="kl">11</span><span class="hva">Kantina, <b>'+kp.navn+'</b>'+
+       (kp.grunn?'<span class="sub">'+kp.grunn+'</span>':'')+'</span><span></span></div>';
+    h+='<div class="maaltid"><span class="kl">14</span><span class="hva">Beger cottage cheese + frukt'+
+       '<span class="sub">Kuttes aldri</span></span><span></span></div>';
+    if(trener) h+='<div class="maaltid ekstra"><span class="kl">'+(i===4?"09:30":"15:30")+
+       '</span><span class="hva">Corny Big + neve rosiner<span class="sub">Fra skuffen</span></span><span></span></div>';
+    if(i===4) h+='<div class="maaltid ekstra"><span class="kl">13:30</span><span class="hva">'+
+       'Saft + Corny Big + 3 riskaker<span class="sub">Skuffen. Under turen: se mage.md</span></span><span></span></div>';
+    h+='<div class="maaltid"><span class="kl">middag</span><span class="hva"><b>'+MIDDAG_UKE[i]+'</b>'+
+       '<span class="sub">'+(dbl?"<b>Dobbel karbo</b> — hel pose ris eller 6 poteter":"Halv pose ris eller 3 poteter")+
+       '</span></span><span></span></div>';
+    h+='<div class="maaltid"><span class="kl">21</span><span class="hva">200 g cottage cheese + bær</span><span></span></div>';
+    h+='</section>';
+  }
+  h+='<p class="kilde" style="border:none;margin-top:18px;padding:0">Lørdag lager du hva du vil til middag. '+
+     'Søndag koker du ny gryte, poteter og egg — se Søndag-fanen.</p>';
+  innhold.innerHTML=h;
 }
 
 function alleVarer(){
