@@ -11,7 +11,7 @@ detaljer. **Du trenger dem ikke.**
 
 | Kl. | Hva |
 |---|---|
-| **07** | **2 cottage cheese-rundstykker med kokt skinke.** Har du ikke rundstykker: 300 g cottage cheese + **1 dl havregryn (tørt)** + neve frosne bær + **1 spiseskje nøtter** |
+| **07** | **2 cottage cheese-rundstykker med kokt skinke.** Har du ikke rundstykker: **1 dl havregryn + 1 skje proteinpulver + 200 g cottage cheese** + neve frosne bær + **1 spiseskje nøtter** |
 | **11** | **Kantina:** halv tallerken salat først · kvart tallerken protein · kvart tallerken karbo |
 | **14** | **Hele begeret cottage cheese** + en frukt. Ikke en «porsjon» fra pakken — hele |
 | **Middag** | Protein på størrelse med håndflaten din (**mål det rått**) · **dobbel** grønnsak · **halv pose ferdigris eller 3 poteter** |
@@ -28,7 +28,7 @@ Nøttene kl. 07 er ikke valgfrie — de er det eneste fettet i planen.
 | | |
 |---|---|
 | **15:30, fra skuffen på jobb** | 1 Corny Big + 1 neve rosiner |
-| **Rett etter økta** | 1 YT Protein restitusjonsdrikk |
+| **Rett etter økta** | **1 skje proteinpulver i 3 dl melk + en banan.** Det er samme jobb som restitusjonsdrikken til under halv pris |
 
 Det er alt. Ingen andre justeringer på en vanlig løpedag.
 
@@ -110,9 +110,11 @@ Samme liste hver uke. Se nederst.
 
 **Tre ting, det meste passivt:**
 1. **Ovnen på 200°: 3 kg poteter i båter.** 35 min, du gjør noe annet
-2. **Én stor gryte eller suppe, 4 porsjoner.** Kjøttdeig eller linser,
+2. **Kok ris til uka.** **Kjøl den raskt ned og spis den innen 3 dager** —
+   oppvarming dreper bakterien, men ikke giften den har rukket å lage
+3. **Én stor gryte eller suppe, 4 porsjoner.** Kjøttdeig eller linser,
    hakkede tomater, frossen grønnsaksblanding, løk
-3. **Kok 10 egg.** La skallet være på
+4. **Kok 10 egg.** La skallet være på
 
 **Så pakker du jobbposen** og setter den i gangen: 5 begre cottage cheese
 (400 g hver) — eller rundstykker fra fryseren. Inn i kjøleskapet på jobb mandag morgen.
@@ -203,7 +205,8 @@ Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.
 ## Handlelista — nesten lik hver uke
 
 **Fast:**
-egg **24 stk (2 brett)** · **cottage cheese 12 begre à 400 g** · frosne bær
+egg **24 stk (2 brett, billigste merke)** · **cottage cheese 10 begre à 400 g**
+· **melk 3 l** · frosne bær (billigste merke)
 1 pose · nøtter 1 liten pose · poteter 3 kg · frossen grønnsaksblanding 2 poser
 · ferdigris 4 poser · hakkede tomater 2 bokser · løk · kjøtt eller fisk til
 4 middager · kokt skinke · bananer
@@ -211,10 +214,15 @@ egg **24 stk (2 brett)** · **cottage cheese 12 begre à 400 g** · frosne bær
 **Når det er tomt:**
 havregryn · Corny Big 3 pk · rosiner · riskaker · saft · proteinbar
 
+**Hver måned:** proteinpulver 1 kg (~330 kr, varer 3–4 uker) · tørr ris i
+storpose · nøtter (vanlig blanding, ikke premium) · rosiner (kjedens eget merke)
+
 **Frossen fisk — kjøp disse:**
-**First Price Seifilet Blokk** eller **torskefilet i blokk** (naturell) til de
-vanlige fiskemiddagene · **laksefilet naturell** (Findus, Lerøy eller Norsk
-Sjømat) én gang i uka · **makrell i tomat på boks** til pålegg og kl. 14.
+**First Price Seifilet Blokk** (billigst per gram protein av all fisk) til de
+vanlige fiskemiddagene · **laksefilet naturell annenhver uke**, ikke hver ·
+**makrell i tomat på boks** til pålegg og kl. 14.
+
+**Kylling kjøpes i 2 kg-pakke**, ikke 900 g — det er ~25 kr/kg billigere.
 
 Panert fisk: se `matplan.md` hvis du vil ha det. Kortversjonen står under.
 

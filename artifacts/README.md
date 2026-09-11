@@ -1,31 +1,41 @@
-# artifacts/
+# Artifacts
 
-Kildekode for de publiserte artifactene. Repoet er kilden — publisert versjon
-skal alltid kunne bygges herfra.
+HTML-sidene her er **frittstående**. De trenger ingen server og ingen konto:
+last ned fila og åpne den i en nettleser, så virker den.
 
-| Fil | Artifact | Innhold |
-|---|---|---|
-| `kroppsloggen.html` | **Kroppsloggen** | Daglig vektlogg med trend, søvndata, ernæringsplan, kneflagg, læringslogg |
-| *(ikke i repo)* | **Marathon** | Treningsplanen, økt for økt. Redigeres direkte i artifacten. |
+| Fil | Hva |
+|---|---|
+| `matplan.html` | Ukesmat — dagens måltider, uka, handleliste, søndagsprep |
+| `kroppsloggen.html` | Daglig vektregistrering |
 
-## Kroppsloggen
+## Hvordan lagringen virker
 
-URL: https://claude.ai/code/artifact/2ff64b78-d515-4fb8-bc2e-3cf7a0535438
+Sidene lagrer avhukinger og valg to steder, avhengig av hvor de kjøres:
 
-Bruker `db`-capability til å lagre vektmålinger. Ett dokument per dato:
+- **Åpnet via claude.ai:** delt lagring. Setter du opp noe på PC, ser du det på
+  mobilen. Dette er det som gjør handlelista nyttig i butikken.
+- **Åpnet som fil, uten claude.ai:** nettleserens eget lager, altså per enhet.
+  Alt virker, men ingenting følger med til en annen telefon eller maskin.
 
-```
-weights/ÅÅÅÅ-MM-DD  →  { d: "ÅÅÅÅ-MM-DD", kg: 119.0 }
-```
+Siden sier selv hvilken modus den er i, øverst.
 
-Tallene kan leses tilbake med Artifact-verktøyets `read_db` og brukes i
-analyser. `ernaering` bruker **ukesnitt**, ikke enkeltmålinger.
+## Hvis Claude-tilgangen tar slutt
 
-Seedet med de tre punktene Knut har oppgitt: 131 kg (feb), 119 kg (juli),
-119 kg (4. sept). Resten legger han inn selv hver morgen.
+Du mister ingenting som betyr noe. **Selve planen ligger i markdown-filene**
+under `coach/` — `ernaering/planen.md`, `treningsplan.md` og resten. De kan
+leses hvor som helst, i all framtid, uavhengig av alt.
 
-## Arbeidsdeling mellom de to
+For å bruke appen videre:
 
-- **Marathon** svarer på «hva gjør jeg i dag». Økter, soner, uker.
-- **Kroppsloggen** er alt annet — det som avgjør om treningen virker, men som
-  ikke er en økt.
+1. Last ned `artifacts/matplan.html` fra dette repoet.
+2. Åpne den i nettleseren. På mobil: lagre til hjemskjermen, så oppfører den
+   seg som en app.
+3. Avhukinger lagres lokalt på den enheten.
+
+Vil du ha den på nett med synk mellom enheter uten Claude, er det to veier:
+GitHub Pages fra et **privat** repo krever betalt GitHub-plan, mens
+Cloudflare Pages og Netlify hoster private repoer gratis. Begge gir fortsatt
+bare lokal lagring — ekte synk krever en database.
+
+**Ikke gjør repoet offentlig** for å få gratis hosting. Det inneholder vekt,
+hvilepuls, HRV og notater om legetimer.
