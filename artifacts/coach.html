@@ -1,0 +1,2252 @@
+<title>Coach</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F5F1EA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+  :root {
+    --ground: #F5F1EA;
+    --raise: #FBF7EF;
+    --sunk: #EFEAE1;
+    --ink: #1C1815;
+    --ink-2: #3D3833;
+    --mute: #6B655C;
+    --line: #E2DBCE;
+    --line-2: #CFC6B5;
+    --accent: #C1523A;
+    --accent-soft: #E9D1C9;
+    --accent-ink: #7E2E1C;
+    --on-accent: #FBF7EF;
+    --easy: #5F8C55;
+    --easy-soft: #DCE7D6;
+    --long: #B08A2A;
+    --long-soft: #F0E4C0;
+    --long-ink: #6E5514;
+    --quality: #C1523A;
+    --quality-soft: #E9D1C9;
+    --deload: #6B84A0;
+    --deload-soft: #D5DEE9;
+    --strength: #7A5EA0;
+    --strength-soft: #E0D8EC;
+    --today-ring: #C1523A;
+    --shadow: 0 1px 2px rgba(28,24,21,0.04), 0 4px 16px rgba(28,24,21,0.06);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12100E;
+      --raise: #1B1815;
+      --sunk: #0C0A09;
+      --ink: #F0EBE1;
+      --ink-2: #C4BEB2;
+      --mute: #8A8378;
+      --line: #2A2622;
+      --line-2: #3C3730;
+      --accent: #E07052;
+      --accent-soft: #3A241E;
+      --accent-ink: #F2BCA8;
+      --on-accent: #1B1815;
+      --easy: #8CB47F;
+      --easy-soft: #253022;
+      --long: #D9B764;
+      --long-soft: #322A17;
+      --long-ink: #E8D19A;
+      --quality: #E07052;
+      --quality-soft: #3A241E;
+      --deload: #9DB1CB;
+      --deload-soft: #1E2833;
+      --strength: #B39BD6;
+      --strength-soft: #29223A;
+      --today-ring: #E07052;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.4);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12100E;
+    --raise: #1B1815;
+    --sunk: #0C0A09;
+    --ink: #F0EBE1;
+    --ink-2: #C4BEB2;
+    --mute: #8A8378;
+    --line: #2A2622;
+    --line-2: #3C3730;
+    --accent: #E07052;
+    --accent-soft: #3A241E;
+    --accent-ink: #F2BCA8;
+    --on-accent: #1B1815;
+    --easy: #8CB47F;
+    --easy-soft: #253022;
+    --long: #D9B764;
+    --long-soft: #322A17;
+    --long-ink: #E8D19A;
+    --quality: #E07052;
+    --quality-soft: #3A241E;
+    --deload: #9DB1CB;
+    --deload-soft: #1E2833;
+    --strength: #B39BD6;
+    --strength-soft: #29223A;
+    --today-ring: #E07052;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.4);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Manrope", -apple-system, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; text-align: left; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+  }
+
+  .wrap { max-width: 640px; margin: 0 auto; padding: 0 20px calc(96px + env(safe-area-inset-bottom)); }
+
+  /* ---------- Sticky header ---------- */
+  header.top {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--ground);
+    padding: env(safe-area-inset-top) 0 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.top .inner {
+    max-width: 640px; margin: 0 auto; padding: 14px 20px 0;
+    display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  }
+  .eyebrow {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--mute);
+  }
+  .hdr-date { color: var(--ink); margin-top: 4px; font-size: 12px; }
+  .toggle {
+    background: none; border: 1px solid var(--line); color: var(--mute);
+    padding: 8px 12px; border-radius: 999px; font-family: "JetBrains Mono", monospace;
+    font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
+    min-height: 34px; flex: none;
+  }
+  .toggle:hover { color: var(--ink); border-color: var(--ink-2); }
+
+  /* ---------- Bottom tab bar ---------- */
+  .tabbar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    background: var(--raise); border-top: 1px solid var(--line);
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .tabbar button {
+    padding: 12px 4px 14px; min-height: 56px; text-align: center;
+    font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--mute);
+    border-top: 2px solid transparent; margin-top: -1px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .tabbar button .ico { display: block; font-size: 15px; margin-bottom: 3px; letter-spacing: 0; }
+  .tabbar button.pa { color: var(--accent); border-top-color: var(--accent); }
+
+  /* ---------- Home ---------- */
+  .hjem-hero { padding: 26px 0 4px; }
+  .hjem-tittel {
+    font-family: "Fraunces", Georgia, serif;
+    font-optical-sizing: auto; font-variation-settings: "opsz" 144;
+    font-weight: 500; font-size: clamp(38px, 12vw, 56px); line-height: 1;
+    letter-spacing: -0.03em; margin: 0;
+  }
+  .hjem-sub {
+    font-family: "JetBrains Mono", monospace; font-size: 11px;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--mute);
+    margin: 10px 0 0;
+  }
+  .porter { display: grid; gap: 14px; margin-top: 22px; }
+  .port {
+    display: block; width: 100%;
+    background: var(--raise); border: 1px solid var(--line);
+    border-radius: 20px; padding: 22px 22px 18px;
+    box-shadow: var(--shadow); position: relative; overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .port::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+    background: var(--pc, var(--accent));
+  }
+  .port:hover { transform: translateY(-2px); }
+  .port:active { transform: scale(0.995); }
+  .port-tag {
+    display: flex; align-items: center; gap: 9px;
+    font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--pc, var(--accent));
+  }
+  .port-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex: none; }
+  .port-navn {
+    display: block;
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 96; font-weight: 500;
+    font-size: clamp(24px, 6.5vw, 30px); line-height: 1.1;
+    letter-spacing: -0.02em; margin: 10px 0 6px; text-wrap: balance;
+  }
+  .port-linje { display: block; font-size: 15px; color: var(--ink-2); line-height: 1.45; }
+  .port-linje b { font-weight: 600; color: var(--ink); }
+  .port-gaa {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--mute);
+  }
+  .port:hover .port-gaa { color: var(--ink-2); }
+  .snarvei {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    width: 100%; margin-top: 14px; min-height: 52px;
+    background: none; border: 1px dashed var(--line-2); border-radius: 14px;
+    padding: 14px 18px; color: var(--ink-2);
+    font-family: "JetBrains Mono", monospace; font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .snarvei b { color: var(--ink); font-weight: 700; }
+  .snarvei:hover { border-color: var(--ink-2); color: var(--ink); }
+
+  /* ---------- Hero: today (trening) ---------- */
+  .today-hero {
+    margin-top: 20px;
+    background: var(--raise);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--line);
+    position: relative; overflow: hidden;
+  }
+  .today-hero::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; background: var(--intensity-color, var(--accent));
+  }
+  .today-tag {
+    display: flex; align-items: center; gap: 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--intensity-color, var(--accent));
+    font-weight: 600;
+  }
+  .today-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .today-name {
+    font-family: "Fraunces", Georgia, serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 96;
+    font-weight: 500;
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.05;
+    margin: 10px 0 4px;
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+  .today-date {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px; color: var(--mute); font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .today-metrics {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+    margin-bottom: 18px;
+  }
+  .metric {
+    background: var(--ground);
+    border: 1px solid var(--line);
+    border-radius: 12px; padding: 12px 14px;
+  }
+  .metric .label {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--mute); margin-bottom: 4px;
+  }
+  .metric .value {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 72;
+    font-weight: 500;
+    font-size: 22px;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .today-detail {
+    font-size: 15px;
+    color: var(--ink-2);
+    line-height: 1.55;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+  }
+  .today-detail strong { color: var(--ink); font-weight: 600; }
+  .today-notes {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--mute);
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  /* Strength detail */
+  .strength-list {
+    margin-top: 14px;
+    display: grid; gap: 8px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+  }
+  .strength-list .row {
+    display: grid; grid-template-columns: 1fr auto; gap: 12px;
+    padding: 8px 10px; background: var(--ground); border-radius: 8px;
+  }
+  .strength-list .row .name { color: var(--ink); font-weight: 500; }
+  .strength-list .row .spec { color: var(--mute); font-weight: 400; }
+  .strength-list .row.new { border-left: 2px solid var(--accent); }
+
+  /* Section titles */
+  h2.section {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 24;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    margin: 32px 0 12px;
+    color: var(--ink);
+  }
+  h2.section .sub {
+    color: var(--mute); font-weight: 400; font-size: 14px; margin-left: 8px;
+    font-family: "Manrope", sans-serif;
+  }
+
+  /* Week strip */
+  .week-strip {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(54px, 1fr)); gap: 8px;
+  }
+  .day-chip {
+    background: var(--raise);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 12px 10px;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    position: relative; overflow: hidden;
+    cursor: pointer; min-height: 74px;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .day-chip::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+    background: var(--dc, var(--line));
+  }
+  .day-chip.today {
+    border-color: var(--today-ring);
+    box-shadow: 0 0 0 2px var(--today-ring);
+  }
+  .day-chip .d {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--mute); font-weight: 600;
+  }
+  .day-chip .n {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px; color: var(--ink); font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+  .day-chip .t {
+    font-size: 11px; color: var(--ink-2); text-align: center; margin-top: 2px;
+    line-height: 1.2; font-weight: 500;
+  }
+  .day-chip:hover { transform: translateY(-2px); }
+  .day-chip:active { transform: scale(0.97); }
+
+  /* All weeks accordion */
+  .weeks { display: grid; gap: 10px; }
+  .week-card {
+    background: var(--raise); border: 1px solid var(--line);
+    border-radius: 14px; overflow: hidden;
+  }
+  .week-card.active { border-color: var(--ink-2); }
+  .week-head {
+    padding: 14px 16px; min-height: 60px;
+    display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center;
+    cursor: pointer; width: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .week-num {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 48;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+    min-width: 32px;
+  }
+  .week-title { display: flex; flex-direction: column; gap: 2px; }
+  .week-title .theme { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .week-title .dates {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; color: var(--mute); letter-spacing: 0.04em;
+  }
+  .chev { color: var(--mute); font-size: 12px; transition: transform 0.2s ease; }
+  .week-card.active .chev { transform: rotate(180deg); }
+  .week-body { display: none; padding: 0 16px 16px; border-top: 1px solid var(--line); }
+  .week-card.active .week-body { display: block; }
+  .week-days { display: grid; gap: 8px; margin-top: 12px; }
+  .day-row {
+    display: grid; grid-template-columns: 60px 1fr; gap: 12px;
+    padding: 10px 12px; background: var(--ground); border-radius: 10px;
+    border-left: 3px solid var(--dc, var(--line));
+    cursor: pointer; transition: transform .12s ease;
+  }
+  .day-row:hover { transform: translateX(2px); }
+  .day-row:active { transform: scale(0.99); }
+  .day-row .date {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; color: var(--mute); font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+  .day-row .date .dn { color: var(--ink); font-weight: 600; display: block; font-size: 12px; }
+  .day-row .body .name { font-weight: 600; font-size: 14px; color: var(--ink); }
+  .day-row .body .detail { font-size: 13px; color: var(--ink-2); margin-top: 2px; line-height: 1.4; }
+  .day-row .body .pace {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; color: var(--mute); margin-top: 4px; letter-spacing: 0.03em;
+  }
+
+  /* Pace zones */
+  .zones {
+    background: var(--raise); border: 1px solid var(--line);
+    border-radius: 14px; padding: 16px; margin-top: 10px;
+  }
+  .zone-row {
+    display: grid; grid-template-columns: 1fr auto auto; gap: 14px; padding: 8px 0;
+    border-top: 1px solid var(--line); align-items: baseline;
+  }
+  .zone-row:first-of-type { border-top: 0; }
+  .zone-row .name { font-size: 13px; font-weight: 500; color: var(--ink); }
+  .zone-row .name .note { color: var(--mute); font-weight: 400; display: block; font-size: 11px; margin-top: 1px; }
+  .zone-row .hr, .zone-row .pace {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px; font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em; min-width: 78px; text-align: right;
+  }
+  .zone-row .hr { color: var(--ink-2); font-weight: 500; }
+  .zone-row .pace { color: var(--mute); }
+  .zone-head {
+    display: grid; grid-template-columns: 1fr auto auto; gap: 14px;
+    padding-bottom: 8px; border-bottom: 2px solid var(--line); margin-bottom: 4px;
+  }
+  .zone-head span {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--mute); font-weight: 600;
+  }
+  .zone-head span:nth-child(2), .zone-head span:nth-child(3) { min-width: 78px; text-align: right; }
+
+  /* Day sheet (modal) */
+  .sheet-backdrop {
+    position: fixed; inset: 0; z-index: 50;
+    background: rgba(20,17,14,0.45);
+    -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+    display: flex; align-items: flex-end; justify-content: center;
+    opacity: 0; pointer-events: none; transition: opacity .18s ease;
+  }
+  .sheet-backdrop.open { opacity: 1; pointer-events: auto; }
+  .sheet {
+    background: var(--raise);
+    border: 1px solid var(--line); border-bottom: 0;
+    border-radius: 22px 22px 0 0;
+    width: 100%; max-width: 640px;
+    max-height: 88vh; overflow-y: auto;
+    padding: 10px 20px calc(28px + env(safe-area-inset-bottom));
+    box-shadow: 0 -8px 40px rgba(0,0,0,0.25);
+    transform: translateY(16px); transition: transform .2s ease;
+    position: relative;
+  }
+  .sheet-backdrop.open .sheet { transform: translateY(0); }
+  @media (min-width: 700px) {
+    .sheet-backdrop { align-items: center; }
+    .sheet { border-radius: 22px; border-bottom: 1px solid var(--line); max-height: 84vh; }
+  }
+  .sheet .grab { width: 40px; height: 4px; border-radius: 999px; background: var(--line); margin: 6px auto 14px; }
+  .sheet .close {
+    position: absolute; top: 12px; right: 14px;
+    background: var(--ground); border: 1px solid var(--line); color: var(--mute);
+    width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
+    font-size: 17px; line-height: 1; display: grid; place-items: center;
+  }
+  .sheet .close:hover { color: var(--ink); border-color: var(--ink-2); }
+  .sheet-tag {
+    display: flex; align-items: center; gap: 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--sc, var(--accent)); font-weight: 600;
+  }
+  .sheet-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .sheet-name {
+    font-family: "Fraunces", Georgia, serif;
+    font-variation-settings: "opsz" 96; font-weight: 500;
+    font-size: clamp(26px, 7vw, 34px); line-height: 1.1;
+    margin: 10px 0 4px; letter-spacing: -0.02em; text-wrap: balance;
+  }
+  .sheet-date {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px; color: var(--mute); font-weight: 500; margin-bottom: 18px;
+  }
+  .sheet-metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 18px; }
+  .sheet-detail {
+    font-size: 15px; color: var(--ink-2); line-height: 1.55;
+    padding-top: 16px; border-top: 1px solid var(--line);
+  }
+  .sheet-detail strong { color: var(--ink); font-weight: 600; }
+  .sheet-notes { margin-top: 12px; font-size: 14px; color: var(--mute); line-height: 1.5; font-style: italic; }
+  .sheet-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 22px; }
+  .sheet-nav button {
+    background: var(--ground); border: 1px solid var(--line); color: var(--ink-2);
+    border-radius: 10px; padding: 12px; cursor: pointer; min-height: 46px; text-align: center;
+    font-family: "JetBrains Mono", monospace; font-size: 11px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .sheet-nav button:hover:not(:disabled) { color: var(--ink); border-color: var(--ink-2); }
+  .sheet-nav button:disabled { opacity: 0.35; cursor: default; }
+  body.sheet-open { overflow: hidden; }
+
+  /* Phase outline */
+  .phase {
+    background: var(--raise); border: 1px solid var(--line);
+    border-radius: 14px; padding: 16px; margin-bottom: 10px;
+    border-left: 3px solid var(--pc, var(--line));
+  }
+  .phase .ph-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px; margin-bottom: 8px; flex-wrap: wrap;
+  }
+  .phase .ph-title { font-size: 15px; font-weight: 700; color: var(--ink); }
+  .phase .ph-when { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--mute); letter-spacing: 0.04em; }
+  .phase .ph-body { font-size: 14px; color: var(--ink-2); line-height: 1.5; }
+  .phase .ph-body strong { color: var(--ink); font-weight: 600; }
+  .phase .ph-long {
+    margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line);
+    font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--mute);
+  }
+  .phase .ph-long b { color: var(--ink-2); font-weight: 500; }
+
+  /* Øktrapport */
+  .report-wrap { margin-top: 18px; }
+  .report-btn {
+    width: 100%; border: 0; border-radius: 12px; padding: 15px 16px; min-height: 48px;
+    background: var(--intensity-color, var(--accent)); color: var(--on-accent);
+    font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    -webkit-tap-highlight-color: transparent;
+    transition: opacity .15s ease, transform .1s ease;
+  }
+  .report-btn:hover:not(:disabled) { opacity: .9; }
+  .report-btn:active:not(:disabled) { transform: scale(.99); }
+  .report-btn:disabled { opacity: .5; cursor: default; }
+  .report-btn .spin {
+    width: 13px; height: 13px; border-radius: 50%;
+    border: 2px solid currentColor; border-right-color: transparent;
+    animation: rspin .7s linear infinite; display: none;
+  }
+  .report-btn.busy .spin { display: block; }
+  @keyframes rspin { to { transform: rotate(360deg); } }
+  .report-panel {
+    display: none; margin-top: 14px;
+    background: var(--ground); border: 1px solid var(--line);
+    border-radius: 12px; padding: 16px;
+  }
+  .report-panel.on { display: block; }
+  .report-panel .rhead {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--mute); margin-bottom: 10px;
+    display: flex; justify-content: space-between; gap: 10px; align-items: baseline;
+  }
+  .report-panel .rbody { font-size: 14.5px; line-height: 1.6; color: var(--ink-2); white-space: pre-wrap; word-wrap: break-word; }
+  .report-panel.err .rbody { color: var(--mute); font-style: italic; }
+  .report-panel .rfoot {
+    margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line);
+    font-family: "JetBrains Mono", monospace; font-size: 10px;
+    letter-spacing: 0.08em; color: var(--mute);
+  }
+
+  footer {
+    margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--mute); text-align: center;
+  }
+  footer .goal {
+    font-family: "Fraunces", serif; font-style: italic;
+    text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--ink-2);
+    margin-top: 6px; display: block;
+  }
+
+  /* ---------- Mat ---------- */
+  .subtabs {
+    position: sticky; top: var(--hdrH, 70px); z-index: 15;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
+    background: var(--ground); padding: 14px 20px 12px; margin: 0 -20px 2px;
+  }
+  .subtabs button {
+    min-height: 44px; padding: 10px 4px; text-align: center;
+    border: 1px solid var(--line); border-radius: 999px; background: var(--raise);
+    font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--mute);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .subtabs button.pa { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .subtabs button .tall { display: block; font-size: 9px; font-weight: 500; opacity: .85; letter-spacing: 0.04em; }
+
+  .card {
+    background: var(--raise); border: 1px solid var(--line);
+    border-radius: 14px; box-shadow: var(--shadow); margin-top: 12px; overflow: hidden;
+  }
+  .card.pad { padding: 16px; }
+  .card.pad p { font-size: 15px; color: var(--ink-2); line-height: 1.55; }
+  .card.pad p b, .card.pad li b { color: var(--ink); font-weight: 600; }
+  .card.pad ul { font-size: 15px; color: var(--ink-2); line-height: 1.6; }
+  .tit {
+    font-family: "JetBrains Mono", monospace; font-weight: 600; font-size: 10px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--mute); margin: 26px 0 0;
+  }
+
+  .maaltid {
+    display: grid; grid-template-columns: 58px 1fr 16px; gap: 12px; align-items: start;
+    width: 100%; padding: 15px 16px; border-bottom: 1px solid var(--line); min-height: 64px;
+  }
+  .maaltid:last-child { border-bottom: none; }
+  .maaltid .kl {
+    font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--mute);
+    font-variant-numeric: tabular-nums; letter-spacing: 0.06em; text-transform: uppercase;
+    padding-top: 3px; font-weight: 500;
+  }
+  .maaltid .hva { font-size: 16px; line-height: 1.42; color: var(--ink-2); }
+  .maaltid .hva b { font-weight: 600; color: var(--ink); }
+  .maaltid .sub { display: block; color: var(--mute); font-size: 13.5px; margin-top: 3px; }
+  .maaltid .chev { color: var(--line-2); font-size: 18px; line-height: 1.2; }
+  .maaltid.na { background: var(--accent-soft); }
+  .maaltid.na .hva, .maaltid.na .kl { color: var(--accent-ink); }
+  .maaltid.na .sub { color: var(--accent-ink); opacity: .8; }
+  .maaltid.ekstra { background: var(--sunk); }
+  .maaltid.byttet .hva b::after { content: " · byttet"; font-weight: 400; font-size: 13px; color: var(--mute); }
+
+  .bryter {
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    padding: 15px 16px; border-top: 1px solid var(--line); width: 100%;
+  }
+  .bryter .sp { font-size: 15.5px; font-weight: 600; color: var(--ink); }
+  .bryter .sp small { display: block; font-weight: 400; color: var(--mute); font-size: 13.5px; margin-top: 2px; }
+  .knapp2 { display: flex; gap: 6px; flex: none; }
+  .knapp2 button {
+    padding: 9px 15px; border-radius: 10px; border: 1px solid var(--line-2);
+    font-family: "JetBrains Mono", monospace; font-size: 10.5px; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    min-height: 44px; background: var(--ground); color: var(--ink-2); text-align: center;
+  }
+  .knapp2 button:hover { color: var(--ink); border-color: var(--ink-2); }
+
+  .regel {
+    background: var(--accent-soft); color: var(--accent-ink); border-radius: 14px;
+    padding: 16px 18px; font-size: 16px; line-height: 1.45; margin-top: 14px;
+  }
+  .regel b { font-weight: 700; }
+  .regel .lab {
+    display: block; font-family: "JetBrains Mono", monospace; font-size: 10px;
+    letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 7px; opacity: .8; font-weight: 600;
+  }
+  .varsel {
+    background: var(--long-soft); color: var(--long-ink); border-radius: 14px;
+    padding: 14px 16px; font-size: 15px; line-height: 1.45; margin-top: 14px;
+  }
+  .varsel b { font-weight: 700; }
+
+  .oppg {
+    display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; width: 100%;
+    padding: 14px 16px; border-bottom: 1px solid var(--line); min-height: 58px;
+  }
+  .oppg:last-child { border-bottom: none; }
+  .boks {
+    width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--line-2);
+    display: grid; place-items: center; font-size: 13px; color: transparent; margin-top: 2px;
+  }
+  .av .boks { background: var(--easy); border-color: var(--easy); color: var(--raise); }
+  .av .navn { text-decoration: line-through; }
+  .av { opacity: .45; }
+  .oppg .navn { font-size: 16px; color: var(--ink); }
+  .oppg .sub { display: block; color: var(--mute); font-size: 13.5px; margin-top: 2px; }
+
+  .teller {
+    position: sticky; top: calc(var(--hdrH, 70px) + var(--subH, 70px)); z-index: 5;
+    background: var(--ground); padding: 12px 20px; margin: 0 -20px;
+    display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  .teller .n {
+    font-family: "Fraunces", Georgia, serif; font-variation-settings: "opsz" 48;
+    font-size: 24px; font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: -0.02em;
+  }
+  .teller .u { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--mute); letter-spacing: 0.1em; text-transform: uppercase; }
+  .vare {
+    display: grid; grid-template-columns: 26px 1fr auto; gap: 12px; align-items: center; width: 100%;
+    min-height: 58px; padding: 10px 14px; border-bottom: 1px solid var(--line);
+  }
+  .vare:last-child { border-bottom: none; }
+  .vare .navn { font-size: 16px; color: var(--ink); }
+  .vare .mengde {
+    font-family: "JetBrains Mono", monospace; font-size: 14px; font-weight: 500;
+    font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--mute);
+  }
+  .leggtil { display: flex; gap: 8px; margin-top: 16px; }
+  .leggtil input {
+    flex: 1; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line-2);
+    background: var(--raise); color: var(--ink); font: inherit; font-size: 16px; min-height: 48px;
+  }
+  .btn {
+    padding: 11px 16px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--raise);
+    font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase; min-height: 48px; color: var(--ink-2); text-align: center;
+  }
+  .btn.primar { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+
+  .angre {
+    position: fixed; left: 50%; transform: translateX(-50%);
+    bottom: calc(76px + env(safe-area-inset-bottom)); z-index: 45;
+    background: var(--ink); color: var(--ground); padding: 12px 16px; border-radius: 12px;
+    font-size: 14px; display: none; align-items: center; gap: 14px; box-shadow: var(--shadow);
+  }
+  .angre.vis { display: flex; }
+  .angre button { font-weight: 700; color: var(--ground); text-decoration: underline; min-height: 32px; }
+
+  /* Mat-ark (bytt måltid) */
+  .ark-bak {
+    position: fixed; inset: 0; background: rgba(20,17,14,.45);
+    -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+    z-index: 48; display: none;
+  }
+  .ark-bak.apen { display: block; }
+  .ark {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 49;
+    background: var(--raise); border: 1px solid var(--line); border-bottom: 0;
+    border-radius: 22px 22px 0 0; max-height: 84vh;
+    display: none; flex-direction: column; box-shadow: 0 -8px 40px rgba(0,0,0,.25);
+    max-width: 640px; margin: 0 auto;
+  }
+  .ark.apen { display: flex; }
+  .ark-topp { padding: 18px 20px 12px; border-bottom: 1px solid var(--line); flex: none; }
+  .ark-topp h2 {
+    margin: 0; font-family: "Fraunces", Georgia, serif; font-variation-settings: "opsz" 48;
+    font-weight: 500; font-size: 24px; letter-spacing: -0.02em;
+  }
+  .ark-topp p { margin: 5px 0 0; font-size: 14px; color: var(--mute); }
+  .ark-liste { overflow-y: auto; flex: 1; }
+  .valg {
+    display: grid; grid-template-columns: 1fr auto; gap: 10px; width: 100%;
+    padding: 16px 20px; border-bottom: 1px solid var(--line); align-items: center;
+    min-height: 60px; font-size: 16px; color: var(--ink-2);
+  }
+  .valg:last-child { border-bottom: none; }
+  .valg.aktiv { background: var(--accent-soft); color: var(--accent-ink); }
+  .valg .hake { color: var(--accent); font-size: 18px; }
+  .ark-bunn {
+    padding: 12px 20px calc(14px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--line); flex: none; display: flex; gap: 8px; justify-content: flex-end;
+  }
+
+  .banner {
+    background: var(--long-soft); color: var(--long-ink); padding: 11px 14px; border-radius: 10px;
+    font-size: 13.5px; margin-top: 12px; line-height: 1.4;
+  }
+  .kilde {
+    font-size: 13px; color: var(--mute); margin-top: 24px; padding-top: 14px;
+    border-top: 1px solid var(--line); line-height: 1.5;
+  }
+  .kilde b { color: var(--ink-2); font-weight: 600; }
+</style>
+
+<header class="top">
+  <div class="inner">
+    <div>
+      <div class="eyebrow" id="hdrWeek">Laster</div>
+      <div class="eyebrow hdr-date" id="hdrDate"></div>
+    </div>
+    <button class="toggle" id="themeToggle" aria-label="Bytt tema">Tema</button>
+  </div>
+</header>
+
+<!-- ===================== HOVEDSIDE ===================== -->
+<section class="wrap view" id="viewHjem">
+  <div class="hjem-hero">
+    <h1 class="hjem-tittel">Coach</h1>
+    <p class="hjem-sub" id="hjemSub">Holmestrand Maraton · 3. april 2027</p>
+  </div>
+
+  <div class="porter">
+    <button class="port" id="portTrening" type="button">
+      <span class="port-tag"><span class="dot"></span><span id="portTreningTag">Trening</span></span>
+      <span class="port-navn" id="portTreningNavn">–</span>
+      <span class="port-linje" id="portTreningLinje"></span>
+      <span class="port-gaa"><span>Hele treningsplanen</span><span>›</span></span>
+    </button>
+
+    <button class="port" id="portMat" type="button" style="--pc:var(--easy)">
+      <span class="port-tag"><span class="dot"></span><span id="portMatTag">Mat</span></span>
+      <span class="port-navn" id="portMatNavn">–</span>
+      <span class="port-linje" id="portMatLinje"></span>
+      <span class="port-gaa"><span>Uka, handleliste og søndag</span><span>›</span></span>
+    </button>
+  </div>
+
+  <button class="snarvei" id="snarveiHandle" type="button">
+    <span>Handleliste</span><span id="snarveiTall">–</span>
+  </button>
+
+  <footer>
+    Holmestrand Maraton · lørdag 3. april 2027
+    <span class="goal">Base og fart ut året. Langturen vokser fra januar.</span>
+  </footer>
+</section>
+
+<!-- ===================== TRENING ===================== -->
+<section class="wrap view" id="viewTrening" hidden>
+
+  <section class="today-hero" id="todayHero">
+    <div class="today-tag"><span class="dot"></span><span id="todayTag">I DAG</span></div>
+    <h1 class="today-name" id="todayName">–</h1>
+    <div class="today-date" id="todayDate"></div>
+    <div class="today-metrics" id="todayMetrics"></div>
+    <div class="today-detail" id="todayDetail"></div>
+    <div class="today-notes" id="todayNotes"></div>
+    <div id="todayStrength"></div>
+    <div class="report-wrap" id="reportWrap" hidden>
+      <button class="report-btn" id="reportBtn" type="button">
+        <span class="spin"></span><span id="reportBtnText">Oppsummer dagens økt</span>
+      </button>
+      <div class="report-panel" id="reportPanel">
+        <div class="rhead"><span id="reportTitle">Rapport</span><span id="reportMeta"></span></div>
+        <div class="rbody" id="reportBody"></div>
+        <div class="rfoot" id="reportFoot" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section">Denne uken<span class="sub" id="weekSub"></span></h2>
+  <div class="eyebrow" style="margin-bottom:10px">Trykk på en dag for detaljer</div>
+  <div class="week-strip" id="weekStrip"></div>
+
+  <h2 class="section">Basefasen<span class="sub">Uke 1–15 · base og fart</span></h2>
+  <div class="weeks" id="weeksList"></div>
+
+  <h2 class="section">Etter nyttår<span class="sub">Spesifikk fase — rammene, ikke økt for økt ennå</span></h2>
+  <div class="eyebrow" style="margin-bottom:10px">Detaljeres i desember, når vi vet hvordan basefasen gikk</div>
+
+  <div class="phase" style="--pc:var(--long)">
+    <div class="ph-head">
+      <div class="ph-title">Blokk 1 — Langturen vokser</div>
+      <div class="ph-when">14. des – 24. jan · uke 16–21</div>
+    </div>
+    <div class="ph-body">
+      Terskelarbeidet fra basefasen holdes ved like med én økt i uka, mens langturen får
+      hovedrollen. Økt nr. 2 blir gradvis lengre og roligere — fra intervaller mot
+      <strong>medium-lange turer</strong>. Første ekte MP-arbeid mot slutten av blokka.
+    </div>
+    <div class="ph-long"><b>Langtur:</b> 22 → 26 km · deload uke 17 (jul) og 20</div>
+  </div>
+
+  <div class="phase" style="--pc:var(--quality)">
+    <div class="ph-head">
+      <div class="ph-title">Blokk 2 — Maratonspesifikk</div>
+      <div class="ph-when">25. jan – 7. mars · uke 22–28</div>
+    </div>
+    <div class="ph-body">
+      Tyngste blokka. Langturene får <strong>MP-avslutninger</strong> — siste 5–10 km i
+      maratonfart på slitne bein, som er det nærmeste du kommer løpet uten å løpe det.
+      Næring og væske øves inn på hver eneste langtur. Kvalitetsøkta mandag blir
+      MP-intervaller framfor terskel.
+    </div>
+    <div class="ph-long"><b>Langtur:</b> 28 → 34 km · topp 6. mars · deload uke 24 og 28</div>
+  </div>
+
+  <div class="phase" style="--pc:var(--deload)">
+    <div class="ph-head">
+      <div class="ph-title">Blokk 3 — Nedtrapping</div>
+      <div class="ph-when">8. mars – 3. april · uke 29–31</div>
+    </div>
+    <div class="ph-body">
+      Volumet ned ~40 %, <strong>intensiteten beholdes</strong> — korte drag i maratonfart for
+      å holde beina skarpe. Siste lange tur 20. mars. De siste ti dagene handler om
+      søvn, karbo og å ikke finne på noe lurt.
+    </div>
+    <div class="ph-long"><b>Langtur:</b> 28 → 18 km · <b>Løp:</b> lørdag 3. april</div>
+  </div>
+
+  <h2 class="section">Ukesvolum<span class="sub">~34–45 km i byggeuker</span></h2>
+  <div class="phase" style="--pc:var(--easy)">
+    <div class="ph-body">
+      <strong>Fem dager fra uke 3</strong> — fire løpeøkter og én styrke. Søndagen er ny:
+      en kort, rolig økt to dager etter langturen. Den vokser 4 → 5 → 6 → 7 km gjennom
+      høsten og tar basefasen fra ~30 til <strong>~45 km i uka</strong>.
+      <br><br>
+      Grunnen er ikke at mer er bedre. Med tre løpedager bar langturen 55–65 % av
+      ukesvolumet — nesten det dobbelte av det som er forsvarlig. Søndagen henter volum
+      der det koster minst, i stedet for å legge alt på én økt.
+      <br><br>
+      <strong>Farten er ikke forhandlingsbar.</strong> Puls over 145 på søndagen betyr ned i
+      fart. Blir den en fjerde kvalitetsøkt, er den verre enn ingen økt.
+      Trenger du mer utover det: utvid oppvarmingen på mandagens terskeløkt til 4–6 km.
+      Ikke før torsdagens korte drag.
+    </div>
+    <div class="ph-long"><b>Fra januar:</b> volumet mot 55–60 km · langturen styres på <b>tid</b>, maks 3:00–3:15</div>
+  </div>
+
+  <h2 class="section">Soner<span class="sub">Puls styrer alt. Pace er kun forventet utslag.</span></h2>
+  <div class="eyebrow" style="margin-bottom:10px">Revidert 03.09.26 · OLT-soner mot makspuls 190 (Garmin)</div>
+  <div class="phase" style="--pc:var(--quality); margin-bottom:10px">
+    <div class="ph-body">
+      <strong>MP er et mål vi bygger, ikke en måling av dagsformen.</strong> Derfor står begge
+      tallene: <b>7:05–7:15</b> er farten planen sikter mot i april, <b>7:35–7:50</b> er farten
+      MP-øktene skal kjøres i akkurat nå. De møtes utover vinteren — arbeidsfarten flytter
+      seg mot målet etter hvert som volumet og terskelen gjør det.
+      <br><br>
+      Det som <i>ikke</i> virker er å kjøre MP-øktene på målfarten før motoren er der.
+      Da blir de terskeløkter i forkledning, og hver langtur med MP-avslutning koster mer
+      restitusjon enn den gir tilpasning.
+      <br><br>
+      <strong>Sonene er regnet om 03.09.</strong> Garmin har satt makspuls til <b>190</b>
+      (høyeste faktisk målte i år: 187). Den gamle tabellen forutsatte ~207 og lå derfor
+      systematisk feil. Reell anaerob terskel ligger på <b>puls 170 ± 3</b>, forankret i
+      10 km-testen 22.07 (snittpuls 166, siste km 178).
+      <br><br>
+      <strong>Intensiteten i tempoøktene er ikke endret — de het bare feil.</strong>
+      Det som het «terskel» lå hele tiden i I3, sub-terskel, og det er riktig sted å
+      bygge maratonmotoren nå. Ekte terskelarbeid (I4, puls 166–175) kommer inn senere.
+      Det som faktisk er rettet er VO2-øktene: gulvet på puls 185 lå over det han når,
+      og drag han ikke fullfører bygger ingenting.
+    </div>
+  </div>
+  <div class="zones">
+    <div class="zone-head">
+      <span>Sone</span><span>HR</span><span>Pace</span>
+    </div>
+    <div class="zone-row">
+      <div class="name">I1 Restitusjon<span class="note">62–72 % · restitusjonsjogg</span></div>
+      <div class="hr">118–136</div><div class="pace">&gt; 7:45</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">I2 Rolig / Langtur<span class="note">72–82 % · prat-test, hele setninger</span></div>
+      <div class="hr">137–156</div><div class="pace">6:45–7:45</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">MP — <b>mål</b><span class="note">dette bygger vi mot. Settes endelig etter HM i januar.</span></div>
+      <div class="hr">~145–155</div><div class="pace">7:05–7:15</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">MP — arbeidsfart nå<span class="note">bruk denne i MP-økter til januar</span></div>
+      <div class="hr">~140–150</div><div class="pace">7:35–7:50</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">I3 Sub-terskel<span class="note">82–87 % · prat vanskelig. Her ligger tempoøktene.</span></div>
+      <div class="hr">156–165</div><div class="pace">6:30–6:50</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">I4 Terskel<span class="note">87–92 % · 2–3 ord om gangen. Terskel ligger på puls 170 ± 3.</span></div>
+      <div class="hr">166–175</div><div class="pace">6:20–6:30</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">I5 VO2<span class="note">92–100 % · korte drag</span></div>
+      <div class="hr">175–190</div><div class="pace">&lt; 6:10</div>
+    </div>
+  </div>
+
+  <footer>
+    Holmestrand Maraton · lørdag 3. april 2027
+    <span class="goal">Base og fart ut året. Langturen vokser fra januar.</span>
+  </footer>
+</section>
+
+<!-- ===================== MAT ===================== -->
+<section class="wrap view" id="viewMat" hidden>
+  <nav class="subtabs" id="subtabs">
+    <button class="pa" data-fane="idag" type="button">I dag</button>
+    <button data-fane="uke" type="button">Uka</button>
+    <button data-fane="handle" type="button">Handle<span class="tall" id="fanetall"></span></button>
+    <button data-fane="uka" type="button">Søndag</button>
+  </nav>
+  <div id="banner"></div>
+  <main id="innhold"></main>
+  <p class="kilde">Hele planen står i <b>planen.md</b>. Under langtur gjelder <b>mage.md</b>.
+     Vil du ha flere alternativer, ligger de i <b>matplan.md</b> — men du trenger dem ikke.</p>
+</section>
+
+<nav class="tabbar" id="tabbar">
+  <button data-vis="hjem" class="pa" type="button"><span class="ico">◆</span>Hjem</button>
+  <button data-vis="trening" type="button"><span class="ico">▲</span>Trening</button>
+  <button data-vis="mat" type="button"><span class="ico">●</span>Mat</button>
+</nav>
+
+<!-- Dag-ark (trening) -->
+<div class="sheet-backdrop" id="sheetBackdrop" role="dialog" aria-modal="true" aria-labelledby="sheetName">
+  <div class="sheet" id="sheet">
+    <div class="grab"></div>
+    <button class="close" id="sheetClose" aria-label="Lukk">&times;</button>
+    <div class="sheet-tag"><span class="dot"></span><span id="sheetTag"></span></div>
+    <h2 class="sheet-name" id="sheetName">–</h2>
+    <div class="sheet-date" id="sheetDate"></div>
+    <div class="sheet-metrics" id="sheetMetrics"></div>
+    <div class="sheet-detail" id="sheetDetail"></div>
+    <div class="sheet-notes" id="sheetNotes"></div>
+    <div id="sheetStrength"></div>
+    <div class="sheet-nav">
+      <button type="button" id="sheetPrev">‹ Forrige økt</button>
+      <button type="button" id="sheetNext">Neste økt ›</button>
+    </div>
+  </div>
+</div>
+
+<!-- Bytte-ark (mat) -->
+<div class="ark-bak" id="arkbak"></div>
+<div class="ark" id="ark" role="dialog" aria-modal="true" aria-labelledby="arktit">
+  <div class="ark-topp"><h2 id="arktit"></h2><p id="arksub"></p></div>
+  <div class="ark-liste" id="arkliste"></div>
+  <div class="ark-bunn"><button class="btn primar" id="arklukk" type="button">Lukk</button></div>
+</div>
+
+<div class="angre" id="angre"><span id="angretxt"></span><button id="angreknapp" type="button">Angre</button></div>
+
+<script>
+"use strict";
+
+/* =========================================================================
+   Treningsplanen — data. Speiler coach/treningsplan.md.
+   ========================================================================= */
+
+const STRENGTH_A = [
+  ["Bench Press", "4 × 5 @ 75 kg", false],
+  ["Seated Cable Row", "4 × 6 @ 90 kg", false],
+  ["Lat Pulldown", "3 × 8 @ 55 kg", false],
+  ["Single-leg RDL", "3 × 8 @ 20 kg", true],
+  ["Standing Calf Raise", "3 × 12", true],
+  ["Cable Crunch", "3 × 10 @ 80 kg", false],
+  ["Band Walks", "3 × 12 / retning", true],
+];
+const STRENGTH_B = [
+  ["Belt Squat (box + kabel)", "4 × 10 @ 100 kg — maskinmaks", false],
+  ["Romanian Deadlift", "3 × 8 · 3 sek ned — vekt etter form", true],
+  ["Bulgarian Split Squat", "3 × 10 @ 10 kg", false],
+  ["Seated Calf Raise", "3 × 15 @ 40 kg", true],
+  ["Seated Chest Fly", "3 × 12 @ 40 kg", false],
+  ["Lying Leg Raise", "3 × 20", false],
+  ["Clamshells + Side Plank", "3 × 10 / side", true],
+];
+
+// Stjernene markerer nye øvelser, og forsvinner så snart varianten er kjørt én gang.
+// A ble kjørt 25.08, B kjøres første gang 01.09.
+const STRENGTH_NEW_UNTIL = { A: "2026-08-25", B: "2026-09-01" };
+
+// Type: easy, long, quality, strength, deload, rest
+const PLAN = [
+  { label: "Bro", theme: "Bro-uke — 18 km bygg", strength: "A", days: [
+    { date: "2026-08-24", d: "Man", type: "easy", name: "6,2 km easy", detail: "Gjennomført.", pace: "I1–I2" },
+    { date: "2026-08-25", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "Gjennomført.", pace: "≈ 50 min" },
+    { date: "2026-08-27", d: "Tor", type: "long", name: "18 km long", detail: "Gjennomført — snittpuls 148, midt i Z2.", pace: "HR Z2 · 7:54/km" },
+    { date: "2026-08-28", d: "Fre", type: "easy", name: "5 km recovery", detail: "Gjennomført.", pace: "HR Z1" },
+  ]},
+
+  { label: "1", theme: "Reset – DELOAD", strength: "B", isDeload: true, days: [
+    { date: "2026-08-31", d: "Man", type: "deload", name: "5 km + 6 strides", detail: "Gjennomført — snittpuls 146, pace 6:47. Traff Z2 perfekt.", pace: "HR Z2 · + strides" },
+    { date: "2026-09-01", d: "Tir", type: "strength", name: "Styrke B – leg-day", detail: "Belt squat, RDL, Bulgarians. Kort langtur å restituere til.", pace: "≈ 55 min" },
+    { date: "2026-09-03", d: "Tor", type: "deload", name: "12 km rolig", detail: "Reset etter rask ramp 10 → 18. Ikke over Z2.", pace: "I1–I2 · ~7:15/km" },
+    { date: "2026-09-04", d: "Fre", type: "deload", name: "4 km eller gåtur", detail: "Siste uke med fredagsøkt — fra uke 2 flyttes den til lørdag som kvalitetsøkt.", pace: "HR Z1" },
+  ]},
+
+  { label: "2", theme: "Bygg 1 – Terskel intro", strength: "A", days: [
+    { date: "2026-09-07", d: "Man", type: "quality", name: "Tempo 20 min", detail: "2 km opp (Z1–Z2) + 20 min på puls 156–165 + 2 km ned. KALIBRERING AV TERSKEL: kjør på puls, ikke klokke. Ikke jag et tempo — la pulsen bestemme og se hva farten blir. Farten hentes fra Strava etterpå, du trenger ikke notere noe. Dette er referansen terskelfremgang måles mot i uke 4 og 12. Den setter IKKE marathon pace — en 20-minutters innsats er 30–50 s/km raskere enn maratonfart, og MP settes etter halvmaraton i januar. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 50 min" },
+    { date: "2026-09-08", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "Bench, row, lat pull, calf, cable crunch.", pace: "≈ 50 min" },
+    { date: "2026-09-10", d: "Tor", type: "quality", name: "6 km + 8 bakkesprint", detail: "4 km rolig + 8 × 15 sek bratt bakke i full fart, gå rolig ned igjen, 2 km ned. Billigste fartsarbeidet som finnes — bygger senestyrke og teknikk med minimal slitasje. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "Z2 + 8 × 15 sek · ≈ 50 min" },
+    { date: "2026-09-11", d: "Fre", type: "long", name: "16 km long", detail: "Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:00" },
+    { date: "2026-09-13", d: "Søn", type: "easy", name: "4 km rolig", detail: "Ny fast økt: fjerde løpedag, to dager etter langturen. Den skal føles for lett — det er hele poenget. Puls 130–142, og går det for fort, gå ned i fart uansett hva klokka sier. Blir denne en kvalitetsøkt, ryker noe innen seks uker.", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "3", theme: "Bygg 2 – Tempo bygger", strength: "A", days: [
+    { date: "2026-09-14", d: "Man", type: "quality", name: "Tempo 22 min", detail: "2 km opp + 22 min på puls 156–165 + 2 km ned. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 55 min" },
+    { date: "2026-09-15", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-09-17", d: "Tor", type: "quality", name: "6 km + 10 bakkesprint", detail: "To sprinter mer enn forrige uke. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "Z2 + 10 × 15 sek · ≈ 52 min" },
+    { date: "2026-09-18", d: "Fre", type: "long", name: "16 km long", detail: "Ren Z2. Ingen MP-arbeid — bortkastet 28 uker fra løpet.", pace: "I2 · ≈ 2:00" },
+    { date: "2026-09-20", d: "Søn", type: "easy", name: "4 km rolig", detail: "Samme som forrige søndag. Ikke øk — tre uker på samme lengde før vi rører den.", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "4", theme: "Bygg 3 – Tempo utvidet", strength: "A", isPeak: true, days: [
+    { date: "2026-09-21", d: "Man", type: "quality", name: "Tempo 25 min", detail: "2 km opp + 25 min på puls 156–165 + 2 km ned. Samme økt som uke 2, 5 min lenger. Kjør på puls; sammenligningen mot uke 2 gjør jeg fra Strava. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 60 min" },
+    { date: "2026-09-22", d: "Tir", type: "strength", name: "Styrke A – lettere", detail: "Lette sett.", pace: "≈ 45 min" },
+    { date: "2026-09-24", d: "Tor", type: "quality", name: "6 km + 10 bakkesprint", detail: "Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "Z2 + 10 × 15 sek · ≈ 52 min" },
+    { date: "2026-09-25", d: "Fre", type: "long", name: "18 km long", detail: "Test næring/væske allerede nå — det er en ferdighet som tar tid å lære. Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:15" },
+    { date: "2026-09-27", d: "Søn", type: "easy", name: "4 km rolig", detail: "Siste uke på 4 km. Deload neste uke, så opp til 5 km etter det.", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "5", theme: "DELOAD", strength: "B", isDeload: true, days: [
+    { date: "2026-09-28", d: "Man", type: "deload", name: "5 km + 6 strides", detail: "Rolig med raske skritt til slutt.", pace: "I2 · ≈ 40 min" },
+    { date: "2026-09-29", d: "Tir", type: "strength", name: "Styrke B – leg-day", detail: "Belt squat, RDL, Bulgarians. Lett løpeuke — beina har plass.", pace: "≈ 55 min" },
+    { date: "2026-10-01", d: "Tor", type: "deload", name: "5 km rolig", detail: "Ingen kvalitet denne uka.", pace: "I1 · ≈ 40 min" },
+    { date: "2026-10-02", d: "Fre", type: "deload", name: "12 km rolig", detail: "Målet: gjenopprette. Ikke over Z2.", pace: "I1–I2 · ≈ 1:30" },
+    { date: "2026-10-04", d: "Søn", type: "deload", name: "3 km rolig", detail: "Deload-uke: kort, eller dropp den helt. Beina bestemmer.", pace: "I1" },
+  ]},
+
+  { label: "6", theme: "Bygg 4 – Intervaller inn", strength: "A", days: [
+    { date: "2026-10-05", d: "Man", type: "quality", name: "2 × 12 min sub-terskel", detail: "2 km opp + 2 × 12 min på puls 156–165, 3 min jogg mellom + 2 km ned. Første delte sub-terskeløkt. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 58 min" },
+    { date: "2026-10-06", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-10-08", d: "Tor", type: "quality", name: "4 × 2 min @ Z4", detail: "2 km opp + 4 × 2 min på puls 166–175, 2 min jogg + 2 km ned. Bakkesprintene byttes mot ekte drag. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I4 · ≈ 48 min" },
+    { date: "2026-10-09", d: "Fre", type: "long", name: "16 km long", detail: "Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:00" },
+    { date: "2026-10-11", d: "Søn", type: "easy", name: "5 km rolig", detail: "Opp fra 4 km. Farten står stille — bare lengden øker.", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "7", theme: "Bygg 5 – Dobbel terskel", strength: "A", days: [
+    { date: "2026-10-12", d: "Man", type: "quality", name: "2 × 15 min sub-terskel", detail: "2 km opp + 2 × 15 min på puls 156–165, 3 min jogg mellom + 2 km ned. 30 min sub-terskel totalt — dette er økta som bygger maratonmotoren. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 63 min" },
+    { date: "2026-10-13", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-10-15", d: "Tor", type: "quality", name: "6 × 1 min hardt", detail: "2 km opp + 6 × 1 min hardt (puls 170–178), 2 min jogg mellom + 2 km ned. Kort og skarpt. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 45 min" },
+    { date: "2026-10-16", d: "Fre", type: "long", name: "18 km long", detail: "Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:15" },
+    { date: "2026-10-18", d: "Søn", type: "easy", name: "5 km rolig", detail: "", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "8", theme: "Bygg 6 – Toppuke", strength: "A", isPeak: true, days: [
+    { date: "2026-10-19", d: "Man", type: "quality", name: "3 × 10 min sub-terskel", detail: "2 km opp + 3 × 10 min på puls 156–165, 2 min jogg + 2 km ned. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 64 min" },
+    { date: "2026-10-20", d: "Tir", type: "strength", name: "Styrke A – lettere", detail: "Lette sett.", pace: "≈ 45 min" },
+    { date: "2026-10-22", d: "Tor", type: "quality", name: "8 × 1 min hardt", detail: "2 km opp + 8 × 1 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 50 min" },
+    { date: "2026-10-23", d: "Fre", type: "long", name: "20 km long", detail: "Høstens lengste. Hold Z2 strengt — hvis pulsen drifter over 155 sent: gå litt.", pace: "I2 · ≈ 2:30" },
+    { date: "2026-10-25", d: "Søn", type: "easy", name: "5 km rolig", detail: "Toppuke. Denne skal fortsatt være rolig — den er restitusjon mellom fredagens langtur og mandagens kvalitet, ikke en økt til.", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "9", theme: "DELOAD + sjekkpunkt", strength: "B", isDeload: true, days: [
+    { date: "2026-10-26", d: "Man", type: "deload", name: "6 km + 6 strides", detail: "Sjekk hvordan beina føles.", pace: "I2 · ≈ 50 min" },
+    { date: "2026-10-27", d: "Tir", type: "strength", name: "Styrke B – LETT", detail: "Eneste ekte styrke-deload i blokka: ~60 % vekt, 2 × 8 i stedet for 4 × 5, dropp Bulgarians. Grunn: fredagens økt er beslutningsøkta — tung knebøy nå ville gjort at du målte stølhet i stedet for restitusjon.", pace: "≈ 35 min" },
+    { date: "2026-10-29", d: "Tor", type: "deload", name: "5 km rolig", detail: "", pace: "I1 · ≈ 40 min" },
+    { date: "2026-10-30", d: "Fre", type: "deload", name: "14 km rolig · SJEKKPUNKT", detail: "Lett = grønt lys videre. Tung = gjenta uke 8 før du går videre. Pulsen ved samme fart sammenlignes mot uke 5 — det gjøres fra Strava.", pace: "I1–I2 · ≈ 1:45" },
+    { date: "2026-11-01", d: "Søn", type: "deload", name: "3 km rolig", detail: "Deload etter sjekkpunktet. Kort, eller dropp.", pace: "I1" },
+  ]},
+
+  { label: "10", theme: "Bygg 7 – VO2 intro", strength: "A", days: [
+    { date: "2026-11-02", d: "Man", type: "quality", name: "5 × 1000 m", detail: "2 km opp + 5 × 1000 m hardt (puls 172–183), 2 min jogg mellom + 2 km ned. Første ekte VO2-økt — hever taket alt annet jobber under. Den ligger på mandag med vilje: dette er ukas ferskeste bein.", pace: "~5:20/km · ≈ 65 min" },
+    { date: "2026-11-03", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-11-05", d: "Tor", type: "quality", name: "4 × 2 min @ Z4", detail: "2 km opp + 4 × 2 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I4 · ≈ 48 min" },
+    { date: "2026-11-06", d: "Fre", type: "long", name: "18 km long", detail: "Mørketid — hodelykt og refleks. Pace betyr mindre nå, puls betyr alt.", pace: "I2 · ≈ 2:15" },
+    { date: "2026-11-08", d: "Søn", type: "easy", name: "6 km rolig", detail: "Opp fra 5 km. Mørketid — hodelykt og refleks.", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "11", theme: "Bygg 8 – Terskelvolum", strength: "A", days: [
+    { date: "2026-11-09", d: "Man", type: "quality", name: "3 × 10 min sub-terskel", detail: "2 km opp + 3 × 10 min på puls 156–165, 2 min jogg + 2 km ned. 30 min sub-terskel delt i tre — lettere å holde kvaliteten enn 2 × 15. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 64 min" },
+    { date: "2026-11-10", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-11-12", d: "Tor", type: "quality", name: "8 × 1 min hardt", detail: "2 km opp + 8 × 1 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 50 min" },
+    { date: "2026-11-13", d: "Fre", type: "long", name: "20 km long", detail: "Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:30" },
+    { date: "2026-11-15", d: "Søn", type: "easy", name: "6 km rolig", detail: "", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "12", theme: "Bygg 9 – Toppuke", strength: "A", isPeak: true, days: [
+    { date: "2026-11-16", d: "Man", type: "quality", name: "Tempo 30 min", detail: "2 km opp + 30 min sammenhengende på puls 156–165 + 2 km ned. Lengste sammenhengende drag i basefasen. Kjør på puls — fremgangen mot uke 2 og 4 kommer i fredagsrapporten. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 60 min" },
+    { date: "2026-11-17", d: "Tir", type: "strength", name: "Styrke A – lettere", detail: "", pace: "≈ 45 min" },
+    { date: "2026-11-19", d: "Tor", type: "quality", name: "5 × 400 m", detail: "2 km opp + 5 × 400 m raskt, 90 sek jogg + 2 km ned. Kort, rask, lite slitasje. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "Z5 · ≈ 45 min" },
+    { date: "2026-11-20", d: "Fre", type: "long", name: "20 km progressiv", detail: "Start i Z1 og øk jevnt — siste 3 km i øvre Z2. Lærer deg å avslutte sterkt på slitne bein.", pace: "I1 → I2 · ≈ 2:30" },
+    { date: "2026-11-22", d: "Søn", type: "easy", name: "6 km rolig", detail: "", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "13", theme: "DELOAD", strength: "B", isDeload: true, days: [
+    { date: "2026-11-23", d: "Man", type: "deload", name: "6 km + 6 strides", detail: "", pace: "I2 · ≈ 50 min" },
+    { date: "2026-11-24", d: "Tir", type: "strength", name: "Styrke B – leg-day", detail: "Belt squat, RDL, Bulgarians.", pace: "≈ 55 min" },
+    { date: "2026-11-26", d: "Tor", type: "deload", name: "5 km rolig", detail: "", pace: "I1 · ≈ 40 min" },
+    { date: "2026-11-27", d: "Fre", type: "deload", name: "14 km rolig", detail: "", pace: "I1–I2 · ≈ 1:45" },
+    { date: "2026-11-29", d: "Søn", type: "deload", name: "3 km rolig", detail: "Deload. Kort, eller dropp.", pace: "I1" },
+  ]},
+
+  { label: "14", theme: "Base 10 – Vedlikehold", strength: "A", days: [
+    { date: "2026-11-30", d: "Man", type: "quality", name: "2 × 15 min sub-terskel", detail: "2 km opp + 2 × 15 min på puls 156–165 + 2 km ned. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 63 min" },
+    { date: "2026-12-01", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-12-03", d: "Tor", type: "quality", name: "6 × 1 min hardt", detail: "2 km opp + 6 × 1 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 45 min" },
+    { date: "2026-12-04", d: "Fre", type: "long", name: "20 km long", detail: "Vinterføre kan komme — brodder klare. Ved is: kort ned heller enn å tvinge det.", pace: "I2 · ≈ 2:30" },
+    { date: "2026-12-06", d: "Søn", type: "easy", name: "7 km rolig", detail: "Opp fra 6 km. Siste økning i basefasen.", pace: "I1 · 7:20–7:45/km" },
+  ]},
+
+  { label: "15", theme: "Base avsluttes", strength: "A", days: [
+    { date: "2026-12-07", d: "Man", type: "quality", name: "Tempo 30 min", detail: "Siste kvalitetsøkt i basefasen. Kjør på puls. Differansen mot uke 2 og 12 er tre måneders arbeid, og den regnes ut fra Strava. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 60 min" },
+    { date: "2026-12-08", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-12-10", d: "Tor", type: "quality", name: "4 × 2 min @ Z4", detail: "Lett kvalitet før siste langtur i basefasen. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I4 · ≈ 48 min" },
+    { date: "2026-12-11", d: "Fre", type: "long", name: "22 km long", detail: "Basefasen er ferdig. Fra 14. desember vokser langturen for alvor — og da trenger du fredager med 3–4 timer.", pace: "I2 · ≈ 2:45" },
+    { date: "2026-12-13", d: "Søn", type: "easy", name: "7 km rolig", detail: "Siste søndag i basefasen. Fra 14. desember vokser både langturen og denne.", pace: "I1 · 7:20–7:45/km" },
+  ]},
+];
+
+const TYPE_COLORS = {
+  easy: "var(--easy)",
+  long: "var(--long)",
+  quality: "var(--quality)",
+  strength: "var(--strength)",
+  deload: "var(--deload)",
+  rest: "var(--line)",
+};
+const TYPE_LABELS = {
+  easy: "Easy",
+  long: "Long Run",
+  quality: "Kvalitet",
+  strength: "Styrke",
+  deload: "Deload",
+  rest: "Hvile",
+};
+const DAY_FULL = { Man:"Mandag", Tir:"Tirsdag", Ons:"Onsdag", Tor:"Torsdag", Fre:"Fredag", Lør:"Lørdag", Søn:"Søndag" };
+
+/* =========================================================================
+   Matplanen — data. Hele innholdet er planen.md.
+   ========================================================================= */
+
+const FASTE = [
+  {n:"frokost",kl:"07",min:420,
+   hva:"2 rundstykker med skinke, eller cottage cheese + 1 dl havregryn + neve frosne bær + <b>1 skje nøtter</b>",
+   sub:"Havregrynene måles tørre, 1 dl (35 g) rett ned i begeret. Nøttene er ikke valgfrie — de er det eneste fettet i planen."},
+  {n:"lunsj",kl:"11",min:660,laast:true,kantine:true},
+  {n:"kl14",kl:"14",min:840,
+   hva:"Beger cottage cheese (400 g) + en frukt",
+   sub:"Kuttes aldri. Det er dette måltidet som avgjør kvelden din."},
+  {n:"middag",kl:"middag",min:1140,middag:true},
+  {n:"kveld",kl:"21",min:1260,
+   hva:"<b>Halvt</b> beger cottage cheese (200 g) + bær"}
+];
+
+const BYTTER = {
+  frokost:[
+    "Cottage cheese + havregryn + bær + nøtter",
+    "Overnight oats — laget kvelden før",
+    "Egg-muffins fra søndag, 60 sek i mikro",
+    "Eggerøre + grovbrød (helg — tar fem minutter)"
+  ],
+  kl14:["Beger cottage cheese + frukt","2 rundstykker med kokt skinke",
+        "2 rundstykker med skinke","Proteinpulver i melk + frukt"],
+  middag:["Gryta fra søndag — 8 min","Kylling eller svin + poteter fra søndag + grønnsaker — 15 min",
+          "Fisk fra frossen + poteter + grønnsaker — 18 min",
+          "Wok: kjøtt eller kylling + frossen wokblanding + ris fra søndag — 15 min"],
+  kveld:["200 g cottage cheese + bær","200 g cottage cheese + lune bær","200 g cottage cheese + frukt",
+         "Proteinshake i melk med bær — når du ikke orker fast føde"]
+};
+
+/* Middagene går i ring. Fast per ukedag, så handlelista og uka stemmer overens. */
+const MIDDAG_UKE = [
+  "Gryta fra søndag — varmes, 8 min",
+  "Kylling eller svin + poteter fra søndag + grønnsaker — 15 min",
+  "Gryta fra søndag — varmes, 8 min",
+  "Wok: kjøtt eller kylling + frossen wokblanding + ris fra søndag — 15 min",
+  "Fisk fra frossen + poteter + grønnsaker — 18 min",
+  "Lørdag — lag hva du vil",
+  "Ny gryte lages i dag, 4 porsjoner"
+];
+
+/* Reserve når datoen ligger utenfor treningsplanen: langturdagen er den
+   eneste over 10 km i den faste uka. */
+const OVER10 = [false,false,false,false,true,false,false];
+
+const LOPEEKSTRA = [
+  {kl:"15:30",hva:"<b>1 Corny Big + 1 neve rosiner</b>",sub:"Fra skuffen på jobb"},
+  {kl:"etter",hva:"Proteinpulver i melk + banan",sub:"Rett etter økta — her er flytende riktig"}
+];
+
+const FREDAG = [
+  {kl:"07",hva:"Frokost som vanlig, <b>men uten nøtter</b>"},
+  {kl:"09:30",hva:"1 Corny Big + neve rosiner",sub:"Skuffen"},
+  {kl:"11",hva:"Kantina, <b>full karbo</b>. Ingenting fett",sub:"Ikke lasagne, ikke panert, ikke fløtesaus"},
+  {kl:"13:30",hva:"1 stort glass saft + 1 Corny Big + 3 riskaker",sub:"Skuffen"},
+  {kl:"15:15",hva:"Neve rosiner",sub:"Skuffen"},
+  {kl:"under",hva:"Følg det som står i <b>mage.md</b>",sub:"Ikke improviser"},
+  {kl:"etter",hva:"Proteinpulver i melk + banan, så middag som vanlig"}
+];
+const FREDAG_MIN = [420,570,660,810,915,1080,1140];
+
+const SONDAG = [
+  {id:"poteter",navn:"Ovnen på 200°: 3 kg poteter i båter",sub:"35 min — du gjør noe annet imens"},
+  {id:"gryte",navn:"Én stor gryte eller suppe, 4 porsjoner",sub:"Kjøttdeig eller linser, hakkede tomater, frossen grønnsaksblanding, løk"},
+  {id:"egg",navn:"Kok 10 egg",sub:"La skallet være på — de holder en uke"},
+  {id:"ris",navn:"Kok ris til uka",sub:"350 g tørr dekker ukas middager. Kjøl raskt ned og sett kaldt — kokt ris skal spises innen 3 dager"},
+  {id:"pose",navn:"Pakk jobbposen og sett den i gangen",sub:"5 begre cottage cheese og en pose rundstykker. Inn i kjøleskapet på jobb mandag morgen"}
+];
+
+const HANDLE_FAST = [
+  ["Egg — billigste merke","2 brett = 24 stk"],["Cottage cheese","10 × 400 g"],
+  ["Frosne bær — billigste","1 pose 500 g"],["Nøtter — vanlig blanding","1 pose 200 g"],["Poteter — til søndagsstekingen","3 kg"],
+  ["Frossen grønnsaksblanding","2 poser"],
+  ["Hakkede tomater — First Price","2 bokser"],["Løk","1 nett"],["Kylling","2 kg-pakke"],["Seifilet i blokk","400 g"],["Kjøttdeig 5 %","billigste"],
+  ["Grovbrød","1 brød"],["Bananer","7–8 stk"],["Melk","3 l"]
+];
+const HANDLE_BAKE = [
+  ["Cottage cheese til baking","1 kg = 2,5 begre"],["Egg til baking","12 stk"],
+  ["Havregryn","375 g"],["Bakepulver","2 ts"],["Kokt skinke","1 pk"],
+  ["Fryseposer, små","1 pk"]
+];
+const HANDLE_TOMT = [
+  ["Havregryn","1 pose"],["Corny Big","3 pk"],["Rosiner — kjedens egne","1 pose 500 g"],["Riskaker","1 pk"],
+  ["Saft","1 flaske"],["Proteinpulver","1 kg — varer 3–4 uker"],["Proteinbar","3 stk"],["Frossen fisk","1 pose"]
+];
+
+/* Den faste uka, som reserve når datoen ligger utenfor treningsplanen:
+   man/tor kvalitet, tir styrke, ons/lør hvile, fre langtur, søn rolig. */
+const UKEPLAN = [
+  {navn:"Mandag", okt:"Kvalitetsøkt", lop:true,  styrke:false},
+  {navn:"Tirsdag",okt:"Styrke",       lop:false, styrke:true},
+  {navn:"Onsdag", okt:"Hvile",        lop:false, styrke:false},
+  {navn:"Torsdag",okt:"Intervaller",  lop:true,  styrke:false},
+  {navn:"Fredag", okt:"Langtur",      lop:true,  styrke:false},
+  {navn:"Lørdag", okt:"Hvile",        lop:false, styrke:false},
+  {navn:"Søndag", okt:"Rolig",        lop:true,  styrke:false}
+];
+const UKEDAG = UKEPLAN.map(d=>d.navn);
+const MND = ["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember"];
+const UNDERSKUDD_FRA = "2026-09-28";
+
+/* =========================================================================
+   Felles
+   ========================================================================= */
+
+function les(n,f){try{const v=localStorage.getItem("coach."+n);return v===null?f:JSON.parse(v)}catch(e){return f}}
+function skriv(n,v){try{localStorage.setItem("coach."+n,JSON.stringify(v))}catch(e){}}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+}
+function isoDato(d){
+  return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+}
+function norskDato(d){ return d.getDate()+". "+MND[d.getMonth()]; }
+function fmtDate(iso) {
+  const d = new Date(iso + "T12:00:00");
+  const days = ["Søn","Man","Tir","Ons","Tor","Fre","Lør"];
+  const months = ["jan","feb","mar","apr","mai","jun","jul","aug","sep","okt","nov","des"];
+  return days[d.getDay()] + " " + d.getDate() + ". " + months[d.getMonth()];
+}
+function fmtDateShort(iso) {
+  const d = new Date(iso + "T12:00:00");
+  return String(d.getDate()).padStart(2,"0") + "." + String(d.getMonth()+1).padStart(2,"0");
+}
+
+const naa = new Date();
+const today = isoDato(naa);
+const dagIdx = (naa.getDay()+6)%7;
+
+/* Slår opp en dato i treningsplanen. */
+function planDag(isoD){
+  for (const wk of PLAN) for (const d of wk.days) if (d.date === isoD) return { wk, d };
+  return null;
+}
+/* Kilometer for en dato, hentet fra øktnavnet. null = ukjent. */
+function kmForDato(isoD){
+  const p = planDag(isoD);
+  if (!p || p.d.type === "strength") return p ? 0 : null;
+  const m = p.d.name.match(/(\d+(?:[.,]\d+)?)\s*km/);
+  return m ? parseFloat(m[1].replace(",", ".")) : null;
+}
+/* Over 10 km i dag? Treningsplanen svarer når den kan, ellers den faste uka. */
+function over10(dIdx, isoD){
+  const km = kmForDato(isoD);
+  return km === null ? OVER10[dIdx] : km > 10;
+}
+
+/* Kantina: porsjonen følger dagen og fasen. Regelen står på måltidet,
+   ikke som løs tekst nederst. */
+function kantinePorsjon(dIdx, isoD){
+  const underskudd = isoD >= UNDERSKUDD_FRA;
+  if (over10(dIdx, isoD)) return {navn:"full karboporsjon", grunn:"Over 10 km i dag"};
+  if (underskudd)         return {navn:"liten karboporsjon", grunn:"Underskuddsfasen — full bare over 10 km og på fredag"};
+  if (dIdx===0||dIdx===3) return {navn:"full karboporsjon", grunn:"Kvalitetsøkt i dag"};
+  if (dIdx===2||dIdx===5) return {navn:"halv karboporsjon", grunn:"Hviledag"};
+  return {navn:"normal karboporsjon", grunn:""};
+}
+
+/* =========================================================================
+   Lagring — claude.ai når den finnes, ellers nettleseren
+   ========================================================================= */
+
+let db=null, dbOk=false;
+let dager={};        // "2026-09-07" -> {lop:true|false, bytte:{luke:tekst}}
+let sondag={};       // "2026-W37" -> {oppg:{id:true}}
+let handle={};       // "2026-W37" -> {av:{}, egne:[]}
+let angreTid=null, sisteAngre=null, arkLuke=null;
+
+function ukeNokkel(d){
+  const x=new Date(d);x.setHours(12,0,0,0);
+  x.setDate(x.getDate()+3-((x.getDay()+6)%7));
+  const u1=new Date(x.getFullYear(),0,4);
+  return x.getFullYear()+"-W"+String(1+Math.round(((x-u1)/86400000-3+((u1.getDay()+6)%7))/7)).padStart(2,"0");
+}
+/* Mandag i den uka handlelista gjelder for. Fra torsdag peker den framover. */
+function handleUkeMandag(){
+  const d=new Date(naa);
+  if(dagIdx>=3) d.setDate(d.getDate()+7);
+  d.setDate(d.getDate()-((d.getDay()+6)%7));
+  d.setHours(12,0,0,0);
+  return d;
+}
+function handleUke(){ return ukeNokkel(handleUkeMandag()); }
+
+const iDagN = today, ukeN = ukeNokkel(naa), hUkeN = handleUke();
+function dag(){ if(!dager[iDagN]) dager[iDagN]={bytte:{}}; return dager[iDagN]; }
+function sond(){ if(!sondag[ukeN]) sondag[ukeN]={oppg:{}}; return sondag[ukeN]; }
+function hl(){ if(!handle[hUkeN]) handle[hUkeN]={av:{},egne:[]}; return handle[hUkeN]; }
+
+/* Uten claude.ai — fila i repoet skal virke alene. Da lagres alt i
+   nettleseren i stedet, per enhet. */
+function lokaltInn(){
+  dager  = les("dager",{});
+  sondag = les("sondag",{});
+  handle = les("handle",{});
+}
+function lokaltUt(){
+  skriv("dager",dager); skriv("sondag",sondag); skriv("handle",handle);
+}
+
+async function koble(){
+  try{ db = (typeof claude!=="undefined" && claude.use) ? await claude.use("db") : null; }
+  catch(e){ db=null; }
+  if(!db){ lokaltInn(); tegn(); tegnHjem(); return; }
+  dbOk=true;
+  try{
+    const d=await db.doc("dager/"+iDagN).get();      if(d) dager[iDagN]={lop:d.lop,bytte:d.bytte||{}};
+    const s=await db.doc("sondag/"+ukeN).get();      if(s) sondag[ukeN]={oppg:s.oppg||{}};
+    const h=await db.doc("handle/"+hUkeN).get();     if(h) handle[hUkeN]={av:h.av||{},egne:h.egne||[]};
+  }catch(e){}
+  tegn(); tegnHjem();
+}
+let t=null;
+function lagre(){
+  if(!db){ lokaltUt(); return; }
+  clearTimeout(t);
+  t=setTimeout(async()=>{
+    try{
+      await db.doc("dager/"+iDagN).set({lop:dag().lop??null,bytte:dag().bytte});
+      await db.doc("sondag/"+ukeN).set({oppg:sond().oppg});
+      await db.doc("handle/"+hUkeN).set({av:hl().av,egne:hl().egne});
+    }catch(e){}
+  },400);
+}
+
+/* =========================================================================
+   Navigasjon
+   ========================================================================= */
+
+let visning = les("visning","hjem");
+let fane = les("fane","idag");
+
+const VIEWS = { hjem:"viewHjem", trening:"viewTrening", mat:"viewMat" };
+
+function settVisning(v, hopp){
+  visning = v; skriv("visning", v);
+  for (const [k, id] of Object.entries(VIEWS)) document.getElementById(id).hidden = (k !== v);
+  document.querySelectorAll(".tabbar button").forEach(b => b.classList.toggle("pa", b.dataset.vis === v));
+  settHeader();
+  if (v === "mat") { tegn(); maalHoyder(); }
+  if (v === "hjem") tegnHjem();
+  if (!hopp) window.scrollTo(0,0);
+}
+
+function settHeader(){
+  const w = document.getElementById("hdrWeek");
+  const dt = document.getElementById("hdrDate");
+  if (visning === "trening") {
+    const wk = findWeekOfToday();
+    w.textContent = wk.label === "Bro" ? "Bro-uke" : "Uke " + wk.label + " · " + wk.theme.split(" – ")[0];
+  } else if (visning === "mat") {
+    w.textContent = "Ukesmat";
+  } else {
+    w.textContent = "Coach";
+  }
+  dt.textContent = UKEDAG[dagIdx] + " " + naa.getDate() + ". " + MND[naa.getMonth()];
+}
+
+document.querySelectorAll(".tabbar button").forEach(b => {
+  b.addEventListener("click", () => settVisning(b.dataset.vis));
+});
+document.getElementById("portTrening").addEventListener("click", () => settVisning("trening"));
+document.getElementById("portMat").addEventListener("click", () => { fane = "idag"; skriv("fane", fane); settVisning("mat"); });
+document.getElementById("snarveiHandle").addEventListener("click", () => { fane = "handle"; skriv("fane", fane); settVisning("mat"); });
+
+/* =========================================================================
+   Hovedsiden
+   ========================================================================= */
+
+/* Neste måltid i dag — én linje. Fredagen har sin egen rekkefølge. */
+function nesteMaaltid(){
+  const min = naa.getHours()*60 + naa.getMinutes();
+  if (dagIdx === 4) {
+    for (let i=0; i<FREDAG.length; i++) {
+      if (FREDAG_MIN[i] >= min) return { kl: FREDAG[i].kl, hva: FREDAG[i].hva, siste: false };
+    }
+    return { kl: FREDAG[FREDAG.length-1].kl, hva: FREDAG[FREDAG.length-1].hva, siste: true };
+  }
+  for (let i=0; i<FASTE.length; i++) {
+    if (FASTE[i].min >= min) return { kl: FASTE[i].kl, hva: maaltidTekst(FASTE[i]), siste: false };
+  }
+  return { kl: FASTE[FASTE.length-1].kl, hva: maaltidTekst(FASTE[FASTE.length-1]), siste: true };
+}
+
+/* Teksten på et fast måltid, med dagens regler innbakt der de gjelder. */
+function maaltidTekst(m){
+  const byttet = dag().bytte[m.n];
+  if (byttet) return "<b>" + escapeHtml(byttet) + "</b>";
+  if (m.kantine) {
+    const kp = kantinePorsjon(dagIdx, iDagN);
+    return "<b>Kantina, " + kp.navn + ".</b> Halv tallerken salat først, kvart protein, kvart karbo";
+  }
+  if (m.middag) return "<b>" + MIDDAG_UKE[dagIdx] + "</b>";
+  return m.hva;
+}
+function maaltidSub(m){
+  if (dag().bytte[m.n]) return "";
+  if (m.kantine) {
+    const kp = kantinePorsjon(dagIdx, iDagN);
+    return kp.grunn ? kp.grunn + " · velg porsjonen, ikke retten" : "Velg porsjonen, ikke retten.";
+  }
+  if (m.middag) {
+    return over10(dagIdx, iDagN)
+      ? "<b>Dobbel karbo</b> — 100 g tørr ris eller 6 poteter. Du er over 10 km i dag"
+      : "Håndflate protein · dobbel grønnsak · 50 g tørr ris eller 3 poteter";
+  }
+  return m.sub || "";
+}
+
+function tegnHjem(){
+  // Trening
+  const { day, upcoming } = findToday();
+  const erIdag = day.date === today;
+  const port = document.getElementById("portTrening");
+  port.style.setProperty("--pc", TYPE_COLORS[day.type]);
+  document.getElementById("portTreningTag").textContent =
+    (erIdag ? "I dag" : "Neste") + " · " + TYPE_LABELS[day.type];
+  document.getElementById("portTreningNavn").textContent = day.name;
+  const naar = erIdag ? "" : " · " + fmtDate(day.date);
+  document.getElementById("portTreningLinje").innerHTML =
+    "<b>" + escapeHtml(day.pace || TYPE_LABELS[day.type]) + "</b>" + escapeHtml(naar);
+
+  // Mat
+  const nm = nesteMaaltid();
+  const klTxt = nm.kl === "middag" ? "Middag" : (nm.kl === "etter" ? "Etter økta" : (nm.kl === "under" ? "Under turen" : "Kl. " + nm.kl));
+  document.getElementById("portMatTag").textContent = nm.siste ? "Siste måltid i dag" : "Neste måltid";
+  document.getElementById("portMatNavn").textContent = klTxt;
+  document.getElementById("portMatLinje").innerHTML = nm.hva;
+
+  // Handleliste
+  const liste = alleVarer();
+  const igjen = liste.filter(v => !hl().av[v.id]).length;
+  document.getElementById("snarveiTall").innerHTML = "<b>" + igjen + "</b> igjen av " + liste.length;
+}
+
+/* =========================================================================
+   Trening — visning
+   ========================================================================= */
+
+function findToday() {
+  for (const wk of PLAN) for (const day of wk.days) if (day.date === today) return { wk, day };
+  let nearestWk = null, nearestDay = null;
+  for (const wk of PLAN) {
+    for (const day of wk.days) {
+      if (day.date >= today) {
+        if (!nearestDay || day.date < nearestDay.date) { nearestWk = wk; nearestDay = day; }
+      }
+    }
+  }
+  if (nearestDay) return { wk: nearestWk, day: nearestDay, upcoming: true };
+  return { wk: PLAN[PLAN.length-1], day: PLAN[PLAN.length-1].days[PLAN[PLAN.length-1].days.length-1], past: true };
+}
+
+function findWeekOfToday() {
+  for (const wk of PLAN) {
+    const first = wk.days[0].date;
+    const last = wk.days[wk.days.length-1].date;
+    const lastD = new Date(last + "T12:00:00");
+    lastD.setDate(lastD.getDate() + ((7 - lastD.getDay()) % 7)); // fram til søndag
+    const lastEnd = isoDato(lastD);
+    if (today >= first && today <= lastEnd) return wk;
+  }
+  for (const wk of PLAN) if (today < wk.days[0].date) return wk;
+  return PLAN[PLAN.length-1];
+}
+
+function metricCard(label, val) {
+  return '<div class="metric"><div class="label">' + label + '</div><div class="value">' + escapeHtml(val) + '</div></div>';
+}
+
+function notesFor(type) {
+  if (type === "long") return "Prat-test hele veien. Ved tung dag: gå de siste 2 km.";
+  if (type === "quality") return "Full oppvarming (min. 2 km) før du åpner. Kvalitet krever ferske bein.";
+  if (type === "deload") return "Målet er å komme ut FRISK. Ikke et sekund raskere enn planlagt.";
+  if (type === "easy") return "Sirkulasjon, ikke arbeid. Bruk den til god form.";
+  if (type === "strength") return "Alle vekter er mål. Klarer du to reps over målet: øk vekten neste gang.";
+  return "";
+}
+
+function strengthHtml(variant, noteClass) {
+  const rows = variant === "B" ? STRENGTH_B : STRENGTH_A;
+  const isNew = today <= (STRENGTH_NEW_UNTIL[variant] || "");
+  const list = rows.map(r => {
+    const mark = isNew && r[2];
+    return '<div class="row' + (mark ? " new" : "") + '">' +
+      '<div class="name">' + escapeHtml(r[0]) + (mark ? " ★" : "") + '</div>' +
+      '<div class="spec">' + escapeHtml(r[1]) + '</div></div>';
+  }).join("");
+  const note = isNew
+    ? "★ = ny øvelse. Stjernen forsvinner så snart du har kjørt økta én gang."
+    : "Skadeforebygging: RDL, calf raise og band walks / clamshells. De føles små, men de er grunnen til at du står gjennom hele oppkjøringen — ikke hopp over dem.";
+  const cap = variant === "B"
+    ? '<div class="' + noteClass + '" style="margin-top:10px">Belt squat er taket på 100 kg (box + kabelrack). Når 4 × 10 går lett, øk med <b>tempo</b> — 3 sek ned, 1 sek pause i bunn — ikke vekt. Videre beinstyrke hentes fra Bulgarians, som ikke har noe tak.<br><br>RDL: <b>hoftehengsel, ikke knebøy.</b> Skyv hofta bakover, myke knær, vekta inntil beina. Stopp der hamstringene slutter å strekkes — ikke ved gulvet. 3 sek ned. Vekta skal være det tyngste du klarer <i>uten</i> at ryggen runder — kjenner du det i korsryggen er den for tung eller formen glapp.</div>'
+    : "";
+  return '<div class="strength-list">' + list + '</div>' +
+    '<div class="' + noteClass + '" style="margin-top:12px">' + note + '</div>' + cap;
+}
+
+function renderToday() {
+  const { day, wk } = findToday();
+  const isToday = day.date === today;
+  document.getElementById("todayTag").textContent = isToday ? "I DAG · " + TYPE_LABELS[day.type] : "NESTE · " + TYPE_LABELS[day.type];
+  document.getElementById("todayName").textContent = day.name;
+
+  const dobj = new Date(day.date + "T12:00:00");
+  const dayName = DAY_FULL[day.d] || day.d;
+  document.getElementById("todayDate").textContent =
+    dayName + " " + fmtDateShort(day.date) + (isToday ? "" : " · om " + Math.round((dobj - new Date()) / 86400000) + " dager");
+
+  const hero = document.getElementById("todayHero");
+  hero.style.setProperty("--intensity-color", TYPE_COLORS[day.type]);
+  hero.setAttribute("data-date", day.date);
+  hero.style.cursor = "pointer";
+
+  let metrics = "";
+  if (day.pace) metrics += metricCard("Mål", day.pace);
+  metrics += metricCard("Type", TYPE_LABELS[day.type]);
+  document.getElementById("todayMetrics").innerHTML = metrics;
+
+  document.getElementById("todayDetail").innerHTML = day.detail ? "<strong>Økt:</strong> " + escapeHtml(day.detail) : "";
+  document.getElementById("todayNotes").textContent = notesFor(day.type);
+
+  const sd = document.getElementById("todayStrength");
+  sd.innerHTML = day.type === "strength" ? strengthHtml(wk.strength, "today-notes") : "";
+}
+
+function renderWeekStrip() {
+  const wk = findWeekOfToday();
+  const strip = document.getElementById("weekStrip");
+  document.getElementById("weekSub").textContent = wk.label === "Bro" ? "Bro" : "Uke " + wk.label;
+  strip.innerHTML = wk.days.map(day => {
+    const isToday = day.date === today;
+    return '<div class="day-chip' + (isToday ? " today" : "") + '" style="--dc:' + TYPE_COLORS[day.type] + '" data-date="' + day.date + '" role="button" tabindex="0" aria-label="Se ' + escapeHtml(day.name) + '">' +
+      '<div class="d">' + day.d + '</div>' +
+      '<div class="n">' + fmtDateShort(day.date) + '</div>' +
+      '<div class="t">' + escapeHtml(day.name.split(" ").slice(0, 3).join(" ")) + '</div></div>';
+  }).join("");
+}
+
+function renderWeeksList() {
+  const list = document.getElementById("weeksList");
+  const currentWk = findWeekOfToday();
+  list.innerHTML = PLAN.map(wk => {
+    const isCurrent = wk === currentWk;
+    const first = fmtDateShort(wk.days[0].date);
+    const last = fmtDateShort(wk.days[wk.days.length-1].date);
+    return '<div class="week-card' + (isCurrent ? " active" : "") + '" data-week="' + wk.label + '">' +
+      '<button class="week-head" type="button">' +
+        '<div class="week-num">' + (wk.label === "Bro" ? "◀" : wk.label) + '</div>' +
+        '<div class="week-title">' +
+          '<div class="theme">' + escapeHtml(wk.theme) + '</div>' +
+          '<div class="dates">' + first + ' – ' + last + '</div>' +
+        '</div>' +
+        '<div class="chev">▾</div>' +
+      '</button>' +
+      '<div class="week-body"><div class="week-days">' +
+        wk.days.map(d =>
+          '<div class="day-row" style="--dc:' + TYPE_COLORS[d.type] + '" data-date="' + d.date + '" role="button" tabindex="0">' +
+            '<div class="date"><span class="dn">' + d.d + '</span>' + fmtDateShort(d.date) + '</div>' +
+            '<div class="body">' +
+              '<div class="name">' + escapeHtml(d.name) + '</div>' +
+              (d.detail ? '<div class="detail">' + escapeHtml(d.detail) + '</div>' : "") +
+              (d.pace ? '<div class="pace">' + escapeHtml(d.pace) + '</div>' : "") +
+            '</div></div>').join("") +
+      '</div></div></div>';
+  }).join("");
+
+  list.querySelectorAll(".week-head").forEach(btn => {
+    btn.addEventListener("click", () => { btn.parentElement.classList.toggle("active"); });
+  });
+}
+
+/* ---------- Dag-ark ---------- */
+const FLAT = [];
+PLAN.forEach(wk => wk.days.forEach(day => FLAT.push({ wk, day })));
+
+const backdrop = document.getElementById("sheetBackdrop");
+let sheetIndex = -1;
+let lastFocus = null;
+
+function openDay(date) {
+  const i = FLAT.findIndex(x => x.day.date === date);
+  if (i < 0) return;
+  sheetIndex = i;
+  renderSheet();
+  if (!backdrop.classList.contains("open")) {
+    lastFocus = document.activeElement;
+    backdrop.classList.add("open");
+    document.body.classList.add("sheet-open");
+    document.getElementById("sheetClose").focus();
+  }
+  document.getElementById("sheet").scrollTop = 0;
+}
+
+function closeSheet() {
+  backdrop.classList.remove("open");
+  document.body.classList.remove("sheet-open");
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+
+function renderSheet() {
+  const { wk, day } = FLAT[sheetIndex];
+  const isToday = day.date === today;
+  const isPast = day.date < today;
+  const dobj = new Date(day.date + "T12:00:00");
+  const diff = Math.round((dobj - new Date(today + "T12:00:00")) / 86400000);
+
+  document.getElementById("sheet").style.setProperty("--sc", TYPE_COLORS[day.type]);
+
+  let tag = TYPE_LABELS[day.type].toUpperCase();
+  if (isToday) tag = "I DAG · " + tag;
+  else if (diff === 1) tag = "I MORGEN · " + tag;
+  else if (isPast) tag = "GJENNOMFØRT · " + tag;
+  document.getElementById("sheetTag").textContent = tag;
+  document.getElementById("sheetName").textContent = day.name;
+
+  const dayName = DAY_FULL[day.d] || day.d;
+  let when = dayName + " " + fmtDateShort(day.date) + " · " + (wk.label === "Bro" ? "Bro-uke" : "Uke " + wk.label);
+  if (!isToday && diff > 1) when += " · om " + diff + " dager";
+  else if (isPast) when += " · for " + Math.abs(diff) + " dag" + (Math.abs(diff) === 1 ? "" : "er") + " siden";
+  document.getElementById("sheetDate").textContent = when;
+
+  let metrics = "";
+  if (day.pace) metrics += metricCard("Mål", day.pace);
+  metrics += metricCard("Type", TYPE_LABELS[day.type]);
+  document.getElementById("sheetMetrics").innerHTML = metrics;
+
+  document.getElementById("sheetDetail").innerHTML = day.detail
+    ? "<strong>Økt:</strong> " + escapeHtml(day.detail)
+    : "<strong>Økt:</strong> " + escapeHtml(day.name);
+  document.getElementById("sheetNotes").textContent = notesFor(day.type);
+
+  const sd = document.getElementById("sheetStrength");
+  sd.innerHTML = day.type === "strength" ? strengthHtml(wk.strength, "sheet-notes") : "";
+
+  const prev = document.getElementById("sheetPrev");
+  const next = document.getElementById("sheetNext");
+  prev.disabled = sheetIndex === 0;
+  next.disabled = sheetIndex === FLAT.length - 1;
+  prev.textContent = sheetIndex > 0 ? "‹ " + FLAT[sheetIndex-1].day.d + " " + fmtDateShort(FLAT[sheetIndex-1].day.date) : "‹ Forrige økt";
+  next.textContent = sheetIndex < FLAT.length - 1 ? FLAT[sheetIndex+1].day.d + " " + fmtDateShort(FLAT[sheetIndex+1].day.date) + " ›" : "Neste økt ›";
+}
+
+document.getElementById("sheetClose").addEventListener("click", closeSheet);
+backdrop.addEventListener("click", e => { if (e.target === backdrop) closeSheet(); });
+document.getElementById("sheetPrev").addEventListener("click", () => { if (sheetIndex > 0) { sheetIndex--; renderSheet(); document.getElementById("sheet").scrollTop = 0; } });
+document.getElementById("sheetNext").addEventListener("click", () => { if (sheetIndex < FLAT.length - 1) { sheetIndex++; renderSheet(); document.getElementById("sheet").scrollTop = 0; } });
+
+// Delegert: alt med data-date åpner den dagen
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-date]");
+  if (el && !backdrop.contains(el)) openDay(el.getAttribute("data-date"));
+});
+document.addEventListener("keydown", e => {
+  if (backdrop.classList.contains("open")) {
+    if (e.key === "Escape") closeSheet();
+    if (e.key === "ArrowLeft") document.getElementById("sheetPrev").click();
+    if (e.key === "ArrowRight") document.getElementById("sheetNext").click();
+    return;
+  }
+  if (e.key !== "Enter" && e.key !== " ") return;
+  const el = document.activeElement && document.activeElement.closest ? document.activeElement.closest("[data-date]") : null;
+  if (el && !backdrop.contains(el)) { e.preventDefault(); openDay(el.getAttribute("data-date")); }
+});
+
+/* =========================================================================
+   Mat — visning
+   ========================================================================= */
+
+const innhold = document.getElementById("innhold");
+
+function tegn(){
+  document.querySelectorAll(".subtabs button").forEach(b=>b.classList.toggle("pa",b.dataset.fane===fane));
+  document.getElementById("banner").innerHTML = dbOk ? "" :
+    '<div class="banner">Lagres i denne nettleseren. Avhukinger følger ikke med til andre enheter.</div>';
+  const liste=alleVarer();
+  document.getElementById("fanetall").textContent=liste.filter(v=>!hl().av[v.id]).length+" igjen";
+  if(fane==="idag") tegnIdag();
+  else if(fane==="handle") tegnHandle();
+  else if(fane==="uke") tegnUkesmeny();
+  else tegnUka();
+}
+
+function tegnIdag(){
+  const erFredag = dagIdx===4;
+  const d = dag();
+  const min = naa.getHours()*60 + naa.getMinutes();
+  let h="";
+
+  if(erFredag){
+    h+='<div class="regel"><span class="lab">Fredag — langtur</span>'+
+       'Ingenting fett etter frokost, og spis av skuffen tre ganger.</div>';
+    h+='<section class="card">'+FREDAG.map((m,i)=>
+       '<div class="maaltid'+(FREDAG_MIN[i]>=min && (i===0||FREDAG_MIN[i-1]<min)?" na":"")+'"><span class="kl">'+m.kl+'</span><span class="hva">'+m.hva+
+       (m.sub?'<span class="sub">'+m.sub+'</span>':'')+'</span><span></span></div>').join("")+'</section>';
+    h+='<p class="kilde" style="margin-top:18px;border:none;padding:0">Fredag er den eneste dagen som er annerledes, '+
+       'og den er annerledes fordi magen ennå ikke er avklart.</p>';
+    innhold.innerHTML=h; return;
+  }
+
+  /* fem faste måltider */
+  let neste=-1;
+  for(let i=0;i<FASTE.length;i++){ if(FASTE[i].min>=min){neste=i;break} }
+  h+='<section class="card">';
+  h+=FASTE.map((m,i)=>{
+    const byttet = d.bytte[m.n];
+    const kl = m.kl==="middag" ? "middag" : m.kl;
+    const sub = maaltidSub(m);
+    return '<'+(m.laast?"div":"button")+' class="maaltid'+(i===neste?" na":"")+(byttet?" byttet":"")+'"'+
+      (m.laast?"":' type="button" data-luke="'+m.n+'"')+'>'+
+      '<span class="kl">'+kl+'</span>'+
+      '<span class="hva">'+maaltidTekst(m)+(sub?'<span class="sub">'+sub+'</span>':'')+'</span>'+
+      '<span class="chev">'+(m.laast?"":"›")+'</span>'+
+      '</'+(m.laast?"div":"button")+'>';
+  }).join("");
+
+  /* Øktdagene kommer fra treningsplanen. Spør ikke — vis, med mulighet til å slå av. */
+  const pd = planDag(iDagN);
+  const fast = UKEPLAN[dagIdx];
+  const planlagt = pd ? { navn: pd.d.name, styrke: pd.d.type==="strength" }
+                      : (fast.lop||fast.styrke ? { navn: fast.okt, styrke: fast.styrke } : null);
+  const trener = d.lop===false ? false : (d.lop===true || !!planlagt);
+  const erStyrke = planlagt ? planlagt.styrke : false;
+
+  if(trener){
+    const ekstra = (erStyrke && d.lop!==true)
+      ? [{kl:"etter",hva:"5 dl lettmelk",sub:"Etter styrke"}]
+      : LOPEEKSTRA;
+    h+=ekstra.map(m=>'<div class="maaltid ekstra"><span class="kl">'+m.kl+'</span>'+
+      '<span class="hva">'+m.hva+'<span class="sub">'+m.sub+'</span></span><span></span></div>').join("");
+  }
+  h+='<div class="bryter"><span class="sp">'+
+     (trener ? (planlagt ? planlagt.navn : "Økt") + " i dag" : "Ingen økt i dag")+
+     '<small>'+(trener
+       ? "Fra treningsplanen. Måltidene over kommer automatisk."
+       : (planlagt ? "Du har slått av dagens økt." : "Hviledag i planen."))+'</small></span>'+
+     '<span class="knapp2"><button type="button" data-lop="'+(trener?"av":"pa")+'">'+
+     (trener?"Ble ikke noe av":"Trente likevel")+'</button></span></div>';
+  h+='</section>';
+
+  innhold.innerHTML=h;
+  innhold.querySelectorAll("[data-luke]").forEach(b=>b.onclick=()=>apneArk(b.dataset.luke));
+  innhold.querySelectorAll("[data-lop]").forEach(b=>b.onclick=()=>{
+    dag().lop = b.dataset.lop==="pa";
+    lagre(); tegn(); tegnHjem();
+  });
+}
+
+function apneArk(luke){
+  arkLuke=luke;
+  const navn={frokost:"Frokost",kl14:"Kl. 14",middag:"Middag",kveld:"Kl. 21"}[luke];
+  document.getElementById("arktit").textContent="Bytt "+navn.toLowerCase();
+  document.getElementById("arksub").textContent="Bare for i dag. I morgen står standarden igjen.";
+  const valgt=dag().bytte[luke];
+  document.getElementById("arkliste").innerHTML=BYTTER[luke].map((x,i)=>
+    '<button type="button" class="valg'+(valgt===x?" aktiv":"")+'" data-i="'+i+'"><span>'+x+
+    (i===0&&!valgt?' <span style="color:var(--mute);font-size:14px">— standard</span>':'')+'</span>'+
+    (valgt===x?'<span class="hake">✓</span>':'<span></span>')+'</button>').join("");
+  document.getElementById("ark").classList.add("apen");
+  document.getElementById("arkbak").classList.add("apen");
+}
+function lukkArk(){
+  document.getElementById("ark").classList.remove("apen");
+  document.getElementById("arkbak").classList.remove("apen");
+  arkLuke=null;
+}
+document.getElementById("arkbak").onclick=lukkArk;
+document.getElementById("arklukk").onclick=lukkArk;
+document.getElementById("arkliste").onclick=e=>{
+  const b=e.target.closest("[data-i]"); if(!b||!arkLuke) return;
+  const v=BYTTER[arkLuke][+b.dataset.i];
+  if(dag().bytte[arkLuke]===v || +b.dataset.i===0) delete dag().bytte[arkLuke];
+  else dag().bytte[arkLuke]=v;
+  lagre(); lukkArk(); tegn(); tegnHjem();
+};
+document.addEventListener("keydown",e=>{if(e.key==="Escape") lukkArk()});
+
+function tegnUka(){
+  const s=sond();
+  let h='<div class="regel"><span class="lab">To rutiner i uka</span>'+
+        'Handle <b>lørdag</b>. 45 minutter på kjøkkenet <b>søndag</b>, og pakk jobbposen samtidig.</div>';
+
+  h+='<div class="tit">Søndag — 45 minutter</div><section class="card">'+
+     SONDAG.map(o=>'<button type="button" class="oppg'+(s.oppg[o.id]?" av":"")+'" data-oppg="'+o.id+'">'+
+       '<span class="boks">✓</span><span><span class="navn">'+o.navn+'</span>'+
+       '<span class="sub">'+o.sub+'</span></span></button>').join("")+'</section>';
+
+  h+='<div class="varsel">Det som er laget søndag spises <b>innen torsdag</b>. Torsdag kveld: fryses eller kastes. '+
+     'Det er hele holdbarhetsregelen.</div>';
+
+  h+='<div class="tit">Middagene — fire, gå i ring</div><section class="card">'+
+     BYTTER.middag.map((m,i)=>'<div class="maaltid"><span class="kl">'+(i+1)+'</span>'+
+       '<span class="hva">'+m.replace(/ — (.+)$/,'<span class="sub">$1</span>')+'</span><span></span></div>').join("")+
+     '</section>'+
+     '<p class="kilde" style="border:none;margin-top:10px;padding:0">Alle bygges likt: protein · dobbel grønnsak · én neve karbo. '+
+     'Ingen ukedag over 18 minutter. Lørdag lager du hva du vil.</p>';
+
+  h+='<div class="tit">Hvis butikken har andre størrelser</div><div class="card pad">'+
+     '<p style="margin:0">Et «beger» i planen er <b>350–400 g</b>, uansett hva pakken heter. '+
+     'Regn 11–12 g protein per 100 g cottage cheese, og ta så mye at måltidet '+
+     'lander på 40–50 g protein. Er begeret mindre, ta halvannet.</p></div>';
+  h+='<div class="tit">Rundstykker — bakes hver 3. uke</div><section class="card pad">'+
+     '<p style="margin:0 0 10px"><b>1 beger cottage cheese (400 g) til 5 egg</b> — det er forholdet som gir proteinet. '+
+     '<b>Havregryn til røra er tykk nok å klatte ut</b>, ca. 150 g per beger. Bakepulver og salt.</p>'+
+     '<p style="margin:0 0 10px">Rør sammen, la svelle 10 min, klatt ut 12 per brett. <b>200 °C i 30 min.</b> '+
+     'Dobbel porsjon fyller to brett på én ovnsomgang — 45 minutter, hvorav 30 er ovntid.</p>'+
+     '<p style="margin:0;color:var(--mute);font-size:15px">Avkjøl helt, frys <b>3 og 3 i små poser</b> — '+
+     'én pose er ett måltid. 40–60 sek i mikro fra frossen, eller ta posen ut kl. 07 så er de tint til lunsj. '+
+     'Legg på skinken først når du skal spise. Holder 4 dager i kjøleskap, 2–3 måneder i fryseren.</p>'+
+     '<p style="margin:10px 0 0;color:var(--mute);font-size:15px">Porsjonen går etter protein, ikke antall: '+
+     '<b>frokost ≈ 30 g protein, kl. 14 ≈ 35 g med skinke.</b> Små stykker (~85 g) er 3 og 2, store (~160 g) er 2 og 2. '+
+     '<b>Ikke 15:30</b> — for lite karbo og for mye fett før økt.</p>'+
+     '</section>';
+  h+='<div class="tit">Skuffen på jobb</div><section class="card pad">'+
+     '<p style="margin:0 0 8px">Fylles <b>når den er tom</b>, ikke etter en plan. Står permanent på handlelista.</p>'+
+     '<ul style="margin:0;padding-left:20px"><li>Corny Big — 3 pakker om gangen, varer en måned</li>'+
+     '<li>Rosiner i en tett boks</li><li>Riskaker og en flaske saft</li>'+
+     '<li>3 proteinbarer — nødreserve for dagen du glemte posen</li></ul></section>';
+
+  innhold.innerHTML=h;
+  innhold.querySelectorAll("[data-oppg]").forEach(b=>b.onclick=()=>{
+    const id=b.dataset.oppg; s.oppg[id]=!s.oppg[id]; lagre(); tegnUka();
+  });
+}
+
+/* Uka: hva du spiser hver dag neste uke. Ingen valg — den følger planen. */
+function tegnUkesmeny(){
+  const m=handleUkeMandag(), n=ukeNokkel(m);
+  const s0=new Date(m), s6=new Date(m); s6.setDate(s6.getDate()+6);
+  let h='<div class="regel"><span class="lab">Uke '+n.slice(6)+' · '+norskDato(s0)+'–'+norskDato(s6)+'</span>'+
+        'Frokost, kl. 14 og kl. 21 er like hver dag. Det som varierer er <b>middagen</b> og '+
+        '<b>karboporsjonen i kantina</b>. Handlelista er bygget på nettopp denne uka.</div>';
+
+  for(let i=0;i<7;i++){
+    const dd=new Date(m); dd.setDate(dd.getDate()+i);
+    const isoD=isoDato(dd);
+    const pd=planDag(isoD), fast=UKEPLAN[i];
+    const kp=kantinePorsjon(i,isoD), dbl=over10(i,isoD);
+    const trener = pd ? true : (fast.lop||fast.styrke);
+    const oktNavn = pd ? pd.d.name : fast.okt.toLowerCase();
+    h+='<div class="tit">'+UKEDAG[i]+' '+norskDato(dd)+' — '+escapeHtml(oktNavn)+'</div>';
+    h+='<section class="card">';
+    h+='<div class="maaltid"><span class="kl">07</span><span class="hva">'+
+       (i===5||i===6?"2 rundstykker med skinke, eller cottage cheese + havregryn":"2 rundstykker med skinke")+
+       (i===4?'<span class="sub">Fredag: <b>ingen nøtter</b> — ikke fett før langturen</span>':'')+
+       '</span><span></span></div>';
+    h+='<div class="maaltid"><span class="kl">11</span><span class="hva">Kantina, <b>'+kp.navn+'</b>'+
+       (kp.grunn?'<span class="sub">'+kp.grunn+'</span>':'')+'</span><span></span></div>';
+    h+='<div class="maaltid"><span class="kl">14</span><span class="hva">Beger cottage cheese + frukt'+
+       '<span class="sub">Kuttes aldri</span></span><span></span></div>';
+    if(trener) h+='<div class="maaltid ekstra"><span class="kl">'+(i===4?"09:30":"15:30")+
+       '</span><span class="hva">Corny Big + neve rosiner<span class="sub">Fra skuffen</span></span><span></span></div>';
+    if(i===4) h+='<div class="maaltid ekstra"><span class="kl">13:30</span><span class="hva">'+
+       'Saft + Corny Big + 3 riskaker<span class="sub">Skuffen. Under turen: se mage.md</span></span><span></span></div>';
+    h+='<div class="maaltid"><span class="kl">middag</span><span class="hva"><b>'+MIDDAG_UKE[i]+'</b>'+
+       '<span class="sub">'+(dbl?"<b>Dobbel karbo</b> — 100 g tørr ris eller 6 poteter":"50 g tørr ris eller 3 poteter")+
+       '</span></span><span></span></div>';
+    h+='<div class="maaltid"><span class="kl">21</span><span class="hva">200 g cottage cheese + bær</span><span></span></div>';
+    h+='</section>';
+  }
+  h+='<p class="kilde" style="border:none;margin-top:18px;padding:0">Lørdag lager du hva du vil til middag. '+
+     'Søndag koker du ny gryte, poteter og egg — se Søndag-fanen.</p>';
+  innhold.innerHTML=h;
+}
+
+function alleVarer(){
+  const v=HANDLE_FAST.map(([n,m])=>({id:"f|"+n,navn:n,mengde:m,gruppe:"fast"}))
+    .concat(HANDLE_TOMT.map(([n,m])=>({id:"t|"+n,navn:n,mengde:m,gruppe:"tomt"})))
+    .concat(HANDLE_BAKE.map(([n,m])=>({id:"b|"+n,navn:n,mengde:m,gruppe:"bake"})));
+  hl().egne.forEach((e,i)=>v.push({id:"e|"+i,navn:e,mengde:"",gruppe:"egen"}));
+  return v;
+}
+
+function tegnHandle(){
+  const h_=hl(), varer=alleVarer();
+  const av=varer.filter(v=>h_.av[v.id]).length;
+  let h='<div class="teller"><span class="n">'+av+' av '+varer.length+'</span>'+
+        '<span class="u">Uke '+hUkeN.slice(6)+'</span></div>';
+  h+='<div class="varsel" style="margin-top:14px">Lista er <b>den samme hver uke</b>, fordi måltidene er det. '+
+     'Den viser hva du trenger for uka som kommer — ikke hva du spiste sist. '+
+     'Poteter og ris står begge fordi middagene går i ring: to av dem bruker potetene fra søndag, én bruker ris.</div>';
+
+  const grupper=[["fast","Fast — hver uke"],["tomt","Når det er tomt"],
+                 ["bake","Rundstykker — uka du baker"],["egen","Lagt til av deg"]];
+  for(const [g,tit] of grupper){
+    const iG=varer.filter(v=>v.gruppe===g);
+    if(!iG.length) continue;
+    h+='<div class="tit">'+tit+'</div><section class="card">'+
+      iG.slice().sort((a,b)=>(h_.av[a.id]?1:0)-(h_.av[b.id]?1:0)).map(v=>
+        '<button type="button" class="vare'+(h_.av[v.id]?" av":"")+'" data-vare="'+v.id+'">'+
+        '<span class="boks">✓</span><span class="navn">'+escapeHtml(v.navn)+'</span>'+
+        '<span class="mengde">'+escapeHtml(v.mengde)+'</span></button>').join("")+'</section>';
+  }
+
+  h+='<form class="leggtil" id="leggtil"><input id="nyvare" placeholder="Legg til en vare" autocomplete="off">'+
+     '<button class="btn primar" type="submit">Legg til</button></form>';
+  innhold.innerHTML=h;
+
+  innhold.querySelectorAll("[data-vare]").forEach(b=>b.onclick=()=>{
+    const id=b.dataset.vare;
+    h_.av[id]=!h_.av[id];
+    sisteAngre=id; visAngre(h_.av[id]?"Krysset av":"Angret");
+    lagre(); tegnHandle(); tegnHjem();
+    document.getElementById("fanetall").textContent=alleVarer().filter(v=>!h_.av[v.id]).length+" igjen";
+  });
+  innhold.querySelector("#leggtil").onsubmit=e=>{
+    e.preventDefault();
+    const inp=innhold.querySelector("#nyvare"), tx=inp.value.trim();
+    if(!tx) return;
+    h_.egne.push(tx); inp.value=""; lagre(); tegnHandle(); tegnHjem();
+  };
+}
+
+function visAngre(txt){
+  const el=document.getElementById("angre");
+  document.getElementById("angretxt").textContent=txt;
+  el.classList.add("vis");
+  clearTimeout(angreTid);
+  angreTid=setTimeout(()=>el.classList.remove("vis"),5000);
+}
+document.getElementById("angreknapp").onclick=()=>{
+  if(!sisteAngre) return;
+  hl().av[sisteAngre]=!hl().av[sisteAngre];
+  document.getElementById("angre").classList.remove("vis");
+  lagre(); tegnHandle(); tegnHjem();
+};
+document.querySelectorAll(".subtabs button").forEach(b=>b.onclick=()=>{
+  fane=b.dataset.fane; skriv("fane",fane); tegn(); window.scrollTo(0,0);
+});
+
+/* =========================================================================
+   Tema
+   ========================================================================= */
+document.getElementById("themeToggle").addEventListener("click", () => {
+  const cur = document.documentElement.getAttribute("data-theme");
+  const isDark = cur === "dark" || (!cur && matchMedia("(prefers-color-scheme: dark)").matches);
+  document.documentElement.setAttribute("data-theme", isDark ? "light" : "dark");
+});
+
+/* =========================================================================
+   Øktrapport: henter dagens økt fra Strava og lar Claude oppsummere.
+   Uten kapabilitetene forblir knappen skjult.
+   ========================================================================= */
+const SRV = "Strava";
+const btn   = document.getElementById("reportBtn");
+const btnTx = document.getElementById("reportBtnText");
+const panel = document.getElementById("reportPanel");
+const rbody = document.getElementById("reportBody");
+const rtitle= document.getElementById("reportTitle");
+const rmeta = document.getElementById("reportMeta");
+const rfoot = document.getElementById("reportFoot");
+let MCP = null, SAMPLE = null, running = false;
+
+const canUse = typeof claude !== "undefined" && claude && typeof claude.use === "function";
+(canUse ? Promise.all([claude.use("mcp"), claude.use("sample")]) : Promise.resolve([null, null]))
+.then(([m, sm]) => {
+  if (!m || !sm) return;
+  MCP = m; SAMPLE = sm;
+  document.getElementById("reportWrap").hidden = false;
+}).catch(() => {});
+
+function say(text, isErr) {
+  panel.classList.add("on");
+  panel.classList.toggle("err", !!isErr);
+  rbody.textContent = text;
+}
+function busy(on, label) {
+  running = on;
+  btn.disabled = on;
+  btn.classList.toggle("busy", on);
+  btnTx.textContent = on ? (label || "Henter…") : "Oppsummer dagens økt";
+}
+function fmtPace(mps) {
+  if (!mps || mps <= 0) return null;
+  const s = Math.round(1000 / mps);
+  return Math.floor(s/60) + ":" + String(s%60).padStart(2,"0") + "/km";
+}
+function fmtDur(sec) {
+  const hh = Math.floor(sec/3600), mm = Math.round((sec%3600)/60);
+  return hh ? hh + "t " + String(mm).padStart(2,"0") + "m" : mm + " min";
+}
+async function call(tool, input) {
+  const res = await MCP.callTool(SRV, tool, input, { cache: false });
+  return res.payload;
+}
+// Dagens økter; er dagen tom, prøv gårsdagen så en kveldsøkt sjekket neste morgen også treffer.
+async function fetchDay() {
+  const today0 = new Date();
+  for (let back = 0; back <= 1; back++) {
+    const d = new Date(today0); d.setDate(d.getDate() - back);
+    const day = isoDato(d);
+    const p = await call("list_activities", {
+      first: 10,
+      range_start: day + "T00:00:00",
+      range_end: day + "T23:59:59",
+    });
+    const acts = (p && p.activities) || [];
+    if (acts.length) return { day, acts, back };
+  }
+  return { day: isoDato(today0), acts: [], back: 0 };
+}
+async function buildFacts(acts) {
+  const out = [];
+  for (const a of acts) {
+    const sm = a.summary || {};
+    const line = {
+      navn: a.name,
+      type: a.sport_type,
+      start: a.start_local,
+      varighet: sm.moving_time ? fmtDur(sm.moving_time) : null,
+    };
+    if (sm.distance > 0) {
+      line.distanse_km = +(sm.distance / 1000).toFixed(2);
+      line.pace = fmtPace(sm.avg_speed);
+      line.hoydemeter = sm.elevation_gain;
+    }
+    if (a.sport_type === "WeightTraining") {
+      try {
+        const det = await call("get_strength_workout_details", { activity_ids: [String(a.id)] });
+        const sets = (Array.isArray(det) && det[0] && det[0].exercise_sets) || [];
+        const grouped = {};
+        for (const st of sets) {
+          const n = st.exercise_name || "Ukjent";
+          (grouped[n] = grouped[n] || []).push(
+            [st.weight && st.weight.value, st.reps && st.reps.value].filter(Boolean).join(" × ")
+          );
+        }
+        line.ovelser = Object.entries(grouped).map(([n, v]) => n + ": " + v.join(", "));
+      } catch (e) { line.styrke_feil = e && e.code; }
+    } else {
+      try {
+        const pf = await call("get_activity_performance", { activity_id: String(a.id) });
+        if (pf) {
+          line.snittpuls = pf.average_heartrate != null ? Math.round(pf.average_heartrate) : null;
+          line.makspuls  = pf.max_heartrate;
+          if (Array.isArray(pf.laps)) {
+            line.runder = pf.laps.filter(l => l.distance > 200).map(l => ({
+              km: +(l.distance/1000).toFixed(2),
+              tid: fmtDur(l.moving_time || l.elapsed_time),
+              puls: l.avg_hr != null ? Math.round(l.avg_hr) : null,
+            }));
+          }
+        }
+      } catch (e) { line.puls_feil = e && e.code; }
+    }
+    out.push(line);
+  }
+  return out;
+}
+
+btn.addEventListener("click", async () => {
+  if (running) return;
+  panel.classList.remove("on", "err");
+  rfoot.hidden = true;
+  busy(true, "Henter fra Strava…");
+  let day, acts, back, facts;
+  try {
+    ({ day, acts, back } = await fetchDay());
+    if (!acts.length) {
+      const pl = planDag(isoDato(new Date()));
+      busy(false);
+      say(pl ? "Ingen økt logget i dag eller i går. På planen i dag: " + pl.d.name + "."
+             : "Ingen økt logget i dag eller i går, og ingen økt på planen i dag.");
+      return;
+    }
+    facts = await buildFacts(acts);
+  } catch (e) {
+    busy(false);
+    const c = e && e.code;
+    say(c === "needs_reauth" ? "Strava-koblingen må kobles til på nytt i Claude-innstillingene."
+      : c === "not_granted" ? "Ingen tilgang til Strava i denne visningen."
+      : c === "rate_limited" ? "Strava svarer ikke akkurat nå — prøv om et par minutter."
+      : "Fikk ikke hentet økta fra Strava" + (c ? " (" + c + ")" : "") + ".", true);
+    return;
+  }
+
+  const pl = planDag(day);
+  const planTxt = pl
+    ? [pl.d.name, pl.d.detail, pl.d.pace, "Uke " + pl.wk.label + " — " + pl.wk.theme].filter(Boolean).join(" · ")
+    : "Ingen økt planlagt denne datoen (fridag eller avvik fra planen).";
+
+  const prompt = [
+    "Du er treningsassistent for en løper som bygger mot Holmestrand Maraton 3. april 2027. Svar på norsk.",
+    "",
+    "PLANLAGT " + day + ": " + planTxt,
+    "",
+    "FAKTISK GJENNOMFØRT (rådata fra Strava):",
+    JSON.stringify(facts, null, 1),
+    "",
+    "PULSSONER (OLT-soner mot makspuls 190, revidert 03.09.26):",
+    "I1 restitusjon 118–136 · I2 rolig/langtur 137–156 · I3 sub-terskel 156–165 · I4 terskel 166–175 · I5 VO2 175–190.",
+    "Anaerob terskel ligger på puls 170 ± 3. Tempoøktene i planen ligger i I3, ikke på terskel — det er med vilje.",
+    "Planen er PULSSTYRT. Traff økta riktig sone er hovedkriteriet; pace er sekundært og varierer med føre og terreng.",
+    "I2-pace er ca. 6:45–7:45/km. Søndagsøkta skal ligge under puls 145 — er den høyere, si fra.",
+    "MP: målfarten i april er 7:05–7:15, men arbeidsfarten i MP-økter fram til januar er 7:35–7:50. Ikke kritiser at MP kjøres i arbeidsfart nå — det er planen.",
+    "Belt squat har utstyrstak på 100 kg — foreslå aldri tyngre vekt der; progresjon går via reps eller tempo.",
+    "",
+    "SKRIV MAKS 160 ORD, ren tekst uten overskrifter og uten punktliste:",
+    "1) Første setning: traff økta det den skulle? Rett på sak.",
+    "2) Så nøkkeltallene som betyr noe — ikke gjenta alt.",
+    "3) Til slutt én konkret observasjon verdt å vite: pulsdrift, om en vekt bør økes, avvik fra planen, eller tegn på slitasje.",
+    "",
+    "Ikke finn på tall som ikke står i rådataene. Mangler noe, si det. Ikke skryt uten dekning — var økta for hard eller for lett i forhold til hensikten, si det rett ut.",
+  ].join("\n");
+
+  busy(true, "Claude analyserer…");
+  rtitle.textContent = back === 1 ? "Gårsdagens økt" : "Dagens økt";
+  rmeta.textContent = acts.length > 1 ? acts.length + " økter" : "";
+  say("Tenker…");
+  try {
+    const { truncated } = await SAMPLE(prompt, {
+      modelTier: "default",
+      cache: false,
+      onText: ({ text }) => { rbody.textContent = text; },
+    });
+    rfoot.hidden = false;
+    rfoot.textContent = (back === 1 ? "Basert på økt fra " + day : "Basert på økt fra i dag")
+      + (truncated ? " · svaret ble kuttet" : "");
+  } catch (e) {
+    const c = e && e.code;
+    if (c === "cancelled") { say("Avbrutt."); }
+    else if (e && e.text) { rbody.textContent = e.text; rfoot.hidden = false; rfoot.textContent = "Svaret ble avbrutt underveis"; }
+    else say(c === "not_granted" ? "Ingen tilgang til å spørre Claude i denne visningen."
+           : c === "rate_limited" ? "For mange forespørsler akkurat nå — vent litt."
+           : "Fikk ikke laget oppsummering" + (c ? " (" + c + ")" : "") + ".", true);
+  } finally {
+    busy(false);
+  }
+});
+
+/* =========================================================================
+   Init
+   ========================================================================= */
+function maalHoyder(){
+  const h = document.querySelector("header.top").offsetHeight;
+  const s = document.getElementById("subtabs").offsetHeight;
+  document.documentElement.style.setProperty("--hdrH", h + "px");
+  if (s) document.documentElement.style.setProperty("--subH", s + "px");
+}
+window.addEventListener("resize", maalHoyder);
+
+renderToday();
+renderWeekStrip();
+renderWeeksList();
+lokaltInn();
+tegn();
+tegnHjem();
+settVisning(visning, true);
+maalHoyder();
+koble();
+</script>
