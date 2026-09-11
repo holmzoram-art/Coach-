@@ -47,13 +47,18 @@ rått** (korreksjonene spenner fra −41,6 til +47,0 s/km), men helheten er soli
 | Solo | Ikke oppgitt | ❓ |
 
 **To stopp, ikke gåpauser:**
-- **194 s ved 7,69 km.** Puls falt 151 → 104. Stillestående, 5 m tilbakelagt.
+- **194 s ved 7,69 km — planlagt næringsstopp.** Seigmenn. Bekreftet av Knut.
+  Puls falt 151 → 104. Stillestående, 5 m tilbakelagt.
 - **53 s ved 12,15 km.**
 
 Til sammen 247 s. Dette er stopp, ikke gange, og de er ekskludert fra
-fartsregningen. **De ødelegger ikke punktet.** Men stoppet ved 7,69 km lot pulsen
-falle 47 slag rett før andre halvdel, noe som gjør at **decoupling-tallet under
-er litt for lavt** — det sanne tallet er trolig marginalt høyere.
+fartsregningen. **De ødelegger ikke punktet — de styrker det.** Næringsstoppet
+var planlagt, ikke noe han måtte ta fordi kroppen sa stopp. Det er en del av
+protokollen og skal gjentas likt på neste «Brygga 16», slik at stoppet blir en
+konstant i serien og ikke en variabel.
+
+Merknad til decoupling: stoppet lot pulsen falle 47 slag rett før andre halvdel,
+noe som gjør at **tallet under er litt for lavt** — det sanne er marginalt høyere.
 
 ## 3. Brystbelte — jeg vet ikke, og jeg later ikke som
 
@@ -79,8 +84,13 @@ Responsen ved stoppet er fysiologisk ren: 151 → 104 på 194 s, deretter
 **Dataen er brukbar uansett kilde.**
 
 **Konsekvens:** nullpunktet settes, men absoluttpulsen bærer ±3–5 slags
-usikkerhet. **Sier Knut at han hadde belte, oppgraderer jeg punktet.**
-Det er ett spørsmål, og det er verdt å stille.
+usikkerhet. Status føres som **«belte ukjent»**. Spørsmålet er stilt og ikke
+besvart, og skal **ikke stilles på nytt** — sier han fra senere, oppgraderes punktet.
+
+Dette rammer ikke serien nevneverdig: så lenge målemetoden er **den samme** på
+hvert «Brygga 16», blir en systematisk skjevhet en konstant som faller ut av
+differansen. Det som ville skadet er å bytte fram og tilbake mellom belte og
+håndledd midt i serien.
 
 ## 4. Traff han I2 140–150? Ja, nesten perfekt.
 
@@ -193,11 +203,51 @@ skrevet, er uke 3 identisk (~34,7 km), og da er 24–26-rammen død i praksis.
    - **Ukesvolum 30,72 km mot 24–26.** Må avklares.
    - **Pulskilde uavklart.** Ett spørsmål løser det.
 
-## Å spørre om (ikke RPE — det kommer på kveldsspørsmålet)
+## Besvart 11.09 — magen
 
-1. **Magen.** Han fikk ny næringsplan i dag — bananer og grovbrød i stedet for
-   Corny Big. **Dette er det eneste som avgjør om fredagsopplegget virker**, og
-   det står ingenting om det i dataen. Var stoppet på 194 s ved 7,69 km
-   næringsstoppet? Hvordan lå magen resten av turen?
-2. **Brystbelte — ja eller nei?**
-3. **Solo?**
+**Magen var helt fin.** Første langtur uten magetrøbbel siden 18-kilometeren 27.08,
+og **første gang hele fredagsopplegget er kjørt gjennom**.
+
+Næringen, etter `ernaering` sin anvisning samme morgen:
+- Ingen Corny Big (ikke tilgjengelig) → **bananer og grovbrød med syltetøy**
+- Kantinelunsj med full karbo og null fett
+- Ingen nøtter til frokost, ingen sportsdrikk
+- Underveis: **seigmenn** ved 7,69 km
+
+`ernaering` oppdaterer `mage.md`.
+
+**Hvorfor dette betyr noe for målingen:** en langtur med magetrøbbel er ikke et
+gyldig EF-punkt — kvalme og stopp endrer både fart og puls. At dette punktet ble
+satt på en tur uten mageproblemer, gjør nullpunktet reelt. Og siden hele
+fredagsopplegget nå er kjørt gjennom én gang, er **næringen også en kontrollert
+variabel i serien** — den skal gjentas likt.
+
+**Ubesvart, og skal ikke etterspørres:** brystbelte og solo.
+
+
+---
+
+# TO TALL SOM SKAL FØLGES PÅ NESTE «BRYGGA 16»
+
+De to funnene under peker mot det samme: **16 km ligger i overkant av det som er
+innkjørt akkurat nå.** De er uavhengige mål — det ene sirkulatorisk, det andre
+muskulært — og derfor er det interessant om de beveger seg **sammen**.
+
+| # | Mål | 11.09.2026 | Tolkning ved neste måling |
+|---|---|---|---|
+| **1** | **Pa:HR-decoupling** | **6,0 %** | Under 5 % = 16 km er innkjørt. Over 7 % = for rask opptrapping |
+| **2** | **Kadensfall gjennom turen** | **157–158 → 153–155 spm** (−4 til −5) | Mindre fall = bedre muskulær utholdenhet. Større fall = tretthet før motoren |
+
+**Hvorfor de hører sammen:** Pa:HR fanger at hjertet må jobbe hardere for samme
+fart utover i turen. Kadensfallet fanger at beina mister frekvens. Går begge ned
+neste gang, bygger han durabilitet i både motor og understell — det er det
+opptrappingen skal gi. Går Pa:HR ned mens kadensfallet øker, er det muskulær
+tretthet som er flaskehalsen, og da er styrken viktigere enn volumet.
+Går begge opp, er opptrappingen for rask.
+
+**Én enkelt måling forteller ingenting om retning.** Dette er punkt 1 av minimum
+4–5. Forutsetningen for at sammenligningen er gyldig er at neste «Brygga 16»
+kjøres med **samme rute, samme retning, samme næringsstopp, samme pulskilde**.
+
+Neste langtur i planen: **fredag 18.09, 16 km, ren I2.** Samme distanse — ideelt
+som måling nummer to.
