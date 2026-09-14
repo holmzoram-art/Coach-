@@ -36,21 +36,73 @@ Ukesvolum ~34–45 km i byggeuker. Fra januar mot 55–60 km.
 
 ---
 
-## Soner — revidert 03.09.26, OLT mot makspuls 190
+## Soner — revidert 14.09.26 av `fysiolog`. AVVENTER GODKJENNING FRA `hovedcoach`
 
-| Sone | Puls | Pace |
-|---|---|---|
-| I1 Restitusjon (62–72 %) | 118–136 | > 7:45 |
-| I2 Rolig / langtur (72–82 %) | 137–156 | 6:45–7:45 |
-| **MP — mål** | ~145–155 | **7:05–7:15** |
-| **MP — arbeidsfart nå** | ~140–150 | **7:35–7:50** |
-| I3 Sub-terskel (82–87 %) | 156–165 | 6:30–6:50 |
-| I4 Terskel (87–92 %) | 166–175 | 6:20–6:30 |
-| I5 VO2 (92–100 %) | 175–190 | < 6:10 |
+> **Pace er GAP** (stigningsjustert), ikke rå klokkefart.
+> På Knuts flate ruter er forskjellen **under 2 s/km** — GAP-korreksjonen har målt
+> +0,6 til +1,8 s/km på tempoøktene og +1,8 s/km på «Brygga 16». Der viser altså
+> klokka praktisk talt riktig.
+> **I kupert terreng skal han styre etter puls og ignorere fartstallet.**
+> Målt eksempel: siste 530 m av nedjoggen 14.09 hadde 21,7 hm/km og en
+> GAP-korreksjon på **+51 s/km**. Der er klokkefarten ubrukelig.
 
-Reell anaerob terskel: **puls 170 ± 3**, forankret i 10 km-testen 22.07.
+| Sone | Puls | Pace (GAP) | Brukes til | Forankring |
+|---|---|---|---|---|
+| **I1 Restitusjon** (62–72 %) | 118–136 | *ikke fastsatt* — styr på puls | Nedjogg, dager som skal koste null | `[for tidlig]` |
+| **I2 Rolig / langtur** (72–82 %) | 137–**155** | **6:30–8:00** | Langtur og alt rolig volum. Langtur: 7:20–8:00. Kortere rolige økter: 6:30–7:20 | `[foreløpig]` |
+| **MP — mål** | ~145–155 | **7:05–7:15** | Maratonfart. **Uendret — settes etter halvmaraton i januar** | `hovedcoach` |
+| **MP — arbeidsfart nå** | ~140–150 | **7:35–7:50** | Fart å bygge langturene rundt | `[foreløpig]` |
+| **I3 Sub-terskel** (82–87 %) | 156–165 | **6:00–6:15** | Mandagens tempoøkter. Hovedjobben i basefasen | `[foreløpig]` |
+| **I4 Terskel** (87–92 %) | 166–175 | **5:45–6:05** | Korte terskeldrag. Tallet er avledet, ikke målt direkte | `[for tidlig]` |
+| **I5 VO2** (92–100 %) | 175–190 | *ikke fastsatt* | 5 × 1000 m fra 02.11. Styr på puls til vi har målt | `[for tidlig]` |
+
+### Endringer mot forrige tabell
+- **I3: 6:30–6:50 → 6:00–6:15.** Den gamle var **30–45 s/km for treg.**
+  Målt to ganger på flate arbeidsblokker: 07.09 GAP 5:54,0 ved median puls 166
+  (4,65 hm/km, korr +1,8 s/km) og 14.09 GAP 6:04,2 ved median puls 164
+  (2,80 hm/km, korr +0,8 s/km). **Dette er den viktigste rettelsen.**
+- **I2: 6:45–7:45 → 6:30–8:00.** Utvidet i begge ender, se under.
+- **I4: 6:20–6:30 → 5:45–6:05.** Avledet av 01.08-parkrunens andre halvdel
+  (puls 170,1 → GAP 5:46,2) og halen på tempoøktene (puls 169 → GAP 6:03).
+  **Ingen dedikert I4-økt er kjørt.** Første blir 08.10.
+- **I2-taket 156 → 155.** Fjerner overlappet mot I3, som begynner på 156.
+- **I1 og I5 står uten tall.** Vi har ikke grunnlag, og et tall som ser sikkert
+  ut er verre enn ingen.
+
+### Hvorfor I2-båndet ble utvidet, ikke flyttet
+To målinger ved puls ~145 ga GAP 7:34 og 6:45 — 49 s/km fra hverandre.
+Forklaringen er **pulsetterslep**, ikke form: 6:45-punktet var
+oppvarmingsrunde 2 den 07.09, der pulsen steg gjennom hele runden
+(første tredjedel snitt 138,5 → siste tredjedel 146,6). Snittet på 145 er en
+stigende kurve, ikke en likevekt, og runden er derfor **ikke et gyldig
+I2-punkt**. Det samme gjelder alle korte oppvarmingsrunder.
+
+> **Rettelse:** påstanden i `2026-09-07`- og `2026-09-10`-analysene om at
+> «I1/I2-pacene er for konservative» bygget på nettopp slike oppvarmingsrunder.
+> Den var ikke holdbar og er trukket.
+
+De gyldige I2-punktene er økter med stabil puls over tid:
+
+| Økt | Varighet | Puls | hm/km | GAP | Korr |
+|---|---|---|---|---|---|
+| «Brygga 16» 11.09 | 121,7 min | 145,6 | 6,80 | **7:34,4** | +1,8 s/km |
+| Søndag 13.09, km 2–4 | 19,7 min | 153,3 | 12,90 | **6:26,8** | +7,3 s/km |
+
+Derfor spenner båndet fra 6:30 (øvre I2, uthvilt) til 8:00 (nedre I2, sent i langtur).
+
+### Terskelen
+Anaerob terskel anslått til **puls 168–171**, terskelfart **6:10–6:25/km GAP**.
+Hviler fortsatt på optisk pulsmåling — **brystbelte på én terskeløkt ville
+avgjort det.** `[foreløpig]`
+
 Tempoøktene ligger i **I3**, ikke I4 — det er riktig sted å bygge
 maratonmotoren nå.
+
+### Forbehold som gjelder hele tabellen
+Knut løper **uten brystbelte** så vidt vi vet. Absolutt puls bærer **±3–5 slag**.
+Pulsgrensene er likevel beholdt, fordi de er forankret i HRmax 190 som også er
+målt optisk — feilen går delvis mot seg selv. Pacetallene er derimot GPS-målte
+og upåvirket.
 
 ---
 
