@@ -36,7 +36,15 @@ Ukesvolum ~34–45 km i byggeuker. Fra januar mot 55–60 km.
 
 ---
 
-## Soner — revidert 14.09.26 av `fysiolog`. AVVENTER GODKJENNING FRA `hovedcoach`
+## Soner — revidert 14.09.26 av `fysiolog`. **GODKJENT av `hovedcoach` 14.09.26**
+
+**Godkjent med to forbehold:**
+1. **Pulsen styrer, pacen beskriver.** Pace-kolonnen er utfall, ikke mål.
+   Ingen økt kjøres på pace mot puls.
+2. **I4-raden (5:45–6:05) skal ikke inn i appen.** Den er avledet, ikke målt,
+   og motsier terskelanslaget 6:10–6:25/km fra 07.09. Står til den er målt.
+   Merk også at I3-pacen er forankret i blokker løpt på puls 164–166, altså i
+   I3s øvre kant og inn i I4. 6:00–6:15 er derfor **rask I3**, ikke midt-I3.
 
 > **Pace er GAP** (stigningsjustert), ikke rå klokkefart.
 > På Knuts flate ruter er forskjellen **under 2 s/km** — GAP-korreksjonen har målt
@@ -53,7 +61,7 @@ Ukesvolum ~34–45 km i byggeuker. Fra januar mot 55–60 km.
 | **MP — mål** | ~145–155 | **7:05–7:15** | Maratonfart. **Uendret — settes etter halvmaraton i januar** | `hovedcoach` |
 | **MP — arbeidsfart nå** | ~140–150 | **7:35–7:50** | Fart å bygge langturene rundt | `[foreløpig]` |
 | **I3 Sub-terskel** (82–87 %) | 156–165 | **6:00–6:15** | Mandagens tempoøkter. Hovedjobben i basefasen | `[foreløpig]` |
-| **I4 Terskel** (87–92 %) | 166–175 | **5:45–6:05** | Korte terskeldrag. Tallet er avledet, ikke målt direkte | `[for tidlig]` |
+| **I4 Terskel** (87–92 %) | 166–175 | *ikke i appen — se forbehold 2* | Korte terskeldrag. Tallet er avledet, ikke målt direkte | `[for tidlig]` |
 | **I5 VO2** (92–100 %) | 175–190 | *ikke fastsatt* | 5 × 1000 m fra 02.11. Styr på puls til vi har målt | `[for tidlig]` |
 
 ### Endringer mot forrige tabell

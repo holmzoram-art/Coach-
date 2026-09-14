@@ -930,17 +930,29 @@
       og drag han ikke fullfører bygger ingenting.
     </div>
   </div>
+  <div class="phase" style="--pc:var(--easy); margin-bottom:10px">
+    <div class="ph-body">
+      <strong>Puls styrer. Pace beskriver.</strong> Pace-kolonnen er hva farten pleier å
+      bli når pulsen ligger der den skal — ikke et tall du sikter mot. Har sona et
+      pulsbånd, kjører du på pulsen.
+      <br><br>
+      Pace er <strong>GAP</strong>, altså stigningsjustert. På de flate rutene dine er
+      forskjellen mot det klokka viser under 2 s/km. <strong>I kupert terreng skal du
+      ignorere fartstallet helt</strong> — nedjoggen 14.09 hadde 21,7 hm/km, der ligger
+      GAP 51 sekunder fra klokkefarten.
+    </div>
+  </div>
   <div class="zones">
     <div class="zone-head">
       <span>Sone</span><span>HR</span><span>Pace</span>
     </div>
     <div class="zone-row">
-      <div class="name">I1 Restitusjon<span class="note">62–72 % · restitusjonsjogg</span></div>
-      <div class="hr">118–136</div><div class="pace">&gt; 7:45</div>
+      <div class="name">I1 Restitusjon<span class="note">62–72 % · nedjogg og dager som skal koste null. Ikke fastsatt pace — styr på puls.</span></div>
+      <div class="hr">118–136</div><div class="pace">—</div>
     </div>
     <div class="zone-row">
-      <div class="name">I2 Rolig / Langtur<span class="note">72–82 % · prat-test, hele setninger</span></div>
-      <div class="hr">137–156</div><div class="pace">6:45–7:45</div>
+      <div class="name">I2 Rolig / Langtur<span class="note">72–82 % · prat-test, hele setninger. Langtur 7:20–8:00, kortere rolig 6:30–7:20.</span></div>
+      <div class="hr">137–155</div><div class="pace">6:30–8:00</div>
     </div>
     <div class="zone-row">
       <div class="name">MP — <b>mål</b><span class="note">dette bygger vi mot. Settes endelig etter HM i januar.</span></div>
@@ -951,16 +963,16 @@
       <div class="hr">~140–150</div><div class="pace">7:35–7:50</div>
     </div>
     <div class="zone-row">
-      <div class="name">I3 Sub-terskel<span class="note">82–87 % · prat vanskelig. Her ligger tempoøktene.</span></div>
-      <div class="hr">156–165</div><div class="pace">6:30–6:50</div>
+      <div class="name">I3 Sub-terskel<span class="note">82–87 % · her ligger mandagens tempoøkter. 6:00–6:15 er målt på puls 164–166, altså <b>rask I3</b> — styr på pulsen, ikke tallet.</span></div>
+      <div class="hr">156–165</div><div class="pace">6:00–6:15</div>
     </div>
     <div class="zone-row">
-      <div class="name">I4 Terskel<span class="note">87–92 % · 2–3 ord om gangen. Terskel ligger på puls 170 ± 3.</span></div>
-      <div class="hr">166–175</div><div class="pace">6:20–6:30</div>
+      <div class="name">I4 Terskel<span class="note">87–92 % · 2–3 ord om gangen. Terskel ligger på puls 170 ± 3. Pace ikke målt ennå — første ekte I4-økt 8. oktober.</span></div>
+      <div class="hr">166–175</div><div class="pace">—</div>
     </div>
     <div class="zone-row">
-      <div class="name">I5 VO2<span class="note">92–100 % · korte drag</span></div>
-      <div class="hr">175–190</div><div class="pace">&lt; 6:10</div>
+      <div class="name">I5 VO2<span class="note">92–100 % · korte drag. Pace ikke målt ennå — første I5-økt 2. november.</span></div>
+      <div class="hr">175–190</div><div class="pace">—</div>
     </div>
   </div>
 
@@ -2245,10 +2257,10 @@ btn.addEventListener("click", async () => {
     JSON.stringify(facts, null, 1),
     "",
     "PULSSONER (OLT-soner mot makspuls 190, revidert 03.09.26):",
-    "I1 restitusjon 118–136 · I2 rolig/langtur 137–156 · I3 sub-terskel 156–165 · I4 terskel 166–175 · I5 VO2 175–190.",
+    "I1 restitusjon 118–136 · I2 rolig/langtur 137–155 · I3 sub-terskel 156–165 · I4 terskel 166–175 · I5 VO2 175–190.",
     "Anaerob terskel ligger på puls 170 ± 3. Tempoøktene i planen ligger i I3, ikke på terskel — det er med vilje.",
     "Planen er PULSSTYRT. Traff økta riktig sone er hovedkriteriet; pace er sekundært og varierer med føre og terreng.",
-    "I2-pace er ca. 6:45–7:45/km. Søndagsøkta skal ligge under puls 145 — er den høyere, si fra.",
+    "I2-pace er ca. 6:30–8:00/km (GAP). Søndagsøkta skal ligge under puls 145 — er den høyere, saktne.",
     "MP: målfarten i april er 7:05–7:15, men arbeidsfarten i MP-økter fram til januar er 7:35–7:50. Ikke kritiser at MP kjøres i arbeidsfart nå — det er planen.",
     "Belt squat har utstyrstak på 100 kg — foreslå aldri tyngre vekt der; progresjon går via reps eller tempo.",
     "",
