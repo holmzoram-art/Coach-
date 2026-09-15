@@ -136,3 +136,79 @@ på etappe 10 (2800 m), er Knut den naturlige kandidaten. Foreslå det, ikke kre
    steg. Kadensfall er hans kjente tretthetssignatur.
 3. **Siste 300 m: alt.** Etappen er kort nok til at det ikke finnes noe å spare
    på. Tømmes helt før vekslingen.
+
+---
+
+# Tillegg 2 — 15.09.2026: lagets resultatside 2025. **Beste kilde vi har.**
+
+Onitio Solutions, A1 bedriftslag mosjon, startgruppe 16:15. Nettotid 1:20:12,
+plass 1807 av 4747. Knut løp **etappe 2 på 5:48**, utrent.
+
+## Etappelengder regnet ut av splitt ÷ splittfart — dette slår søketabellen over
+
+| Etappe | Navn | Splitt | Splittfart | **Utledet lengde** | Søkeanslag mitt | Avvik |
+|---|---|---|---|---|---|---|
+| 1 | St. Hanshaugen | 4:29 | 4:05 | **1098 m** | 1170 | −72 |
+| **2** | **Norabakken** | **5:48** | **5:25** | **1071 m** | 1130 | −59 |
+| 3 | Blåsen | 2:33 | 4:16 | **598 m** | 595 | ok |
+| 4 | Berg og dal | 7:27 | 3:53 | **1918 m** | 1920 | ok |
+| 5 | Forskningsparken | 5:29 | 4:32 | **1210 m** | 1210 | ok |
+| 6 | Lille Besserud | 7:12 | 5:45 | **1252 m** | 1790 | **−538, mitt tall var feil** |
+| 7 | Besserud | 9:57 | 5:37 | **1772 m** | 1810 | ok |
+| 8 | Utforetappen | 6:40 | 3:45 | **1778 m** | 1810 | ok |
+| 9 | Gressbanen | 2:45 | 4:24 | **625 m** | 650 | ok |
+| 10 | Den lange | 9:53 | 3:28 | **2851 m** | 2800–2860 | ok |
+| 11 | Frognerparken | 6:05 | 4:00 | **1521 m** | 1520 | ok |
+| 12 | Dumpa | 1:24 | 4:00 | **350 m** | 350 | ok |
+
+Etappe 13–15 mangler i utdraget: 1:20:12 − 1:09:36 = **10:36 på de tre siste**.
+
+**Rettelser til tabellen i hoveddelen:**
+- **Etappe 2 heter «Norabakken»** og går opp mot St. Hanshaugen-platået, ikke
+  «Bislett → Wolffs gate». Vekslingsnavnene fra søk var feil.
+- **Etappe 6 er ~1250 m, ikke 1790.** «Lille Besserud». Etappe 7 (~1772 m) er
+  den store klatreetappen. Den forvirringen jeg flagget er nå oppklart av dataen.
+- Etappe 8 «Utforetappen» og 10 «Den lange» bekreftet.
+
+**Terrenget leses rett ut av lagets splittfarter:** 3:28 på etappe 10 og 3:45 på
+etappe 8 (de raskeste — utfor), mot 5:45 og 5:37 på 6 og 7 (Besserud-klatringen)
+og **5:25 på etappe 2**. Etappe 2 ligger 70–80 s/km tregere enn naboetappene 1
+(4:05) og 3 (4:16). **Etappe 2 er altså en ordentlig bakke, ikke «slak stigning».**
+Profilkarakteren jeg oppga fra søk var feil, eller kraftig underdrevet.
+
+## Jeg bommet på tidsanslaget. Revidert.
+
+Jeg anslo **6:15–7:00 (≈6:35)**. Han løp **5:48 utrent i 2025**. Anslaget var
+for tregt, og feilen var min:
+
+**Hva jeg gjorde feil:** jeg tok terskel-/I3-ankeret (20 min på GAP 5:54 ved
+puls 166) og la på et bakkepåslag. Men et 6-minutters maksdrag ligger normalt
+**20–30 s/km raskere** enn 20-minutterspacen, ikke tregere. Jeg la på
+stigningskostnaden uten å legge på varighetsgevinsten. Det er en ren regnefeil
+i resonnementet, ikke manglende data.
+
+**Hva som gjør 2025-tallet litt mindre imponerende enn det ser ut:**
+- Distansen er **1071 m**, ikke 1130 — 5 % kortere enn jeg regnet med.
+- Stafettstart i pulje, medløpere og adrenalin er verdt anslagsvis 5–15 s/km
+  over 6 minutter. Han vil ikke treffe 5:48 alene på en tirsdag.
+- **Vekta i mai 2025 er ukjent.** Profilen har 131 kg (~2023) og 119 kg (nå),
+  ingenting for mai 2025. Trolig 122–128. Vektgevinsten fram til i dag er
+  derfor kanskje bare **3–8 kg**, ikke 12.
+
+**Revidert anslag, dagens form: 5:20–5:45, mest sannsynlig ~5:32.**
+Rå fart 5:00–5:22/km over 1071 m. **Sone I5 — puls 178–190, altså mot taket.**
+Det er 15–25 s raskere enn 2025, som er et nøkternt utbytte av et halvår med
+struktur og noen kilo mindre. Anslaget er fortsatt avledet, ikke målt: første
+dokumenterte I5-økt er 5 × 1000 m den 02.11, og det tallet skal revideres da.
+
+## Endrer dette anbefalingen? Nei — den blir sterkere.
+
+Etappe 2 er en **klatreetappe**, ikke et flatt fartsdrag. Det endrer tre ting:
+1. Klatring belønner aerob motor og er **null eksentrisk risiko** for kneet.
+2. Han har et **dokumentert referansetall** på akkurat denne etappen: 5:48.
+   Et konkret mål å slå er verdt mer enn en marginalt bedre etappe uten historikk.
+3. Argumentet om at «utholdenheten hans er bortkastet» står fortsatt — 6 minutter
+   er 6 minutter — men det veier lettere når etappen faktisk krever
+   bakkestyrke ved høy vekt, som er noe han har.
+
+**Konklusjon: bli på etappe 2. Mål for 8. mai 2027: under 5:30.**
