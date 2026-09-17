@@ -1,0 +1,29 @@
+﻿Sleep Score 4 Weeks,Score,Resting Heart Rate,Body Battery,Pulse Ox,Respiration,Skin Temp Change,HRV Status,Quality,Duration,Sleep Need,Bedtime,Wake Time,Sleep Alignment
+2026-09-03,85,43,54,--,13.17,'-0.2°,76,Good,7h 19min,7h 50min,11:00 PM,6:33 AM,Aligned
+2026-09-02,78,43,50,--,13.21,'-0.4°,74,Fair,6h 23min,7h 50min,11:51 PM,6:21 AM,Aligned
+2026-09-01,92,43,53,--,13.1,'-0.2°,75,Excellent,7h 16min,7h 30min,11:28 PM,6:46 AM,Aligned
+2026-08-31,95,42,63,--,13.11,'+0.1°,76,Excellent,7h 47min,7h 50min,10:56 PM,6:47 AM,Aligned
+2026-08-30,88,43,52,--,12.94,'-0.4°,77,Good,7h 17min,7h 0min,11:59 PM,7:16 AM,Aligned
+2026-08-29,84,43,61,--,13.67,'-0.3°,74,Good,6h 59min,7h 50min,12:04 AM,7:05 AM,Aligned
+2026-08-28,78,44,58,--,13.63,'-0.1°,73,Fair,7h 49min,7h 50min,10:16 PM,6:44 AM,Aligned
+2026-08-27,81,45,52,--,13.99,'+0.5°,73,Good,7h 23min,7h 50min,11:11 PM,6:46 AM,Aligned
+2026-08-26,86,44,59,--,13.82,'+0.3°,74,Good,6h 58min,8h 10min,11:17 PM,6:21 AM,Aligned
+2026-08-25,73,44,54,--,13.45,'-0.4°,74,Fair,6h 18min,7h 30min,12:11 AM,6:46 AM,Aligned
+2026-08-24,98,42,65,--,12.91,'-0.2°,72,Excellent,8h 0min,7h 50min,10:27 PM,6:29 AM,Aligned
+2026-08-23,83,44,46,--,14.08,0°,72,Good,7h 36min,7h 30min,11:00 PM,6:46 AM,Aligned
+2026-08-22,85,44,58,--,13.44,0°,76,Good,8h 39min,7h 50min,9:47 PM,6:35 AM,Aligned
+2026-08-21,80,45,53,--,13.96,'-0.1°,74,Good,7h 14min,7h 50min,11:24 PM,6:45 AM,Aligned
+2026-08-20,93,43,60,--,13.45,'+0.3°,75,Excellent,7h 34min,7h 50min,11:02 PM,6:48 AM,Aligned
+2026-08-19,87,43,58,--,13.25,0°,75,Good,7h 11min,7h 50min,11:32 PM,6:45 AM,Aligned
+2026-08-18,82,43,51,--,13.64,'+0.4°,77,Good,6h 20min,7h 50min,12:23 AM,6:45 AM,Aligned
+2026-08-17,85,41,51,--,13.34,'-0.1°,78,Good,6h 41min,7h 10min,12:01 AM,6:43 AM,Aligned
+2026-08-16,93,43,75,--,13.16,'+0.4°,78,Excellent,9h 14min,8h 50min,10:43 PM,7:58 AM,Aligned
+2026-08-15,50,46,35,--,13.92,'+0.5°,75,Poor,4h 10min,8h 10min,6:30 AM,11:00 AM,Not Aligned
+2026-08-14,78,42,52,--,13.33,'-0.1°,75,Fair,6h 10min,7h 30min,12:15 AM,6:32 AM,Aligned
+2026-08-13,100,41,55,--,13.1,'-0.4°,76,Excellent,7h 54min,7h 30min,10:51 PM,6:46 AM,Aligned
+2026-08-12,92,42,50,--,13.74,'-0.1°,76,Excellent,8h 13min,7h 50min,9:58 PM,6:30 AM,Aligned
+2026-08-11,88,44,61,--,13.62,'+0.1°,74,Good,7h 12min,7h 20min,11:36 PM,6:48 AM,Behind
+2026-08-10,93,43,66,--,13.7,'+0.1°,73,Excellent,8h 50min,7h 50min,10:00 PM,6:52 AM,Aligned
+2026-08-09,80,47,52,--,14.2,'+0.6°,73,Good,7h 56min,7h 50min,10:08 PM,6:31 AM,Aligned
+2026-08-08,82,47,48,--,13.99,'+0.6°,74,Good,7h 44min,7h 50min,11:09 PM,7:12 AM,Behind
+2026-08-07,88,43,64,--,13.61,'+0.3°,76,Good,7h 35min,7h 50min,10:27 PM,6:21 AM,Aligned
