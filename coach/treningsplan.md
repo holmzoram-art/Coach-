@@ -310,3 +310,70 @@ Seated Chest Fly 3×12 @ 40 kg · Lying Leg Raise 3×20 · Clamshells + Side Pla
 > Merk: hovedcoach har 07.09 bestemt at **knedominert styrke skal progrederes,
 > ikke bare vedlikeholdes** — se `coach/instrukser.md`. Vektene over er
 > utgangspunktet, ikke taket.
+
+## Fjellhelg 18.–20.09 — tak og regnestykke
+
+Fastsatt av `belastning-restitusjon` 17.09. Fjellturer føres ikke som løpe-km
+og ikke som hvile, men konverteres:
+
+```
+belastnings-km = 4 × (timer i bevegelse) + 0,5 × (høydemeter nedstigning / 100)
+```
+
+Stravas `relative_effort` duger ikke for vandring — pulsen er lav, så RE
+undervurderer systematisk det som faktisk belaster: timer på beina og
+eksentrisk arbeid nedover ved 122 kg. Fjellturen 22.08 (3,7 km, 219 hm,
+87 min) fikk RE = 12; turen 23.08 fikk RE = 2.
+
+**Tak for helga:** maks 6 timer i bevegelse totalt, maks 2,5 t på én dag,
+maks 1200 hm nedstigning totalt og 500 hm per dag. Fordeling: fredag 2 t,
+lørdag 2,5 t, søndag 1,5 t og flatt. Den lengste nedstigningen legges fredag
+eller lørdag, ikke søndag.
+
+**Med taket:** uke 3 = 7,8 + ~1 + 30 = ~39 belastnings-km. ACWR 39 / 30,6 =
+**1,27**, øvre kant av trygg sone. **Uten tak** (tre dager à 3 t, 2000 hm ned):
+53,8 / 30,6 = **1,76 — rødt**, den hardeste uka i hele materialet.
+
+Uke 3 blir altså ikke lettere enn planlagt. Den er en volumuke med et annet
+bevegelsesmønster, ikke en hviluke.
+
+**Nedstigning er risikoen, ikke oppstigning.** Staver nedover (20–25 % mindre
+kraft gjennom beina), korte steg med høy frekvens, sikksakk i bratte partier,
+ikke løp nedover.
+
+## Halssymptom 17.09 — nakkeregelen
+
+Over kragebeinet (sår hals, tett nese, ingen feber): gå tur, men på puls —
+under ~140 i stigning. Under kragebeinet (hoste i brystet, tung pust,
+frysninger, muskelverk, feber): ingenting.
+
+**Snu i fjellet ved:** hoste som flytter seg ned, pust som piper i en stigning
+som ikke forsvarer det, frysninger, puls 10+ slag over normalt på samme
+gangfart i samme motbakke, verk i lår/rygg som ikke kommer fra turen,
+hodepine som forverres oppover. Feber = ikke ut av hytta.
+
+**Tre tall på klokka torsdag morgen,** vurdert samlet: nattpuls mot 7-dagers
+baseline, HRV-status, hudtemperaturavvik. Nattpuls +5 **og** HRV under baseline
+**og** hudtemp +0,5 °C = infeksjon i anmarsj. To av tre utslag → korte turer,
+maks 1,5 t/dag, minimalt med høydemeter. Alle tre → ingen fjelltur dag 1.
+
+Kald vind, høyde og våt bekledning driver en halsinfeksjon ned i brystet.
+Skift til tørt straks han er inne.
+
+**Fjellturdagene kjøres ikke i energiunderskudd.** Energiunderskudd er
+enkeltfaktoren som gjør «grums i halsen» til «syk i tre dager». Spis normalt
+til overskudd fredag–søndag.
+
+## Gate foran uke 4
+
+Mandag 21.09 er en avsjekk, ikke en økt: 5 km rolig, puls under 145. Tre ting
+rapporteres etterpå — puls på normal rolig fart, ømhet i akilles/legger, RPE.
+
+Er pulsen 8+ slag høyere enn vanlig på rolig fart mandag, er infeksjonen ikke
+over: da utgår onsdagens tempoøkt. Fredagens EF-punkt kjøres uansett som
+16 km ren I2 — det er et gyldig punkt.
+
+Bakkesprintene utgår i uke 4. Tempo onsdag pluss 16 km fredag er nok.
+
+**Er Pa:HR over 6 % også 25.09** — to punkter på rad på eller over grensa —
+**stopper progresjonen inn i uke 6**, uavhengig av hvordan han føler seg.
