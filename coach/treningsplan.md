@@ -133,41 +133,74 @@ og upåvirket.
 | 11.09 | Fre | langtur | **16 km.** Strengt I2. Beina er trøtte fra i går — med vilje |
 | 13.09 | Søn | rolig | **4 km.** Puls 130–142. Skal føles for lett |
 
-### Uke 3 · Bygg 2 — Tempo bygger · styrke A
-| Dato | Dag | Type | Økt |
-|---|---|---|---|
-| 14.09 | Man | kvalitet | Tempo 22 min, puls 156–165 |
-| 15.09 | Tir | styrke | Styrke A |
-| 17.09 | Tor | kvalitet | 6 km + 10 bakkesprint |
-| 18.09 | Fre | langtur | 16 km, ren I2 |
-| 20.09 | Søn | rolig | 4 km |
+### Uke 3 · OMSTRUKTURERT 17.09 — fjellhelg · styrke A
+Knut meldte 17.09: fjelltur fredag–søndag, torsdagsøkta og bakkesprintene ute,
+lett halsirritasjon. Beslutningen er hans; uka er lagt om rundt den.
 
-### Uke 4 · Bygg 3 — Tempo utvidet · styrke A · TOPPUKE
 | Dato | Dag | Type | Økt |
 |---|---|---|---|
-| 21.09 | Man | kvalitet | Tempo 25 min, puls 156–165 |
-| 22.09 | Tir | styrke | Styrke A, lettere |
-| 24.09 | Tor | kvalitet | 6 km + 10 bakkesprint |
-| 25.09 | Fre | langtur | 18 km. Test næring og væske |
-| 27.09 | Søn | rolig | 4 km — siste uke på 4 |
+| 14.09 | Man | kvalitet | Tempo 22 min — **gjennomført**, 7,83 km |
+| 15.09 | Tir | styrke | Styrke A — **gjennomført** |
+| 16.09 | Ons | hvile | — |
+| 17.09 | Ons/tor | hvile | **Torsdagsøkta (6 km + 10 bakkesprint) STRØKET.** Ikke flyttet |
+| 18.09 | Fre | fjelltur | Fjelltur. Timer på beina, ikke løping. Rolig, samtaletempo |
+| 19.09 | Lør | fjelltur | Fjelltur |
+| 20.09 | Søn | fjelltur | Fjelltur. **Søndagsøkta 4 km STRØKET** — fjellet dekker den |
 
-### Uke 5 · DELOAD · styrke B
-| Dato | Dag | Type | Økt |
-|---|---|---|---|
-| 28.09 | Man | deload | 5 km + 6 strides |
-| 29.09 | Tir | styrke | Styrke B, leg-day |
-| 01.10 | Tor | deload | 5 km rolig |
-| 02.10 | Fre | deload | 12 km rolig |
-| 04.10 | Søn | deload | 3 km, eller dropp |
+**Løpsvolum uke 3: 7,8 km.** Fjellturene føres som treningsbelastning
+(varighet + hm), ikke som løpskilometer, og ikke som hvile.
+Halsen: ingenting over I2-innsats i fjellet. Feber, frysninger eller symptomer
+ned i brystet = gåtur på flatmark, ikke topptur.
 
-### Uke 6 · Bygg 4 — Intervaller inn · styrke A
+### Uke 4 · GJENOPPTAK (var: toppuke) · styrke A
+Toppuka er **flyttet til uke 5**. Å gå fra 7,8 løpe-km + tre dager fjell rett
+inn i 18 km langtur og tempo 25 min er ikke progresjon, det er et sprang.
+
 | Dato | Dag | Type | Økt |
 |---|---|---|---|
-| 05.10 | Man | kvalitet | 2 × 12 min sub-terskel, 3 min jogg mellom |
-| 06.10 | Tir | styrke | Styrke A |
-| 08.10 | Tor | kvalitet | 4 × 2 min @ I4 (166–175), 2 min jogg |
-| 09.10 | Fre | langtur | 16 km |
-| 11.10 | Søn | rolig | 5 km |
+| 21.09 | Man | rolig/fri | 5 km rolig I2 — eller fri hvis beina er tomme etter fjellet. **Ingen kvalitet dagen etter tre dager i terreng** |
+| 22.09 | Tir | styrke | Styrke A |
+| 23.09 | Ons | kvalitet | **Tempo 22 min**, puls 156–165. Gjentas — ikke utvidet til 25 |
+| 24.09 | Tor | hvile | — |
+| 25.09 | Fre | langtur | **16 km, ren I2. EF-PUNKT 2** — se under |
+| 27.09 | Søn | rolig | 4 km, puls 130–142 |
+
+Volum ~33 km.
+
+### Uke 5 · Bygg 3 — TOPPUKE (flyttet fra uke 4) · styrke A
+**Betinget:** kjøres bare hvis EF-punkt 2 (25.09) ikke gir andre strake
+Pa:HR over 6 % ved samme fart. Gjør den det, gjentas uke 4 i stedet.
+
+| Dato | Dag | Type | Økt |
+|---|---|---|---|
+| 28.09 | Man | kvalitet | Tempo 25 min, puls 156–165 |
+| 29.09 | Tir | styrke | Styrke A, lettere |
+| 01.10 | Tor | kvalitet | 6 km + 10 bakkesprint |
+| 02.10 | Fre | langtur | 18 km. Test næring og væske |
+| 04.10 | Søn | rolig | 4 km |
+
+### Uke 6 · DELOAD (flyttet fra uke 5) · styrke B
+Bygg 4 («Intervaller inn», opprinnelig 05.–11.10) **utgår**. Første I4-økt blir
+15.10 i uke 7. Rytmen 3 bygg + 1 deload beholdes, og kalenderen fra uke 7 er urørt.
+
+| Dato | Dag | Type | Økt |
+|---|---|---|---|
+| 05.10 | Man | deload | 5 km + 6 strides |
+| 06.10 | Tir | styrke | Styrke B, leg-day |
+| 08.10 | Tor | deload | 5 km rolig |
+| 09.10 | Fre | deload | 12 km rolig |
+| 11.10 | Søn | deload | 3 km, eller dropp |
+
+### EF-kriteriet — status etter 17.09
+Punkt 1: «Brygga 16» 11.09 — Pa:HR 6,0 %, EF 0,01511, GAP 7:34,4/km @ HR 145,6.
+På grensa, ikke over.
+Punkt 2 skulle vært 18.09. **Den ryker og flyttes til 25.09** — samme distanse
+(16 km) og samme type rute, ellers er punktene ikke sammenlignbare. En fjelltur
+er ikke et EF-punkt og skal ikke brukes som ett.
+
+**Volumprogresjonen står på vent til punkt 2 foreligger.** Uke 4 går ikke videre
+som toppuke. Det er ikke bare EF-kriteriet: 7,8 løpe-km i uke 3 gjør 18 km +
+tempo 25 min i uke 4 uforsvarlig uansett hva punkt 2 viser.
 
 ### Uke 7 · Bygg 5 — Dobbel terskel · styrke A
 | Dato | Dag | Type | Økt |
