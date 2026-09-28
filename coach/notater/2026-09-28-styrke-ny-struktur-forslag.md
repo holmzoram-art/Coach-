@@ -194,6 +194,10 @@ Anslått tid ~50 min.
 
 ## EF-punkt 2
 
+> **OPPHEVET 28.09 kveld (`hovedcoach`):** EF-serien er avviklet. 09.10 er en
+> vanlig 16 km langtur uten rute- eller solokrav. Se «Måling» i
+> `coach/treningsplan.md`. Teksten under står som historikk.
+
 02.10 er **ikke** et EF-punkt (12 km ≠ 16 km, deload-uke, første beinøkt på 28
 dager 72 t før). 02.10: 12 km rolig, strengt I2 140–150, ingen progressiv
 avslutning.

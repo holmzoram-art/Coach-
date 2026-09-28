@@ -126,8 +126,8 @@ terskel og økter som skal være tunge og der man skal pushe, som har noe å si.
 
 **Teller:**
 - Kalibrerings- og terskeløkter (I3/I4), solo, flat rute
-- Referanseøkta «8K Flat» — pulslås 145, samme rute, solo
-- Testløp
+- ~~Referanseøkta «8K Flat»~~ — **avviklet 28.09**, sammen med EF-serien
+- Halvmaratonen i januar (eneste testløp som står)
 
 **Teller ikke. Ikke analyser dem som formmåling:**
 - Deloaduker
@@ -136,8 +136,10 @@ terskel og økter som skal være tunge og der man skal pushe, som har noe å si.
 - Økter under 40 minutter
 - Kupert terreng uten kontroll på ruta
 
-Rolig løping *kan* måle aerob utvikling — men bare under kontrollerte forhold,
-og det er akkurat det «8K Flat» er laget for. Alt annet rolig er bare volum.
+Rolig løping *kan* måle aerob utvikling under kontrollerte forhold, men
+28.09 ble det besluttet at kontrollen koster mer enn den gir. Rolig løping er
+volum; langturer leses kun for flagg (drift, kadens, RPE). Se «Måling» i
+`coach/treningsplan.md`.
 
 ## FIT-øktfiler: pulskoding
 I FIT-formatet betyr `custom_target_heart_rate_low/high` **1–100 = prosent av

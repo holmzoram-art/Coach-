@@ -41,6 +41,15 @@ som utløste den.)_
   økta; gyldigheten avgjøres på måledataen etterpå.
 - [2026-09-03] Langturen står på 16–18 km til langturandelen er under 40 %
   av ukesvolumet.
+- [2026-09-28] **Måleregimet er forenklet. EF-serien på «Brygga 16» er
+  avviklet.** Ingen agent skal be Knut om fast rute, solo, fast næringsstopp
+  eller andre betingelser for å få et målepunkt. Ingen agent skal foreslå
+  referanseøkter eller testløp utover halvmaratonen i januar. Formkurve bygges
+  passivt på mandagens tempoøkter; langturer leses for drift/kadens som flagg,
+  uansett rute og gruppe. Pa:HR-stoppregelen (10.09) er erstattet av
+  stoppregelen i `coach/treningsplan.md`, «Måling». (Knut: «Det burde vell ikke
+  være så ofte at det skal måles og sjekkes og testes? burde heller kjøre
+  kvalitetsøkter en å måle og kjøre EF økter?»)
 
 ## Åpne punkter
 
@@ -98,7 +107,8 @@ Nettene før var 6t18 og 6t58 med periodetopp i puls og periodebunn i HRV.
   dataene. Terskelutvikling og formkurve skal bygges på disse, ikke på
   langturene.
 - [2026-09-03] Knut har selv bedt om **solo testøkter** for å kartlegge
-  hvor han faktisk ligger. Det er riktig instinkt og skal inn i planen.
+  hvor han faktisk ligger. **Erstattet 28.09:** han vil ha kvalitetsøkter,
+  ikke målinger. Tempoøktene er de solo-dataene vi trenger.
 
 ## Soner — revidert 03.09.26 (makspuls 190)
 
@@ -119,6 +129,11 @@ Intensiteten i tempoøktene er uendret — de het bare feil. Rettet er
 VO2-øktene, der gulvet på puls 185 lå over det han når.
 
 ## Testprotokoll — solo
+
+> **OPPHEVET 28.09.2026** unntatt halvmaratonen i januar (setter MP).
+> «8K Flat», 10 km-testen uke 8 og solo-langturene uke 10/22 utgår.
+> Se Beslutninger [2026-09-28] og «Måling» i `coach/treningsplan.md`.
+> Teksten under står som historikk.
 
 **Referanseøkt «8K Flat», hver 3.–4. uke.** 8,0 km på samme flate asfaltrunde,
 solo, 15 min oppvarming logget separat, deretter **pulslås 145 ± 3**. Farten er

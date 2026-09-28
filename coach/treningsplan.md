@@ -4,7 +4,7 @@
 Denne fila er en kopi av plandataen i artifacten, lagt i repoet fordi agentene
 ikke kan lese artifacter. **Endres planen i artifacten, skal denne oppdateres.**
 
-Hentet 10.09.2026. **Styrke revidert 28.09.2026:** én helkroppsøkt hver tirsdag, ryggvennlig, maks 90 min — se «Styrkeøkta».
+Hentet 10.09.2026. **Styrke revidert 28.09.2026:** én helkroppsøkt hver tirsdag, ryggvennlig, maks 90 min — se «Styrkeøkta». **Måling forenklet 28.09.2026:** EF-serien avviklet — se «Måling».
 
 > **Regel for alle agenter:** før du spør Knut hva som sto på planen, eller
 > antar at en økt ble valgt der og da — **les denne fila**. Han følger planen.
@@ -114,6 +114,35 @@ og upåvirket.
 
 ---
 
+## Måling — forenklet 28.09.2026 (`hovedcoach`)
+
+Utløst av Knut 28.09: «Det burde vell ikke være så ofte at det skal måles og
+sjekkes og testes?» Han har rett. **EF-serien på «Brygga 16» er avviklet.**
+Ingen økt i planen har lenger rute-, solo- eller protokollkrav for å bli målt.
+
+**Knut gjør ingenting annerledes for å bli målt — med ett unntak:
+halvmaratonen i januar**, som setter MP. Den er et løp, ikke en ekstra test.
+
+**Hentes passivt fra vanlige økter (agentenes jobb, ikke hans):**
+- **Formkurve:** GAP ved puls på mandagens tempo-/sub-terskeløkter (solo, pulsstyrt
+  — de reneste dataene vi har). Sammenlign uke 2/3/12/15 som før.
+- **Langturen:** pulsdrift og kadens i siste tredjedel, uansett rute. Leses som
+  flagg, ikke som EF-trend. Er turen tilfeldigvis flat og solo, kan `fysiolog`
+  regne EF som bonus — aldri som krav.
+- **Belastning:** ACWR, søvn/HRV fra CSV (`belastning-restitusjon`).
+
+**Knut gir fortsatt (finnes ikke i Strava):** RPE i Strava-feltet, smerte,
+én linje mage på langtur, gruppe/solo.
+
+**Stoppregel for langturprogresjonen (erstatter Pa:HR-regelen):**
+langturen går **ikke opp** neste gang hvis ett av disse slår inn:
+1. RPE ≥ 7 på en langtur som skulle være I2, eller
+2. puls over 155 i siste tredjedel uten at farten økte, **to langturer på rad**, eller
+3. kne-kriterier, søvnflagg eller ACWR-flagg fra `belastning-restitusjon`.
+Da gjentas forrige distanse. Den går ikke ned uten et skadeflagg.
+
+---
+
 ## Basefasen — uke 1–15
 
 ### Uke 1 · Reset, DELOAD · styrke B
@@ -157,7 +186,7 @@ og upåvirket.
 | 28.09 | Man | deload | 5 km + 6 strides |
 | 29.09 | Tir | styrke | Helkropp, deload-dose. Første økt i ny struktur. Leg curl i stedet for RDL |
 | 01.10 | Tor | deload | 5 km rolig |
-| 02.10 | Fre | deload | 12 km rolig, puls 140–150, ingen progressiv avslutning. Ikke EF-punkt |
+| 02.10 | Fre | deload | 12 km rolig, puls 140–150, ingen progressiv avslutning |
 | 04.10 | Søn | deload | 3 km, eller dropp |
 
 ### Uke 6 · Bygg 4 — Intervaller inn · styrke
@@ -166,7 +195,7 @@ og upåvirket.
 | 05.10 | Man | kvalitet | 2 × 12 min sub-terskel, 3 min jogg mellom |
 | 06.10 | Tir | styrke | Helkropp. Leg extension og hip thrust inn |
 | 08.10 | Tor | kvalitet | 4 × 2 min @ I4 (166–175), 2 min jogg |
-| 09.10 | Fre | langtur | 16 km · **EF-punkt 2** — Brygga 16, puls 140–150, alene, ingen avslutning over 155 |
+| 09.10 | Fre | langtur | 16 km, puls 140–150, ingen avslutning over 155. Valgfri rute, gruppe ok. Næring underveis |
 | 11.10 | Søn | rolig | 5 km |
 
 ### Uke 7 · Bygg 5 — Dobbel terskel · styrke
@@ -193,7 +222,7 @@ og upåvirket.
 | 26.10 | Man | deload | 6 km + 6 strides |
 | 27.10 | Tir | styrke | Helkropp deload: 2 sett, samme vekt, RIR 3–4 |
 | 29.10 | Tor | deload | 5 km rolig |
-| 30.10 | Fre | deload | **14 km · SJEKKPUNKT.** Lett = grønt lys. Tung = gjenta uke 8 |
+| 30.10 | Fre | deload | **14 km · SJEKKPUNKT.** RPE ≤ 5 = grønt lys. RPE ≥ 6 = gjenta uke 8. Vanlig rolig tur, ingen testbetingelser |
 | 01.11 | Søn | deload | 3 km, eller dropp |
 
 ### Uke 10 · Bygg 7 — VO2 intro · styrke
