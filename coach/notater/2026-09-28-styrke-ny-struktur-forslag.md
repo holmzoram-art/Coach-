@@ -1,6 +1,6 @@
 # Forslag: ny styrkestruktur (hovedcoach 28.09.2026, revidert 28.09 kveld)
 
-**Status: FORSLAG — venter på Knuts godkjenning.** `coach/treningsplan.md` og
+**Status: GODKJENT av Knut 29.09 og skrevet inn i `coach/treningsplan.md`.** `coach/treningsplan.md` og
 artifacten «Marathon» er ikke endret. Morgendagens økt (29.09) gjelder uansett
 — i **revidert** form nedenfor.
 
