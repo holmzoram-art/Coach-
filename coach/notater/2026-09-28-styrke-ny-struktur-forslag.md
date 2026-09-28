@@ -59,19 +59,30 @@ Hjelper det ikke, flyttes beina til mandag etter løpet.
 
 ### Knedominert: én trapp, i denne rekkefølgen
 
+**Revidert 28.09 kveld** (`fysiolog`, besluttet av `hovedcoach`): reps- og
+tempotrinnet er strøket. 100 kg × 10 × 4 ble tatt 01.09 — mer reps på samme
+vekt er volum, ikke last, og gir lite for løpsøkonomi.
+
 1. **Belt squat 3×8, RIR 2** — +10 kg per bygguke til 100 kg (uke 10).
-2. **Ved 100 kg: reps opp**, 8 → 10 → 12 (ett trinn per bygguke).
-3. **Ved 100 × 12: tempo** — 3 s ned, 1 s pause i bunn, 8 reps. Ikke i deload.
-4. **Når tempo ved 100 kg er RIR 2: ettbeins belt squat** (splittstilling
-   i beltet), start 60 kg, 3×8 per bein. Lasten går via hofta, og 100 kg per
-   bein er langt mer enn han trenger. Knut sjekker at maskinen tillater
-   splittstilling før vi kommer dit (tidligst uke 14).
+2. **Uke 11: ettbeins belt squat** (splittstilling i beltet), **3 × 5–6 per
+   bein, RIR 2**, start ~60 kg, +5–10 kg per bygguke. Lasten går via hofta.
+   Samme stoppregel som bulgarians: settet slutter ved tap av balanse eller
+   vridning. **Knut sjekker nå** at maskinen tillater splittstilling.
+   **Tillater den det ikke:** belt squat står på 3 × 8 @ 100 kg, og
+   bulgarians bærer progresjonen.
+
+**Hurtig konsentrisk fase** (kontrollert ned, eksplosivt opp) på belt squat,
+bulgarians og hip thrust fra 06.10. Ikke i deload. Hip thrust: fart opp, men
+stopp ved nøytral hofte.
+
+**Hip thrust-taket (100 kg)** er en oppsettgrense fra `belastning-restitusjon`,
+ikke et styrketak — han har tatt 140 × 20 (2024). Økta gir moderat hoftearbeid.
 
 **Bulgarian split squat med manualer**, parallelt: +2 kg per hånd per bygguke,
 **tak 20 kg per hånd.** Manualer i hendene gir kompresjon gjennom skuldrene,
 ikke stang på nakken, og med oppreist overkropp er det lav ryggrisiko på det
 nivået (han har båret 40 kg farmers walk). Risikoen over taket er balanse og
-vridning, ikke vekten i seg selv. Ved taket: reps 8 → 12, deretter tar trinn 4
+vridning, ikke vekten i seg selv. Ved taket: reps 8 → 12, deretter tar ettbeins belt squat
 over rollen. **[B-R 28.09]** Manualene hentes fra stativ eller benk i
 hoftehøyde, ikke fra gulvet i splittstilling. Settet slutter første gang han
 må ta ned bakfoten eller mister balansen — ikke kjemp deg gjennom en vridning.
@@ -135,7 +146,7 @@ Forutsetter at progresjonsregelen er oppfylt hver uke. Stopper den, står vekten
 
 | Øvelse | U5 deload | U6 | U7 | U8 topp | **U9 deload** | U10 | U11 | U12 topp | **U13 deload** |
 |---|---|---|---|---|---|---|---|---|---|
-| Belt squat | 3×8 @ 80 | 3×8 @ 80 | 3×8 @ 90 | 3×8 @ 90 | **2×8 @ 90** | 3×8 @ 100 | 3×10 @ 100 | 3×10 @ 100 | **2×10 @ 100** |
+| Belt squat | 3×8 @ 80 | 3×8 @ 80 | 3×8 @ 90 | 3×8 @ 90 | **2×8 @ 90** | 3×8 @ 100 | **ettbeins** 3×6/bein @ ~60 | 3×6/bein @ ~60 | **2×6/bein @ ~60** |
 | Bulgarian (per hånd) | 2×8 @ 8 | 3×8 @ 8 | 10 | 10 | **2×8 @ 10** | 12 | 14 | 14 | **2×8 @ 14** |
 | Seated leg curl | 2×10 @ C | 3×10 @ C | C+1 | C+1 | **2×10 @ C+1** | C+2 | C+3 | C+3 | **2×10 @ C+3** |
 | Leg extension | — | 3×12 @ E | E+1 | E+1 | **2×12 @ E+1** | E+2 | E+3 | E+3 | **2×12 @ E+3** |
@@ -216,7 +227,8 @@ nytt nullpunkt for den nye strukturen.
   `belastning-restitusjon` har vurdert hip thrust, seated cable row og
   bulgarians — se «Ryggvurdering» øverst.
 - ~~Brystpute-ro / hip thrust-maskin / Smith?~~ **Avklart 29.09: finnes ikke.** Seated cable row @ ~70 kg og hip thrust med stang står, med reglene over.
-- Tillater belt squat-maskinen splittstilling? Trengs først rundt uke 14.
+- Tillater belt squat-maskinen splittstilling? **Trengs nå** — ettbeins
+  belt squat inn uke 11 (10.11). Knut sjekker neste tirsdag.
 - Hvorfor manglet man/tir/tor i uke 4? Spurt 28.09.
 - `ernaering`: økta gir ~300–400 kcal mer og ~20 flere beinsett per syklus fra
   uke 6. Dekker proteinfordelingen tirsdag/onsdag det? Svar før 06.10.

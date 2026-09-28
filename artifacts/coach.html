@@ -1062,7 +1062,7 @@ const STRENGTH_B = [
 // Kolonner: uke 5..13. null = ikke med den uka. C/E = startvekt på maskinen, satt første gang.
 const HELK_WEEKS = ["5","6","7","8","9","10","11","12","13"];
 const HELK = [
-  ["Belt squat",               ["3×8 @ 80","3×8 @ 80","3×8 @ 90","3×8 @ 90","2×8 @ 90","3×8 @ 100","3×10 @ 100","3×10 @ 100","2×10 @ 100"]],
+  ["Belt squat",               ["3×8 @ 80","3×8 @ 80","3×8 @ 90","3×8 @ 90","2×8 @ 90","3×8 @ 100","ettbeins 3×6/bein @ ~60","ettbeins 3×6/bein @ ~60","ettbeins 2×6/bein @ ~60"]],
   ["Bulgarian split squat (per hånd)", ["2×8 @ 8","3×8 @ 8","3×8 @ 10","3×8 @ 10","2×8 @ 10","3×8 @ 12","3×8 @ 14","3×8 @ 14","2×8 @ 14"]],
   ["Seated leg curl",          ["2×10 · finn C","3×10 @ C","3×10 @ C+1","3×10 @ C+1","2×10 @ C+1","3×10 @ C+2","3×10 @ C+3","3×10 @ C+3","2×10 @ C+3"]],
   ["Leg extension",            [null,"3×12 · finn E","3×12 @ E+1","3×12 @ E+1","2×12 @ E+1","3×12 @ E+2","3×12 @ E+3","3×12 @ E+3","2×12 @ E+3"]],
@@ -1075,7 +1075,7 @@ const HELK = [
   ["Sideplanke",               ["2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side"]],
 ];
 // Uke 14–15 ligger utenfor tabellen: sett × reps som byggeuke, vekt etter progresjonsregelen.
-const HELK_BUILD = ["3×8","3×8 per bein","3×10","3×12","3×10","3×15","3×5","3×8","3×10","3×10 per side","2×30 s/side"];
+const HELK_BUILD = ["ettbeins 3×6/bein","3×8 per bein","3×10","3×12","3×10","3×15","3×5","3×8","3×10","3×10 per side","2×30 s/side"];
 
 // Stjernene markerer nye øvelser, og forsvinner så snart varianten er kjørt én gang.
 // A ble kjørt 25.08, B kjøres første gang 01.09.
@@ -1171,7 +1171,7 @@ const PLAN = [
 
   { label: "11", theme: "Bygg 8 – Terskelvolum", strength: "H", days: [
     { date: "2026-11-09", d: "Man", type: "quality", name: "3 × 10 min sub-terskel", detail: "2 km opp + 3 × 10 min på puls 156–165, 2 min jogg + 2 km ned. 30 min sub-terskel delt i tre — lettere å holde kvaliteten enn 2 × 15. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 64 min" },
-    { date: "2026-11-10", d: "Tir", type: "strength", name: "Helkropp", detail: "", pace: "≈ 80 min" },
+    { date: "2026-11-10", d: "Tir", type: "strength", name: "Helkropp", detail: "Ettbeins belt squat inn (splittstilling i beltet), start ~60 kg per bein. Tillater ikke maskinen det: bli på 3×8 @ 100 kg.", pace: "≈ 80 min" },
     { date: "2026-11-12", d: "Tor", type: "quality", name: "8 × 1 min hardt", detail: "2 km opp + 8 × 1 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 50 min" },
     { date: "2026-11-13", d: "Fre", type: "long", name: "20 km long", detail: "Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:30" },
     { date: "2026-11-15", d: "Søn", type: "easy", name: "6 km rolig", detail: "", pace: "I1 · 7:20–7:45/km" },
@@ -1675,7 +1675,7 @@ function helkroppHtml(label, noteClass) {
   const extra = idx < 0 ? " Vekter: fortsett fra uke 13 etter progresjonsregelen." : "";
   return '<div class="strength-list">' + list + '</div>' +
     '<div class="' + noteClass + '" style="margin-top:12px">' + head + extra +
-    '<br><br><b>Ryggen:</b> stopp beindelen ved kne over 3/10, verk som øker, eller noe i rygg/sete. Hip thrust: stanga rulles inn over lårene, aldri opp i fanget — stopp settet ved svai. Bulgarian-manualer hentes fra stativ, ikke gulv. Skiver løftes én og én, tett inntil kroppen.' +
+    '<br><br><b>Byggeuker:</b> kontrollert ned, eksplosivt opp på belt squat, bulgarians og hip thrust. Hip thrust: stopp ved nøytral hofte.<br><br><b>Ryggen:</b> stopp beindelen ved kne over 3/10, verk som øker, eller noe i rygg/sete. Hip thrust: stanga rulles inn over lårene, aldri opp i fanget — stopp settet ved svai. Bulgarian-manualer hentes fra stativ, ikke gulv. Skiver løftes én og én, tett inntil kroppen.' +
     '<br><br>C/E = startvekt på leg curl/extension, finnes første gang (4 reps i reserve). +1 = ett trinn på maskinen.</div>';
 }
 

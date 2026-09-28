@@ -1,91 +1,98 @@
 # Vinterløping — når det ikke går ute
 
-Hovedcoach, 28.09.2026. Svar på Knuts spørsmål om vinteren.
-Endrer ikke `treningsplan.md` — dette er reglene for å bytte økt når føret stopper deg.
+Hovedcoach, 28.09.2026. **Revidert 28.09 kveld** etter innspill fra `fysiolog`
+og `belastning-restitusjon` (full teamrunde). Gjelder uansett løp.
+Endrer ikke ukeplanen i `treningsplan.md` — dette er reglene for å bytte økt
+når føret stopper deg.
 
-**Utstyr:** 2 tredemøller + 2 romaskiner på gymmet (delt), ellipse hjemme, ingen piggsko, ikke ski.
+**Utstyr:** 2 tredemøller + 2 romaskiner på gymmet (delt), ellipse hjemme,
+ingen piggsko, ikke ski.
 
-## Regelen
+---
 
-> **Langturen går ute. Kvalitet går på mølla. Søndag kan gå på ellipsen. Romaskinen bruker du ikke.**
+## Reglene — det eneste du trenger å huske
 
-| Når | Gjør |
-|---|---|
-| Glatt, men farbart | Ut med brodder. Kun rolig fart — **aldri kvalitet på is** |
-| Fredag umulig ute (blank/våt is, storm) | **Flytt langturen til lørdag.** Søndag blir hvile eller ellipse |
-| Lørdag også umulig | Mølle maks 90 min + resten på ellipse, tid for tid. Bare som nødløsning |
-| Mandag/torsdag glatt | Mølle, 1 % stigning. Pulsen styrer |
-| Mølla opptatt på kvalitetsdag | Samme intervaller på ellipsen hjemme, på puls |
-| Søndag glatt eller mørkt og surt | Ellipse, like mange minutter som planen tilsier, I1–I2 |
+**Kvelden før (sjekk yr):**
+1. **−2 til +2 °C med fukt, underkjølt regn, eller rim etter klar natt → mølle.**
+   Samme gjelder våt blankis. Bestemmes kvelden før, ikke i døra.
 
-## 1. Hvilke økter som skal ut, og hvilke som kan byttes
+**Ute på glatt føre:**
+2. **Brodder, bare rolig fart. Aldri kvalitet på is.**
+3. **To skli eller nesten-fall de første 2 km → hjem, eller mølle.** Ingen
+   diskusjon. Med prolaps er det å *redde seg* (brå bøy og vri) også en
+   belastning på skiva, ikke bare selve fallet.
+4. Gå din egen fart selv om du er i gruppe. **Gå nedoverbakkene.** Unngå
+   tredekke, kumlokk og malte striper. Brodder av og på **sittende**.
 
-- **Langtur (fredag): ute.** Den er selve maratontreningen. Den skal gi beina
-  2–4 timer med støt, og det gir verken mølle eller ellipse. Fra januar er
-  det langturen som bestemmer maratontiden.
-- **Kvalitet (mandag + torsdag): mølla er et godt alternativ, ofte bedre enn ute.**
-  Der har du jevn fart og ingen is, og øktene er under en time.
-- **Søndag rolig: ellipsen er helt greit.** Målet med økta er restitusjon,
-  og det gir ellipsen deg uten støt.
-- **Tak:** fra januar skal maks **én av fire løpeøkter i uka** byttes til ellipse.
-  Det er kilometerne som bygger sener og bein til 42 km.
+**Hvilken økt går hvor:**
+5. **Langtur (fredag): ute.** Umulig fredag → lørdag. Umulig lørdag → søndag.
+6. **Alle tre dagene umulige:** én nødøkt på mølla, **maks 2 t**. Går ikke det
+   heller, er langturen tapt den uka. Nødøkta brukes ikke uke etter uke.
+7. **Returregel etter tapt eller forkortet langtur:** neste langtur =
+   **siste faktisk løpte langtur + maks 2 km** — ikke planens tall.
+8. **Kvalitet (mandag/torsdag): mølle, 1 % stigning.** Mølla opptatt →
+   flytt økta én dag. **Ikke intervaller på ellipsen.**
+9. **Ellipse: maks én økt i uka, og det er søndagen.** Må en annen økt på
+   ellipsen likevel, **løpes søndagen** (ute eller mølle).
+10. **Romaskin: aldri.** (Prolaps.)
 
-## 2. Utstyret rangert etter nytte for maraton
+**Mølla:**
+11. **Første mølleøkt: rolig 30–40 min.** Først deretter kvalitet på mølla.
+12. **I3/I4 (tempo, sub-terskel): pulsen styrer.** Inne blir pulsen 3–8 slag
+    høyere ved samme fart — senk farten, ikke grensen. Bruk vifte.
+13. **I5 og korte drag: farten styrer** (satt fra uteøkter), pulsen er bare
+    et tak. Båndet bruker 5–10 s på å skifte fart: kjør **75 s i stedet for
+    60 s**, eller start klokka når båndet har nådd farten.
+14. **Bakkesprint på mølla:** start **6 × 30 s på 5 %**, 90 s rolig jogg på 1 %.
+    Per bygguke: +1 % **eller** +2 drag, ikke begge. Tak 8 × 30 s på 6–8 %.
+    Aldri hopp av og på båndet i fart.
+15. Før inn distansen fra mølledisplayet og kalibrer klokka etterpå.
+
+**Tilbake ute:**
+16. **Har ≥ 3 av 4 løpeøkter gått på mølla i ≥ 2 uker:** langturen står stille
+    første uka ute.
+17. **Ingen volumøkning samme uke som full løping gjenopptas.** Etter en
+    ellipseuke sammenlignes km mot siste fulle løpeuke.
+
+**Én gang, før vinteren:**
+- Sjekk at møllas **maks brukervekt er ≥ 150 kg**.
+- Kjøp **løpebrodder** i november, test på rolig økt før første langtur (04.12).
+- **Ekstra par sko** i rotasjon (mølle/vått føre).
+- Hodelykt og refleksvest fra november.
+
+---
+
+## Hvordan agentene regner
+
+- **Ellipse — to regnskap:** 0 km i løpe-km (ukesøkning, langturandel),
+  **full relative effort i ACWR**. `belastning-restitusjon` fører begge.
+- **Ellipse regnes tid mot tid i samme pulssone.** Ellipse gir ofte 5–10 slag
+  lavere puls ved samme følelse — styr på pulsen.
+- **Mølleøkter er ikke sammenlignbare med uteøkter på EF.** Flyttes
+  mandagstempo inn, starter en ny EF-serie med eget nullpunkt: samme mølle,
+  1 %, vifte. `fysiolog` holder seriene adskilt.
+- **To tapte langturer på rad i blokk 2 er et reelt avvik** og skal meldes
+  i fredagsrapporten, ikke glattes over.
+
+---
+
+## Bakgrunn
+
+### Utstyret rangert etter nytte for maraton
 
 | | Overføring | Kommentar |
 |---|---|---|
-| **Tredemølle** | Høy, nesten som ute | Samme bevegelse, samme støt. Litt lettere uten vind og ujevnt underlag |
-| **Ellipse** | Middels: god for kondisjonen, nesten ingen for beina | Holder hjerte og lunger i gang, men trener ikke senene og beinbygningen til å tåle støt |
-| **Romaskin** | Lav | Mest overkropp og rygg. **Ikke med din prolapshistorikk**, se under |
+| **Tredemølle** | Høy, nesten som ute | Samme bevegelse, samme støt. I3/I4 overfører godt |
+| **Ellipse** | Middels: kondisjon ja, bein nei | Trener ikke sener og skjelett til å tåle støt. I4/I5 på ellipse er svakt |
+| **Romaskin** | Lav | Hvert tak starter i bøyd korsrygg under last, flere hundre ganger, og formen glipper når du blir sliten. Feil belastning for en skadet skive |
 
-**Omregning for ellipse:** regn **tid mot tid i samme pulssone**, ikke km.
-60 min rolig løping = 60 min ellipse på puls 137–155. Ellipse gir ofte 5–10
-slag lavere puls ved samme følelse. Styr etter pulsen, ikke etter følelsen.
-Ellipse-minutter teller **0 km** i ukesvolumet.
+### Hvorfor langturen skal ut
+Den gir beina 2–3 timer med støt, og det er den som bestemmer maratontiden
+fra januar. Mølla har to delte bånd — 90 min er det realistiske normale taket,
+2 t er nødløsning. Derfor flyttes langturen i dager før den flyttes inn.
 
-**Romaskin og prolaps — nei.** Hvert tak starter med at du lener deg fram og
-bøyer korsryggen, og så drar du med belastning. Det gjentas flere hundre ganger,
-og formen glipper når du blir sliten. Det er akkurat den belastningen en
-skadet skive tåler dårlig. Ellipsen gir det samme for kondisjonen uten
-den risikoen.
-
-## 3. Tredemølla
-
-- **Stigning 1 %, alltid.** Ved farten din (7–8 min/km) er luftmotstanden liten,
-  så 0,5–1 % holder. Velg 1 % og hold den fast, så blir øktene sammenlignbare.
-- **Pulsen styrer, også inne.** Inne er det varmere og luften står stille, så pulsen blir
-  ofte 3–8 slag høyere ved samme fart. Senk farten, ikke pulsgrensen. Bruk
-  vifte hvis det finnes.
-- **Klokka måler feil distanse inne** (±5–10 %). Før inn distansen fra
-  mølledisplayet og kalibrer i Garmin etter økta.
-- **Bakkesprint på mølla:** Ikke gjør maksfart i 15 sekunder på et bånd som
-  bruker 5–10 sekunder på å skifte fart. Hopper du av og på et bånd i fart, er
-  fallrisikoen for høy ved din vekt. Bytt til **8 × 30 s på 6–8 % stigning** i
-  hard, kontrollert fart og 90 s rolig jogg på 1 %. Du sparer også knærne
-  for nedoverbakkene.
-- **Lange økter (20+ km) på mølla: ikke planlegg det.** 20 km tar deg
-  ~2 t 30 min. Gymmet har to møller, andre venter, og mange gym har tidsgrense
-  når det er travelt. Det holder ikke uke etter uke. Sett **90 min** som tak
-  på mølla. Er langturen lengre, flytter du den heller til en annen dag.
-
-## 4. Brodder eller piggsko — ja, kjøp brodder
-
-**Anbefaling: løpebrodder over de vanlige skoene dine.** Kjøp i november, så de
-er klare til 04.12 (planen sier «brodder klare»). Test dem på en rolig økt før
-første langtur.
-
-- **Hvorfor brodder og ikke piggsko:** Vestfold skifter mellom bart og is på
-  samme tur. Brodder kan du ta av på bar asfalt. Du beholder skoen kne og
-  legg er vant til. Å bytte sko midt i sesongen er en egen risiko ved 118 kg.
-- **Type:** Velg en *løpemodell* med karbidpigger og gummiramme, ikke
-  gåbrodder med kjetting eller spiker. Kjøp en robust modell i riktig størrelse
-  til skoen, for de tynne slites fort ut med din vekt.
-- **Piggsko** griper best, men er en ekstra sko å bli vant til. Det er
-  aktuelt hvis du ender med å løpe mest på is. Vent og se hvordan vinteren blir.
-- **Fall er den største vinterrisikoen for deg.** Et fall på is med 118 kg og
-  prolapshistorikk kan koste flere uker. Brodder hjelper lite på **våt blankis**.
-  Da tar du mølla, uten diskusjon.
-
-## 5. Mørke
-
-Hodelykt og refleksvest på alle økter ute fra november (planen har hodelykt fra 06.11).
+### Brodder, ikke piggsko
+Vestfold skifter mellom bart og is på samme tur; brodder kan tas av. Du
+beholder skoen kne og legg er vant til. Velg en robust **løpemodell** med
+karbidpigger og gummiramme i riktig størrelse — tynne modeller slites fort
+ved 118 kg. Brodder hjelper lite på våt blankis; der gjelder regel 1.

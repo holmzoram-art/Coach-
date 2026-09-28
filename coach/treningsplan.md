@@ -209,7 +209,7 @@ og upåvirket.
 | Dato | Dag | Type | Økt |
 |---|---|---|---|
 | 09.11 | Man | kvalitet | 3 × 10 min sub-terskel |
-| 10.11 | Tir | styrke | Helkropp |
+| 10.11 | Tir | styrke | Helkropp. Ettbeins belt squat inn (~60 kg per bein) |
 | 12.11 | Tor | kvalitet | 8 × 1 min hardt |
 | 13.11 | Fre | langtur | 20 km |
 | 15.11 | Søn | rolig | 6 km |
@@ -260,6 +260,22 @@ og upåvirket.
 | **2 — Maratonspesifikk** | 25.01–07.03 · uke 22–28 | Tyngste blokka. **MP-avslutninger** på langturene, siste 5–10 km i maratonfart på slitne bein. Næring øves på hver langtur | 28 → 34 km · topp 06.03 · deload uke 24 og 28 |
 | **3 — Nedtrapping** | 08.03–03.04 · uke 29–31 | Volum ned ~40 %, intensiteten beholdes. Siste lange tur 20.03 | 28 → 18 km |
 
+> **Prinsippbeslutning 28.09 (`hovedcoach`, støttet av `belastning-restitusjon`):**
+> langturen styres på **tid**, ikke km — tak **3 t 00 i blokk 1, 3 t 15 i blokk 2**,
+> og volumet som faller bort flyttes til en **medium-langtur 14–16 km midt i uka**
+> i blokk 2 (plan-vurdering Funn 3). 34 km i en uke på 55–60 km gir 57–62 %
+> langturandel mot en grense på ~35 %. Km-tallene i tabellen over skrives om
+> **før 14.12**, samtidig med at løpsvalget (Holmestrand/København) er tatt.
+
+---
+
+## Vinterregler
+
+Når føret stopper deg: følg lista i **`coach/notater/vinterlop.md`**. Kort:
+langturen går ute (fredag → lørdag → søndag), kvalitet går på mølla, søndag er
+den ene ellipseøkta, romaskin aldri. Glatt og −2 til +2 °C med fukt → mølle,
+bestemt kvelden før. Etter en tapt langtur: **neste = siste løpte + maks 2 km.**
+
 ---
 
 ## Styrkeøkta — helkropp (revidert 28.09.2026)
@@ -276,10 +292,10 @@ inntil kroppen, nøytral rygg.
 | # | Øvelse | Sett × reps | Merk |
 |---|---|---|---|
 | 0 | Oppvarming: 5 min sykkel, band walks, clamshell | | |
-| 1 | Belt squat | 3 × 8, RIR 2 | +10 kg/bygguke til 100 kg, så reps 8 → 10 → 12, så tempo |
+| 1 | Belt squat | 3 × 8, RIR 2 | +10 kg/bygguke til 100 kg (uke 10). **Fra uke 11: ettbeins belt squat** 3 × 6 per bein, RIR 2, start ~60 kg, +5–10 kg/bygguke |
 | 2 | Bulgarian split squat, manualer | 3 × 8 per bein | +2 kg/hånd, tak 20 kg. Manualer fra stativ/benk, ikke gulv |
 | 3a/b | Seated leg curl + leg extension | 3 × 10 / 3 × 12 | Ett vekttrinn per bygguke |
-| 4a/b | Hip thrust (stang over hofta) + seated calf raise | 3 × 10 / 3 × 15 | Stanga rulles inn, aldri opp i fanget. Stopp ved svai eller kjenning i korsryggen |
+| 4a/b | Hip thrust (stang over hofta) + seated calf raise | 3 × 10 / 3 × 15 | Stanga rulles inn, aldri opp i fanget. Stopp ved svai eller kjenning i korsryggen. Tak 100 kg — se under |
 | 5a/b | Benkpress + lat pulldown | 3 × 5 / 3 × 8 | Vedlikehold, samme vekt |
 | 6a/b | Seated cable row + Pallof press | 3 × 10 / 3 × 10 per side | Roing ~70 kg, overkroppen helt i ro |
 | 7 | Sideplanke | 2 × 30 s per side | |
@@ -289,6 +305,19 @@ inntil kroppen, nøytral rygg.
 - **Byggeuke:** vekt opp etter progresjonsregelen.
 - **Toppuke (4/8/12):** hold vekt.
 - **Deload (5/9/13):** samme økt, **2 sett**, samme vekt som forrige bygguke, RIR 3–4.
+
+**Tillegg 28.09 kveld (`fysiolog`, besluttet av `hovedcoach`):**
+- **Hurtig opp:** belt squat, bulgarians og hip thrust kjøres kontrollert ned,
+  **eksplosivt opp**. Hip thrust: fart opp, men stopp ved nøytral hofte — aldri
+  svai i toppen. Ikke i deload. Fra 06.10.
+- **Ettbeins belt squat erstatter reps- og tempotrinnet.** Mer reps på 100 kg
+  er volum, ikke last, og gir lite for løpsøkonomi. Samme stoppregel som
+  bulgarians: settet slutter ved tap av balanse eller vridning.
+  **Tillater ikke maskinen splittstilling:** belt squat står på 3 × 8 @ 100 kg
+  med hurtig opp, og bulgarians bærer progresjonen.
+- **Hip thrust er moderat hoftearbeid.** Han har tatt 140 × 20 (2024). Taket
+  på 100 kg er en *oppsettgrense* fra `belastning-restitusjon` (stanga skal
+  rulles inn, ikke løftes), ikke et styrketak.
 
 **Progresjonsregel:** vekt opp bare hvis (1) ingen kne-kriterier har slått inn,
 (2) stølhet torsdag ≤ 2/10, (3) fredagens langtur hadde forventet RPE. Ellers
