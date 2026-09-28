@@ -215,8 +215,7 @@ nytt nullpunkt for den nye strukturen.
 - ~~Ryggvurderingen er én vurdering, ikke to.~~ **Lukket 28.09:**
   `belastning-restitusjon` har vurdert hip thrust, seated cable row og
   bulgarians — se «Ryggvurdering» øverst.
-- Har gymmet brystpute-ro (maskin/T-bar med brystpute) eller hip thrust-maskin/
-  Smith? I så fall erstatter de seated cable row og stang-hip thrust. Spør Knut.
+- ~~Brystpute-ro / hip thrust-maskin / Smith?~~ **Avklart 29.09: finnes ikke.** Seated cable row @ ~70 kg og hip thrust med stang står, med reglene over.
 - Tillater belt squat-maskinen splittstilling? Trengs først rundt uke 14.
 - Hvorfor manglet man/tir/tor i uke 4? Spurt 28.09.
 - `ernaering`: økta gir ~300–400 kcal mer og ~20 flere beinsett per syklus fra

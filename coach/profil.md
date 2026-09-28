@@ -7,7 +7,7 @@ etter (sier 122 kg).
 |---|---|
 | Alder | 38 år |
 | Høyde | 195 cm |
-| Vekt nå | **119 kg** (stabilt) |
+| Vekt nå | **118 kg** (29.09.2026) |
 | Vekt for 3 år siden | 131 kg |
 | Makspuls | 190 (Garmin) |
 | Mål | Holmestrand Maraton, lørdag 3. april 2027 |

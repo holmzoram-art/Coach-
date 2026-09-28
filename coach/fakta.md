@@ -76,7 +76,7 @@ Bare dette, og det meste hentes gjennom **kveldsspørsmålet**, ikke som lekser:
 
 ## Avklart om ham
 
-- 38 år, 195 cm, 119 kg, makspuls 190.
+- 38 år, 195 cm, **118 kg (29.09.2026)**, makspuls 190. Strava-profilen sier 122 kg og er utdatert — bruk denne.
 - Tre års styrketrening. Løping startet i 2026.
 - **Langturer kjøres i gruppe** — farten er ikke hans. Kvalitetsøkter er solo.
 - Kantine på jobb med varmmat, salatbar og brød. Lager mat selv, god til det.
@@ -169,7 +169,8 @@ Ingen stang på ryggen (knebøy, box squat), ingen tunge hengselløft med stang
 (RDL, markløft, good mornings). Foretrekk maskiner og øvelser med ryggstøtte.
 Gjelder alle agenter, alltid.
 
-Utstyr: gymmet har **ikke beinpress**. Det har belt squat (maks 100 kg) og
-Leg Curl & Extension-maskin.
+Utstyr: gymmet har **ikke beinpress**, **ikke roapparat med brystpute**, **ikke
+hip thrust-maskin eller Smith**. Det har belt squat (maks 100 kg), Leg Curl &
+Extension-maskin, 2 tredemøller og 2 romaskiner. Hjemme: ellipsemaskin.
 
 **Styrkeøkta: maks 90 min.**
