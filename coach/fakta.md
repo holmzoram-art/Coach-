@@ -174,3 +174,9 @@ hip thrust-maskin eller Smith**. Det har belt squat (maks 100 kg), Leg Curl &
 Extension-maskin, 2 tredemøller og 2 romaskiner. Hjemme: ellipsemaskin.
 
 **Styrkeøkta: maks 90 min.**
+
+## Løpsmål (Knut 28.09.2026)
+
+**Holmestrand Maraton, lørdag 3. april 2027 — bekreftet.** København Maraton er
+vurdert og forkastet for 2027 (påmeldingen stengt). Knut vurderer loddtrekningen
+til **København 2028**.

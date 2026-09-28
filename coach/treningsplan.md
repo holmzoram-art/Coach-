@@ -157,7 +157,7 @@ og upåvirket.
 | 28.09 | Man | deload | 5 km + 6 strides |
 | 29.09 | Tir | styrke | Helkropp, deload-dose. Første økt i ny struktur. Leg curl i stedet for RDL |
 | 01.10 | Tor | deload | 5 km rolig |
-| 02.10 | Fre | deload | 12 km rolig |
+| 02.10 | Fre | deload | 12 km rolig, puls 140–150, ingen progressiv avslutning. Ikke EF-punkt |
 | 04.10 | Søn | deload | 3 km, eller dropp |
 
 ### Uke 6 · Bygg 4 — Intervaller inn · styrke
@@ -166,7 +166,7 @@ og upåvirket.
 | 05.10 | Man | kvalitet | 2 × 12 min sub-terskel, 3 min jogg mellom |
 | 06.10 | Tir | styrke | Helkropp. Leg extension og hip thrust inn |
 | 08.10 | Tor | kvalitet | 4 × 2 min @ I4 (166–175), 2 min jogg |
-| 09.10 | Fre | langtur | 16 km |
+| 09.10 | Fre | langtur | 16 km · **EF-punkt 2** — Brygga 16, puls 140–150, alene, ingen avslutning over 155 |
 | 11.10 | Søn | rolig | 5 km |
 
 ### Uke 7 · Bygg 5 — Dobbel terskel · styrke
