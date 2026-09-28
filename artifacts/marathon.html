@@ -536,6 +536,20 @@
     text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--ink-2);
     margin-top: 6px; display: block;
   }
+  /* Sammenleggbare seksjoner */
+  details.fold { margin-top: 14px; background: var(--raise); border: 1px solid var(--line); border-radius: 14px; }
+  details.fold > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; min-height: 52px;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    font-family: "Fraunces", Georgia, serif; font-size: 17px; font-weight: 500; color: var(--ink);
+    -webkit-tap-highlight-color: transparent;
+  }
+  details.fold > summary::-webkit-details-marker { display: none; }
+  details.fold > summary .sub { font-family: "Manrope", sans-serif; font-size: 13px; color: var(--mute); font-weight: 400; margin-left: 8px; }
+  details.fold > summary::after { content: "▾"; color: var(--mute); font-size: 12px; transition: transform .2s ease; }
+  details.fold[open] > summary::after { transform: rotate(180deg); }
+  details.fold > .fold-body { padding: 0 12px 12px; }
+  details.fold .phase:last-child { margin-bottom: 0; }
 </style>
 
 <header class="top">
@@ -574,12 +588,19 @@
   <div class="eyebrow" style="margin-bottom:10px">Trykk på en dag for detaljer</div>
   <div class="week-strip" id="weekStrip"></div>
 
-  <h2 class="section">Basefasen<span class="sub">Uke 1–15 · base og fart</span></h2>
-  <div class="weeks" id="weeksList"></div>
+  <details class="fold" open>
+    <summary><span>Kommende uker<span class="sub">trykk på en uke</span></span></summary>
+    <div class="fold-body"><div class="weeks" id="weeksList"></div></div>
+  </details>
 
-  <h2 class="section">Etter nyttår<span class="sub">Spesifikk fase — rammene, ikke økt for økt ennå</span></h2>
-  <div class="eyebrow" style="margin-bottom:10px">Detaljeres i desember, når vi vet hvordan basefasen gikk</div>
+  <details class="fold">
+    <summary><span>Tidligere uker<span class="sub" id="pastCount"></span></span></summary>
+    <div class="fold-body"><div class="weeks" id="pastList"></div></div>
+  </details>
 
+  <details class="fold">
+    <summary><span>Etter nyttår<span class="sub">des–april</span></span></summary>
+    <div class="fold-body">
   <div class="phase" style="--pc:var(--long)">
     <div class="ph-head">
       <div class="ph-title">Blokk 1 — Langturen vokser</div>
@@ -620,7 +641,12 @@
     <div class="ph-long"><b>Langtur:</b> 28 → 18 km · <b>Løp:</b> lørdag 3. april</div>
   </div>
 
-  <h2 class="section">Ukesvolum<span class="sub">~34–45 km i byggeuker</span></h2>
+    </div>
+  </details>
+
+  <details class="fold">
+    <summary><span>Ukesvolum<span class="sub">~34–45 km</span></span></summary>
+    <div class="fold-body">
   <div class="phase" style="--pc:var(--easy)">
     <div class="ph-body">
       <strong>Fem dager fra uke 3</strong> — fire løpeøkter og én styrke. Søndagen er ny:
@@ -638,9 +664,48 @@
     </div>
     <div class="ph-long"><b>Fra januar:</b> volumet mot 55–60 km · langturen styres på <b>tid</b>, maks 3:00–3:15</div>
   </div>
+    </div>
+  </details>
 
   <h2 class="section">Soner<span class="sub">Puls styrer alt. Pace er kun forventet utslag.</span></h2>
   <div class="eyebrow" style="margin-bottom:10px">Revidert 03.09.26 · OLT-soner mot makspuls 190 (Garmin)</div>
+  <div class="zones">
+    <div class="zone-head">
+      <span>Sone</span><span>HR</span><span>Pace</span>
+    </div>
+    <div class="zone-row">
+      <div class="name">I1 Restitusjon<span class="note">62–72 % · nedjogg og dager som skal koste null. Ikke fastsatt pace — styr på puls.</span></div>
+      <div class="hr">118–136</div><div class="pace">—</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">I2 Rolig / Langtur<span class="note">72–82 % · prat-test, hele setninger. Langtur 7:20–8:00, kortere rolig 6:30–7:20.</span></div>
+      <div class="hr">137–155</div><div class="pace">6:30–8:00</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">MP — <b>mål</b><span class="note">dette bygger vi mot. Settes endelig etter HM i januar.</span></div>
+      <div class="hr">~145–155</div><div class="pace">7:05–7:15</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">MP — arbeidsfart nå<span class="note">bruk denne i MP-økter til januar</span></div>
+      <div class="hr">~140–150</div><div class="pace">7:35–7:50</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">I3 Sub-terskel<span class="note">82–87 % · her ligger mandagens tempoøkter. 6:00–6:15 er målt på puls 164–166, altså <b>rask I3</b> — styr på pulsen, ikke tallet.</span></div>
+      <div class="hr">156–165</div><div class="pace">6:00–6:15</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">I4 Terskel<span class="note">87–92 % · 2–3 ord om gangen. Terskel ligger på puls 170 ± 3. Pace ikke målt ennå — første ekte I4-økt 8. oktober.</span></div>
+      <div class="hr">166–175</div><div class="pace">—</div>
+    </div>
+    <div class="zone-row">
+      <div class="name">I5 VO2<span class="note">92–100 % · korte drag. Pace ikke målt ennå — første I5-økt 2. november.</span></div>
+      <div class="hr">175–190</div><div class="pace">—</div>
+    </div>
+  </div>
+
+  <details class="fold">
+    <summary><span>Om sonene<span class="sub">hvorfor tallene er som de er</span></span></summary>
+    <div class="fold-body">
   <div class="phase" style="--pc:var(--quality); margin-bottom:10px">
     <div class="ph-body">
       <strong>MP er et mål vi bygger, ikke en måling av dagsformen.</strong> Derfor står begge
@@ -676,39 +741,8 @@
       GAP 51 sekunder fra klokkefarten.
     </div>
   </div>
-  <div class="zones">
-    <div class="zone-head">
-      <span>Sone</span><span>HR</span><span>Pace</span>
     </div>
-    <div class="zone-row">
-      <div class="name">I1 Restitusjon<span class="note">62–72 % · nedjogg og dager som skal koste null. Ikke fastsatt pace — styr på puls.</span></div>
-      <div class="hr">118–136</div><div class="pace">—</div>
-    </div>
-    <div class="zone-row">
-      <div class="name">I2 Rolig / Langtur<span class="note">72–82 % · prat-test, hele setninger. Langtur 7:20–8:00, kortere rolig 6:30–7:20.</span></div>
-      <div class="hr">137–155</div><div class="pace">6:30–8:00</div>
-    </div>
-    <div class="zone-row">
-      <div class="name">MP — <b>mål</b><span class="note">dette bygger vi mot. Settes endelig etter HM i januar.</span></div>
-      <div class="hr">~145–155</div><div class="pace">7:05–7:15</div>
-    </div>
-    <div class="zone-row">
-      <div class="name">MP — arbeidsfart nå<span class="note">bruk denne i MP-økter til januar</span></div>
-      <div class="hr">~140–150</div><div class="pace">7:35–7:50</div>
-    </div>
-    <div class="zone-row">
-      <div class="name">I3 Sub-terskel<span class="note">82–87 % · her ligger mandagens tempoøkter. 6:00–6:15 er målt på puls 164–166, altså <b>rask I3</b> — styr på pulsen, ikke tallet.</span></div>
-      <div class="hr">156–165</div><div class="pace">6:00–6:15</div>
-    </div>
-    <div class="zone-row">
-      <div class="name">I4 Terskel<span class="note">87–92 % · 2–3 ord om gangen. Terskel ligger på puls 170 ± 3. Pace ikke målt ennå — første ekte I4-økt 8. oktober.</span></div>
-      <div class="hr">166–175</div><div class="pace">—</div>
-    </div>
-    <div class="zone-row">
-      <div class="name">I5 VO2<span class="note">92–100 % · korte drag. Pace ikke målt ennå — første I5-økt 2. november.</span></div>
-      <div class="hr">175–190</div><div class="pace">—</div>
-    </div>
-  </div>
+  </details>
 
   <footer>
     Holmestrand Maraton · lørdag 3. april 2027
@@ -760,17 +794,17 @@ const STRENGTH_B = [
 // Kolonner: uke 5..13. null = ikke med den uka. C/E = startvekt på maskinen, satt første gang.
 const HELK_WEEKS = ["5","6","7","8","9","10","11","12","13"];
 const HELK = [
-  ["Belt squat",               ["3×8 @ 80 kg på beltet","3×8 @ 80 kg på beltet","3×8 @ 90 kg på beltet","3×8 @ 90 kg på beltet","2×8 @ 90 kg på beltet","3×8 @ 100 kg på beltet","ettbeins 3×6 per bein @ ~60 kg på beltet","ettbeins 3×6 per bein @ ~60 kg på beltet","ettbeins 2×6 per bein @ ~60 kg på beltet"]],
-  ["Bulgarian split squat", ["2×8 @ 8 kg i hver hånd","3×8 @ 8 kg i hver hånd","3×8 @ 10 kg i hver hånd","3×8 @ 10 kg i hver hånd","2×8 @ 10 kg i hver hånd","3×8 @ 12 kg i hver hånd","3×8 @ 14 kg i hver hånd","3×8 @ 14 kg i hver hånd","2×8 @ 14 kg i hver hånd"]],
-  ["Seated leg curl",          ["2×10 · finn startvekt C på maskinen","3×10 @ C","3×10 @ C+1","3×10 @ C+1","2×10 @ C+1","3×10 @ C+2","3×10 @ C+3","3×10 @ C+3","2×10 @ C+3"]],
-  ["Leg extension",            [null,"3×12 · finn startvekt E på maskinen","3×12 @ E+1","3×12 @ E+1","2×12 @ E+1","3×12 @ E+2","3×12 @ E+3","3×12 @ E+3","2×12 @ E+3"]],
-  ["Hip thrust (stang over hofta)", [null,"3×10 @ 60 kg totalt på stanga","3×10 @ 70 kg totalt på stanga","3×10 @ 70 kg totalt på stanga","2×10 @ 70 kg totalt på stanga","3×10 @ 80 kg totalt på stanga","3×10 @ 90 kg totalt på stanga","3×10 @ 90 kg totalt på stanga","2×10 @ 90 kg totalt på stanga"]],
-  ["Seated calf raise",        ["2×15 @ 50 kg på maskinen","3×15 @ 50 kg på maskinen","3×15 @ 60 kg på maskinen","3×15 @ 60 kg på maskinen","2×15 @ 60 kg på maskinen","3×15 @ 70 kg på maskinen","3×15 @ 80 kg på maskinen","3×15 @ 80 kg på maskinen","2×15 @ 80 kg på maskinen"]],
-  ["Benkpress",                ["2×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","2×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","2×5 @ 75 kg totalt på stanga"]],
-  ["Lat pulldown",             ["2×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","2×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","2×8 @ 55 kg på maskinen"]],
+  ["Belt squat", ["3×8 @ 80 kg på beltet","3×8 @ 80 kg på beltet","3×8 @ 90 kg på beltet","3×8 @ 90 kg på beltet","2×8 @ 90 kg på beltet","3×8 @ 100 kg på beltet","ettbeins 3×6 per bein @ ~60 kg på beltet","ettbeins 3×6 per bein @ ~60 kg på beltet","ettbeins 2×6 per bein @ ~60 kg på beltet"]],
+  ["Bulgarian split squat", ["2×8 per bein @ 12 kg i hver hånd","3×8 per bein @ 16 kg i hver hånd","3×8 per bein @ 18 kg i hver hånd","3×8 per bein @ 18 kg i hver hånd","2×8 per bein @ 18 kg i hver hånd","3×8 per bein @ 20 kg i hver hånd","3×10 per bein @ 20 kg i hver hånd","3×10 per bein @ 20 kg i hver hånd","2×10 per bein @ 20 kg i hver hånd"]],
+  ["Seated leg curl", ["2×10 @ 90 kg på maskinen","3×10 @ 97,5 kg på maskinen","3×10 @ 105 kg på maskinen","3×10 @ 105 kg på maskinen","2×10 @ 105 kg på maskinen","3×10 @ 112,5 kg på maskinen","3×10 @ 120 kg på maskinen","3×10 @ 120 kg på maskinen","2×10 @ 120 kg på maskinen"]],
+  ["Leg extension", [null,"3×12 @ 105 kg på maskinen","3×12 @ 112,5 kg på maskinen","3×12 @ 112,5 kg på maskinen","2×12 @ 112,5 kg på maskinen","3×12 @ 120 kg på maskinen","3×12 @ 127,5 kg på maskinen","3×12 @ 127,5 kg på maskinen","2×12 @ 127,5 kg på maskinen"]],
+  ["Hip thrust (stang over hofta)", [null,"3×10 @ 70 kg totalt på stanga","3×10 @ 80 kg totalt på stanga","3×10 @ 80 kg totalt på stanga","2×10 @ 80 kg totalt på stanga","3×10 @ 90 kg totalt på stanga","3×10 @ 100 kg totalt på stanga","3×10 @ 100 kg totalt på stanga","2×10 @ 100 kg totalt på stanga"]],
+  ["Seated calf raise", ["2×15 @ 60 kg på maskinen","3×15 @ 70 kg på maskinen","3×15 @ 80 kg på maskinen","3×15 @ 80 kg på maskinen","2×15 @ 80 kg på maskinen","3×15 @ 85 kg på maskinen","3×15 @ 90 kg på maskinen","3×15 @ 90 kg på maskinen","2×15 @ 90 kg på maskinen"]],
+  ["Benkpress", ["2×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","2×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","2×5 @ 75 kg totalt på stanga"]],
+  ["Lat pulldown", ["2×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","2×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","2×8 @ 55 kg på maskinen"]],
   ["Seated cable row, overkropp i ro", ["2×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","2×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","2×10 @ 70 kg på kabelen"]],
-  ["Pallof press",  ["2×10 per side @ 20 kg på kabelen","3×10 per side @ 20 kg på kabelen","3×10 per side @ 20 kg på kabelen","3×10 per side @ 20 kg på kabelen","2×10 per side @ 20 kg på kabelen","3×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","2×10 per side @ 25 kg på kabelen"]],
-  ["Sideplanke",               ["2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side"]],
+  ["Pallof press", ["2×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","2×10 per side @ 25 kg på kabelen","3×10 per side @ 30 kg på kabelen","3×10 per side @ 30 kg på kabelen","3×10 per side @ 30 kg på kabelen","2×10 per side @ 30 kg på kabelen"]],
+  ["Sideplanke", ["2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side"]],
 ];
 // Uke 14–15 ligger utenfor tabellen: sett × reps som byggeuke, vekt etter progresjonsregelen.
 const HELK_BUILD = ["ettbeins 3×6/bein","3×8 per bein","3×10","3×12","3×10","3×15","3×5","3×8","3×10","3×10 per side","2×30 s/side"];
@@ -829,7 +863,7 @@ const PLAN = [
 
   { label: "6", theme: "Bygg 4 – Intervaller inn", strength: "H", days: [
     { date: "2026-10-05", d: "Man", type: "quality", name: "2 × 12 min sub-terskel", detail: "2 km opp + 2 × 12 min på puls 156–165, 3 min jogg mellom + 2 km ned. Første delte sub-terskeløkt. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 58 min" },
-    { date: "2026-10-06", d: "Tir", type: "strength", name: "Helkropp", detail: "Leg extension og hip thrust inn. Finn startvekt E på leg extension.", pace: "≈ 80 min" },
+    { date: "2026-10-06", d: "Tir", type: "strength", name: "Helkropp", detail: "Leg extension og hip thrust inn. Leg extension: kjenner du kneet, gå ned til 90 kg.", pace: "≈ 80 min" },
     { date: "2026-10-08", d: "Tor", type: "quality", name: "4 × 2 min @ Z4", detail: "2 km opp + 4 × 2 min på puls 166–175, 2 min jogg + 2 km ned. Bakkesprintene byttes mot ekte drag. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I4 · ≈ 48 min" },
     { date: "2026-10-09", d: "Fre", type: "long", name: "16 km long", detail: "Puls 140–150, ingen avslutning over 155. Velg rute selv, gruppe er greit. Spis underveis. Legg inn RPE i Strava etterpå.", pace: "I2 · ≈ 2:00" },
     { date: "2026-10-11", d: "Søn", type: "easy", name: "5 km rolig", detail: "Opp fra 4 km. Farten står stille — bare lengden øker.", pace: "I1 · 7:20–7:45/km" },
@@ -1045,7 +1079,7 @@ function helkroppHtml(label, noteClass) {
   return '<div class="strength-list">' + list + '</div>' +
     '<div class="' + noteClass + '" style="margin-top:12px">' + head + extra +
     '<br><br><b>Byggeuker:</b> kontrollert ned, eksplosivt opp på belt squat, bulgarians og hip thrust. Hip thrust: stopp ved nøytral hofte.<br><br><b>Ryggen:</b> stopp beindelen ved kne over 3/10, verk som øker, eller noe i rygg/sete. Hip thrust: stanga rulles inn over lårene, aldri opp i fanget — stopp settet ved svai. Bulgarian-manualer hentes fra stativ, ikke gulv. Skiver løftes én og én, tett inntil kroppen.' +
-    '<br><br>C/E = startvekt på leg curl/extension, finnes første gang (4 reps i reserve). +1 = ett vekttrinn på maskinen.</div>';
+    '<br><br>Leg curl i dag: kjennes første sett veldig lett, ta 97,5 kg i andre sett — ikke mer.</div>';
 }
 
 function strengthHtml(variant, noteClass, wk) {
@@ -1087,44 +1121,48 @@ function strengthHtml(variant, noteClass, wk) {
     }).join("");
   }
 
-  function renderWeeksList() {
-    const list = document.getElementById("weeksList");
-    const currentWk = findWeekOfToday();
-    list.innerHTML = PLAN.map(wk => {
-      const isCurrent = wk === currentWk;
-      const first = fmtDateShort(wk.days[0].date);
-      const last = fmtDateShort(wk.days[wk.days.length-1].date);
-      const dots = wk.days.map(d => `<span class="dot" style="background:${TYPE_COLORS[d.type]}"></span>`).join("");
-      return `<div class="week-card${isCurrent ? " active" : ""}" data-week="${wk.label}">
-        <button class="week-head" type="button">
-          <div class="week-num">${wk.label === "Bro" ? "◀" : wk.label}</div>
-          <div class="week-title">
-            <div class="theme">${escapeHtml(wk.theme)}</div>
-            <div class="dates">${first} – ${last}</div>
-          </div>
-          <div class="chev">▾</div>
-        </button>
-        <div class="week-body">
-          <div class="week-days">
-            ${wk.days.map(d => `
-              <div class="day-row" style="--dc:${TYPE_COLORS[d.type]}" data-date="${d.date}" role="button" tabindex="0">
-                <div class="date"><span class="dn">${d.d}</span>${fmtDateShort(d.date)}</div>
-                <div class="body">
-                  <div class="name">${escapeHtml(d.name)}</div>
-                  ${d.detail ? `<div class="detail">${escapeHtml(d.detail)}</div>` : ""}
-                  ${d.pace ? `<div class="pace">${escapeHtml(d.pace)}</div>` : ""}
-                </div>
-              </div>`).join("")}
-          </div>
-        </div>
-      </div>`;
-    }).join("");
+  function weekEnd(wk) {
+    const lastD = new Date(wk.days[wk.days.length-1].date + "T12:00:00");
+    lastD.setDate(lastD.getDate() + ((7 - lastD.getDay()) % 7));
+    return lastD.getFullYear() + "-" + String(lastD.getMonth()+1).padStart(2,"0") + "-" + String(lastD.getDate()).padStart(2,"0");
+  }
 
-    // Attach click handlers
-    list.querySelectorAll(".week-head").forEach(btn => {
-      btn.addEventListener("click", () => {
-        btn.parentElement.classList.toggle("active");
-      });
+  function weekCard(wk, isCurrent) {
+    const first = fmtDateShort(wk.days[0].date);
+    const last = fmtDateShort(wk.days[wk.days.length-1].date);
+    return `<div class="week-card${isCurrent ? " active" : ""}" data-week="${wk.label}">
+      <button class="week-head" type="button">
+        <div class="week-num">${wk.label === "Bro" ? "◀" : wk.label}</div>
+        <div class="week-title">
+          <div class="theme">${escapeHtml(wk.theme)}</div>
+          <div class="dates">${first} – ${last}</div>
+        </div>
+        <div class="chev">▾</div>
+      </button>
+      <div class="week-body">
+        <div class="week-days">
+          ${wk.days.map(d => `
+            <div class="day-row" style="--dc:${TYPE_COLORS[d.type]}" data-date="${d.date}" role="button" tabindex="0">
+              <div class="date"><span class="dn">${d.d}</span>${fmtDateShort(d.date)}</div>
+              <div class="body">
+                <div class="name">${escapeHtml(d.name)}</div>
+                ${d.pace ? `<div class="pace">${escapeHtml(d.pace)}</div>` : ""}
+              </div>
+            </div>`).join("")}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  function renderWeeksList() {
+    const currentWk = findWeekOfToday();
+    const past = PLAN.filter(wk => weekEnd(wk) < today && wk !== currentWk);
+    const coming = PLAN.filter(wk => !past.includes(wk));
+    document.getElementById("weeksList").innerHTML = coming.map(wk => weekCard(wk, wk === currentWk)).join("");
+    document.getElementById("pastList").innerHTML = past.slice().reverse().map(wk => weekCard(wk, false)).join("");
+    document.getElementById("pastCount").textContent = past.length + " uker";
+    document.querySelectorAll(".week-head").forEach(btn => {
+      btn.addEventListener("click", () => { btn.parentElement.classList.toggle("active"); });
     });
   }
 

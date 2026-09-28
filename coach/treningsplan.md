@@ -184,7 +184,7 @@ Da gjentas forrige distanse. Den går ikke ned uten et skadeflagg.
 | Dato | Dag | Type | Økt |
 |---|---|---|---|
 | 28.09 | Man | deload | 5 km + 6 strides |
-| 29.09 | Tir | styrke | Helkropp, deload-dose. Første økt i ny struktur. Leg curl i stedet for RDL |
+| 29.09 | Tir | styrke | Helkropp, deload-dose. Første økt i ny struktur. Leg curl i stedet for RDL (90 kg på maskinen) |
 | 01.10 | Tor | deload | 5 km rolig |
 | 02.10 | Fre | deload | 12 km rolig, puls 140–150, ingen progressiv avslutning |
 | 04.10 | Søn | deload | 3 km, eller dropp |
@@ -193,7 +193,7 @@ Da gjentas forrige distanse. Den går ikke ned uten et skadeflagg.
 | Dato | Dag | Type | Økt |
 |---|---|---|---|
 | 05.10 | Man | kvalitet | 2 × 12 min sub-terskel, 3 min jogg mellom |
-| 06.10 | Tir | styrke | Helkropp. Leg extension og hip thrust inn |
+| 06.10 | Tir | styrke | Helkropp. Leg extension (105 kg på maskinen) og hip thrust (70 kg totalt på stanga) inn |
 | 08.10 | Tor | kvalitet | 4 × 2 min @ I4 (166–175), 2 min jogg |
 | 09.10 | Fre | langtur | 16 km, puls 140–150, ingen avslutning over 155. Valgfri rute, gruppe ok. Næring underveis |
 | 11.10 | Søn | rolig | 5 km |
@@ -311,7 +311,7 @@ bestemt kvelden før. Etter en tapt langtur: **neste = siste løpte + maks 2 km.
 
 Erstatter A (no-legs) og B (leg-day). Besluttet av `hovedcoach` etter innspill
 fra `fysiolog` og `belastning-restitusjon`; ryggvurdert av
-`belastning-restitusjon`. Full begrunnelse og vekttabell uke 5–13:
+`belastning-restitusjon`. Full begrunnelse og vekttabell uke 5–13 (startvekter satt fra Hevy-historikken 28.09):
 `coach/notater/2026-09-28-styrke-ny-struktur-forslag.md`.
 
 **Ryggregel (prolapshistorikk):** ingen stang på ryggen, ingen tunge
@@ -321,12 +321,12 @@ inntil kroppen, nøytral rygg.
 | # | Øvelse | Sett × reps | Merk |
 |---|---|---|---|
 | 0 | Oppvarming: 5 min sykkel, band walks, clamshell | | |
-| 1 | Belt squat | 3 × 8, RIR 2 | +10 kg/bygguke til 100 kg (uke 10). **Fra uke 11: ettbeins belt squat** 3 × 6 per bein, RIR 2, start ~60 kg, +5–10 kg/bygguke |
-| 2 | Bulgarian split squat, manualer | 3 × 8 per bein | +2 kg/hånd, tak 20 kg. Manualer fra stativ/benk, ikke gulv |
-| 3a/b | Seated leg curl + leg extension | 3 × 10 / 3 × 12 | Ett vekttrinn per bygguke |
-| 4a/b | Hip thrust (stang over hofta) + seated calf raise | 3 × 10 / 3 × 15 | Stanga rulles inn, aldri opp i fanget. Stopp ved svai eller kjenning i korsryggen. Tak 100 kg — se under |
-| 5a/b | Benkpress + lat pulldown | 3 × 5 / 3 × 8 | Vedlikehold, samme vekt |
-| 6a/b | Seated cable row + Pallof press | 3 × 10 / 3 × 10 per side | Roing ~70 kg, overkroppen helt i ro |
+| 1 | Belt squat | 3 × 8, RIR 2 | 80 kg på beltet, +10 kg/bygguke til 100 kg (uke 10). **Fra uke 11: ettbeins belt squat** 3 × 6 per bein, RIR 2, start ~60 kg, +5–10 kg/bygguke |
+| 2 | Bulgarian split squat, manualer | 3 × 8 per bein | U5 12 kg i hver hånd, U6 16, deretter +2 kg i hver hånd per bygguke, tak 20 kg i hver hånd (U10), så reps 8 → 10. Manualer fra stativ/benk, ikke gulv |
+| 3a/b | Seated leg curl + leg extension | 3 × 10 / 3 × 12 | Samme maskin som høsten 2025. Leg curl U5 90 kg på maskinen, leg extension U6 105 kg på maskinen. +7,5 kg (ett trinn) per bygguke |
+| 4a/b | Hip thrust (stang over hofta) + seated calf raise | 3 × 10 / 3 × 15 | Hip thrust U6 70 kg totalt på stanga, +10/bygguke, tak 100 kg (U11). Calf U5 60 kg på maskinen, +10 til 80, så +5, til 90. Stanga rulles inn, aldri opp i fanget. Stopp ved svai eller kjenning i korsryggen — se under |
+| 5a/b | Benkpress + lat pulldown | 3 × 5 / 3 × 8 | Vedlikehold: 75 kg totalt på stanga / 55 kg på maskinen |
+| 6a/b | Seated cable row + Pallof press | 3 × 10 / 3 × 10 per side | Roing ~70 kg på kabelen, overkroppen helt i ro. Pallof 25 kg på kabelen, 30 fra U10 |
 | 7 | Sideplanke | 2 × 30 s per side | |
 
 **~80 min byggeuke, ~55 min deload.**
