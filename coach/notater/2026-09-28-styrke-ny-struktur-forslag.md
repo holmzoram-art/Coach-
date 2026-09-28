@@ -23,6 +23,22 @@ Knut: prolaps flere ganger, ingen beinpress, maks 90 min (nå i `coach/fakta.md`
 Seated cable row beholdes med krav: nøytral rygg, ikke len fram i strekket.
 Back extension og step-ups er vurdert og **ikke** tatt inn (se under).
 
+## Ryggvurdering `belastning-restitusjon` 28.09 kveld — endringer
+
+Andre vurdering av hip thrust, seated cable row og bulgarians (se «Åpent»).
+Knut 28.09: ingen vondter. Endringer merket **[B-R 28.09]** i teksten.
+
+| Øvelse | Vurdering | Hvorfor |
+|---|---|---|
+| Hip thrust, stang, 60 → tak 100 kg | **Godkjent med endring:** oppsettregel + stoppregel (under) | Selve løftet er lavrisiko for skiva: ryggen er støttet, ingen fleksjon under last. Risikoen ligger i (1) å få stanga opp i fanget — bøyd fram, rund rygg, 60–100 kg — og (2) når han blir sliten: fullfører med svai i korsryggen i stedet for hofta. Tak 100 kg ok (han tok 80 × 15 i mars). |
+| Seated cable row 3 × 6 @ 90 kg | **Godkjent med endring:** 3 × 10 @ ~70 kg, overkroppen står stille. Brystpute-ro (maskin) foretrekkes hvis gymmet har det | Den mest ryggrisikable øvelsen i økta. I strekket drar 90 kg overkroppen fram → korsryggen holder et fleksjonsmoment under last, og tunge 6-reps inviterer til å gynge: fram i fleksjon, tilbake med rykk. Når han er sliten er det nettopp det som skjer. Overkroppen er på vedlikehold — tung ro gir null for maraton, bare risiko. |
+| Bulgarians, manualer, tak 20 kg/hånd | **Godkjent med endring:** manualene hentes fra stativ/benk, ikke gulv; settet slutter ved tap av balanse | Ingen aksial last på ryggen, ingen fleksjon i selve løftet. Farene er (1) å bøye seg ned etter manualene i splittstilling og (2) tap av balanse når beina er slitne → vridning under last. Taket står. |
+
+**Generell regel [B-R 28.09]:** Skiver på/av (belt squat opptil 100 kg, hip
+thrust opptil 100 kg) er økta største skjulte fleksjonsbelastning. Skiver
+løftes tett inntil kroppen med nøytral rygg, én og én, aldri med rund rygg og
+strake bein. Avlast belt squat mellom sett bare hvis maskinen krever det.
+
 ## Beslutningen
 
 Én helkroppsøkt hver tirsdag, **~80 min bygguke, ~55 min deload.**
@@ -56,7 +72,9 @@ Hjelper det ikke, flyttes beina til mandag etter løpet.
 ikke stang på nakken, og med oppreist overkropp er det lav ryggrisiko på det
 nivået (han har båret 40 kg farmers walk). Risikoen over taket er balanse og
 vridning, ikke vekten i seg selv. Ved taket: reps 8 → 12, deretter tar trinn 4
-over rollen.
+over rollen. **[B-R 28.09]** Manualene hentes fra stativ eller benk i
+hoftehøyde, ikke fra gulvet i splittstilling. Settet slutter første gang han
+må ta ned bakfoten eller mister balansen — ikke kjemp deg gjennom en vridning.
 
 **Leg extension 3×12, RIR 2** — fra uke 6. Null ryggbelastning, ren quadriceps.
 Kne-kriteriene gjelder; kneet er det eneste stedet denne kan gjøre skade.
@@ -71,6 +89,11 @@ Kne-kriteriene gjelder; kneet er det eneste stedet denne kan gjøre skade.
   Ryggen er støttet og lasten ligger over bekkenet, ikke langs ryggraden.
   Krav: stopp ved nøytral hofte, ribbein ned, **ikke svai i toppen**. Pute på
   stanga. Start 60 kg (han tok 80 × 15 i mars), +10 kg per bygguke, tak 100 kg.
+  **[B-R 28.09] Oppsett:** bruk 20 kg-skiver med full diameter så stanga
+  *rulles* inn over lårene fra gulvet — aldri løftes opp i fanget. Finnes
+  hip thrust-maskin eller Smith-stang, bruk den. **Stopp:** kjennes det i
+  korsryggen i stedet for setet, eller kommer toppen bare med svai, er settet
+  ferdig — uansett rep-tall. Hake mot bryst gjennom hele løftet.
 - **Back extension: ut.** Belastet bøy/strekk i korsryggen — feil øvelse ved
   prolapshistorikk.
 - **Glute bridge: ut** — overflødig ved siden av hip thrust. Kan brukes som
@@ -97,10 +120,10 @@ Progresjon: ett vekttrinn på maskinen per bygguke.
 | 4b | Seated calf raise | 3 × 15 | 60 s | |
 | 5a | Benkpress | 3 × 5 | — | 12 |
 | 5b | Lat pulldown | 3 × 8 | 90 s | |
-| 6a | Seated cable row, nøytral rygg | 3 × 6 | — | 9 |
+| 6a | Seated cable row, nøytral rygg, overkropp i ro **[B-R 28.09]** | 3 × 10 | — | 10 |
 | 6b | Pallof press | 3 × 10 per side | 60 s | |
 | 7 | Sideplanke | 2 × 30 s per side | | 3 |
-| | **Sum inkl. bytter** | | | **~80** |
+| | **Sum inkl. bytter** | | | **~81** |
 
 Deload: samme rekkefølge, 2 sett → **~55 min.** Overkroppen holdes på
 vedlikehold (samme vekt hele syklusen); løpingen har prioritet.
@@ -119,11 +142,16 @@ Forutsetter at progresjonsregelen er oppfylt hver uke. Stopper den, står vekten
 | Hip thrust | — | 3×10 @ 60 | 70 | 70 | **2×10 @ 70** | 80 | 90 | 90 | **2×10 @ 90** |
 | Seated calf raise | 2×15 @ 50 | 3×15 @ 50 | 60 | 60 | **2×15 @ 60** | 70 | 80 | 80 | **2×15 @ 80** |
 | Benkpress | 2×5 @ 75 | 3×5 @ 75 | 75 | 75 | **2×5 @ 75** | 75 | 75 | 75 | **2×5 @ 75** |
-| Seated cable row | 2×6 @ 90 | 3×6 @ 90 | 90 | 90 | **2×6 @ 90** | 90 | 90 | 90 | **2×6 @ 90** |
+| Seated cable row [B-R 28.09] | 2×10 @ 70 | 3×10 @ 70 | 70 | 70 | **2×10 @ 70** | 70 | 70 | 70 | **2×10 @ 70** |
 | Lat pulldown | 2×8 @ 55 | 3×8 @ 55 | 55 | 55 | **2×8 @ 55** | 55 | 55 | 55 | **2×8 @ 55** |
 | Pallof press | 2×10 @ 20 | 3×10 @ 20 | 20 | 20 | **2×10 @ 20** | 25 | 25 | 25 | **2×10 @ 25** |
 
 C/E = startvekt satt 29.09/06.10; +1 = ett vekttrinn på maskinen.
+Seated cable row: 70 kg er utgangspunkt — riktig vekt er den der 10 reps går
+med RIR 2 og overkroppen står helt stille. Står den ikke stille, ned ett trinn.
+Holdes deretter hele syklusen (vedlikehold). **[B-R 28.09]** Deload-kolonnene
+(U5/U9/U13) er kontrollert mot regelen «samme vekt som forrige bygguke» og
+stemmer for alle øvelser.
 Uke 5 er første økt etter 28 dager uten beintrening og har derfor 3×8 belt
 squat som gjeninngang, slik det var besluttet.
 
@@ -144,7 +172,7 @@ squat som gjeninngang, slik det var besluttet.
 | Seated leg curl (erstatter RDL) | 2 × 10 | Finn vekt: 4 reps igjen i tanken. Logg i Hevy |
 | Seated calf raise | 2 × 15 | 50 kg |
 | Benkpress + lat pulldown (supersett) | 2 × 5 / 2 × 8 | 75 / 55 kg |
-| Seated cable row, nøytral rygg | 2 × 6 | 90 kg |
+| Seated cable row, overkropp i ro **[B-R 28.09]** | 2 × 10 | ~70 kg |
 | Pallof press (erstatter cable crunch) | 2 × 10 per side | 20 kg |
 | Sideplanke | 2 × 30 s per side | |
 
@@ -184,9 +212,11 @@ nytt nullpunkt for den nye strukturen.
 
 ## Åpent
 
-- **Ryggvurderingen er én vurdering, ikke to.** `belastning-restitusjon` bør se
-  over hip thrust, seated cable row og tak på bulgarians før 06.10. Ikke nødvendig
-  før i morgen — alle endringer 29.09 reduserer ryggbelastningen.
+- ~~Ryggvurderingen er én vurdering, ikke to.~~ **Lukket 28.09:**
+  `belastning-restitusjon` har vurdert hip thrust, seated cable row og
+  bulgarians — se «Ryggvurdering» øverst.
+- Har gymmet brystpute-ro (maskin/T-bar med brystpute) eller hip thrust-maskin/
+  Smith? I så fall erstatter de seated cable row og stang-hip thrust. Spør Knut.
 - Tillater belt squat-maskinen splittstilling? Trengs først rundt uke 14.
 - Hvorfor manglet man/tir/tor i uke 4? Spurt 28.09.
 - `ernaering`: økta gir ~300–400 kcal mer og ~20 flere beinsett per syklus fra
