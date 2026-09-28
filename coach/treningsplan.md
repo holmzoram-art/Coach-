@@ -14,6 +14,8 @@ Mål: **Holmestrand Maraton, lørdag 3. april 2027.**
 
 ---
 
+**Strides** (der det står «+ 6 strides»): 6 × ca. 20 sek (80–100 m) på slutten av turen, jevn oppbygging til ca. 90 % — raskt og avslappet, ikke full sprint. Gå/jogg 60–90 sek mellom. Flatt underlag.
+
 ## Ukestruktur
 
 Fem dager fra uke 3: **fire løpeøkter og én styrke.**
