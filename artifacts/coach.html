@@ -1057,6 +1057,26 @@ const STRENGTH_B = [
   ["Clamshells + Side Plank", "3 × 10 / side", true],
 ];
 
+// Helkroppsøkt fra uke 5 (revidert 28.09.2026) — erstatter A og B.
+// Ryggvennlig (prolapshistorikk), maks 90 min. Deload = samme økt, 2 sett, samme vekt.
+// Kolonner: uke 5..13. null = ikke med den uka. C/E = startvekt på maskinen, satt første gang.
+const HELK_WEEKS = ["5","6","7","8","9","10","11","12","13"];
+const HELK = [
+  ["Belt squat",               ["3×8 @ 80","3×8 @ 80","3×8 @ 90","3×8 @ 90","2×8 @ 90","3×8 @ 100","3×10 @ 100","3×10 @ 100","2×10 @ 100"]],
+  ["Bulgarian split squat (per hånd)", ["2×8 @ 8","3×8 @ 8","3×8 @ 10","3×8 @ 10","2×8 @ 10","3×8 @ 12","3×8 @ 14","3×8 @ 14","2×8 @ 14"]],
+  ["Seated leg curl",          ["2×10 · finn C","3×10 @ C","3×10 @ C+1","3×10 @ C+1","2×10 @ C+1","3×10 @ C+2","3×10 @ C+3","3×10 @ C+3","2×10 @ C+3"]],
+  ["Leg extension",            [null,"3×12 · finn E","3×12 @ E+1","3×12 @ E+1","2×12 @ E+1","3×12 @ E+2","3×12 @ E+3","3×12 @ E+3","2×12 @ E+3"]],
+  ["Hip thrust (stang over hofta)", [null,"3×10 @ 60","3×10 @ 70","3×10 @ 70","2×10 @ 70","3×10 @ 80","3×10 @ 90","3×10 @ 90","2×10 @ 90"]],
+  ["Seated calf raise",        ["2×15 @ 50","3×15 @ 50","3×15 @ 60","3×15 @ 60","2×15 @ 60","3×15 @ 70","3×15 @ 80","3×15 @ 80","2×15 @ 80"]],
+  ["Benkpress",                ["2×5 @ 75","3×5 @ 75","3×5 @ 75","3×5 @ 75","2×5 @ 75","3×5 @ 75","3×5 @ 75","3×5 @ 75","2×5 @ 75"]],
+  ["Lat pulldown",             ["2×8 @ 55","3×8 @ 55","3×8 @ 55","3×8 @ 55","2×8 @ 55","3×8 @ 55","3×8 @ 55","3×8 @ 55","2×8 @ 55"]],
+  ["Seated cable row, overkropp i ro", ["2×10 @ 70","3×10 @ 70","3×10 @ 70","3×10 @ 70","2×10 @ 70","3×10 @ 70","3×10 @ 70","3×10 @ 70","2×10 @ 70"]],
+  ["Pallof press (per side)",  ["2×10 @ 20","3×10 @ 20","3×10 @ 20","3×10 @ 20","2×10 @ 20","3×10 @ 25","3×10 @ 25","3×10 @ 25","2×10 @ 25"]],
+  ["Sideplanke",               ["2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side"]],
+];
+// Uke 14–15 ligger utenfor tabellen: sett × reps som byggeuke, vekt etter progresjonsregelen.
+const HELK_BUILD = ["3×8","3×8 per bein","3×10","3×12","3×10","3×15","3×5","3×8","3×10","3×10 per side","2×30 s/side"];
+
 // Stjernene markerer nye øvelser, og forsvinner så snart varianten er kjørt én gang.
 // A ble kjørt 25.08, B kjøres første gang 01.09.
 const STRENGTH_NEW_UNTIL = { A: "2026-08-25", B: "2026-09-01" };
@@ -1101,89 +1121,89 @@ const PLAN = [
     { date: "2026-09-27", d: "Søn", type: "easy", name: "4 km rolig", detail: "Siste uke på 4 km. Deload neste uke, så opp til 5 km etter det.", pace: "I1 · 7:20–7:45/km" },
   ]},
 
-  { label: "5", theme: "DELOAD", strength: "B", isDeload: true, days: [
+  { label: "5", theme: "DELOAD", strength: "H", isDeload: true, days: [
     { date: "2026-09-28", d: "Man", type: "deload", name: "5 km + 6 strides", detail: "Rolig med raske skritt til slutt.", pace: "I2 · ≈ 40 min" },
-    { date: "2026-09-29", d: "Tir", type: "strength", name: "Styrke B – leg-day", detail: "Belt squat, RDL, Bulgarians. Lett løpeuke — beina har plass.", pace: "≈ 55 min" },
+    { date: "2026-09-29", d: "Tir", type: "strength", name: "Helkropp – deload", detail: "Første økt i ny struktur. Leg curl i stedet for RDL, Pallof i stedet for cable crunch. Alle beinsett 3–4 reps i reserve.", pace: "≈ 50 min" },
     { date: "2026-10-01", d: "Tor", type: "deload", name: "5 km rolig", detail: "Ingen kvalitet denne uka.", pace: "I1 · ≈ 40 min" },
     { date: "2026-10-02", d: "Fre", type: "deload", name: "12 km rolig", detail: "Målet: gjenopprette. Ikke over Z2.", pace: "I1–I2 · ≈ 1:30" },
     { date: "2026-10-04", d: "Søn", type: "deload", name: "3 km rolig", detail: "Deload-uke: kort, eller dropp den helt. Beina bestemmer.", pace: "I1" },
   ]},
 
-  { label: "6", theme: "Bygg 4 – Intervaller inn", strength: "A", days: [
+  { label: "6", theme: "Bygg 4 – Intervaller inn", strength: "H", days: [
     { date: "2026-10-05", d: "Man", type: "quality", name: "2 × 12 min sub-terskel", detail: "2 km opp + 2 × 12 min på puls 156–165, 3 min jogg mellom + 2 km ned. Første delte sub-terskeløkt. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 58 min" },
-    { date: "2026-10-06", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-10-06", d: "Tir", type: "strength", name: "Helkropp", detail: "Leg extension og hip thrust inn. Finn startvekt E på leg extension.", pace: "≈ 80 min" },
     { date: "2026-10-08", d: "Tor", type: "quality", name: "4 × 2 min @ Z4", detail: "2 km opp + 4 × 2 min på puls 166–175, 2 min jogg + 2 km ned. Bakkesprintene byttes mot ekte drag. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I4 · ≈ 48 min" },
     { date: "2026-10-09", d: "Fre", type: "long", name: "16 km long", detail: "Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:00" },
     { date: "2026-10-11", d: "Søn", type: "easy", name: "5 km rolig", detail: "Opp fra 4 km. Farten står stille — bare lengden øker.", pace: "I1 · 7:20–7:45/km" },
   ]},
 
-  { label: "7", theme: "Bygg 5 – Dobbel terskel", strength: "A", days: [
+  { label: "7", theme: "Bygg 5 – Dobbel terskel", strength: "H", days: [
     { date: "2026-10-12", d: "Man", type: "quality", name: "2 × 15 min sub-terskel", detail: "2 km opp + 2 × 15 min på puls 156–165, 3 min jogg mellom + 2 km ned. 30 min sub-terskel totalt — dette er økta som bygger maratonmotoren. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 63 min" },
-    { date: "2026-10-13", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-10-13", d: "Tir", type: "strength", name: "Helkropp", detail: "", pace: "≈ 80 min" },
     { date: "2026-10-15", d: "Tor", type: "quality", name: "6 × 1 min hardt", detail: "2 km opp + 6 × 1 min hardt (puls 170–178), 2 min jogg mellom + 2 km ned. Kort og skarpt. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 45 min" },
     { date: "2026-10-16", d: "Fre", type: "long", name: "18 km long", detail: "Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:15" },
     { date: "2026-10-18", d: "Søn", type: "easy", name: "5 km rolig", detail: "", pace: "I1 · 7:20–7:45/km" },
   ]},
 
-  { label: "8", theme: "Bygg 6 – Toppuke", strength: "A", isPeak: true, days: [
+  { label: "8", theme: "Bygg 6 – Toppuke", strength: "H", isPeak: true, days: [
     { date: "2026-10-19", d: "Man", type: "quality", name: "3 × 10 min sub-terskel", detail: "2 km opp + 3 × 10 min på puls 156–165, 2 min jogg + 2 km ned. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 64 min" },
-    { date: "2026-10-20", d: "Tir", type: "strength", name: "Styrke A – lettere", detail: "Lette sett.", pace: "≈ 45 min" },
+    { date: "2026-10-20", d: "Tir", type: "strength", name: "Helkropp – toppuke", detail: "Hold vekten fra forrige uke.", pace: "≈ 80 min" },
     { date: "2026-10-22", d: "Tor", type: "quality", name: "8 × 1 min hardt", detail: "2 km opp + 8 × 1 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 50 min" },
     { date: "2026-10-23", d: "Fre", type: "long", name: "20 km long", detail: "Høstens lengste. Hold Z2 strengt — hvis pulsen drifter over 155 sent: gå litt.", pace: "I2 · ≈ 2:30" },
     { date: "2026-10-25", d: "Søn", type: "easy", name: "5 km rolig", detail: "Toppuke. Denne skal fortsatt være rolig — den er restitusjon mellom fredagens langtur og mandagens kvalitet, ikke en økt til.", pace: "I1 · 7:20–7:45/km" },
   ]},
 
-  { label: "9", theme: "DELOAD + sjekkpunkt", strength: "B", isDeload: true, days: [
+  { label: "9", theme: "DELOAD + sjekkpunkt", strength: "H", isDeload: true, days: [
     { date: "2026-10-26", d: "Man", type: "deload", name: "6 km + 6 strides", detail: "Sjekk hvordan beina føles.", pace: "I2 · ≈ 50 min" },
-    { date: "2026-10-27", d: "Tir", type: "strength", name: "Styrke B – LETT", detail: "Eneste ekte styrke-deload i blokka: ~60 % vekt, 2 × 8 i stedet for 4 × 5, dropp Bulgarians. Grunn: fredagens økt er beslutningsøkta — tung knebøy nå ville gjort at du målte stølhet i stedet for restitusjon.", pace: "≈ 35 min" },
+    { date: "2026-10-27", d: "Tir", type: "strength", name: "Helkropp – deload", detail: "Samme økt, 2 sett, samme vekt som forrige bygguke. Fredagens sjekkpunkt skal måle restitusjon, ikke stølhet.", pace: "≈ 55 min" },
     { date: "2026-10-29", d: "Tor", type: "deload", name: "5 km rolig", detail: "", pace: "I1 · ≈ 40 min" },
     { date: "2026-10-30", d: "Fre", type: "deload", name: "14 km rolig · SJEKKPUNKT", detail: "Lett = grønt lys videre. Tung = gjenta uke 8 før du går videre. Pulsen ved samme fart sammenlignes mot uke 5 — det gjøres fra Strava.", pace: "I1–I2 · ≈ 1:45" },
     { date: "2026-11-01", d: "Søn", type: "deload", name: "3 km rolig", detail: "Deload etter sjekkpunktet. Kort, eller dropp.", pace: "I1" },
   ]},
 
-  { label: "10", theme: "Bygg 7 – VO2 intro", strength: "A", days: [
+  { label: "10", theme: "Bygg 7 – VO2 intro", strength: "H", days: [
     { date: "2026-11-02", d: "Man", type: "quality", name: "5 × 1000 m", detail: "2 km opp + 5 × 1000 m hardt (puls 172–183), 2 min jogg mellom + 2 km ned. Første ekte VO2-økt — hever taket alt annet jobber under. Den ligger på mandag med vilje: dette er ukas ferskeste bein.", pace: "~5:20/km · ≈ 65 min" },
-    { date: "2026-11-03", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-11-03", d: "Tir", type: "strength", name: "Helkropp", detail: "", pace: "≈ 80 min" },
     { date: "2026-11-05", d: "Tor", type: "quality", name: "4 × 2 min @ Z4", detail: "2 km opp + 4 × 2 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I4 · ≈ 48 min" },
     { date: "2026-11-06", d: "Fre", type: "long", name: "18 km long", detail: "Mørketid — hodelykt og refleks. Pace betyr mindre nå, puls betyr alt.", pace: "I2 · ≈ 2:15" },
     { date: "2026-11-08", d: "Søn", type: "easy", name: "6 km rolig", detail: "Opp fra 5 km. Mørketid — hodelykt og refleks.", pace: "I1 · 7:20–7:45/km" },
   ]},
 
-  { label: "11", theme: "Bygg 8 – Terskelvolum", strength: "A", days: [
+  { label: "11", theme: "Bygg 8 – Terskelvolum", strength: "H", days: [
     { date: "2026-11-09", d: "Man", type: "quality", name: "3 × 10 min sub-terskel", detail: "2 km opp + 3 × 10 min på puls 156–165, 2 min jogg + 2 km ned. 30 min sub-terskel delt i tre — lettere å holde kvaliteten enn 2 × 15. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 64 min" },
-    { date: "2026-11-10", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-11-10", d: "Tir", type: "strength", name: "Helkropp", detail: "", pace: "≈ 80 min" },
     { date: "2026-11-12", d: "Tor", type: "quality", name: "8 × 1 min hardt", detail: "2 km opp + 8 × 1 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 50 min" },
     { date: "2026-11-13", d: "Fre", type: "long", name: "20 km long", detail: "Langtur dagen etter kvalitet. Legg deg strengt i Z2 — hele poenget er at den er rolig. Beina er litt trøtte fra i går, og det er med vilje: i løpet løper du de siste 15 km på nettopp slike bein.", pace: "I2 · ≈ 2:30" },
     { date: "2026-11-15", d: "Søn", type: "easy", name: "6 km rolig", detail: "", pace: "I1 · 7:20–7:45/km" },
   ]},
 
-  { label: "12", theme: "Bygg 9 – Toppuke", strength: "A", isPeak: true, days: [
+  { label: "12", theme: "Bygg 9 – Toppuke", strength: "H", isPeak: true, days: [
     { date: "2026-11-16", d: "Man", type: "quality", name: "Tempo 30 min", detail: "2 km opp + 30 min sammenhengende på puls 156–165 + 2 km ned. Lengste sammenhengende drag i basefasen. Kjør på puls — fremgangen mot uke 2 og 4 kommer i fredagsrapporten. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 60 min" },
-    { date: "2026-11-17", d: "Tir", type: "strength", name: "Styrke A – lettere", detail: "", pace: "≈ 45 min" },
+    { date: "2026-11-17", d: "Tir", type: "strength", name: "Helkropp – toppuke", detail: "Hold vekten fra forrige uke.", pace: "≈ 80 min" },
     { date: "2026-11-19", d: "Tor", type: "quality", name: "5 × 400 m", detail: "2 km opp + 5 × 400 m raskt, 90 sek jogg + 2 km ned. Kort, rask, lite slitasje. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "Z5 · ≈ 45 min" },
     { date: "2026-11-20", d: "Fre", type: "long", name: "20 km progressiv", detail: "Start i Z1 og øk jevnt — siste 3 km i øvre Z2. Lærer deg å avslutte sterkt på slitne bein.", pace: "I1 → I2 · ≈ 2:30" },
     { date: "2026-11-22", d: "Søn", type: "easy", name: "6 km rolig", detail: "", pace: "I1 · 7:20–7:45/km" },
   ]},
 
-  { label: "13", theme: "DELOAD", strength: "B", isDeload: true, days: [
+  { label: "13", theme: "DELOAD", strength: "H", isDeload: true, days: [
     { date: "2026-11-23", d: "Man", type: "deload", name: "6 km + 6 strides", detail: "", pace: "I2 · ≈ 50 min" },
-    { date: "2026-11-24", d: "Tir", type: "strength", name: "Styrke B – leg-day", detail: "Belt squat, RDL, Bulgarians.", pace: "≈ 55 min" },
+    { date: "2026-11-24", d: "Tir", type: "strength", name: "Helkropp – deload", detail: "Samme økt, 2 sett, samme vekt som forrige bygguke.", pace: "≈ 55 min" },
     { date: "2026-11-26", d: "Tor", type: "deload", name: "5 km rolig", detail: "", pace: "I1 · ≈ 40 min" },
     { date: "2026-11-27", d: "Fre", type: "deload", name: "14 km rolig", detail: "", pace: "I1–I2 · ≈ 1:45" },
     { date: "2026-11-29", d: "Søn", type: "deload", name: "3 km rolig", detail: "Deload. Kort, eller dropp.", pace: "I1" },
   ]},
 
-  { label: "14", theme: "Base 10 – Vedlikehold", strength: "A", days: [
+  { label: "14", theme: "Base 10 – Vedlikehold", strength: "H", days: [
     { date: "2026-11-30", d: "Man", type: "quality", name: "2 × 15 min sub-terskel", detail: "2 km opp + 2 × 15 min på puls 156–165 + 2 km ned. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 63 min" },
-    { date: "2026-12-01", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-12-01", d: "Tir", type: "strength", name: "Helkropp", detail: "", pace: "≈ 80 min" },
     { date: "2026-12-03", d: "Tor", type: "quality", name: "6 × 1 min hardt", detail: "2 km opp + 6 × 1 min, 2 min jogg + 2 km ned. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I5 · ≈ 45 min" },
     { date: "2026-12-04", d: "Fre", type: "long", name: "20 km long", detail: "Vinterføre kan komme — brodder klare. Ved is: kort ned heller enn å tvinge det.", pace: "I2 · ≈ 2:30" },
     { date: "2026-12-06", d: "Søn", type: "easy", name: "7 km rolig", detail: "Opp fra 6 km. Siste økning i basefasen.", pace: "I1 · 7:20–7:45/km" },
   ]},
 
-  { label: "15", theme: "Base avsluttes", strength: "A", days: [
+  { label: "15", theme: "Base avsluttes", strength: "H", days: [
     { date: "2026-12-07", d: "Man", type: "quality", name: "Tempo 30 min", detail: "Siste kvalitetsøkt i basefasen. Kjør på puls. Differansen mot uke 2 og 12 er tre måneders arbeid, og den regnes ut fra Strava. HAR DU TID: utvid oppvarmingen til 4–6 km. Terskeløkter tåler — og har godt av — lang oppvarming, så det er det billigste stedet å hente ukesvolum.", pace: "I3 · ≈ 60 min" },
-    { date: "2026-12-08", d: "Tir", type: "strength", name: "Styrke A – no-legs", detail: "", pace: "≈ 50 min" },
+    { date: "2026-12-08", d: "Tir", type: "strength", name: "Helkropp", detail: "", pace: "≈ 80 min" },
     { date: "2026-12-10", d: "Tor", type: "quality", name: "4 × 2 min @ Z4", detail: "Lett kvalitet før siste langtur i basefasen. Kort oppvarming her. Økta skal være ferdig på under en time, så du er brukbar til langturen i morgen.", pace: "I4 · ≈ 48 min" },
     { date: "2026-12-11", d: "Fre", type: "long", name: "22 km long", detail: "Basefasen er ferdig. Fra 14. desember vokser langturen for alvor — og da trenger du fredager med 3–4 timer.", pace: "I2 · ≈ 2:45" },
     { date: "2026-12-13", d: "Søn", type: "easy", name: "7 km rolig", detail: "Siste søndag i basefasen. Fra 14. desember vokser både langturen og denne.", pace: "I1 · 7:20–7:45/km" },
@@ -1637,11 +1657,30 @@ function notesFor(type) {
   if (type === "quality") return "Full oppvarming (min. 2 km) før du åpner. Kvalitet krever ferske bein.";
   if (type === "deload") return "Målet er å komme ut FRISK. Ikke et sekund raskere enn planlagt.";
   if (type === "easy") return "Sirkulasjon, ikke arbeid. Bruk den til god form.";
-  if (type === "strength") return "Alle vekter er mål. Klarer du to reps over målet: øk vekten neste gang.";
+  if (type === "strength") return "Maks 90 min. Supersett: leg curl + extension, hip thrust + legg, benk + nedtrekk, roing + Pallof.";
   return "";
 }
 
-function strengthHtml(variant, noteClass) {
+function helkroppHtml(label, noteClass) {
+  const idx = HELK_WEEKS.indexOf(label);
+  const list = HELK.map((r, k) => {
+    const spec = idx >= 0 ? r[1][idx] : HELK_BUILD[k];
+    if (spec === null) return "";
+    return '<div class="row"><div class="name">' + escapeHtml(r[0]) + '</div><div class="spec">' + escapeHtml(spec) + '</div></div>';
+  }).join("");
+  const deload = ["5","9","13"].includes(label);
+  const head = deload
+    ? "<b>Deload:</b> samme økt, 2 sett, samme vekt. 3–4 reps i reserve på alle beinsett."
+    : "<b>Byggeuke:</b> 2 reps i reserve. Vekt opp bare når kneet er rolig, stølhet torsdag ≤ 2/10 og fredagens langtur gikk som forventet. Ellers står vekten.";
+  const extra = idx < 0 ? " Vekter: fortsett fra uke 13 etter progresjonsregelen." : "";
+  return '<div class="strength-list">' + list + '</div>' +
+    '<div class="' + noteClass + '" style="margin-top:12px">' + head + extra +
+    '<br><br><b>Ryggen:</b> stopp beindelen ved kne over 3/10, verk som øker, eller noe i rygg/sete. Hip thrust: stanga rulles inn over lårene, aldri opp i fanget — stopp settet ved svai. Bulgarian-manualer hentes fra stativ, ikke gulv. Skiver løftes én og én, tett inntil kroppen.' +
+    '<br><br>C/E = startvekt på leg curl/extension, finnes første gang (4 reps i reserve). +1 = ett trinn på maskinen.</div>';
+}
+
+function strengthHtml(variant, noteClass, wk) {
+  if (variant === "H") return helkroppHtml(wk ? wk.label : "", noteClass);
   const rows = variant === "B" ? STRENGTH_B : STRENGTH_A;
   const isNew = today <= (STRENGTH_NEW_UNTIL[variant] || "");
   const list = rows.map(r => {
@@ -1685,7 +1724,7 @@ function renderToday() {
   document.getElementById("todayNotes").textContent = notesFor(day.type);
 
   const sd = document.getElementById("todayStrength");
-  sd.innerHTML = day.type === "strength" ? strengthHtml(wk.strength, "today-notes") : "";
+  sd.innerHTML = day.type === "strength" ? strengthHtml(wk.strength, "today-notes", wk) : "";
 }
 
 function renderWeekStrip() {
@@ -1795,7 +1834,7 @@ function renderSheet() {
   document.getElementById("sheetNotes").textContent = notesFor(day.type);
 
   const sd = document.getElementById("sheetStrength");
-  sd.innerHTML = day.type === "strength" ? strengthHtml(wk.strength, "sheet-notes") : "";
+  sd.innerHTML = day.type === "strength" ? strengthHtml(wk.strength, "sheet-notes", wk) : "";
 
   const prev = document.getElementById("sheetPrev");
   const next = document.getElementById("sheetNext");
