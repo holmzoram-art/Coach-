@@ -103,3 +103,10 @@ nytt nullpunkt for den nye strukturen.
 - Hvorfor manglet man/tir/tor i uke 4? Spurt 28.09.
 - `ernaering`: økta gir ~300–400 kcal mer og ~20 flere beinsett per syklus fra
   uke 6. Dekker proteinfordelingen tirsdag/onsdag det? Svar før 06.10.
+
+## Utstyr (Knut 28.09)
+
+Gymmet har også **Leg Curl & Extension** (kombinert beinmaskin: leg curl for
+hamstrings, leg extension for quadriceps). Ikke avklart om det finnes beinpress.
+
+Knut: **øktene skal ikke være for lange.** Makstid ikke oppgitt ennå.
