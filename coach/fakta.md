@@ -160,3 +160,16 @@ lagt der fordi agenter ikke kan lese artifacter. **Les den før du spør Knut hv
 som sto på planen, og før du antar at en økt ble valgt spontant.** Han følger
 planen; avvik sier han fra om selv. Endres planen i artifacten, skal fila
 oppdateres samtidig.
+
+## Rygg — prolapshistorikk (Knut 28.09.2026)
+
+Knut har **dårlig rygg og har hatt prolaps flere ganger.** Styrkeøvelser skal
+velges slik at ryggen **ikke belastes aksialt og ikke risikerer feilbelastning**.
+Ingen stang på ryggen (knebøy, box squat), ingen tunge hengselløft med stang
+(RDL, markløft, good mornings). Foretrekk maskiner og øvelser med ryggstøtte.
+Gjelder alle agenter, alltid.
+
+Utstyr: gymmet har **ikke beinpress**. Det har belt squat (maks 100 kg) og
+Leg Curl & Extension-maskin.
+
+**Styrkeøkta: maks 90 min.**
