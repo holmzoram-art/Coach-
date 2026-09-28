@@ -76,13 +76,13 @@ første langtur.
 
 - **Hvorfor brodder og ikke piggsko:** Vestfold skifter mellom bart og is på
   samme tur. Brodder kan du ta av på bar asfalt. Du beholder skoen kne og
-  legg er vant til. Å bytte sko midt i sesongen er en egen risiko ved 120 kg.
+  legg er vant til. Å bytte sko midt i sesongen er en egen risiko ved 118 kg.
 - **Type:** Velg en *løpemodell* med karbidpigger og gummiramme, ikke
   gåbrodder med kjetting eller spiker. Kjøp en robust modell i riktig størrelse
   til skoen, for de tynne slites fort ut med din vekt.
 - **Piggsko** griper best, men er en ekstra sko å bli vant til. Det er
   aktuelt hvis du ender med å løpe mest på is. Vent og se hvordan vinteren blir.
-- **Fall er den største vinterrisikoen for deg.** Et fall på is med 120 kg og
+- **Fall er den største vinterrisikoen for deg.** Et fall på is med 118 kg og
   prolapshistorikk kan koste flere uker. Brodder hjelper lite på **våt blankis**.
   Da tar du mølla, uten diskusjon.
 

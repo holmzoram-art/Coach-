@@ -76,7 +76,7 @@ Bare dette, og det meste hentes gjennom **kveldsspørsmålet**, ikke som lekser:
 
 ## Avklart om ham
 
-- 38 år, 195 cm, **118 kg (29.09.2026)**, makspuls 190. Strava-profilen sier 122 kg og er utdatert — bruk denne.
+- 38 år, 195 cm, **118 kg (28.09.2026)**, makspuls 190. Strava-profilen sier 122 kg og er utdatert — bruk denne.
 - Tre års styrketrening. Løping startet i 2026.
 - **Langturer kjøres i gruppe** — farten er ikke hans. Kvalitetsøkter er solo.
 - Kantine på jobb med varmmat, salatbar og brød. Lager mat selv, god til det.
