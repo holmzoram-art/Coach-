@@ -327,8 +327,9 @@ inntil kroppen, nøytral rygg.
 | 0 | Oppvarming: 5 min sykkel, band walks, clamshell | | |
 | 1 | Belt squat | 3 × 8, RIR 2 | 80 kg på beltet, +10 kg/bygguke til 100 kg (uke 10). **Fra uke 11: ettbeins belt squat** 3 × 6 per bein, RIR 2, start ~60 kg, +5–10 kg/bygguke |
 | 2 | Bulgarian split squat, manualer | 3 × 8 per bein | U5 12 kg i hver hånd, U6 16, deretter +2 kg i hver hånd per bygguke, tak 20 kg i hver hånd (U10), så reps 8 → 10. Manualer fra stativ/benk, ikke gulv |
-| 3a/b | Seated leg curl + leg extension | 3 × 10 / 3 × 12 | Samme maskin som høsten 2025. Leg curl U5 90 kg på maskinen, leg extension U6 105 kg på maskinen. +7,5 kg (ett trinn) per bygguke |
-| 4a/b | Hip thrust (stang over hofta) + seated calf raise | 3 × 10 / 3 × 15 | Hip thrust U6 70 kg totalt på stanga, +10/bygguke, tak 100 kg (U11). Calf U5 60 kg på maskinen, +10 til 80, så +5, til 90. Stanga rulles inn, aldri opp i fanget. Stopp ved svai eller kjenning i korsryggen — se under |
+| 3a/b | Seated leg curl + sittende tåhev (supersett) | 3 × 10 / 3 × 15 | Leg curl U5 82,5 kg (deload), U6 97,5 kg på maskinen, +7,5 kg per bygguke. Tåhev: manualer på knærne, se vekttabell |
+| 3c | Leg extension | 3 × 12 | Rett etter leg curl — samme combo-apparat, juster én gang. U6 105 kg på maskinen, +7,5 per bygguke |
+| 4 | Hip thrust (stang over hofta) | 3 × 10 | Hip thrust U6 70 kg totalt på stanga, +10/bygguke, tak 100 kg (U11). Stanga rulles inn, aldri opp i fanget. Stopp ved svai eller kjenning i korsryggen — se under |
 | 5a/b | Benkpress + lat pulldown | 3 × 5 / 3 × 8 | Vedlikehold: 75 kg totalt på stanga / 55 kg på maskinen |
 | 6a/b | Seated cable row + Pallof press | 3 × 10 / 3 × 10 per side | Roing ~70 kg på kabelen, overkroppen helt i ro. Pallof 25 kg på kabelen, 30 fra U10 |
 | 7 | Sideplanke | 2 × 30 s per side | |

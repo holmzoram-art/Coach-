@@ -173,7 +173,7 @@ Gjelder alle agenter, alltid.
 
 Utstyr: gymmet har **ikke beinpress**, **ikke roapparat med brystpute**, **ikke
 hip thrust-maskin eller Smith**. Det har belt squat (maks 100 kg), Leg Curl &
-Extension-maskin, 2 tredemøller og 2 romaskiner. **Ingen tåhevmaskin**: tåhev gjøres på boks/kant, stående med manualer i hendene eller sittende med manualer på knærne. Hjemme: ellipsemaskin.
+Extension-maskin (ett combo-apparat — curl og extension kan ikke supersettes), 2 tredemøller og 2 romaskiner. **Ingen tåhevmaskin**: tåhev gjøres på boks/kant, stående med manualer i hendene eller sittende med manualer på knærne. Hjemme: ellipsemaskin.
 
 **Styrkeøkta: maks 90 min.**
 
