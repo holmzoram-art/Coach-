@@ -334,6 +334,23 @@ inntil kroppen, nøytral rygg.
 | 6a/b | Seated cable row + Pallof press | 3 × 10 / 3 × 10 per side | Roing ~70 kg på kabelen, overkroppen helt i ro. Pallof 25 kg på kabelen, 30 fra U10 |
 | 7 | Sideplanke | 2 × 30 s per side | |
 
+**Pauser og tid (byggeuke):**
+
+| Blokk | Pause | Min |
+|---|---|---|
+| Oppvarming: 5 min sykkel, band walks, clamshell | — | 8 |
+| Belt squat (+2 oppvarmingssett) | 2 min | 12 |
+| Bulgarian split squat | 90 s etter begge bein | 11 |
+| Supersett A: leg curl + tåhev | ingen mellom, 60 s etter paret | 10 |
+| Leg extension (samme apparat) | 60 s | 7 |
+| Hip thrust | 90 s | 9 |
+| Supersett B: benk + nedtrekk | ingen mellom, 90 s etter paret | 10 |
+| Supersett C: roing + Pallof | ingen mellom, 60 s etter paret | 8 |
+| Sideplanke | 30 s | 3 |
+| **Sum inkl. bytter** | | **~80** |
+
+Deload (2 sett): ~50 min. Går økta over 90 min, kuttes pausene i supersett B og C først — aldri pausen på belt squat.
+
 **~80 min byggeuke, ~55 min deload.**
 
 - **Byggeuke:** vekt opp etter progresjonsregelen.

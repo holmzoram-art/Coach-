@@ -772,6 +772,7 @@
   .strength-list .ss-tag { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--strength); font-weight: 700; padding: 2px 2px 0; }
   .strength-list .row { grid-template-columns: 1fr; gap: 2px; }
   .strength-list .row .spec { color: var(--ink-2); }
+  .strength-list .pause { font-size: 11px; color: var(--mute); }
   .strength-list .ss-merk { display: block; font-size: 11px; color: var(--mute); font-weight: 400; margin-top: 2px; }
 </style>
 
@@ -1081,6 +1082,15 @@ const HELK = [
 ];
 // Uke 14–15 ligger utenfor tabellen: sett × reps som byggeuke, vekt etter progresjonsregelen.
 // Supersett: to øvelser som kjøres annenhver. Må stå rett etter hverandre i HELK.
+// Pause etter hvert sett. Supersett: ingen pause mellom de to, pausen tas etter paret.
+const PAUSE = {
+  "Belt squat": "2 min pause",
+  "Bulgarian split squat": "90 s pause etter begge bein",
+  "Leg extension": "60 s pause",
+  "Hip thrust (stang over hofta)": "90 s pause",
+  "Sideplanke": "30 s pause",
+};
+const SS_PAUSE = { A: "60 s", B: "90 s", C: "60 s" };
 const SUPERSETT = [
   ["Seated leg curl", "Sittende tåhev, manualer på knærne"],
   ["Benkpress", "Lat pulldown"],
@@ -1676,7 +1686,7 @@ function notesFor(type) {
   if (type === "quality") return "Full oppvarming (min. 2 km) før du åpner. Kvalitet krever ferske bein.";
   if (type === "deload") return "Målet er å komme ut FRISK. Ikke et sekund raskere enn planlagt.";
   if (type === "easy") return "Sirkulasjon, ikke arbeid. Bruk den til god form.";
-  if (type === "strength") return "Maks 90 min. Supersett: leg curl + tåhev, benk + nedtrekk, roing + Pallof. Leg extension tas rett etter leg curl på samme apparat — juster én gang.";
+  if (type === "strength") return "Ca. 80 min i byggeuker, ca. 50 min i deload (maks 90). 8 min oppvarming først: 5 min sykkel + band walks og clamshells. Supersett: leg curl + tåhev, benk + nedtrekk, roing + Pallof. Leg extension tas rett etter leg curl på samme apparat — juster én gang.";
   return "";
 }
 
@@ -1688,14 +1698,16 @@ function helkroppHtml(label, noteClass) {
   }).filter(Boolean);
   const radHtml = x => '<div class="row"><div class="name">' + escapeHtml(x.navn) +
     (x.navn === "Leg extension" ? '<span class="ss-merk">samme apparat som leg curl</span>' : "") +
-    '</div><div class="spec">' + escapeHtml(x.spec) + '</div></div>';
+    '</div><div class="spec">' + escapeHtml(x.spec) + '</div>' +
+    (PAUSE[x.navn] ? '<div class="pause">' + PAUSE[x.navn] + '</div>' : '') + '</div>';
   let list = "", n = 0;
   for (let k = 0; k < rader.length; k++) {
     const par = SUPERSETT.find(ss => ss[0] === rader[k].navn);
     const neste = rader[k + 1];
     if (par && neste && neste.navn === par[1]) {
       n++;
-      list += '<div class="ss"><div class="ss-tag">Supersett ' + String.fromCharCode(64 + n) + ' · annenhver</div>' +
+      const bokstav = String.fromCharCode(64 + n);
+      list += '<div class="ss"><div class="ss-tag">Supersett ' + bokstav + ' · annenhver · ingen pause mellom, ' + SS_PAUSE[bokstav] + ' etter paret</div>' +
               radHtml(rader[k]) + radHtml(neste) + '</div>';
       k++;
     } else list += radHtml(rader[k]);
