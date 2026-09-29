@@ -790,20 +790,20 @@ const STRENGTH_B = [
 ];
 
 // Helkroppsøkt fra uke 5 (revidert 28.09.2026) — erstatter A og B.
-// Ryggvennlig, maks 90 min. Deload = samme økt, 2 sett, samme vekt.
+// Ryggvennlig, maks 90 min. Deload = samme økt, 2 sett, ca. 10 % lettere.
 // Kolonner: uke 5..13. null = ikke med den uka. C/E = startvekt på maskinen, satt første gang.
 const HELK_WEEKS = ["5","6","7","8","9","10","11","12","13"];
 const HELK = [
-  ["Belt squat", ["3×8 @ 80 kg på beltet","3×8 @ 80 kg på beltet","3×8 @ 90 kg på beltet","3×8 @ 90 kg på beltet","2×8 @ 90 kg på beltet","3×8 @ 100 kg på beltet","ettbeins 3×6 per bein @ ~60 kg på beltet","ettbeins 3×6 per bein @ ~60 kg på beltet","ettbeins 2×6 per bein @ ~60 kg på beltet"]],
-  ["Bulgarian split squat", ["2×8 per bein @ 12 kg i hver hånd","3×8 per bein @ 16 kg i hver hånd","3×8 per bein @ 18 kg i hver hånd","3×8 per bein @ 18 kg i hver hånd","2×8 per bein @ 18 kg i hver hånd","3×8 per bein @ 20 kg i hver hånd","3×10 per bein @ 20 kg i hver hånd","3×10 per bein @ 20 kg i hver hånd","2×10 per bein @ 20 kg i hver hånd"]],
-  ["Seated leg curl", ["2×10 @ 90 kg på maskinen","3×10 @ 97,5 kg på maskinen","3×10 @ 105 kg på maskinen","3×10 @ 105 kg på maskinen","2×10 @ 105 kg på maskinen","3×10 @ 112,5 kg på maskinen","3×10 @ 120 kg på maskinen","3×10 @ 120 kg på maskinen","2×10 @ 120 kg på maskinen"]],
-  ["Leg extension", [null,"3×12 @ 105 kg på maskinen","3×12 @ 112,5 kg på maskinen","3×12 @ 112,5 kg på maskinen","2×12 @ 112,5 kg på maskinen","3×12 @ 120 kg på maskinen","3×12 @ 127,5 kg på maskinen","3×12 @ 127,5 kg på maskinen","2×12 @ 127,5 kg på maskinen"]],
-  ["Hip thrust (stang over hofta)", [null,"3×10 @ 70 kg totalt på stanga","3×10 @ 80 kg totalt på stanga","3×10 @ 80 kg totalt på stanga","2×10 @ 80 kg totalt på stanga","3×10 @ 90 kg totalt på stanga","3×10 @ 100 kg totalt på stanga","3×10 @ 100 kg totalt på stanga","2×10 @ 100 kg totalt på stanga"]],
-  ["Sittende tåhev, manualer på knærne", ["2×15 @ 60 kg totalt (2 × 30 kg)","3×15 @ 70 kg totalt (2 × 35 kg)","3×15 @ 80 kg totalt (2 × 40 kg)","3×15 @ 80 kg totalt (2 × 40 kg)","2×15 @ 80 kg totalt (2 × 40 kg)","3×15 @ 85 kg totalt (2 × 42,5 kg)","3×15 @ 90 kg totalt (2 × 45 kg)","3×15 @ 90 kg totalt (2 × 45 kg)","2×15 @ 90 kg totalt (2 × 45 kg)"]],
-  ["Benkpress", ["2×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","2×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","2×5 @ 75 kg totalt på stanga"]],
-  ["Lat pulldown", ["2×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","2×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","2×8 @ 55 kg på maskinen"]],
-  ["Seated cable row, overkropp i ro", ["2×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","2×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","2×10 @ 70 kg på kabelen"]],
-  ["Pallof press", ["2×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","2×10 per side @ 25 kg på kabelen","3×10 per side @ 30 kg på kabelen","3×10 per side @ 30 kg på kabelen","3×10 per side @ 30 kg på kabelen","2×10 per side @ 30 kg på kabelen"]],
+  ["Belt squat", ["2×8 @ 70 kg på beltet","3×8 @ 80 kg på beltet","3×8 @ 90 kg på beltet","3×8 @ 90 kg på beltet","2×8 @ 80 kg på beltet","3×8 @ 100 kg på beltet","ettbeins 3×6 per bein @ ~60 kg på beltet","ettbeins 3×6 per bein @ ~60 kg på beltet","ettbeins 2×6 per bein @ ~55 kg på beltet"]],
+  ["Bulgarian split squat", ["2×8 per bein @ 10 kg i hver hånd","3×8 per bein @ 16 kg i hver hånd","3×8 per bein @ 18 kg i hver hånd","3×8 per bein @ 18 kg i hver hånd","2×8 per bein @ 16 kg i hver hånd","3×8 per bein @ 20 kg i hver hånd","3×10 per bein @ 20 kg i hver hånd","3×10 per bein @ 20 kg i hver hånd","2×10 per bein @ 18 kg i hver hånd"]],
+  ["Seated leg curl", ["2×10 @ 82,5 kg på maskinen","3×10 @ 97,5 kg på maskinen","3×10 @ 105 kg på maskinen","3×10 @ 105 kg på maskinen","2×10 @ 90 kg på maskinen","3×10 @ 112,5 kg på maskinen","3×10 @ 120 kg på maskinen","3×10 @ 120 kg på maskinen","2×10 @ 105 kg på maskinen"]],
+  ["Leg extension", [null,"3×12 @ 105 kg på maskinen","3×12 @ 112,5 kg på maskinen","3×12 @ 112,5 kg på maskinen","2×12 @ 97,5 kg på maskinen","3×12 @ 120 kg på maskinen","3×12 @ 127,5 kg på maskinen","3×12 @ 127,5 kg på maskinen","2×12 @ 112,5 kg på maskinen"]],
+  ["Hip thrust (stang over hofta)", [null,"3×10 @ 70 kg totalt på stanga","3×10 @ 80 kg totalt på stanga","3×10 @ 80 kg totalt på stanga","2×10 @ 70 kg totalt på stanga","3×10 @ 90 kg totalt på stanga","3×10 @ 100 kg totalt på stanga","3×10 @ 100 kg totalt på stanga","2×10 @ 90 kg totalt på stanga"]],
+  ["Sittende tåhev, manualer på knærne", ["2×15 @ 52 kg totalt (2 × 26 kg)","3×15 @ 70 kg totalt (2 × 35 kg)","3×15 @ 80 kg totalt (2 × 40 kg)","3×15 @ 80 kg totalt (2 × 40 kg)","2×15 @ 72 kg totalt (2 × 36 kg)","3×15 @ 85 kg totalt (2 × 42,5 kg)","3×15 @ 90 kg totalt (2 × 45 kg)","3×15 @ 90 kg totalt (2 × 45 kg)","2×15 @ 80 kg totalt (2 × 40 kg)"]],
+  ["Benkpress", ["2×5 @ 67,5 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","2×5 @ 67,5 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","3×5 @ 75 kg totalt på stanga","2×5 @ 67,5 kg totalt på stanga"]],
+  ["Lat pulldown", ["2×8 @ 50 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","2×8 @ 50 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","3×8 @ 55 kg på maskinen","2×8 @ 50 kg på maskinen"]],
+  ["Seated cable row, overkropp i ro", ["2×10 @ 60 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","2×10 @ 60 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","3×10 @ 70 kg på kabelen","2×10 @ 60 kg på kabelen"]],
+  ["Pallof press", ["2×10 per side @ 22,5 kg på kabelen","3×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","3×10 per side @ 25 kg på kabelen","2×10 per side @ 22,5 kg på kabelen","3×10 per side @ 30 kg på kabelen","3×10 per side @ 30 kg på kabelen","3×10 per side @ 30 kg på kabelen","2×10 per side @ 27,5 kg på kabelen"]],
   ["Sideplanke", ["2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side"]],
 ];
 // Uke 14–15 ligger utenfor tabellen: sett × reps som byggeuke, vekt etter progresjonsregelen.
@@ -887,7 +887,7 @@ const PLAN = [
 
   { label: "9", theme: "DELOAD + sjekkpunkt", strength: "H", isDeload: true, days: [
     { date: "2026-10-26", d: "Man", type: "deload", name: "6 km + 6 strides", detail: "Sjekk hvordan beina føles. STRIDES: 6 × ca. 20 sek (80–100 m) på slutten av turen. Bygg opp farten jevnt til ca. 90 % — raskt og avslappet, ikke full sprint. Gå eller jogg rolig 60–90 sek mellom. Flatt underlag.", pace: "I2 · ≈ 50 min" },
-    { date: "2026-10-27", d: "Tir", type: "strength", name: "Helkropp – deload", detail: "Samme økt, 2 sett, samme vekt som forrige bygguke. Fredagens sjekkpunkt skal måle restitusjon, ikke stølhet.", pace: "≈ 55 min" },
+    { date: "2026-10-27", d: "Tir", type: "strength", name: "Helkropp – deload", detail: "Samme økt, 2 sett, ca. 10 % lettere enn forrige bygguke. Fredagens sjekkpunkt skal måle restitusjon, ikke stølhet.", pace: "≈ 55 min" },
     { date: "2026-10-29", d: "Tor", type: "deload", name: "5 km rolig", detail: "", pace: "I1 · ≈ 40 min" },
     { date: "2026-10-30", d: "Fre", type: "deload", name: "14 km rolig · sjekkpunkt", detail: "Vanlig rolig tur, ingen testbetingelser. Legg inn RPE i Strava: 5 eller lavere = grønt lys videre. 6 eller høyere = gjenta uke 43.", pace: "I1–I2 · ≈ 1:45" },
     { date: "2026-11-01", d: "Søn", type: "deload", name: "3 km rolig", detail: "Deload etter sjekkpunktet. Kort, eller dropp.", pace: "I1" },
@@ -919,7 +919,7 @@ const PLAN = [
 
   { label: "13", theme: "DELOAD", strength: "H", isDeload: true, days: [
     { date: "2026-11-23", d: "Man", type: "deload", name: "6 km + 6 strides", detail: "STRIDES: 6 × ca. 20 sek (80–100 m) på slutten av turen. Bygg opp farten jevnt til ca. 90 % — raskt og avslappet, ikke full sprint. Gå eller jogg rolig 60–90 sek mellom. Flatt underlag.", pace: "I2 · ≈ 50 min" },
-    { date: "2026-11-24", d: "Tir", type: "strength", name: "Helkropp – deload", detail: "Samme økt, 2 sett, samme vekt som forrige bygguke.", pace: "≈ 55 min" },
+    { date: "2026-11-24", d: "Tir", type: "strength", name: "Helkropp – deload", detail: "Samme økt, 2 sett, ca. 10 % lettere enn forrige bygguke.", pace: "≈ 55 min" },
     { date: "2026-11-26", d: "Tor", type: "deload", name: "5 km rolig", detail: "", pace: "I1 · ≈ 40 min" },
     { date: "2026-11-27", d: "Fre", type: "deload", name: "14 km rolig", detail: "", pace: "I1–I2 · ≈ 1:45" },
     { date: "2026-11-29", d: "Søn", type: "deload", name: "3 km rolig", detail: "Deload. Kort, eller dropp.", pace: "I1" },
@@ -1081,7 +1081,7 @@ function helkroppHtml(label, noteClass) {
   }).join("");
   const deload = ["5","9","13"].includes(label);
   const head = deload
-    ? "<b>Deload:</b> samme økt, 2 sett, samme vekt. 3–4 reps i reserve på alle beinsett."
+    ? "<b>Deload:</b> samme øvelser, 2 sett og ca. 10 % lettere vekt. 3–4 reps i reserve — det skal kjennes lett."
     : "<b>Byggeuke:</b> 2 reps i reserve. Vekt opp bare når kneet er rolig, stølhet torsdag ≤ 2/10 og fredagens langtur gikk som forventet. Ellers står vekten.";
   const extra = idx < 0 ? " Vekter: fortsett fra uke 48 etter progresjonsregelen." : "";
   return '<div class="strength-list">' + list + '</div>' +

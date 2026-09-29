@@ -45,8 +45,8 @@ strake bein. Avlast belt squat mellom sett bare hvis maskinen krever det.
 
 - **Byggeuke:** vekt opp etter progresjonsregelen.
 - **Toppuke (4/8/12):** hold vekt.
-- **Deload (5/9/13):** samme økt, 2 sett, samme vekt som forrige bygguke,
-  RIR 3–4. Ingen tempo-/pausevarianter, ingen nye øvelser.
+- **Deload (5/9/13):** samme økt, 2 sett, **ca. 10 % lettere** enn forrige bygguke,
+  RIR 3–4. (Endret 29.09 etter Knuts innspill.) Ingen tempo-/pausevarianter, ingen nye øvelser.
 
 **Progresjonsregel:** vekt opp bare hvis (1) ingen kne-kriterier 1–6 har slått
 inn, (2) stølhet torsdag ≤ 2/10, (3) fredagens langtur hadde forventet RPE.
@@ -251,3 +251,27 @@ nytt nullpunkt for den nye strukturen.
 - Hvorfor manglet man/tir/tor i uke 4? Spurt 28.09.
 - `ernaering`: økta gir ~300–400 kcal mer og ~20 flere beinsett per syklus fra
   uke 6. Dekker proteinfordelingen tirsdag/onsdag det? Svar før 06.10.
+
+## Endring 29.09: deload-vekt ca. 10 % lettere
+
+Knut: «Samme vekt og bare 1 mindre sett? … Trur du må gå over deloade ukene å
+faktisk ta deloade vekt.» Regelen «samme vekt, 2 sett» gjaldt, men ga ikke en
+deload han kjente som deload. Endret til `belastning-restitusjon`s opprinnelige
+regel fra 28.09: **2 sett og ca. 10 % lettere** enn forrige bygguke (rundet ned
+til nærmeste vekttrinn), RIR 3–4.
+
+| Øvelse | U5 (29.09) | U9 (27.10) | U13 (24.11) |
+|---|---|---|---|
+| Belt squat | 2×8 @ 70 kg på beltet | 2×8 @ 80 | ettbeins 2×6 per bein @ ~55 |
+| Bulgarian split squat | 2×8 @ 10 kg i hver hånd | 16 | 2×10 @ 18 |
+| Seated leg curl | 2×10 @ 82,5 kg på maskinen | 90 | 105 |
+| Leg extension | — | 2×12 @ 97,5 | 112,5 |
+| Hip thrust | — | 2×10 @ 70 kg totalt på stanga | 90 |
+| Sittende tåhev | 2×15 @ 52 kg totalt (2 × 26) | 72 (2 × 36) | 80 (2 × 40) |
+| Benkpress | 2×5 @ 67,5 kg totalt | 67,5 | 67,5 |
+| Lat pulldown | 2×8 @ 50 kg | 50 | 50 |
+| Seated cable row | 2×10 @ 60 kg | 60 | 60 |
+| Pallof press | 2×10 per side @ 22,5 kg | 22,5 | 27,5 |
+
+Byggeukene er uendret. Ikke kjørt forbi spesialistene — regelen er deres egen
+fra 28.09.

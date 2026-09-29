@@ -25,7 +25,7 @@ Fem dager fra uke 3: **fire løpeøkter og én styrke.**
 | Dag | Rolle |
 |---|---|
 | **Mandag** | Kvalitet — tempo eller sub-terskelintervaller |
-| **Tirsdag** | Styrke, helkropp — samme økt hver uke. Deload: 2 sett, samme vekt |
+| **Tirsdag** | Styrke, helkropp — samme økt hver uke. Deload: 2 sett, ca. 10 % lettere |
 | **Onsdag** | Hvile |
 | **Torsdag** | Kort kvalitet — bakkesprint eller drag. Under en time |
 | **Fredag** | Langtur |
@@ -224,7 +224,7 @@ Da gjentas forrige distanse. Den går ikke ned uten et skadeflagg.
 | Dato | Dag | Type | Økt |
 |---|---|---|---|
 | 26.10 | Man | deload | 6 km + 6 strides |
-| 27.10 | Tir | styrke | Helkropp deload: 2 sett, samme vekt, RIR 3–4 |
+| 27.10 | Tir | styrke | Helkropp deload: 2 sett, ca. 10 % lettere, RIR 3–4 |
 | 29.10 | Tor | deload | 5 km rolig |
 | 30.10 | Fre | deload | **14 km · SJEKKPUNKT.** RPE ≤ 5 = grønt lys. RPE ≥ 6 = gjenta uke 8. Vanlig rolig tur, ingen testbetingelser |
 | 01.11 | Søn | deload | 3 km, eller dropp |
@@ -260,7 +260,7 @@ Da gjentas forrige distanse. Den går ikke ned uten et skadeflagg.
 | Dato | Dag | Type | Økt |
 |---|---|---|---|
 | 23.11 | Man | deload | 6 km + 6 strides |
-| 24.11 | Tir | styrke | Helkropp deload: 2 sett, samme vekt, RIR 3–4 |
+| 24.11 | Tir | styrke | Helkropp deload: 2 sett, ca. 10 % lettere, RIR 3–4 |
 | 26.11 | Tor | deload | 5 km rolig |
 | 27.11 | Fre | deload | 14 km rolig |
 | 29.11 | Søn | deload | 3 km, eller dropp |
@@ -337,7 +337,7 @@ inntil kroppen, nøytral rygg.
 
 - **Byggeuke:** vekt opp etter progresjonsregelen.
 - **Toppuke (4/8/12):** hold vekt.
-- **Deload (5/9/13):** samme økt, **2 sett**, samme vekt som forrige bygguke, RIR 3–4.
+- **Deload (5/9/13):** samme økt, **2 sett**, **ca. 10 % lettere** enn forrige bygguke (rundet ned til nærmeste vekttrinn), RIR 3–4. Endret 29.09 etter Knuts innspill — «samme vekt» ga ikke en ekte deload.
 
 **Tillegg 28.09 kveld (`fysiolog`, besluttet av `hovedcoach`):**
 - **Hurtig opp:** belt squat, bulgarians og hip thrust kjøres kontrollert ned,
