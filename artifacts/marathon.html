@@ -550,6 +550,11 @@
   details.fold[open] > summary::after { transform: rotate(180deg); }
   details.fold > .fold-body { padding: 0 12px 12px; }
   details.fold .phase:last-child { margin-bottom: 0; }
+  .strength-list .ss { border: 1px solid var(--strength); border-left-width: 4px; border-radius: 10px; padding: 6px 6px 6px 8px; display: grid; gap: 6px; }
+  .strength-list .ss-tag { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--strength); font-weight: 700; padding: 2px 2px 0; }
+  .strength-list .row { grid-template-columns: 1fr; gap: 2px; }
+  .strength-list .row .spec { color: var(--ink-2); }
+  .strength-list .ss-merk { display: block; font-size: 11px; color: var(--mute); font-weight: 400; margin-top: 2px; }
 </style>
 
 <header class="top">
@@ -807,7 +812,13 @@ const HELK = [
   ["Sideplanke", ["2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side","2×30 s/side"]],
 ];
 // Uke 14–15 ligger utenfor tabellen: sett × reps som byggeuke, vekt etter progresjonsregelen.
-const HELK_BUILD = ["ettbeins 3×6/bein","3×8 per bein","3×10","3×12","3×10","3×15","3×5","3×8","3×10","3×10 per side","2×30 s/side"];
+// Supersett: to øvelser som kjøres annenhver. Må stå rett etter hverandre i HELK.
+const SUPERSETT = [
+  ["Seated leg curl", "Sittende tåhev, manualer på knærne"],
+  ["Benkpress", "Lat pulldown"],
+  ["Seated cable row, overkropp i ro", "Pallof press"],
+];
+const HELK_BUILD = ["ettbeins 3×6 per bein","3×8 per bein","3×10","3×15","3×12","3×10","3×5","3×8","3×10","3×10 per side","2×30 s/side"];
 
 // Stjernene markerer nye øvelser, og forsvinner så snart varianten er kjørt én gang.
 // A ble kjørt 25.08, B kjøres første gang 01.09.
@@ -1074,11 +1085,24 @@ function ukeNr(wk) { return isoUke(wk.days[0].date); }
 
 function helkroppHtml(label, noteClass) {
   const idx = HELK_WEEKS.indexOf(label);
-  const list = HELK.map((r, k) => {
+  const rader = HELK.map((r, k) => {
     const spec = idx >= 0 ? r[1][idx] : HELK_BUILD[k];
-    if (spec === null) return "";
-    return '<div class="row"><div class="name">' + escapeHtml(r[0]) + '</div><div class="spec">' + escapeHtml(spec) + '</div></div>';
-  }).join("");
+    return spec === null ? null : { navn: r[0], spec: spec };
+  }).filter(Boolean);
+  const radHtml = x => '<div class="row"><div class="name">' + escapeHtml(x.navn) +
+    (x.navn === "Leg extension" ? '<span class="ss-merk">samme apparat som leg curl</span>' : "") +
+    '</div><div class="spec">' + escapeHtml(x.spec) + '</div></div>';
+  let list = "", n = 0;
+  for (let k = 0; k < rader.length; k++) {
+    const par = SUPERSETT.find(ss => ss[0] === rader[k].navn);
+    const neste = rader[k + 1];
+    if (par && neste && neste.navn === par[1]) {
+      n++;
+      list += '<div class="ss"><div class="ss-tag">Supersett ' + String.fromCharCode(64 + n) + ' · annenhver</div>' +
+              radHtml(rader[k]) + radHtml(neste) + '</div>';
+      k++;
+    } else list += radHtml(rader[k]);
+  }
   const deload = ["5","9","13"].includes(label);
   const head = deload
     ? "<b>Deload:</b> samme øvelser, 2 sett og ca. 10 % lettere vekt. 3–4 reps i reserve — det skal kjennes lett."
@@ -1086,8 +1110,7 @@ function helkroppHtml(label, noteClass) {
   const extra = idx < 0 ? " Vekter: fortsett fra uke 48 etter progresjonsregelen." : "";
   return '<div class="strength-list">' + list + '</div>' +
     '<div class="' + noteClass + '" style="margin-top:12px">' + head + extra +
-    '<br><br><b>Byggeuker:</b> kontrollert ned, eksplosivt opp på belt squat, bulgarians og hip thrust. Hip thrust: stopp ved nøytral hofte.<br><br><b>Ryggen:</b> stopp beindelen ved kne over 3/10, verk som øker, eller noe i rygg/sete. Hip thrust: stanga rulles inn over lårene, aldri opp i fanget — stopp settet ved svai. Bulgarian-manualer hentes fra stativ, ikke gulv. Skiver løftes én og én, tett inntil kroppen.' +
-    '<br><br>Leg curl i dag: kjennes første sett veldig lett, ta 97,5 kg i andre sett — ikke mer.</div>';
+    '<br><br><b>Byggeuker:</b> kontrollert ned, eksplosivt opp på belt squat, bulgarians og hip thrust. Hip thrust: stopp ved nøytral hofte.<br><br><b>Ryggen:</b> stopp beindelen ved kne over 3/10, verk som øker, eller noe i rygg/sete. Hip thrust: stanga rulles inn over lårene, aldri opp i fanget — stopp settet ved svai. Bulgarian-manualer hentes fra stativ, ikke gulv. Skiver løftes én og én, tett inntil kroppen.' + '</div>';
 }
 
 function strengthHtml(variant, noteClass, wk) {
