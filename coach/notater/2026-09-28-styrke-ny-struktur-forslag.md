@@ -275,3 +275,10 @@ til nærmeste vekttrinn), RIR 3–4.
 
 Byggeukene er uendret. Ikke kjørt forbi spesialistene — regelen er deres egen
 fra 28.09.
+
+## Endring 29.09: leg extension og hip thrust inn allerede i uke 40 (deload)
+
+Knut: «Men det er greit å starte med øvelsene på deloade der det er letter og
+mindre belastning.» Hans valg. Uke 40: **leg extension 2×12 @ 90 kg på
+maskinen**, **hip thrust 2×10 @ 60 kg totalt på stanga**, minst 4 reps i reserve.
+Uke 41 blir dermed andre eksponering, ikke første.
